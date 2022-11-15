@@ -1,0 +1,82 @@
+version: "3"
+env:
+  CURRENT_BRANCH:
+    sh: "git rev-parse --abbrev-ref HEAD"
+  SITE:
+    sh: "pwd | xargs basename | sed -re s/-jekyll-theme//"
+  DOMAIN:
+    sh: "pwd | xargs basename | sed -re s/-jekyll-theme/.sutty.local/"
+tasks:
+  default:
+    deps:
+    - "build"
+  rubocop:
+    desc: "Chequea el código Ruby"
+    deps:
+    - "bundle"
+    cmds:
+    - "haini.sh bundle exec rubocop -A"
+  build:
+    desc: "Genera el sitio en entorno de desarrollo"
+    deps:
+    - "pnpm"
+    - "bundle"
+    - "serve"
+    cmds:
+    - "haini.sh bundle exec jekyll build --trace --profile"
+    - task: "notify"
+  bundle:
+    desc: "Instala dependencias de Jekyll"
+    cmds:
+    - "haini.sh bundle"
+    sources:
+    - "Gemfile"
+    generates:
+    - "Gemfile.lock"
+  pnpm:
+    desc: "Instala dependencias de JS y CSS"
+    cmds:
+    - "haini.sh npm install -g pnpm"
+    - "haini.sh pnpm install"
+    sources:
+    - "package.json"
+    generates:
+    - "pnpm-lock.yaml"
+  webpack:
+    desc: "Compila el JS para producción"
+    deps:
+    - "pnpm"
+    cmds:
+    - "git rm -f assets/js/pack.* || true"
+    - "haini.sh ./node_modules/.bin/webpack --config webpack.prod.js"
+    - "git add _data/assets.json assets/js/pack.*"
+    - "git commit -m '[skip ci] Recompilar JS' || true"
+    sources:
+    - "_packs/**/*.js"
+    - ".env"
+    generates:
+    - "assets/js/pack.*.js"
+    - "_data/assets.json"
+  webpack-dev-server:
+    deps:
+    - "pnpm"
+    cmds:
+    - "haini.sh ./node_modules/.bin/webpack-dev-server --public {{.DOMAIN}}:4000 --host 127.0.0.1 --port 65001"
+    preconditions:
+    - "ss -lnp | grep \":65001 \" | wc -l | xargs test 0 = "
+  hosts:
+    desc: "Agrega el dominio local {{.DOMAIN}}"
+    interactive: true
+    cmds:
+    - "echo -e \"127.0.0.1 {{.DOMAIN}}\n::1 {{.DOMAIN}}\" | sudo tee -a /etc/hosts"
+    status:
+    - "grep -q \" {{.DOMAIN}}$\" /etc/hosts"
+  serve:
+    desc: "Inicia el servidor web de desarrollo en https://{{.DOMAIN}}:4000"
+    deps:
+    - "hosts"
+    cmds:
+    - "haini.sh nginx"
+    status:
+    - "pgrep -F ../hain/run/nginx/nginx.pid"
+  notify: "echo -e \"\a\""
