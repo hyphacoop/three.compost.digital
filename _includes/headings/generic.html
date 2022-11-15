@@ -1,0 +1,14 @@
+{%- comment -%}
+
+La base para un encabezado
+
+@param :level [Integer] El nivel
+@param :text [String] El contenido
+{%- endcomment -%}
+
+{%- assign slug = include.text | slugify -%}
+<h{{ include.level }} id="{{ slug }}">
+  <a href="#{{ slug }}">
+    {{- include.text -}}
+  </a>
+</h{{ include.level }}>
