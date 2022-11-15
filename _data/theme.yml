@@ -1,2 +1,6 @@
 ---
 spacer: "1rem"
+btn_transition: "all 250ms ease-in-out"
+btn_font_size: "0.8rem"
+btn_padding_y: "1.5rem"
+btn_line_height: "1"
