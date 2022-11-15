@@ -1,7 +1,7 @@
 ---
 layout: "theme"
 title: "COMPOST"
-font_family_sans_serif: ""
+font_family_sans_serif: "Open Sans"
 headings_font_family: ""
 enable_rounded: true
 enable_shadows: true

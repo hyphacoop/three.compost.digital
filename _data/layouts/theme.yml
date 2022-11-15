@@ -23,9 +23,11 @@ font_family_sans_serif:
     en:
       "": "Default"
       Roboto: "Roboto"
+      Open Sans: "Open Sans"
     es:
       "": "Default"
       Roboto: "Roboto"
+      Open Sans: "Open Sans"
 headings_font_family:
   type: "predefined_value"
   label:
@@ -41,9 +43,11 @@ headings_font_family:
     en:
       "": "Default"
       Roboto: "Roboto"
+      Open Sans: "Open Sans"
     es:
       "": "Default"
       Roboto: "Roboto"
+      Open Sans: "Open Sans"
 enable_rounded:
   type: "boolean"
   label:
