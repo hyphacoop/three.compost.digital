@@ -68,5 +68,14 @@ layout: default
   </section>
 </div>
 
-<div class="container">
+<div class="container mb-5">
+  <article>
+    {% include headings/h1.html text="Botón con link" %}
+
+    {% include buttons/with_link.html href="#" text="Become a subscriber" %}
+
+    {% include headings/h2.html text="Botón con link externo" %}
+
+    {% include buttons/with_link.html href="https://sutty.nl/" text="Find out more about Sutty" %}
+  </article>
 </div>

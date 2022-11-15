@@ -4,10 +4,10 @@ title: "COMPOST"
 font_family_sans_serif: "Open Sans"
 headings_font_family: ""
 enable_rounded: true
-enable_shadows: true
+enable_shadows: false
 body_bg: "#ffffff"
 body_color: "#212529"
-primary: "#007bff"
+primary: "#564FE3"
 secondary: "#6c757d"
 link_color: "#007bff"
 link_hover_color: "#0056b3"

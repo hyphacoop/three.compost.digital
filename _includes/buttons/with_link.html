@@ -1,0 +1,17 @@
+{%- comment -%}
+
+Un botón con link, por ejemplo para Support Us.  Si el link es externo,
+agregar el parámetro de seguridad noopener.
+
+@param :href [String] El link
+@param :text [String] El contenido
+
+{%- endcomment -%}
+
+<a
+  href="{{ include.href | default: "#" }}"
+  {{ include.href | start_with: "https://" | value_if: 'rel="noopener"' }}
+  {{ include.href | start_with: "http://" | value_if: 'rel="noopener"' }}
+  class="btn btn-primary btn-block text-uppercase">
+  <span>{{- include.text -}}</span>
+</a>
