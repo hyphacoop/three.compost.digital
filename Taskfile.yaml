@@ -35,6 +35,7 @@ tasks:
     cmds:
     - "haini.sh bundle"
     sources:
+    - "*.gemspec"
     - "Gemfile"
     generates:
     - "Gemfile.lock"
