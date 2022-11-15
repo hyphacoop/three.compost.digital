@@ -1,5 +1,7 @@
 ---
 ---
 
+{{ site.data.theme | yaml_to_scss }}
+
 @import "bootstrap/scss/bootstrap";
 @import "utilities";
