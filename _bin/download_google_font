@@ -1,0 +1,24 @@
+#!/bin/sh
+
+import_url="$1"
+font_family="$(echo "${import_url}" | cut -d "=" -f 2 | cut -d "&" -f 1)"
+font_snake_case="$(echo "${font_family}" | tr "+" "_" | tr [:upper:] [:lower:] )"
+scss_file="_sass/${font_snake_case}.scss"
+font_dir="assets/fonts/"
+
+if test -f "${scss_file}"; then
+  echo "${font_family} ya existe"
+  exit 0
+fi
+
+css_tempfile="$(mktemp)"
+
+wget -O "${css_tempfile}" -q "${import_url}" --convert-links
+
+mkdir -p "${font_dir}"
+
+cd "${font_dir}"
+grep -Eo "https://[^\"')]+" "${css_tempfile}" | sort -u | wget -i - -x -nH -nv --cut-dir 1 -N
+cd -
+
+sed -r -e "s,https://fonts\.gstatic\.com/s/,../fonts/," "${css_tempfile}" > "${scss_file}"

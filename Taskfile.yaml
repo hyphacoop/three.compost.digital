@@ -86,3 +86,7 @@ tasks:
     status:
     - "pgrep -F ../hain/run/nginx/nginx.pid"
   notify: "echo -e \"\a\""
+  google-font:
+    desc: "Descarga una tipografía desde Google Fonts"
+    cmds:
+    - "./_bin/download_google_font {{.CLI_ARGS}}"
