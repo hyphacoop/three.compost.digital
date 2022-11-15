@@ -25,3 +25,5 @@ plugins:
 - "sutty-liquid"
 - "jekyll-gzip"
 - "jekyll-brotli"
+liquid:
+  strict_filters: true
