@@ -1,6 +1,7 @@
 ---
 ---
 
+{{ site.posts | find: "layout", "theme" | yaml_to_scss: site.data.layouts.theme }}
 {{ site.data.theme | yaml_to_scss }}
 
 @import "bootstrap/scss/bootstrap";

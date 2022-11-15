@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
     'documentation_uri' => "https://rubydoc.info/gems/#{spec.name}"
   }
 
-  spec.required_ruby_version = Gem::Requirement.new('> 2.7.6')
+  spec.required_ruby_version = Gem::Requirement.new('>= 2.7')
 
   spec.add_runtime_dependency 'jekyll', '~> 4.3'
   spec.add_runtime_dependency 'jekyll-brotli'
@@ -48,7 +48,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-order'
   spec.add_runtime_dependency 'jekyll-relative-urls'
   spec.add_runtime_dependency 'jekyll-seo-tag'
-  spec.add_runtime_dependency 'sutty-liquid', '> 0.11.0'
+  spec.add_runtime_dependency 'sutty-liquid', '>= 0.11.2'
 
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'rubocop-jekyll'

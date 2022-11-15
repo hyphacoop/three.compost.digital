@@ -1,0 +1,227 @@
+---
+title:
+  type: "string"
+  required: true
+  label:
+    en: "Title"
+    es: "Título"
+  help:
+    en: "The name you want to give to this customization"
+    es: "El nombre que quieras darle a esta personalización"
+font_family_sans_serif:
+  type: "predefined_value"
+  label:
+    en: "Select a typography for the site"
+    es: "Selecciona una tipografía para el sitio"
+  help:
+    en: "If you want us to add support for a typography, please send us an e-mail"
+    es: "Si quieres que agreguemos una tipografía, por favor envíanos un e-mail"
+  default:
+    en: ""
+    es: ""
+  values:
+    en:
+      "": "Default"
+      Roboto: "Roboto"
+    es:
+      "": "Default"
+      Roboto: "Roboto"
+headings_font_family:
+  type: "predefined_value"
+  label:
+    en: "Select a typography for headings"
+    es: "Selecciona una tipografía para los títulos del sitio"
+  help:
+    en: "If you want us to add support for a typography, please send us an e-mail"
+    es: "Si quieres que agreguemos una tipografía, por favor envíanos un e-mail"
+  default:
+    en: ""
+    es: ""
+  values:
+    en:
+      "": "Default"
+      Roboto: "Roboto"
+    es:
+      "": "Default"
+      Roboto: "Roboto"
+enable_rounded:
+  type: "boolean"
+  label:
+    en: "Rounded corners"
+    es: "Esquinas redondeadas"
+  help:
+    en: "For buttons, form inputs, etc."
+    es: "De los botones, campos de formularios, etc."
+  default:
+    es: false
+    en: false
+enable_shadows:
+  type: boolean
+  label:
+    en: "Shadows"
+    es: "Sombras"
+  help:
+    en: "Shadows behind elements"
+    es: "Sombras en los elementos"
+  default:
+    es: false
+    en: false
+body_bg:
+  type: "color"
+  label:
+    en: "Background color"
+    es: "Color de fondo"
+  help:
+    en: "Site's background color"
+    es: "Color de fondo del sitio"
+  default:
+    es: "#FFFFFF"
+    en: "#FFFFFF"
+body_color:
+  type: "color"
+  label:
+    en: "Text color"
+    es: "Color del texto"
+  help:
+    en: ""
+    es: ""
+  default:
+    es: "#212529"
+    en: "#212529"
+primary:
+  type: "color"
+  label:
+    en: "Primary color"
+    es: "Color principal"
+  help:
+    en: "Highlights certain elements"
+    es: "Resalta algunos elementos"
+  default:
+    es: "#007bff"
+    en: "#007bff"
+secondary:
+  type: "color"
+  label:
+    en: "Secondary color"
+    es: "Color secundario"
+  help:
+    en: "Highlights certain elements"
+    es: "Resalta algunos elementos"
+  default:
+    es: "#6c757d"
+    en: "#6c757d"
+link_color:
+  type: "color"
+  label:
+    en: "Link color"
+    es: "Color de los vínculos"
+  help:
+    en: ""
+    es: ""
+  default:
+    es: "#007bff"
+    en: "#007bff"
+link_hover_color:
+  type: "color"
+  label:
+    en: "Link color when selected"
+    es: "Color de los vínculos al seleccionarlos"
+  help:
+    en: ""
+    es: ""
+  default:
+    es: "#0056b3"
+    en: "#0056b3"
+h1_font_size:
+  type: "string"
+  label:
+    en: "Height for first level headings"
+    es: "Altura de los títulos de primer nivel"
+  help:
+    en: ""
+    es: ""
+  default:
+    es: "2.5rem"
+    en: "2.5rem"
+h2_font_size:
+  type: "string"
+  label:
+    en: "Height for second level headings"
+    es: "Altura de los títulos de segundo nivel"
+  help:
+    en: ""
+    es: ""
+  default:
+    es: "2rem"
+    en: "2rem"
+h3_font_size:
+  type: "string"
+  label:
+    en: "Height for third level headings"
+    es: "Altura de los títulos de tercer nivel"
+  help:
+    en: ""
+    es: ""
+  default:
+    es: "1.75rem"
+    en: "1.75rem"
+h4_font_size:
+  type: "string"
+  label:
+    en: "Height for fourth level headings"
+    es: "Altura de los títulos de cuarto nivel"
+  help:
+    en: ""
+    es: ""
+  default:
+    es: "1.5rem"
+    en: "1.5rem"
+h5_font_size:
+  type: "string"
+  label:
+    en: "Height for fifth level headings"
+    es: "Altura de los títulos de quinto nivel"
+  help:
+    en: ""
+    es: ""
+  default:
+    es: "1.25rem"
+    en: "1.25rem"
+h6_font_size:
+  type: "string"
+  label:
+    en: "Height for sixth level headings"
+    es: "Altura de los títulos de sexto nivel"
+  help:
+    en: ""
+    es: ""
+  default:
+    es: "1rem"
+    en: "1rem"
+mark_bg:
+  type: "color"
+  label:
+    en: "Highlight color"
+    es: "Color de resaltado"
+  help:
+    en: "Default color for highlighted text"
+    es: "Color por defecto para el texto resaltado"
+  default:
+    es: "#fcf8e3"
+    en: "#fcf8e3"
+order:
+  type: "order"
+  label:
+    en: "Order"
+    es: "Orden"
+  help:
+    en: "Position in articles list"
+    es: "La posición del artículo en la lista de artículos"
+draft:
+  type: "boolean"
+  label:
+    en: "Draft"
+    es: "Borrador"
+  help:
+    en: "This post isn't ready to be published yet"
+    es: "Este artículo aun no está listo para publicar"

@@ -1,0 +1,23 @@
+---
+layout: "theme"
+title: "COMPOST"
+font_family_sans_serif: ""
+headings_font_family: ""
+enable_rounded: true
+enable_shadows: true
+body_bg: "#ffffff"
+body_color: "#212529"
+primary: "#007bff"
+secondary: "#6c757d"
+link_color: "#007bff"
+link_hover_color: "#0056b3"
+h1_font_size: "2.5rem"
+h2_font_size: "2rem"
+h3_font_size: "1.75rem"
+h4_font_size: "1.5rem"
+h5_font_size: "1.25rem"
+h6_font_size: "1rem"
+mark_bg: "#fcf8e3"
+order: 1
+draft: false
+---
