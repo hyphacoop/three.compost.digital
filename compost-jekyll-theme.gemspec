@@ -34,7 +34,13 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = Gem::Requirement.new('> 2.7.6')
 
   spec.add_runtime_dependency 'jekyll', '~> 4.3'
+  spec.add_runtime_dependency 'jekyll-brotli'
   spec.add_runtime_dependency 'jekyll-data'
+  spec.add_runtime_dependency 'jekyll-drafts-as-metadata'
+  spec.add_runtime_dependency 'jekyll-embed-urls'
+  spec.add_runtime_dependency 'jekyll-gzip'
+  spec.add_runtime_dependency 'jekyll-hardlinks'
+  spec.add_runtime_dependency 'jekyll-ignore-layouts'
   spec.add_runtime_dependency 'jekyll-images'
   spec.add_runtime_dependency 'jekyll-include-cache'
   spec.add_runtime_dependency 'jekyll-linked-posts'

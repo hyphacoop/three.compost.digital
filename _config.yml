@@ -1,5 +1,27 @@
 ---
+title: "COMPOST"
+url: "https://compost.sutty.nl"
 sass:
-  style: compressed
+  style: "compressed"
   load_paths:
-  - node_modules
+  - "node_modules"
+permalink: ":title/"
+locales:
+- "en"
+- "es"
+plugins:
+- "jekyll-hardlinks"
+- "jekyll-drafts-as-metadata"
+- "jekyll-locales"
+- "jekyll-ignore-layouts"
+- "jekyll-relative-urls"
+- "jekyll-include-cache"
+- "jekyll-linked-posts"
+- "jekyll-order"
+- "jekyll-data"
+- "jekyll-seo-tag"
+- "jekyll-images"
+- "jekyll-embed-urls"
+- "sutty-liquid"
+- "jekyll-gzip"
+- "jekyll-brotli"
