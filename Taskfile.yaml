@@ -1,5 +1,5 @@
 version: "3"
-env:
+vars:
   CURRENT_BRANCH:
     sh: "git rev-parse --abbrev-ref HEAD"
   SITE:
@@ -16,9 +16,14 @@ tasks:
     - "bundle"
     cmds:
     - "haini.sh bundle exec rubocop -A"
+  url:
+    silent: true
+    cmds:
+    - "echo https://{{.DOMAIN}}:4000/"
   build:
     desc: "Genera el sitio en entorno de desarrollo"
     deps:
+    - "url"
     - "pnpm"
     - "bundle"
     - "serve"
@@ -65,14 +70,14 @@ tasks:
     preconditions:
     - "ss -lnp | grep \":65001 \" | wc -l | xargs test 0 = "
   hosts:
-    desc: "Agrega el dominio local {{.DOMAIN}}"
+    desc: "Agrega el dominio local a /etc/hosts"
     interactive: true
     cmds:
     - "echo -e \"127.0.0.1 {{.DOMAIN}}\n::1 {{.DOMAIN}}\" | sudo tee -a /etc/hosts"
     status:
     - "grep -q \" {{.DOMAIN}}$\" /etc/hosts"
   serve:
-    desc: "Inicia el servidor web de desarrollo en https://{{.DOMAIN}}:4000"
+    desc: "Inicia el servidor web de desarrollo"
     deps:
     - "hosts"
     cmds:
