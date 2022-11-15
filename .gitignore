@@ -2,6 +2,7 @@
 .bundle
 .jekyll-cache
 .sass-cache
+.env
 _site
 Gemfile.lock
 .task/
