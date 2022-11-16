@@ -51,7 +51,7 @@ content:
 supporters_title:
   type: string
   label:
-    es: Título de la sección de Supporters
+    es: Título de la sección de Sponsors
     en: Supporters section title
   help:
     es: ''
