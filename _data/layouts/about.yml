@@ -1,0 +1,83 @@
+---
+title:
+  type: string
+  required: true
+  label:
+    es: Título
+    en: Title
+  help:
+    es: ''
+    en: ''
+description:
+  type: string
+  required: true
+  label:
+    es: Descripción del proyecto
+    en: Proyect description
+  help:
+    es: ''
+    en: ''
+content:
+  type: new_content
+  label:
+    es: contenido de la pagina about
+    en: title post page one
+  help:
+    es: titulo de la página centrado a la izquierda
+    en: title page 1
+image_menu_close:
+  type: 'image'
+  path:
+    label:
+      es: 'Logo'
+      en: 'Logo'
+    help:
+      es: 'Logo de cabecera con el menú cerrado'
+      en: ''
+  description:
+    label:
+      es: 'Descripción del logo'
+      en: 'Logo description'
+    help:
+      es: ''
+      en: ''
+image_menu_open:
+  type: 'image'
+  path:
+    label:
+      es: 'Logo'
+      en: 'Logo'
+    help:
+      es: 'Logo de cabecera con el menú abierto'
+      en: ''
+  description:
+    label:
+      es: 'Descripción del logo'
+      en: 'Logo description'
+    help:
+      es: ''
+      en: ''
+license:
+  type: text
+  label:
+    es: Descripción de la licencia
+    en: License description
+  help:
+    es: 'este contenido se mostrará en los post que contienen un pie de licencia'
+    en: 'this content will be displayed in posts that contain a license footer'
+order:
+  type: order
+  label:
+    es: Orden
+    en: Order
+  help:
+    es: La posición del artículo en la lista de artículos
+    en: Position in articles list
+draft:
+  type: boolean
+  label:
+    es: Borrador
+    en: Draft
+  help:
+    es: Este artículo aun no está listo para publicar
+    en: This post isn't ready to be published yet
