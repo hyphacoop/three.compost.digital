@@ -1,0 +1,50 @@
+---
+title:
+  type: string
+  required: true
+  label:
+    es: Título
+    en: Title
+  help:
+    es: ''
+    en: ''
+image:
+  type: 'image'
+  path:
+    label:
+      es: 'Logo'
+      en: 'Logo'
+    help:
+      es: ''
+      en: ''
+  description:
+    label:
+      es: 'Descripción de la imagen'
+      en: 'Image description'
+    help:
+      es: ''
+      en: ''
+url:
+  type: url
+  label:
+    es: URL del sitio del Sponsor
+    en: Supporter site URL
+  help:
+    es: ''
+    en: ''
+draft:
+  type: 'boolean'
+  label:
+    es: 'Borrador'
+    en: 'Draft'
+  help:
+    es: 'Este artículo aun no está listo para publicar'
+    en: "This post isn't ready to be published yet"
+order:
+  type: 'order'
+  label:
+    es: 'Orden'
+    en: 'Order'
+  help:
+    es: 'La posición del artículo en la lista de artículos'
+    en: 'The post position in the posts list'
