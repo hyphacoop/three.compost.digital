@@ -1,0 +1,70 @@
+title:
+  type: 'string'
+  required: true
+  label:
+    es: 'Título de la página soporte'
+    en: 'Support page title'
+  help:
+    es: '¡Un título que invite a leer el artículo!'
+    en: 'A title that invites people to read the post!'
+description:
+  type: 'text'
+  required: true
+  label:
+    es: 'Alerta de contenido o descripción del artículo'
+    en: 'Content warning or post description'
+  help:
+    es: |
+      Resumen del contenido del artículo, que también usarán redes
+      sociales y buscadores.  Si el artículo trata de violencias y otros
+      temas sensibles, te invitamos a usar este campo como alerta de
+      contenido, para que las personas puedan determinar cuándo quieren
+      abrirlo.
+    en: |
+      Summary of the post contents, also used by social media and search
+      engines.  If the post is about violence and other sensitive
+      topics, we invite you to use it as a content warning, so others
+      can decide when they want to read it.
+section_1:
+  type: html
+  label:
+    en: First content section
+    es: Primera sección de contenido
+  help:
+    en: Content that can have text and images
+    es: Contenido que puede tener texto e imágenes
+goals:
+  type: has_many
+  inverse: goal
+  filter:
+    layout: goal
+  label:
+    en: Add goals
+    es: Agregar objetivos
+  help:
+    en: If objectives exist, associate them here
+    es: Si existen objetivos, asociarlos aquí
+section_2:
+  type: html
+  label:
+    en: Second content section
+    es: Segunda sección de contenido
+  help:
+    en: Content that can have text and images
+    es: Contenido que puede tener texto e imágenes
+order:
+  type: order
+  label:
+    en: Order
+    es: Orden
+  help:
+    en: Position in articles list
+    es: La posición del artículo en la lista de artículos
+draft:
+  type: boolean
+  label:
+    en: Draft
+    es: Borrador
+  help:
+    en: This post isn't ready to be published yet
+    es: Este artículo aun no está listo para publicar
