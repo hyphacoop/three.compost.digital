@@ -17,6 +17,17 @@
           color: var(--#{$color});
         }
       }
+
+      /// Cambiar el color al pasar por encima o hacer foco
+      ///
+      /// @example html
+      ///   <div class="black hover-red"></div>
+      .hover-#{$color} {
+        &:hover,
+        &:focus-within {
+          color: var(--#{$color}) !important;
+        }
+      }
     }
   }
 }
