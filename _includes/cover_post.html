@@ -1,0 +1,23 @@
+{%- comment -%}
+
+La ficha de post en el índice de artículos del menú.
+
+@param :href [String] El link
+@param :title [String] El título
+@param :text [String] El contenido
+@param :image [Image] La imagen
+
+{%- endcomment -%}
+
+{%- assign image = include.image.path | default: 'public/placeholder.png' %}
+
+
+<div
+	class="mx-3">
+	<a class="stretched-link black hover-black text-decoration-none" href="{{ include.href | default: "#" }}">
+	<img class="w-100 shadow-sm" src="{{ image | thumbnail: 1140 }}"/>
+	<p class="font-weight-bold text-uppercase m-0 py-2">{{- include.title -}}</p>
+
+	<p class="text-uppercase">{{- include.text -}}</p>
+	</a>
+</div>
