@@ -35,5 +35,9 @@
         letter-spacing: $value !important;
       }
     }
+
+    .object-fit-cover#{$infix} {
+      object-fit: cover;
+    }
   }
 }
