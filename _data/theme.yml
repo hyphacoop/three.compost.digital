@@ -10,3 +10,6 @@ colors:
   transparent: "transparent"
   blue: "#564FE3"
   light_blue: "#9995ef"
+letter_spacings:
+  1: "0.1rem"
+  2: "0.16rem"

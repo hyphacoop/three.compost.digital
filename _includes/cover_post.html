@@ -13,11 +13,13 @@ La ficha de post en el índice de artículos del menú.
 
 
 <div
-	class="mx-3">
-	<a class="stretched-link black hover-black text-decoration-none" href="{{ include.href | default: "#" }}">
-	<img class="w-100 shadow-sm" src="{{ image | thumbnail: 1140 }}"/>
-	<p class="font-weight-bold text-uppercase m-0 py-2">{{- include.title -}}</p>
+	class="mx-3 position-relative">
+	<a class="stretched-link black hover-black text-decoration-none" href="{{ include.href | default: "#" }}"></a>
 
-	<p class="text-uppercase">{{- include.text -}}</p>
-	</a>
+		<img class="w-100 shadow-sm" src="{{ image | thumbnail: 1140 }}"/>
+
+		<p class="font-weight-bold text-uppercase m-0 py-2 letter-spacing-1">{{- include.title -}}</p>
+
+		<p class="text-uppercase">{{- include.text -}}</p>
+
 </div>

@@ -29,5 +29,11 @@
         }
       }
     }
+
+    @each $letter-spacing, $value in $letter-spacings {
+      .letter-spacing#{$infix}-#{$letter-spacing} {
+        letter-spacing: $value !important;
+      }
+    }
   }
 }
