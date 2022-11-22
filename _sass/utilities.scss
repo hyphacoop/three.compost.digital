@@ -17,6 +17,23 @@
           color: var(--#{$color});
         }
       }
+
+      /// Cambiar el color al pasar por encima o hacer foco
+      ///
+      /// @example html
+      ///   <div class="black hover-red"></div>
+      .hover-#{$color} {
+        &:hover,
+        &:focus-within {
+          color: var(--#{$color}) !important;
+        }
+      }
+    }
+
+    @each $letter-spacing, $value in $letter-spacings {
+      .letter-spacing#{$infix}-#{$letter-spacing} {
+        letter-spacing: $value !important;
+      }
     }
 
     .object-fit-cover#{$infix} {
