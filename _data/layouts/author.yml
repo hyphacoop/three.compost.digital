@@ -33,6 +33,17 @@ projects:
   help:
     es: 'Lista de proyectos personales de lx autorx'
     en: "List of the author's personal projects"
+posts:
+  type: 'has_and_belongs_to_many'
+  filter:
+    layout: 'post'
+  inverse: 'authors'
+  label:
+    es: 'Items relacionados'
+    en: 'Link article to these sections'
+  help:
+    es: 'Usar la lista desplegable para elegir el título, será reemplazado por el identificador del artículo.  Empezar a escribir para filtrar.'
+    en: ''
 draft:
   type: 'boolean'
   label:
