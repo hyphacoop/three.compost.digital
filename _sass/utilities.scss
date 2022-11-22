@@ -18,5 +18,9 @@
         }
       }
     }
+
+    .object-fit-cover#{$infix} {
+      object-fit: cover;
+    }
   }
 }
