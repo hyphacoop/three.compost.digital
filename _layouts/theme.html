@@ -95,9 +95,19 @@ layout: default
 </div>
 
 <div class="container mb-5">
-  <article class="row row-cols-3">
+  {% include headings/h1.html text="Cover post (Menu index grid)" %}
+
+  <article class="row row-cols-3 no-gutters">
     {% include cover_post.html text="Kola Heyward-Rotimi" title="Qubit Guarantee" image="public/placeholder.png" href="https://sutty.nl/" %}
 
     {% include cover_post.html title="Foreword" image="public/placeholder.png" href="https://sutty.nl/" %}
   </article>
+</div>
+
+<div class="container mb-5">
+  {% include headings/h1.html text="Letter spacing" %}
+
+  {% for letter_spacing in site.data.theme.letter_spacings %}
+    <p class="letter-spacing-{{ letter_spacing[0] }}">Letter spacing {{ letter_spacing[0] }}</p>
+  {% endfor %}
 </div>
