@@ -91,6 +91,7 @@ layout: default
       {% include headings/h2.html text=text %}
       {% include embed_responsive.html src="public/placeholder.png" width=576 x=x y=y %}
     {% endfor %}
+
     {% include headings/h1.html text="license block" %}
     {% include license_block.html title="Content License: CC BY-ND 4.0" content="We built this little tool for you to inoculate other web spaces with the ideas and stories contained in this issue. To re-publish this piece under the terms of the license, click below to copy the markdown." %}
   </article>
@@ -142,7 +143,18 @@ layout: default
 </div>
 
 <div class="container mb-5">
+
   {% include headings/h1.html text="Botones de navegación al pie de los artículos" %}
 
   {% include navegacion_post.html %}
+
+  {% include headings/h1.html text="Imagen con link de sección Supporters" %}
+</div>
+
+<div class="container mb-5">
+  <div class="d-flex">
+    {% include image_supporter.html src="public/logo-distributedpress.png" alt="Descripción de la imagen" width=200 href="https://distributed.press/" %}
+
+    {% include image_supporter.html src="public/logo-hypha.png" alt="Descripción de la imagen" width=100 href="https://hypha.coop/" %}
+  </div>
 </div>
