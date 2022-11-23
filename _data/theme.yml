@@ -10,6 +10,7 @@ colors:
   transparent: "transparent"
   blue: "#564FE3"
   light_blue: "#9995ef"
+  light_gray: "#eeeeee"
 pixel_densities:
 - "1"
 - "1.5"
