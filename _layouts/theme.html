@@ -111,3 +111,13 @@ layout: default
     <p class="letter-spacing-{{ letter_spacing[0] }}">Letter spacing {{ letter_spacing[0] }}</p>
   {% endfor %}
 </div>
+
+<div class="container mb-5">
+  {% include headings/h1.html text="Texto con link (Items del menú)" %}
+
+  {% include menu_item.html text="Issue 02" href="https://sutty.nl/" %}
+
+  {% include menu_item.html text="About" href="https://sutty.nl/" %}
+
+  {% include menu_item.html text="Support Us" href="https://sutty.nl/" %}
+</div>
