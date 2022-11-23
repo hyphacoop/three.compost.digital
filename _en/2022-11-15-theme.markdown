@@ -6,7 +6,7 @@ headings_font_family: ""
 enable_rounded: true
 enable_shadows: false
 body_bg: "#ffffff"
-body_color: "#212529"
+body_color: "#000000"
 primary: "#564FE3"
 secondary: "#6c757d"
 link_color: "#564FE3"
