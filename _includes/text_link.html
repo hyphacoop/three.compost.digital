@@ -1,0 +1,12 @@
+{%- comment -%}
+
+Un texto con link. Por ejemplo, para los items del menú.
+
+@param :href [String] El link
+@param :text [String] El contenido
+@param :class [String] Las clases
+{%- endcomment -%}
+
+<a class="{{ include.class }}" href="{{ include.href | default: "#" }}">
+	<span>{{ include.text}}</span>
+</a>
