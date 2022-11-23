@@ -1,5 +1,8 @@
 ---
 spacer: "1rem"
+spacers:
+  20: "($spacer * 1.25)"
+  50: "($spacer * 3.125)"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
 btn_padding_y: "1.5rem"
@@ -29,3 +32,10 @@ embed_responsive_aspect_ratios:
 - "(4 3)"
 - "(1 1)"
 - "(700 350)"
+display3_size: "3.9375rem"
+display4_size: "1.875rem"
+enable_responsive_font_sizes: true
+lead_font_size: "1.3125rem"
+font-sizes:
+  19: "1.1875"
+  14: "0.875"

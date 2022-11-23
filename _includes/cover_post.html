@@ -9,10 +9,10 @@ La ficha de post en el índice de artículos del menú.
 {%- endcomment -%}
 
 <div
-	class="position-relative mx-2">
-	<a class="stretched-link black hover-black text-decoration-none" href="{{ include.href | default: "#" }}"></a>
-		{% include embed_responsive.html src="public/placeholder.png" width=576 x="700" y="350" %}
+	class="position-relative px-2">
+	<a class="stretched-link black hover-black text-decoration-none" href="{{ include.href }}"></a>
+		{% include embed_responsive.html src="public/placeholder.png" width=700 x="700" y="350" %}
 
-		<p class="font-weight-bold text-uppercase m-0 py-2 letter-spacing-1">{{- include.title -}}</p>
-		<p class="text-uppercase letter-spacing-2">{{- include.text -}}</p>
+		<p class="font-weight-bold text-uppercase m-0 py-2 letter-spacing-1 lead">{{- include.title -}}</p>
+		<p class="text-uppercase letter-spacing-2 font-sm">{{- include.text -}}</p>
 </div>

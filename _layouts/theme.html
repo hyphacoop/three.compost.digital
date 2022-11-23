@@ -17,7 +17,7 @@ layout: default
 
   <p class="lead">Párrafo resaltado</p>
 
-  <p>
+  <p class="lead">
     <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing
     elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. <a href="#">Ut enim ad minim veniam</a>, quis nostrud
@@ -104,7 +104,7 @@ layout: default
 <div class="container mb-5">
   {% include headings/h1.html text="Cover post (Menu index grid)" %}
 
-  <article class="row row-cols-3 no-gutters">
+  <article class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters">
     {% include cover_post.html text="Kola Heyward-Rotimi" title="Qubit Guarantee" image="public/placeholder.png" href="https://sutty.nl/" %}
 
     {% include cover_post.html title="Foreword" image="public/placeholder.png" href="https://sutty.nl/" %}
@@ -117,4 +117,16 @@ layout: default
   {% for letter_spacing in site.data.theme.letter_spacings %}
     <p class="letter-spacing-{{ letter_spacing[0] }}">Letter spacing {{ letter_spacing[0] }}</p>
   {% endfor %}
+</div>
+
+<div class="container mb-5">
+  {% include headings/h1.html text="Texto con link (Items del menú)" %}
+
+  <div class="d-flex flex-column flex-md-row">
+    {% include menu_item.html text="Issue 02" href="https://sutty.nl/" %}
+
+    {% include menu_item.html text="About" href="https://sutty.nl/" %}
+
+    {% include menu_item.html text="Support Us" href="https://sutty.nl/" %}
+  </div>
 </div>
