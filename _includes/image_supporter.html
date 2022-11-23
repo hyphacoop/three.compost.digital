@@ -1,0 +1,13 @@
+{%- comment -%}
+
+componente de imagen que tiene un link [url]
+
+@param :src [String]
+@param :href [String] El link
+@param :width [Integer] Ancho de la imagen
+@param :alt [String] El alt de la imagen
+{%- endcomment -%}
+
+<div class="p-2">
+	{% include image_with_link.html src=include.src width=include.width alt=include.alt img_class="w-100 h-100 object-fit-cover" %}
+</div>
