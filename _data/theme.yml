@@ -37,5 +37,5 @@ display4_size: "1.875rem"
 enable_responsive_font_sizes: true
 lead_font_size: "1.3125rem"
 font-sizes:
-  19: "1.1875"
-  14: "0.875"
+  19: "1.181"
+  14: "0.9"
