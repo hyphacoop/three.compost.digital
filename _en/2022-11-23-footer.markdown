@@ -1,0 +1,28 @@
+---
+title: Footer
+image:
+  path: public/3643u1cfioqiaqmzgq5345n97f8r/back-cover.jpg
+  description: ''
+column_2: |-
+  <p>
+
+  </p>
+column_3: |-
+  <p>
+
+  </p>
+column_4: |-
+  <p>
+
+  </p>
+draft: false
+order: 6
+layout: footer
+uuid: 81a580fa-7e0f-4ade-9669-316f5bb2c298
+liquid: false
+usuaries:
+- 356
+last_modified_at: 2022-11-23 02:28:18.861260102 +00:00
+---
+
+<p>COMPOST is a magazine about the digital commons.</p><p>Issue 02, September 2021.</p><p>We are a project by <a href="https://distributed.press/" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Distributed Press </a>and hosted by <a href="https://hypha.coop" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Hypha Worker Co-operative</a>.</p><p>Previous Issues</p><p><a href="https://one.compost.digital" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Issue 01</a></p>
