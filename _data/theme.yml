@@ -10,6 +10,9 @@ colors:
   transparent: "transparent"
   blue: "#564FE3"
   light_blue: "#9995ef"
+letter_spacings:
+  1: "0.1rem"
+  2: "0.16rem"
 pixel_densities:
 - "1"
 - "1.5"
@@ -25,6 +28,7 @@ embed_responsive_aspect_ratios:
 - "(16 9)"
 - "(4 3)"
 - "(1 1)"
+- "(700 350)"
 display3_size: "3.9375rem"
 display4_size: "1.875rem"
 enable_responsive_font_sizes: true
