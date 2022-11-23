@@ -91,5 +91,12 @@ layout: default
       {% include headings/h2.html text=text %}
       {% include embed_responsive.html src="public/placeholder.png" width=576 x=x y=y %}
     {% endfor %}
+    {% include headings/h1.html text="image_url_link" %}
+    {% include image_url_link.html
+      src="public/placeholder.png"
+      href="https://sutty.nl/"
+      alt="imagen"
+      width=100
+    %}
   </article>
 </div>
