@@ -43,9 +43,27 @@
     .object-fit-cover#{$infix} {
       object-fit: cover;
     }
+
+    .lead#{$infix} {
+      font-size: $lead-font-size;
+    }
+
+    /// Poder aumentar o disminuir el alto de la tipografía.
+    /// Se pueden definir con la variable font_size en theme.yml
+    /// @example html
+    ///   <div class="f-20"></div>
+    @each $font-size, $value in $font-sizes {
+      .f#{$infix}-#{$font-size} {
+        font-size: $font-size-base * $value !important;
+      }
+    }
   }
 }
 
 .font-sm {
   font-size: 1rem * 1.0625;
+}
+
+.work-sans {
+  font-family: 'Work Sans';
 }
