@@ -1,6 +1,7 @@
 ---
 - "content"
 - "font_sizes"
+- "letter_spacing"
 - "colors"
 - "picture"
 - "embed_responsive"
