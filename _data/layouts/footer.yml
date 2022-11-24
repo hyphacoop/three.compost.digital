@@ -24,7 +24,7 @@ image:
     help:
       es: ''
       en: ''
-image:
+background_image:
   type: 'image'
   path:
     label:
