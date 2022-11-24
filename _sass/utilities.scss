@@ -12,10 +12,10 @@ $directions: (top, right, bottom, left);
     ///   <div class="border border-md-top-0 border-width-3"></div>
     .border#{$infix}   { border: $border-width solid $border-color !important; }
     .border#{$infix}-0 { border: 0 !important; }
-
     @each $direction in $directions {
       .border#{$infix}-#{$direction}   { border-#{$direction}: $border-width solid $border-color !important; }
       .border#{$infix}-#{$direction}-0 { border-#{$direction}: 0 !important; }
+      .border#{$infix}-#{$direction}-dashed { border-#{$direction}: $border-width dashed $border-color !important; }
     }
 
     @each $border-width, $length in $border-widths {
@@ -96,4 +96,3 @@ $directions: (top, right, bottom, left);
 .work-sans {
   font-family: 'Work Sans';
 }
-
