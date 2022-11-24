@@ -1,0 +1,10 @@
+{% for embed_responsive_aspect_ratio in site.data.theme.embed_responsive_aspect_ratios %}
+  {% assign x = embed_responsive_aspect_ratio | split: " " | first | remove: "(" %}
+  {% assign y = embed_responsive_aspect_ratio | split: " " | last | remove: ")" %}
+  {% assign text = x | append: "by" | append: y %}
+
+  <div class="mb-3">
+    {% include headings/h2.html text=text %}
+    {% include embed_responsive.html src="public/placeholder.png" width=576 x=x y=y %}
+  </div>
+{% endfor %}
