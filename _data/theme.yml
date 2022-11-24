@@ -10,3 +10,25 @@ colors:
   transparent: "transparent"
   blue: "#564FE3"
   light_blue: "#9995ef"
+pixel_densities:
+- "1"
+- "1.5"
+- "2"
+grid_breakpoints:
+  xs: "0"
+  sm: "576px"
+  md: "768px"
+  lg: "992px"
+  xl: "1200px"
+embed_responsive_aspect_ratios:
+- "(21 9)"
+- "(16 9)"
+- "(4 3)"
+- "(1 1)"
+display3_size: "3.9375rem"
+display4_size: "1.875rem"
+enable_responsive_font_sizes: true
+lead_font_size: "1.3125rem"
+font_sizes:
+  19: "1.1875"
+  14: "0.875"
