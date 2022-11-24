@@ -2,94 +2,40 @@
 layout: default
 ---
 
-{% capture content %}
-  <h1>Título 1</h1>
-  <h2>Título 2</h2>
-  <h3>Título 3</h3>
-  <h4>Título 4</h4>
-  <h5>Título 5</h5>
-  <h6>Título 6</h6>
+{% capture components %}
+  {% for component in site.data.components %}
+    {% assign component_include = "theme/" | append: component | append: ".html" %}
+    {% assign title = component | replace: "_", " " | capitalize %}
 
-  <p class="display-1">Display 1</p>
-  <p class="display-2">Display 2</p>
-  <p class="display-3">Display 3</p>
-  <p class="display-4">Display 4</p>
+    <section id="{{ component | replace: "_", "-" }}" class="mb-5">
 
-  <p class="lead">Párrafo resaltado</p>
+      <header>
+        {% include headings/h1.html text=title %}
+      </header>
 
-  <p class="lead">
-    <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing
-    elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. <a href="#">Ut enim ad minim veniam</a>, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. <em>Duis aute irure dolor</em> in reprehenderit in
-    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur <mark>sint occaecat cupidatat non proident</mark>, sunt in
-    culpa qui officia <small>deserunt mollit anim id est laborum</small>.
-  </p>
-
-  <ul>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>consectetur adipiscing elit</li>
-    <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-  </ul>
-
-  <ol>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>consectetur adipiscing elit</li>
-    <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-  </ol>
-
-  <blockquote>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </blockquote>
+      {% include {{ component_include }} %}
+    </section>
+  {% endfor %}
 {% endcapture %}
 
-<div class="container">
-  <div class="content">
-    {{ content }}
+<div class="container-fluid">
+  <div class="row">
+    <aside class="col-12 col-md-3 sticky-top">
+      <ol class="list-unstyled">
+        {%- assign toc = components | table_of_contents: 1 -%}
+
+        {% for item in toc %}
+          <li>
+            <a href="#{{ item.id }}" data-turbo="false">
+              {{- item.title -}}
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
+    </aside>
+
+    <section class="col-12 col-md">
+      {{ components }}
+    </section>
   </div>
-
-  <section>
-    <div class="row row-cols-2 row-cols-md-4">
-      {% for color in site.data.theme.colors %}
-        <div class="col">
-          <div class="w-100 embed-responsive embed-responsive-1by1">
-            <div class="embed-responsive-item background-{{ color[0] | replace: "_", "-" }} d-flex align-items-center justify-content-center">
-              <div>
-                <p>{{ color[0] | replace: "_", "-" }}</p>
-                <p>{{ color[1] }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </section>
-</div>
-
-<div class="container mb-5">
-  <article>
-    {% include headings/h1.html text="Botón con link" %}
-
-    {% include buttons/with_link.html href="#" text="Become a subscriber" %}
-
-    {% include headings/h2.html text="Botón con link externo" %}
-
-    {% include buttons/with_link.html href="https://sutty.nl/" text="Find out more about Sutty" %}
-
-    {% include headings/h1.html text="Imagen de 100px" %}
-    {% include picture.html src="public/placeholder.png" width=100 %}
-
-    {% include headings/h1.html text="Embed responsive" %}
-
-    {% for embed_responsive_aspect_ratio in site.data.theme.embed_responsive_aspect_ratios %}
-      {% assign x = embed_responsive_aspect_ratio | split: " " | first | remove: "(" %}
-      {% assign y = embed_responsive_aspect_ratio | split: " " | last | remove: ")" %}
-      {% assign text = x | append: "by" | append: y %}
-
-      {% include headings/h2.html text=text %}
-      {% include embed_responsive.html src="public/placeholder.png" width=576 x=x y=y %}
-    {% endfor %}
-  </article>
 </div>
