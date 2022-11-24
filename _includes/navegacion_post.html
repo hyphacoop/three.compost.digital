@@ -2,13 +2,18 @@
 
 Los botones de navegación de los posts
 
-@param :href [String] El link
+@param :src_previous [String] El scr de imagen de Previous
+@param :src_next [String] El scr de imagen de Next
+@param :src_home [String] El scr de imagen de Home
+@param :href_previous [String] El link de Previous
+@param :href_home [String] El link de Home
+@param :href_next [String] El link de Next
 {%- endcomment -%}
 
 <div class="d-flex align-items-center">
-	{% include image_with_link.html src="public/arrow_left.png" alt=site.i18n.previous_page width=40 href="#imagen-con-link" img_class="px-2" %}
+	{% include image_with_link.html src=include.src_previous alt=site.i18n.previous_page width=40 href=include.href_previous img_class="px-2" %}
 
-	{% include image_with_link.html src="public/home.png" alt=site.i18n.home width=60 href="?#" img_class="px-2" %}
+	{% include image_with_link.html src=include.src_home alt=site.i18n.home width=60 href=include.href_home img_class="px-2" %}
 
-	{% include image_with_link.html src="public/arrow_right.png" alt=site.i18n.next_page width=40 href="#imagen-con-link-externo" img_class="px-2" %}
+	{% include image_with_link.html src=include.src_next alt=site.i18n.next_page width=40 href=include.href_next img_class="px-2" %}
 </div>
