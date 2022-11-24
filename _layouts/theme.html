@@ -39,27 +39,3 @@ layout: default
     </section>
   </div>
 </div>
-
-<div class="container mb-5">
-  {% include headings/h1.html text="Imagen con link" %}
-  {% include image_with_link.html src="public/placeholder.png" href="#" width=200 alt="Descripción de la imagen" %}
-
-  {% include headings/h2.html text="Imagen con link externo" %}
-  {% include image_with_link.html src="public/placeholder.png" href="https://sutty.nl/" width=200 alt="Descripción de la imagen" %}
-</div>
-
-<div class="container mb-5">
-  {% include headings/h1.html text="Botones de navegación al pie de los artículos" %}
-
-  {% include headings/h2.html text="Todos los botones visibles" %}
-
-  {% include navegacion_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous="#biografía-de-autore-en-los-artículos" href_home="?#" href_next="#imagen-con-link-de-sección-supporters" %}
-
-  {% include headings/h2.html text="Cuando se llega al principio del indice de contenido" %}
-
-  {% include navegacion_post.html src_home="public/home.png" src_next="public/arrow_next.png" href_home="?#" href_next="#imagen-con-link-de-sección-supporters" %}
-
-  {% include headings/h2.html text="Cuando se llega al final del indice de contenido" %}
-
-  {% include navegacion_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" href_previous="#biografía-de-autore-en-los-artículos" href_home="?#"  %}
-</div>
