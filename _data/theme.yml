@@ -29,7 +29,7 @@ display3_size: "3.9375rem"
 display4_size: "1.875rem"
 enable_responsive_font_sizes: true
 lead_font_size: "1.3125rem"
-font-sizes:
+font_sizes:
   19: "1.1875"
   14: "0.875"
 border_width: "1px"
