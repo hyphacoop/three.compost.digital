@@ -10,9 +10,15 @@ La ficha de post en el índice de artículos del menú.
 
 <div
 	class="position-relative px-2">
-	<a class="stretched-link black hover-black text-decoration-none" href="{{ include.href | uri_escape }}"></a>
-		{% include embed_responsive.html src=include.src width=700 x="700" y="350" %}
+	<a
+		class="stretched-link black hover-black text-decoration-none" href="{{ include.href | uri_escape }}"
+		{{ include.href | start_with: "https://" | value_if: 'rel="noopener" target="blank_"' }}
+		{{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="blank_"' }}>
+		<span class="sr-only">{{ include.alt }}</span>
+	</a>
 
-		<p class="font-weight-bold text-uppercase m-0 py-2 letter-spacing-1 lead">{{- include.title -}}</p>
-		<p class="text-uppercase letter-spacing-2 font-sm">{{- include.text -}}</p>
+	{% include embed_responsive.html src=include.src width=700 x="700" y="350" alt=include.alt %}
+
+	<p class="font-weight-bold text-uppercase m-0 py-2 letter-spacing-1 lead">{{- include.title -}}</p>
+	<p class="text-uppercase letter-spacing-2 font-sm">{{- include.text -}}</p>
 </div>
