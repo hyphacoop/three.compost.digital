@@ -2,7 +2,7 @@
 
 import_url="$1"
 font_family="$(echo "${import_url}" | cut -d "=" -f 2 | cut -d "&" -f 1)"
-font_snake_case="$(echo "${font_family}" | tr "+" "_" | tr ":" "_" | tr "@" "_" | tr [:upper:] [:lower:] )"
+font_snake_case="$(echo "${font_family}" | tr "+" "_" | tr ":" "_" | tr "@" "_" | tr "," "_" | tr [:upper:] [:lower:] )"
 scss_file="_sass/${font_snake_case}.scss"
 font_dir="assets/fonts/"
 
