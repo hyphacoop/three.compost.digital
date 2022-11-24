@@ -1,0 +1,18 @@
+{% for font_size in site.data.theme.font_sizes %}
+  <div class="mb-3">
+    {% assign title = "Tipografía f-" | append: font_size[0] %}
+    {% include headings/h2.html text=title %}
+
+    <p class="f-{{ font_size[0] }}">
+      <strong>Lorem ipsum dolor sit amet</strong>, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. <a href="#">Ut enim ad minim veniam</a>, quis
+      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. <em>Duis aute irure dolor</em> in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur <mark>sint occaecat cupidatat non proident</mark>, sunt
+      in culpa qui officia <small>deserunt mollit anim id est
+        laborum</small>.
+    </p>
+  </div>
+{% endfor %}

@@ -2,7 +2,7 @@
 title: "COMPOST"
 url: "https://compost.sutty.nl"
 sass:
-  style: "compressed"
+#  style: "compressed"
   load_paths:
   - "node_modules"
 permalink: ":title/"

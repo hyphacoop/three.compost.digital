@@ -1,0 +1,25 @@
+{%- comment -%}
+
+Image component
+
+@param :src [String]
+@param :alt [String]
+@param :width [Integer]
+@param :class [String]
+@param :img_class [String]
+{%- endcomment -%}
+
+<picture class="{{ include.class }}">
+  <source
+    srcset="
+      {%- for pixel_density in site.data.theme.pixel_densities %}
+        {%- assign w = include.width | times: pixel_density -%}
+        {{- include.src | thumbnail: w | uri_escape }} {{ pixel_density }}x,
+      {% endfor -%}
+      " />
+
+  <img
+    class="{{ include.img_class }}"
+    src="{{ include.src | thumbnail: include.width | uri_escape }}"
+    alt="{{ include.alt | escape_once }}" />
+</picture>
