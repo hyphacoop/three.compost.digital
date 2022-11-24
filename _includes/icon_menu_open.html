@@ -1,0 +1,14 @@
+{%- comment -%}
+
+Imagen de la cabecera con el menú cerrado
+
+@param :src [String]
+@param :href [String] El link
+@param :width [Integer] Ancho de la imagen
+@param :alt [String] El alt de la imagen
+@param :container_class [String] Clases para el componente
+{%- endcomment -%}
+
+<div class="{{ include.container_class }}">
+	{% include image_with_link.html src=include.src alt=include.alt href=include.href width=include.width %}
+</div>

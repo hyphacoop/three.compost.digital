@@ -101,3 +101,13 @@ layout: default
   {% include headings/h2.html text="Imagen con link externo" %}
   {% include image_with_link.html src="public/placeholder.png" href="https://sutty.nl/" width=200 alt="Descripción de la imagen" %}
 </div>
+
+<div class="container mb-5">
+  {% include headings/h1.html text="Botón de Support en la cabecera" %}
+
+  {% include headings/h2.html text="Botón de Support en la cabecera cuando el menú está cerrado" %}
+  {% include icon_menu_open.html src="public/mushroom_close.gif" href="#" alt="Mushroom close menu" container_class="background-black" width=100 %}
+
+  {% include headings/h2.html text="Botón de Support en la cabecera cuando el menú está abierto" %}
+  {% include icon_menu_open.html src="public/mushroom_open.gif" href="#" alt="Mushroom open menu" container_class="background-white" width=100 %}
+</div>
