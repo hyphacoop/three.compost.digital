@@ -26,8 +26,14 @@
     }
   }
 }
+
 footer{
   padding-top: 150px;
   background-size: auto;
   background-size: cover;
+}
+
+.border-dashed{
+  border: 1px;
+  outline: 1px dashed;
 }
