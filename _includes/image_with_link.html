@@ -6,11 +6,12 @@ componente de imagen que tiene un link [url]
 @param :href [String] El link
 @param :width [Integer] Ancho de la imagen
 @param :alt [String] El alt de la imagen
+@param :a_class [String] Clases para a
 {%- endcomment -%}
 
 <div
 	class="position-relative">
-	<a class="stretched-link"
+	<a class="stretched-link {{ include.a_class }}"
 		 href="{{ include.href }}"
 		 {{ include.href | start_with: "https://" | value_if: 'rel="noopener" target="blank_"' }}
 		 {{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="blank_"' }}>
