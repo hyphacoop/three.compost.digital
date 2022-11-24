@@ -18,7 +18,7 @@ Los botones de navegación de los posts
 		{% if previous %}
 			aria-hidden="true"
 		{% endif %}>
-		{% include image_with_link.html src=include.src_previous alt=site.i18n.previous_page width=40 href=include.href_previous img_class="px-2" div_class=previous %}
+		{% include image_with_link.html src=include.src_previous alt=site.i18n.previous_page width=40 href=include.href_previous img_class="px-2" component_class=previous %}
 	</div>
 
 	{% include image_with_link.html src=include.src_home alt=site.i18n.home width=60 href=include.href_home img_class="px-2" %}
@@ -27,6 +27,6 @@ Los botones de navegación de los posts
 		{% if next %}
 			aria-hidden="true"
 		{% endif %}>
-		{% include image_with_link.html src=include.src_next alt=site.i18n.next_page width=40 href=include.href_next img_class="px-2" div_class=next %}
+		{% include image_with_link.html src=include.src_next alt=site.i18n.next_page width=40 href=include.href_next img_class="px-2" component_class=next %}
 	</div>
 </div>
