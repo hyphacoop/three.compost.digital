@@ -1,0 +1,62 @@
+---
+title:
+  type: string
+  required: true
+  label:
+    es: Nombre de autorx
+    en: Author's name
+  help:
+    es: ''
+    en: ''
+alias:
+  type: string
+  required: true
+  label:
+    es: Alias de autorx
+    en: Author's alias
+  help:
+    es: ''
+    en: ''
+content:
+  type: 'new_content'
+  label:
+    es: 'Breve biografía de autorx'
+    en: 'Brief author biography'
+  help:
+    es: 'Escribe aquí el artículo'
+    en: 'Write down your post'
+projects:
+  type: 'array'
+  label:
+    es: 'Proyectos'
+    en: 'Projects'
+  help:
+    es: 'Lista de proyectos personales de lx autorx'
+    en: "List of the author's personal projects"
+posts:
+  type: 'has_and_belongs_to_many'
+  filter:
+    layout: 'post'
+  inverse: 'authors'
+  label:
+    es: 'Items relacionados'
+    en: 'Link article to these sections'
+  help:
+    es: 'Usar la lista desplegable para elegir el título, será reemplazado por el identificador del artículo.  Empezar a escribir para filtrar.'
+    en: ''
+draft:
+  type: 'boolean'
+  label:
+    es: 'Borrador'
+    en: 'Draft'
+  help:
+    es: 'Este artículo aun no está listo para publicar'
+    en: "This post isn't ready to be published yet"
+order:
+  type: 'order'
+  label:
+    es: 'Orden'
+    en: 'Order'
+  help:
+    es: 'La posición del artículo en la lista de artículos'
+    en: 'The post position in the posts list'

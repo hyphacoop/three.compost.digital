@@ -1,0 +1,28 @@
+.content {
+  p { min-height: $font-size-base * $line-height-base; }
+  h1 { min-height: $h1-font-size * $headings-line-height; }
+  h2 { min-height: $h2-font-size * $headings-line-height; }
+  h3 { min-height: $h3-font-size * $headings-line-height; }
+  h4 { min-height: $h4-font-size * $headings-line-height; }
+  h5 { min-height: $h5-font-size * $headings-line-height; }
+  h6 { min-height: $h6-font-size * $headings-line-height; }
+
+  iframe { border: 0; }
+
+  audio { width: 100%; }
+
+  img,
+  video,
+  iframe {
+    @extend .img-fluid;
+    height: auto;
+  }
+
+  & > * {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{%- comment -%}
+
+Embed responsive
+
+@param :x [Integer]
+@param :y [Integer]
+@param :src [String]
+@param :alt [String]
+@param :width [Integer]
+@param :height [Integer]
+{%- endcomment -%}
+
+<div class="embed-responsive embed-responsive-{{ include.x }}by{{ include.y }}">
+  {%- include picture.html class="embed-responsive-item" img_class="w-100 h-100 object-fit-cover" src=include.src alt=include.alt width=include.width -%}
+</div>
