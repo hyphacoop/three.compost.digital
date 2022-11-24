@@ -24,7 +24,7 @@ image:
     help:
       es: ''
       en: ''
-url:
+link:
   type: url
   label:
     es: URL del sitio del Sponsor
