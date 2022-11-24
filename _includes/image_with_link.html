@@ -1,0 +1,22 @@
+{%- comment -%}
+
+componente de imagen que tiene un link [url]
+
+@param :src [String]
+@param :href [String] El link
+@param :width [Integer] Ancho de la imagen
+@param :alt [String] El alt de la imagen
+@param :a_class [String] Clases para a
+@param :component_class [String] Clases para el componente
+{%- endcomment -%}
+
+<div
+	class="position-relative {{ include.component_class }}">
+	<a class="stretched-link {{ include.a_class }}"
+		 href="{{ include.href }}"
+		 {{ include.href | start_with: "https://" | value_if: 'rel="noopener" target="blank_"' }}
+		 {{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="blank_"' }}>
+		 <span class="sr-only">{{ include.alt }}</span>
+	 </a>
+  {% include picture.html src=include.src width=include.width alt=include.alt img_class=include.img_class %}
+</div>
