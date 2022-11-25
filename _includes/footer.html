@@ -7,7 +7,7 @@ Footer
 @param :col_3 [HTML] Contenido
 @param :col_4 [HTML] Contenido
 {%- endcomment -%}
-<footer class="d-flex align-items-center justify-content-center" style="background: url('{{ include.src | default: 'public/footer.png' | uri_escape }}') top center; background-size: cover; !important;">
+<footer class="d-flex align-items-center justify-content-center" style="background: url('{{ include.src | default: 'public/footer.png' | uri_escape }}') top center; background-size: cover !important;">
 <div class="row align-items-center justify-content-center container pt-150">
   <div class="col-md-4">
     {{ include.col_1}}
