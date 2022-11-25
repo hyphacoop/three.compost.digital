@@ -8,7 +8,21 @@ layout: default
     {% assign title = component | replace: "_", " " | capitalize %}
 
     <section id="{{ component | replace: "_", "-" }}" class="mb-5">
+      <header>
+        {% include headings/h1.html text=title %}
+      </header>
 
+      {% include {{ component_include }} %}
+    </section>
+  {% endfor %}
+{% endcapture %}
+
+{% capture full_width_components %}
+  {% for component in site.data.full_width_components %}
+    {% assign component_include = "theme/" | append: component | append: ".html" %}
+    {% assign title = component | replace: "_", " " | capitalize %}
+
+    <section id="{{ component | replace: "_", "-" }}" class="mb-5">
       <header>
         {% include headings/h1.html text=title %}
       </header>
@@ -22,7 +36,8 @@ layout: default
   <div class="row">
     <aside class="col-12 col-md-3">
       <ol class="list-unstyled">
-        {%- assign toc = components | table_of_contents: 1 -%}
+        {%- assign toc_full_width = full_width_components | table_of_contents: 1 -%}
+        {%- assign toc = components | table_of_contents: 1 | concat: toc_full_width -%}
 
         {% for item in toc %}
           <li>
@@ -39,3 +54,7 @@ layout: default
     </section>
   </div>
 </div>
+
+<section class="w-100">
+  {{ full_width_components }}
+</section>
