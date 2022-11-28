@@ -26,7 +26,7 @@ description:
       topics, we invite you to use it as a content warning, so others
       can decide when they want to read it.
 section_1:
-  type: html
+  type: new_html
   label:
     en: First content section
     es: Primera sección de contenido
@@ -45,7 +45,7 @@ goals:
     en: If objectives exist, associate them here
     es: Si existen objetivos, asociarlos aquí
 section_2:
-  type: html
+  type: new_html
   label:
     en: Second content section
     es: Segunda sección de contenido
