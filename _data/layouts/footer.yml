@@ -41,7 +41,7 @@ background_image:
       es: ''
       en: ''
 column_1:
-  type: new_content
+  type: new_html
   label:
     es: Contenido de la primera columna del footer
     en: Footer first column content
