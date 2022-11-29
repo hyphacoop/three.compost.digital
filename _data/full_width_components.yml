@@ -1,3 +1,5 @@
 ---
-- "header"
 - "footer"
+- "header_close"
+- "header_open"
+- "header_toggler"
