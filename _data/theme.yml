@@ -50,3 +50,8 @@ opacities:
   4: "-20%"
   5: "0%"
 progress_border_radius: "0"
+directions:
+  top: "top"
+  right: "right"
+  bottom: "bottom"
+  left: "left"
