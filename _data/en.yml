@@ -1,6 +1,6 @@
 ---
 locale: "English"
 dir: "ltr"
-previous_page: Previous page
-next_page: Next page
-home: Home
+previous_page: "Previous page"
+next_page: "Next page"
+home: "Home"
