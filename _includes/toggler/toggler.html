@@ -1,0 +1,14 @@
+{% comment %}
+  Este elemento colocado en el mismo nivel que un elemento con la clase
+  toggled permite ocultarlo o mostrarlo.
+
+  @see toggler_label.html
+  @param :id [String] La ID
+{% endcomment %}
+<input
+  type="checkbox"
+  class="toggler sr-only"
+  autocomplete="off"
+  id="{{ include.id }}"
+  name="{{ include.id }}"
+  aria-labelledby="{{ include.id }}-label" />

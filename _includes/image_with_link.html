@@ -14,8 +14,8 @@ componente de imagen que tiene un link [url]
 	class="position-relative {{ include.component_class }}">
 	<a class="stretched-link {{ include.a_class }}"
 		 href="{{ include.href }}"
-		 {{ include.href | start_with: "https://" | value_if: 'rel="noopener" target="blank_"' }}
-		 {{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="blank_"' }}>
+		 {{ include.href | start_with: "https://" | value_if: 'rel="noopener" target="_blank"' }}
+		 {{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="_blank"' }}>
 		 <span class="sr-only">{{ include.alt }}</span>
 	 </a>
   {% include picture.html src=include.src width=include.width alt=include.alt img_class=include.img_class %}

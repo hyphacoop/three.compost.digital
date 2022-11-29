@@ -15,6 +15,7 @@ Los botones de navegación de los posts
 
 <div class="d-flex align-items-center">
 	<div
+		class="mt-3"
 		{% if previous %}
 			aria-hidden="true"
 		{% endif %}>
@@ -24,6 +25,7 @@ Los botones de navegación de los posts
 	{% include image_with_link.html src=include.src_home alt=site.i18n.home width=60 href=include.href_home img_class="px-2" %}
 
 	<div
+		class="mt-3"
 		{% if next %}
 			aria-hidden="true"
 		{% endif %}>
