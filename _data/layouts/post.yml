@@ -68,15 +68,15 @@ content:
   help:
     es: 'Escribe aquí el artículo'
     en: 'Write down your post'
-biography:
+show_biography:
   type: boolean
   label:
-    es: Biografia
-    en: Biography
+    es: Mostrar biografia
+    en: Show biography
   help:
-    es: Mostrar biografía de los participantes
+    es: Mostrar biografía de les participantes
     en: Show biography of the participants
-title_license:
+license:
   type: string
   label:
     es: Título de la licencia
