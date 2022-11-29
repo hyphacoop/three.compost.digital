@@ -78,6 +78,35 @@ $directions: (top, right, bottom, left);
           opacity: ($degree + 100%) / 100% !important;
         }
       }
+
+      /// Atributos de SVG
+      $svg-attributes: (stroke, fill);
+      @each $attr in $svg-attributes {
+        /// Poder cambiar el relleno o la línea de un SVG
+        ///
+        /// @example html
+        ///   <div class="stroke-black fill-red">
+        ///     <svg/>
+        ///   </div>
+        .#{$attr}#{$infix}-#{$color} {
+          svg {
+            * {
+              #{$attr}: var(--#{$color});
+            }
+          }
+        }
+
+        .#{$attr}-hover#{$infix}-#{$color} {
+          &:hover,
+          &:focus-within {
+            svg {
+              * {
+                #{$attr}: var(--#{$color});
+              }
+            }
+          }
+        }
+      }
     }
 
     .object-fit-cover#{$infix} {
@@ -107,6 +136,47 @@ $directions: (top, right, bottom, left);
         letter-spacing: $value !important;
       }
     }
+
+    /// Cursores
+    $cursors: (pointer, none);
+    @each $cursor in $cursors {
+      /// El elemento va a tener un cursor
+      ///
+      /// @example html
+      ///   <div class="cursor-pointer"></div>
+      .cursor#{$infix}-#{$cursor} {
+        cursor: $cursor;
+      }
+    }
+
+    @each $spacer, $length in $spacers {
+      @each $direction in $directions {
+        /// Ubicación absoluta, usar con position-*
+        ///
+        /// @example html
+        ///   <div class="position-absolute top-0 left-3"></div>
+        .#{$direction}#{$infix}-#{$spacer} {
+          #{$direction}: $length
+        }
+
+        .object-position#{$infix}-#{$direction} {
+          object-position: $direction;
+        }
+      }
+    }
+
+    /// Anchos y altos en base a `$sizes` definido por Bootstrap.  Para
+    /// personalizar los tamaños, modificarlos o agregarlos en `styles.scss`
+    ///
+    /// @link assets/css/styles.scss
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+        .min-#{$abbrev}#{$infix}-#{$size} { min-#{$prop}: $length !important; }
+        .max-#{$abbrev}#{$infix}-#{$size} { max-#{$prop}: $length !important; }
+      }
+    }
   }
 }
 
@@ -117,3 +187,11 @@ $directions: (top, right, bottom, left);
 .work-sans {
   font-family: 'Work Sans';
 }
+
+.zindex-dropdown { z-index: 1000; }
+.zindex-sticky { z-index: 1020; }
+.zindex-fixed { z-index: 1030; }
+.zindex-modal-backdrop { z-index: 1040; }
+.zindex-modal { z-index: 1050; }
+.zindex-popover { z-index: 1060; }
+.zindex-tooltip { z-index: 1070; }

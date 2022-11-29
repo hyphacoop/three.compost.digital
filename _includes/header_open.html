@@ -1,0 +1,25 @@
+{%- comment -%}
+
+Cabecera con menú abierto
+
+@param :component_class [String] Las clases del componente
+@param :class_menu [String] Las clases del menú
+@param :container [String] Las clases del contenedor del menú
+{%- endcomment -%}
+
+<div class="d-flex position-relative {{ include.component_class }} justify-content-between align-items-center p-3">
+	{% include menu_open.html class=include.class_menu container=include.container %}
+
+	{% include
+		header.html
+		src_logo="public/logo_black.png"
+		href_logo="?#"
+		alt_logo="Compost"
+		width_logo=333
+		class_logo="w-221px w-md-333px"
+		src_btn="public/mushroom_open.gif"
+		href_btn="#"
+		alt_btn="Mushroom open menu"
+		class_btn="w-44px w-md-67px"
+		width_btn=67 %}
+</div>

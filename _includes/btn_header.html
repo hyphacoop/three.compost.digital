@@ -1,6 +1,6 @@
 {%- comment -%}
 
-Imagen de la cabecera con el menú cerrado
+Imagen de la cabecera
 
 @param :src [String]
 @param :href [String] El link
@@ -10,5 +10,5 @@ Imagen de la cabecera con el menú cerrado
 {%- endcomment -%}
 
 <div>
-	{% include image_with_link.html src=include.src alt=include.alt href=include.href width=include.width component_class=include.component_class %}
+	{% include image_with_link.html src=include.src alt=include.alt href=include.href width=include.width component_class=include.component_class img_class=include.img_class %}
 </div>
