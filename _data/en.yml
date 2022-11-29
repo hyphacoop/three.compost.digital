@@ -1,3 +1,5 @@
 ---
 locale: "English"
 dir: "ltr"
+layouts:
+  supporter: "Sponsor"

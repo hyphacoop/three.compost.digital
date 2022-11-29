@@ -27,3 +27,5 @@ plugins:
 - "jekyll-brotli"
 liquid:
   strict_filters: true
+ignored_layouts:
+- supporter

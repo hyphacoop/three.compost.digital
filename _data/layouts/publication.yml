@@ -1,0 +1,91 @@
+---
+title:
+  type: "string"
+  required: true
+  label:
+    en: "Publication title"
+    es: "Título de la publicación"
+  help:
+    en: ""
+    es: ""
+subtitle:
+  type: "string"
+  label:
+    en: "Subtitle"
+    es: "Subtítulo"
+  help:
+    en: "Subtitle or N° Issue"
+    es: "Para poner un subtítulo o el número de publicación"
+description:
+  type: 'text'
+  label:
+    es: 'Alerta de contenido o descripción del artículo'
+    en: 'Content warning or post description'
+  help:
+    es: |
+      Resumen del contenido del artículo, que también usarán redes
+      sociales y buscadores.  Si el artículo trata de violencias y otros
+      temas sensibles, te invitamos a usar este campo como alerta de
+      contenido, para que las personas puedan determinar cuándo quieren
+      abrirlo.
+    en: |
+      Summary of the post contents, also used by social media and search
+      engines.  If the post is about violence and other sensitive
+      topics, we invite you to use it as a content warning, so others
+      can decide when they want to read it.
+content:
+  type: 'new_content'
+  label:
+    es: 'Descripción de la publicación'
+    en: 'Publication description'
+  help:
+    es: 'Escribe aquí el artículo'
+    en: 'Write down your post'
+image:
+  type: 'image'
+  path:
+    label:
+      es: 'Imagen principal'
+      en: 'Main image'
+    help:
+      es: |
+        Se utiliza para ilustrar el artículo y como previsualización en
+        las redes sociales.
+      en: |
+        It's used to illustrate the article and as preview in social
+        networks.
+  description:
+    label:
+      es: 'Descripción de la imagen principal'
+      en: 'Main image description'
+    help:
+      es: |
+        Describe la imagen principal para usuaries no videntes y
+        buscadores
+      en: |
+        Describe the main image for blind or partially sighted users and
+        search engines
+publication_date:
+  type: "string"
+  label:
+    en: "Publication date"
+    es: "Fecha de publicación"
+  help:
+    en: "The date, time, or year the publication came out"
+    es: "La fecha, época o año en que salió la publicación"
+draft:
+  type: 'boolean'
+  label:
+    es: 'Borrador'
+    en: 'Draft'
+  help:
+    es: 'Este artículo aun no está listo para publicar'
+    en: "This post isn't ready to be published yet"
+order:
+  type: 'order'
+  label:
+    es: 'Orden'
+    en: 'Order'
+  help:
+    es: 'La posición del artículo en la lista de artículos'
+    en: 'The post position in the posts list'

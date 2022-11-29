@@ -1,3 +1,5 @@
 ---
 locale: "Castellano"
 dir: "ltr"
+layouts:
+  supporter: "Patrocinador"
