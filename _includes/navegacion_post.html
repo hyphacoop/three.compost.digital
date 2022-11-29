@@ -2,33 +2,35 @@
 
 Los botones de navegación de los posts
 
-@param :src_previous [String] El scr de imagen de Previous
-@param :src_next [String] El scr de imagen de Next
-@param :src_home [String] El scr de imagen de Home
+@param :src_previous [String] El src de imagen de Previous
+@param :src_next [String] El src de imagen de Next
+@param :src_home [String] El src de imagen de Home
 @param :href_previous [String] El link de Previous
 @param :href_home [String] El link de Home
 @param :href_next [String] El link de Next
 {%- endcomment -%}
 
-{% assign previous = include.src_previous | blank | value_if: "invisible" %}
-{% assign next = include.src_next | blank | value_if: "invisible" %}
+{% assign previous_class = include.href_previous | blank | value_if: "invisible" %}
+{% assign next_class = include.href_next | blank | value_if: "invisible" %}
 
 <div class="d-flex align-items-center">
 	<div
 		class="mt-3"
-		{% if previous %}
+		{% unless previous_class %}
 			aria-hidden="true"
-		{% endif %}>
-		{% include image_with_link.html src=include.src_previous alt=site.i18n.previous_page width=40 href=include.href_previous img_class="px-2" component_class=previous %}
+		{% endunless %}>
+		{% include image_with_link.html src=include.src_previous alt=site.i18n.previous_page width=40 href=include.href_previous img_class="px-2" component_class=previous_class %}
 	</div>
 
-	{% include image_with_link.html src=include.src_home alt=site.i18n.home width=60 href=include.href_home img_class="px-2" %}
+	<div>
+		{% include image_with_link.html src=include.src_home alt=site.i18n.home width=60 href=include.href_home img_class="px-2" %}
+	</div>
 
 	<div
 		class="mt-3"
-		{% if next %}
+		{% unless next_class %}
 			aria-hidden="true"
-		{% endif %}>
-		{% include image_with_link.html src=include.src_next alt=site.i18n.next_page width=40 href=include.href_next img_class="px-2" component_class=next %}
+		{% endunless %}>
+		{% include image_with_link.html src=include.src_next alt=site.i18n.next_page width=40 href=include.href_next img_class="px-2" component_class=next_class %}
 	</div>
 </div>
