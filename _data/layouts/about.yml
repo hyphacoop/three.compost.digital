@@ -58,7 +58,7 @@ image_menu_open:
       es: ''
       en: ''
 license:
-  type: html
+  type: new_html
   label:
     es: Descripción de la licencia
     en: License description
