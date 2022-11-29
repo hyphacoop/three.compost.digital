@@ -3,13 +3,13 @@
 License block
 
 @param :title [String] El título
-@param :content [String] El contenido
+@param :content [HTML] El contenido
 {%- endcomment -%}
 <div class="background-light-gray p-3 mt-2 mb-2 text-monospace text-left border border-light_gray">
   <div class="font-weight-bold">
-    {{ include.title }}
+    <p rel="license">{{- include.title-}}</p>
   </div>
   <div class="mt-2 mb-2">
-    {{ include.content }}
+    <p>{{- include.content -}}</p>
   </div>
 </div>
