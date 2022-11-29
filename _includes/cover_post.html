@@ -6,12 +6,14 @@ La ficha de post en el índice de artículos del menú.
 @param :title [String] El título
 @param :text [String] El contenido
 @param :src [String] La imagen
+@param :alt [String] La descripción de la imagen
 {%- endcomment -%}
 
 <div
 	class="position-relative px-2">
 	<a
-		class="stretched-link black hover-black text-decoration-none" href="{{ include.href | uri_escape }}"
+		class="stretched-link black hover-black text-decoration-none"
+		href="{{ include.href | uri_escape }}"
 		{{ include.href | start_with: "https://" | value_if: 'rel="noopener" target="_blank"' }}
 		{{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="_blank"' }}>
 		<span class="sr-only">{{ include.alt }}</span>
