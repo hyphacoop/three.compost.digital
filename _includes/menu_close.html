@@ -1,0 +1,11 @@
+{%- comment -%}
+
+El icono de la hamburguesa para abrir y cerrar el menú
+
+@param :class [String] Las clases de la imagen
+@param :container [String] Las clases del contenedor
+{%- endcomment -%}
+
+<div class="{{ include.container }} cursor-pointer">
+	{% include svg/menu.svg class=include.class %}
+</div>
