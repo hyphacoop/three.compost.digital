@@ -1,6 +1,24 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    /// Bordes.  Bootstrap no define bordes _responsive_
+    ///
+    /// @link node_modules/bootstrap/scss/utilities/_borders.scss
+    /// @example html
+    ///   <div class="border border-md-top-0 border-width-3"></div>
+    .border#{$infix}   { border: $border-width solid $border-color !important; }
+    .border#{$infix}-0 { border: 0 !important; }
+
+    @each $direction in $directions {
+      .border#{$infix}-#{$direction}   { border-#{$direction}: $border-width solid $border-color !important; }
+      .border#{$infix}-#{$direction}-0 { border-#{$direction}: 0 !important; }
+    }
+
+    @each $border-width, $length in $border-widths {
+      .border-width#{$infix}-#{$border-width}   { border-width: $length !important; }
+    }
+
     @each $color, $rgb in $colors {
       .background#{$infix}-#{$color} {
         background-color: var(--#{$color});
@@ -26,6 +44,35 @@
         &:hover,
         &:focus-within {
           color: var(--#{$color}) !important;
+        }
+      }
+
+      /// Bordes de color
+      ///
+      /// @example html
+      ///   <div class="border-red"></div>
+      .border#{$infix}-#{$color} {
+        border-color: var(--#{$color}) !important;
+      }
+
+      .border-hover#{$infix}-#{$color} {
+        &:hover,
+        &:focus-within {
+          border-color: var(--#{$color}) !important;
+        }
+      }
+
+      @each $opacity, $degree in $opacities {
+        /// Color de fondo con transparencia (opacidad)
+        ///
+        /// @example html
+        ///   <div class="background-red-t2"></div>
+        .background#{$infix}-#{$color}-t#{$opacity} {
+          background-color: scale-color($rgb, $alpha: $degree);
+        }
+
+        .o#{$infix}-#{$opacity} {
+          opacity: ($degree + 100%) / 100% !important;
         }
       }
     }
@@ -67,3 +114,4 @@
 .work-sans {
   font-family: 'Work Sans';
 }
+
