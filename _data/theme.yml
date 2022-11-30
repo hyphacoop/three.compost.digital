@@ -68,3 +68,8 @@ sizes:
   74px: "4.625rem"
   221px: "13.8125rem"
   333px: "20.8125rem"
+directions:
+- "top"
+- "right"
+- "bottom"
+- "left"

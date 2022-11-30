@@ -9,7 +9,7 @@ title:
     es: ''
     en: ''
 description:
-  type: string
+  type: text
   required: true
   label:
     es: Descripción del proyecto
@@ -58,7 +58,7 @@ image_menu_open:
       es: ''
       en: ''
 license:
-  type: text
+  type: new_html
   label:
     es: Descripción de la licencia
     en: License description

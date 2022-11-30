@@ -7,6 +7,6 @@ Un texto con link. Por ejemplo, para los items del menú.
 @param :class [String] Las clases
 {%- endcomment -%}
 
-<a class="{{ include.class }}" href="{{ include.href | default: "#" }}">
+<a class="{{ include.class }}" href="{{ include.href | uri_escape }}">
 	<span>{{ include.text}}</span>
 </a>
