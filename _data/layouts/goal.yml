@@ -1,0 +1,44 @@
+title:
+  type: 'string'
+  required: true
+  label:
+    es: 'Título del objetivo'
+    en: 'Objetive title'
+  help:
+    es:
+    en:
+content:
+  type: new_content
+  label:
+    en: Objective section content
+    es: Sección de contenido para el objetivo
+  help:
+    en: Content that can have only text
+    es: Contenido que puede tener sólo texto
+goal:
+  type: belongs_to
+  inverse: goals
+  filter:
+    layout: support
+  label:
+    en: Belongs to
+    es: Pertenece a
+  help:
+    en: What article does this one belong to?
+    es: "¿De qué artículo depende?"
+order:
+  type: order
+  label:
+    en: Order
+    es: Orden
+  help:
+    en: Position in articles list
+    es: La posición del artículo en la lista de artículos
+draft:
+  type: boolean
+  label:
+    en: Draft
+    es: Borrador
+  help:
+    en: This post isn't ready to be published yet
+    es: Este artículo aun no está listo para publicar

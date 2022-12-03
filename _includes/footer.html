@@ -1,0 +1,29 @@
+{%- comment -%}
+
+Footer
+@param :src [string] Imagen de background
+@param :col_1 [HTML] Contenido
+@param :col_2 [HTML] Contenido
+@param :col_3 [HTML] Contenido
+@param :col_4 [HTML] Contenido
+{%- endcomment -%}
+<footer class="d-flex align-items-center justify-content-center" style="background: url('{{ include.src | default: 'public/footer.png' | uri_escape }}') top center; background-size: cover !important;">
+<div class="row row-cols-md-1 row-cols-lg-3 align-items-center justify-content-center container pt-150">
+  <div class="col-12">
+    {{ include.col_1}}
+  </div>
+  <div class="col-12">
+    {{ include.col_2}}
+  </div>
+  <div class="col-12">
+    <div class="row flex-row">
+      <div class="col">
+        {{ include.col_3 }}
+      </div>
+      <div class="col">
+        {{ include.col_4 }}
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
