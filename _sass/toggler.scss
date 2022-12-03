@@ -1,0 +1,20 @@
+////
+/// @group Toggler
+////
+
+/// Desplegar menúes sin javascript!
+///
+/// Comenzamos con un `<input type="checkbox"/>` con la clase
+/// `.toggler`.
+///
+/// @link https://dev.to/cydstumpel/creating-a-fold-out-navigation-with-css-only-4g9k
+/// @see toggler.html
+.toggler {
+  & + .toggled {
+    visibility: hidden;
+  }
+
+  &:checked + .toggled {
+    visibility: visible;
+  }
+}

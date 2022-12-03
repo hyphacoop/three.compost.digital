@@ -1,0 +1,55 @@
+{%- comment -%}
+
+Cabecera y menú con toggler
+
+{%- endcomment -%}
+
+<div class="d-flex position-relative background-black justify-content-between align-items-center p-3">
+
+	{% assign menu-id = page.uuid | prepend: 'r-' %}
+
+	{%- capture menu_svg -%}
+		{% include menu_close.html class="w-36px w-md-54px" container_class="stroke-white" %}
+	{%- endcapture -%}
+
+	{% include toggler/toggler_label.html id=menu-id class="m-0" content=menu_svg %}
+
+	{% include toggler/toggler.html id=menu-id extra='data-action="toggle-media#toggle" data-menu-target="toggler"'%}
+	<div class="toggled position-absolute top-0 left-0 w-100 zindex-dropdown">
+		<div class="d-flex background-white justify-content-between align-items-center p-3">
+
+			{% assign menu-id = page.uuid | prepend: 'r-' %}
+			{%- capture menu_svg -%}
+				{% include menu_open.html class="w-36px w-md-54px" container_class="fill-black" %}
+			{%- endcapture -%}
+
+			{% include toggler/toggler_label.html id=menu-id class="m-0" content=menu_svg %}
+
+			{% include
+				header.html
+				logo_src="public/logo_black.png"
+				logo_href="?#"
+				logo_alt="Compost"
+				logo_width=333
+				logo_class="w-221px w-md-333px"
+				btn_src="public/mushroom_open.gif"
+				btn_href="#"
+				btn_alt="Mushroom open menu"
+				btn_class="w-44px w-md-67px"
+				btn_width=67 %}
+		</div>
+	</div>
+
+	{% include
+		header.html
+		logo_src="public/logo_white.png"
+		logo_href="?#"
+		logo_alt="Compost"
+		logo_width=333
+		logo_class="w-221px w-md-333px"
+		btn_src="public/mushroom_close.gif"
+		btn_href="#"
+		btn_alt="Mushroom close menu"
+		btn_class="w-44px w-md-67px"
+		btn_width=67 %}
+</div>
