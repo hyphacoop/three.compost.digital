@@ -4,11 +4,12 @@ La base para un encabezado
 
 @param :level [Integer] El nivel
 @param :text [String] El contenido
+@param :class [String] Clases para aplicar a títulos
 {%- endcomment -%}
 
 {%- assign slug = include.text | slugify -%}
 <h{{ include.level }} id="{{ slug }}">
-  <a href="#{{ slug }}">
+  <a class="{{ include.class }}" href="#{{ slug }}">
     {{- include.text -}}
   </a>
 </h{{ include.level }}>

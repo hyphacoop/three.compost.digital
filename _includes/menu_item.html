@@ -1,0 +1,10 @@
+{%- comment -%}
+
+Item del menú
+
+@param :text [String] El contenido
+@param :href [String] El link
+@param :class [String] Las clases
+{%- endcomment -%}
+
+{% include text_link.html text=include.text class="display-4 letter-spacing-1 text-uppercase font-weight-bold text-decoration-none ml-20 mr-50" href=include.href %}

@@ -1,0 +1,26 @@
+{%- comment -%}
+
+Card horizontal
+
+@param :src [String] Imágen de la Card
+@param :alt [String] Texto alternativo de la imágen
+@param :title [String] Título de la Card
+@param :subtitle [string] Subtítulo
+@param :content [string] Contenido
+{%- endcomment -%}
+<div class="row m-0 no-gutters align-items-center justify-content-center container">
+  <div class="col-lg-4 col-md-6 p-3">
+    {% include picture.html src=include.src width=500 img_class="w-100 h-100 object-fit-cover" %}
+  </div>
+  <div class="col-lg-8 col-md-6">
+    <div class="">
+      {% include headings/h1.html text=include.title class="font-italic border-width-2 border-black border-bottom-dashed" %}
+    </div>
+    <div class="my-3 text-monospace">
+      {{ include.subtitle }}
+    </div>
+    <div class="content">
+      {{ include.content }}
+    </div>
+  </div>
+</div>
