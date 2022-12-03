@@ -1,5 +1,9 @@
 ---
 spacer: "1rem"
+spacers:
+  20: "($spacer * 1.25)"
+  50: "($spacer * 3.125)"
+  150: "9.375rem"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
 btn_padding_y: "1.5rem"
@@ -10,6 +14,9 @@ colors:
   transparent: "transparent"
   blue: "#564FE3"
   light_blue: "#9995ef"
+letter_spacings:
+  1: "0.1rem"
+  2: "0.16rem"
 pixel_densities:
 - "1"
 - "1.5"
@@ -25,6 +32,7 @@ embed_responsive_aspect_ratios:
 - "(16 9)"
 - "(4 3)"
 - "(1 1)"
+- "(700 350)"
 display3_size: "3.9375rem"
 display4_size: "1.875rem"
 enable_responsive_font_sizes: true
@@ -32,6 +40,26 @@ lead_font_size: "1.3125rem"
 font_sizes:
   19: "1.1875"
   14: "0.875"
+sizes:
+  67px: "4.1875rem"
+  44px: "2.75rem"
+  54px: "3.375rem"
+  36px: "2.25rem"
+  49px: "3.0625rem"
+  74px: "4.625rem"
+  221px: "13.8125rem"
+  333px: "20.8125rem"
+directions:
+- "top"
+- "left"
+- "right"
+- "bottom"
+svg_attributes:
+- "fill"
+- "stroke"
+cursors:
+- "pointer"
+- "none"
 border_width: "1px"
 border_widths:
   1: "1px"

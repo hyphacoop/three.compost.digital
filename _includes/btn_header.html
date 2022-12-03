@@ -1,0 +1,14 @@
+{%- comment -%}
+
+Imagen de la cabecera
+
+@param :src [String]
+@param :href [String] El link
+@param :width [Integer] Ancho de la imagen
+@param :alt [String] El alt de la imagen
+@param :component_class [String] Clases para el componente
+{%- endcomment -%}
+
+<div>
+	{% include image_with_link.html src=include.src alt=include.alt href=include.href width=include.width component_class=include.component_class img_class=include.img_class %}
+</div>

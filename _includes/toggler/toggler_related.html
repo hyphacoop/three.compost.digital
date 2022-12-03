@@ -1,0 +1,23 @@
+{% comment %}
+  Este label puede usarse para abrir y cerrar un elemento asociado a
+  toggler.html
+
+  Similar a toggler_label.html pero no comparte la misma ID, se puede
+  usar para botones de cierre o relacionados, pero que no aportan
+  descripción al elemento que se abre y cierra (especialmente para
+  lectores de pantalla).
+
+  @see togger_label.html
+  @param :id [String] La ID del elemento
+  @param :class [String] CSS
+  @param :content [HTML] Contenido
+{% endcomment %}
+<label
+  data-controller="label"
+  tabindex="0"
+  aria-hidden="true"
+  id="{{ include.id }}-label-related"
+  for="{{ include.id }}"
+  class="{{ include.class }}">
+  {{ include.content }}
+</label>

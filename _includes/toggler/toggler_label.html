@@ -1,0 +1,21 @@
+{% comment %}
+  Este label puede usarse para abrir y cerrar un elemento asociado a
+  toggler.html
+
+  Mientras compartan la misma ID puede colocarse el label en cualquier
+  lado del HTML.
+
+  @see toggler.html
+  @param :id [String] La ID del elemento
+  @param :class [String] CSS
+  @param :content [String] Contenido
+{% endcomment %}
+<label
+  data-controller="label"
+  tabindex="0"
+  aria-hidden="true"
+  id="{{ include.id }}-label"
+  for="{{ include.id }}"
+  class="{{ include.class }}">
+  {{ include.content }}
+</label>

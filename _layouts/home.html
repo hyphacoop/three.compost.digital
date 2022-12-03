@@ -2,12 +2,6 @@
 layout: "default"
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">
-        {{- post.title }}
-        <span class="badge badge-primary">{{ post.layout }}</span></a>
-    </li>
-  {% endfor %}
-</ul>
+{%- assign theme = site.posts | find: "layout", "theme" -%}
+
+{%- include buttons/with_link.html href=theme.url text="Go to Components" -%}
