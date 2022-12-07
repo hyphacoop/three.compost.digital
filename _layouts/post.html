@@ -1,0 +1,21 @@
+---
+layout: "default"
+---
+
+{%- assign about = site.posts | find: "layout", "about" -%}
+
+<article id="{{ page.slug }}" class="container mx-auto">
+  {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=1200 %}
+
+  <div class="content">
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+  </div>
+
+  <footer>
+    {% unless page.license == empty %}
+      {% include license_block.html title=page.license content=about.license %}
+    {% endunless %}
+  </footer>
+</article>
