@@ -104,16 +104,6 @@
       }
     }
 
-    /// Espacio entre caracteres
-    ///
-    /// @example html
-    ///   <div class="letter-spacing-2"></div>
-    @each $letter-spacing, $value in $letter-spacings {
-      .letter-spacing#{$infix}-#{$letter-spacing} {
-        letter-spacing: $value !important;
-      }
-    }
-
     .object-fit-cover#{$infix} {
       object-fit: cover;
     }
