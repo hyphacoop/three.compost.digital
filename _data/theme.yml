@@ -94,3 +94,8 @@ directions:
 - "right"
 - "bottom"
 - "left"
+container_max_widths:
+  sm: "540px"
+  md: "720px"
+  lg: "780px"
+  xl: "781px"
