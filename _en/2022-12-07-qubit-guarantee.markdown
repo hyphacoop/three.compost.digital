@@ -11,7 +11,7 @@ image:
 show_biography: true
 license: CC BY-ND 4.0
 order: 20
-draft: true
+draft: false
 layout: post
 uuid: 4df3cc40-0b0c-4a38-835d-fa4a69f991bf
 liquid: false
