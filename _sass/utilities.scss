@@ -160,6 +160,18 @@
         .max-#{$abbrev}#{$infix}-#{$size} { max-#{$prop}: $length !important; }
       }
     }
+
+    @each $transform-scale, $value in $transform-scales {
+      .transform-scale#{$infix}-#{$transform-scale} {
+        transform: scale($value) !important;
+      }
+
+      .transform-scale-hover#{$infix}-#{$transform-scale} {
+        &:hover, &:focus {
+          transform: scale($value) !important;
+        }
+      }
+    }
   }
 }
 
