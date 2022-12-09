@@ -1,0 +1,26 @@
+---
+layout: "default"
+---
+
+{%- assign about = site.posts | find: "layout", "about" -%}
+{%- assign posts = site.posts | where: "layout", "post" -%}
+{%- assign prev = page | prev: posts -%}
+{%- assign next = page | next: posts -%}
+
+<article id="{{ page.slug }}" class="container mx-auto">
+  {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 %}
+
+  <div class="content">
+    {% include headings/h1.html class="text-uppercase" text=page.title %}
+
+    {{ content }}
+  </div>
+
+  <footer class="d-flex flex-column align-items-center">
+    {% unless page.license == empty %}
+      {% include license_block.html title=page.license content=about.license %}
+    {% endunless %}
+
+    {% include navegacion_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
+  </footer>
+</article>

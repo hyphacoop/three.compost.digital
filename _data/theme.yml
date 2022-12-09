@@ -34,6 +34,7 @@ embed_responsive_aspect_ratios:
 - "(4 3)"
 - "(1 1)"
 - "(700 350)"
+- "(2 1)"
 display3_size: "3.9375rem"
 display4_size: "1.875rem"
 enable_responsive_font_sizes: true
@@ -93,3 +94,8 @@ directions:
 - "right"
 - "bottom"
 - "left"
+container_max_widths:
+  sm: "540px"
+  md: "720px"
+  lg: "780px"
+  xl: "781px"
