@@ -102,3 +102,6 @@ container_max_widths:
   md: "720px"
   lg: "780px"
   xl: "781px"
+transform_scales:
+  n8: "0.8"
+  1: "1"
