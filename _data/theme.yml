@@ -32,3 +32,6 @@ lead_font_size: "1.3125rem"
 font_sizes:
   19: "1.1875"
   14: "0.875"
+transform_scales:
+  n8: "0.8"
+  1: "1"
