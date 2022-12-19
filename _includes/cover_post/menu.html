@@ -1,0 +1,12 @@
+{%- comment -%}
+
+La ficha de post en el índice de artículos del menú.
+
+@param :href [String] El link
+@param :title [String] El título
+@param :author [String] Le autore
+@param :src [String] La imagen
+@param :alt [String] La descripción de la imagen
+{%- endcomment -%}
+
+{% include cover_post/generic.html author=include.author title=include.title src=include.src alt=include.alt href=include.href title_class="font-weight-bold text-uppercase m-0 py-2 letter-spacing-1 lead" author_class="text-uppercase letter-spacing-2 font-sm" %}
