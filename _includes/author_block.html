@@ -1,0 +1,20 @@
+{%- comment -%}
+
+Author block
+
+@param :title [String] Alias
+@param :link [array] link's
+{%- endcomment -%}
+{% assign links = include.links %}
+<div class="">
+  <div class="p-3">
+    {% include headings/h2.html text=include.title class="black " %}
+  </div>
+  <div class="background-light-blue text-monospace text-left p-3 mt-2 mb-2 rounded">
+    {% for link in links %}
+    <li class="list-unstyled">
+      <a class="black hover-white" href="{{- link -}}" target="_blank">{{ link }}</a>
+    </li>
+    {% endfor %}
+  </div>
+</div>
