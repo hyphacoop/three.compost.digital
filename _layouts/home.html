@@ -2,6 +2,28 @@
 layout: "default"
 ---
 
-{%- assign theme = site.posts | find: "layout", "theme" -%}
+{%- assign publication = site.posts | find: "layout", "publication" -%}
+{%- assign posts = site.posts | where: "layout", "post" -%}
 
-{%- include buttons/with_link.html href=theme.url text="Go to Components" -%}
+<div class="row align-items-center justify-content-center content">
+  {% include card_horizontal.html
+    src=publication.image.path
+    alt=publication.image.alt
+    title=publication.title
+    subtitle=publication.subtitle
+    content=publication.content
+  %}
+<div class="row row-cols-1 row-cols-md-3 no-gutters m-0 align-items-center justify-content-center">
+  {% for post in posts %}
+  <div class="col">
+    {% include cover_post.html
+      src=post.image.path
+      alt=post.image.alt
+      title=post.title
+      text=post.description
+    %}
+  </div>
+  {% endfor %}
+</div>
+
+</div>
