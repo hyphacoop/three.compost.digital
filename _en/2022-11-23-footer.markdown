@@ -1,7 +1,7 @@
 ---
 title: Footer
 image:
-  path: public/3643u1cfioqiaqmzgq5345n97f8r/back-cover.jpg
+  path: public/3643u1cfioqiaqmzgq5345n97f8r/footer.png
   description: ''
 column_1: <p>COMPOST is a magazine about the digital commons.</p><p>Issue 02, September
   2021.</p><p>We are a project by <a href="https://distributed.press/" rel="noopener"
@@ -42,4 +42,3 @@ usuaries:
 - 356
 last_modified_at: 2022-12-07 15:29:26.340001554 +00:00
 ---
-
