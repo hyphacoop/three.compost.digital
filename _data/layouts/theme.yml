@@ -28,6 +28,26 @@ font_family_sans_serif:
       "": "Default"
       Roboto: "Roboto"
       Open Sans: "Open Sans"
+font_family_monospace:
+  type: "predefined_value"
+  label:
+    en: "Select a typography for the site"
+    es: "Selecciona una tipografía para el sitio"
+  help:
+    en: "If you want us to add support for a typography, please send us an e-mail"
+    es: "Si quieres que agreguemos una tipografía, por favor envíanos un e-mail"
+  default:
+    en: ""
+    es: ""
+  values:
+    en:
+      "": "Default"
+      Roboto: "Roboto Mono"
+      Open Sans: "Liberation Mono"
+    es:
+      "": "Default"
+      Roboto: "Roboto Mono"
+      Open Sans: "Liberation Mono"
 headings_font_family:
   type: "predefined_value"
   label:
