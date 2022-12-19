@@ -1,0 +1,41 @@
+---
+layout: "default"
+---
+
+{%- assign authors = site.posts | where: "layout", "author" -%}
+{%- assign posts = site.posts | where: "layout", "post" -%}
+{%- assign supporters = site.posts | where: "layout", "supporter" -%}
+{%- assign prev = page | prev: posts -%}
+{%- assign next = page | next: posts -%}
+
+<article id="{{ page.slug }}" class="container mx-auto my-4">
+  {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 component_class="shadow-sm" %}
+
+  <div class="content mt-5">
+    {% include headings/h1.html class="text-uppercase black hover-black letter-spacing-1 font-weight-bold" text=page.title %}
+
+    {% include headings/h2.html class="text-uppercase black hover-black letter-spacing-1" text=page.authors_title %}
+
+    {% for author in authors %}
+			{% include author_block.html title=author.alias link=author.projects %}
+    {% endfor %}
+
+    {% include headings/h2.html class="text-uppercase black hover-black letter-spacing-1" text=page.content_title %}
+
+    <div class="source-serif lead pt-2">
+      {{ content }}
+    </div>
+
+    {% include headings/h2.html class="text-uppercase black hover-black letter-spacing-1" text=page.supporters_title %}
+
+		{% for supporter in supporters %}
+			{% include image_supporter.html src=supporter.image.path alt=supporter.image.description href=supporter.link %}
+		{% endfor %}
+  </div>
+
+  <footer class="d-flex flex-column align-items-center">
+		<p>{{ page.final_message }}</p>
+
+    {% include navigation_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
+  </footer>
+</article>
