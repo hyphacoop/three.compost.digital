@@ -4,16 +4,27 @@ layout: "default"
 
 {%- assign about = site.posts | find: "layout", "about" -%}
 {%- assign posts = site.posts | where: "layout", "post" -%}
+{%- assign authors = site.posts | where: "layout", "author" -%}
 {%- assign prev = page | prev: posts -%}
 {%- assign next = page | next: posts -%}
 
-<article id="{{ page.slug }}" class="container mx-auto">
-  {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 %}
+<article id="{{ page.slug }}" class="container mx-auto my-4">
+  {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 component_class="shadow-sm" %}
 
-  <div class="content">
-    {% include headings/h1.html class="text-uppercase" text=page.title %}
+  <div class="content mt-5">
+    {% include headings/h1.html class="text-uppercase black hover-black letter-spacing-1 font-weight-bold" text=page.title %}
 
-    {{ content }}
+    {% unless page.authors == empty %}
+      {% for author in authors %}
+        <p class="lead text-uppercase letter-spacing-3">{{ author.title }}</p>
+      {% endfor %}
+    {% endunless %}
+
+    <div class="source-serif lead pt-2">
+      <p>{{ page.description }}</p>
+
+      {{ content }}
+    </div>
   </div>
 
   <footer class="d-flex flex-column align-items-center">
@@ -21,6 +32,6 @@ layout: "default"
       {% include license_block.html title=page.license content=about.license %}
     {% endunless %}
 
-    {% include navegacion_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
+    {% include navigation_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
   </footer>
 </article>
