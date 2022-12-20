@@ -16,7 +16,7 @@ content:
     en: ''
     es: ''
 value_max:
-  type: number
+  type: float
   label:
     en: The maximum value of the goal
     es: El valor máximo del objetivo
