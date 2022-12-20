@@ -5,12 +5,14 @@ Author block
 @param :title [String] Alias
 @param :link [array] link's
 {%- endcomment -%}
+
 {% assign links = include.links %}
+
 <div class="">
-  <div class="p-3">
-    {% include headings/h2.html text=include.title class="black " %}
+  <div class="py-3">
+    {% include headings/h3.html text=include.title class="black source-serif font-weight-bold" %}
   </div>
-  <div class="background-light-blue text-monospace text-left p-3 mt-2 mb-2 rounded">
+  <div class="background-lighter-blue text-monospace text-left p-3 mt-2 mb-2 rounded">
     {% for link in links %}
     <li class="list-unstyled">
       <a class="black hover-white" href="{{- link -}}" target="_blank" rel="noopener">{{ link }}</a>

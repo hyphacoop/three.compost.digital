@@ -1,0 +1,56 @@
+---
+layout: "default"
+---
+
+{%- assign authors = site.posts | where: "layout", "author" -%}
+{%- assign back_covers = site.posts | where: "layout", "back_cover" -%}
+{%- assign posts = site.posts | where: "layout", "post" | concat: back_covers -%}
+{%- assign supporters = site.posts | where: "layout", "supporter" -%}
+{%- assign prev = page | prev: posts -%}
+{%- assign next = page | next: posts -%}
+
+<article id="{{ page.slug }}" class="container mx-auto my-4">
+  <div class="shadow-sm">
+    {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 %}
+  </div>
+
+  <div class="content mt-5">
+    <div class="border-bottom border-gray border-width-2 pb-2">
+      {% include headings/h1.html class="text-uppercase black hover-black letter-spacing-1 font-weight-bold" text=page.title %}
+    </div>
+
+    <div class="pt-32">
+      {% include headings/h2.html class="text-uppercase black hover-black letter-spacing-1" text=page.authors_title %}
+    </div>
+
+    {% for author in authors %}
+			{% include author_block.html title=author.alias links=author.projects %}
+    {% endfor %}
+
+    <div class="pt-32">
+      {% include headings/h2.html class="text-uppercase black hover-black letter-spacing-1" text=page.content_title %}
+    </div>
+
+    <div class="source-serif lead pt-2">
+      {{ content }}
+    </div>
+
+    <div class="pt-32">
+      {% include headings/h2.html class="text-uppercase black hover-black letter-spacing-1" text=page.supporters_title %}
+    </div>
+
+    <div class="row row-cols-2 row-cols-md-4 align-items-center">
+      {% for supporter in supporters %}
+        <div class="col p-2">
+          {% include image_supporter.html src=supporter.image.path alt=supporter.image.description href=supporter.link width=576 %}
+        </div>
+      {% endfor %}
+		</div>
+
+    <p class="font-italic source-serif lead border-bottom border-gray border-width-2 py-3">{{ page.final_message }}</p>
+  </div>
+
+  <footer class="d-flex flex-column align-items-center">
+    {% include navegacion_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
+  </footer>
+</article>

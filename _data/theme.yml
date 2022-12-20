@@ -16,6 +16,7 @@ colors:
   blue: "#564FE3"
   light_blue: "#9995ef"
   light_gray: "#eeeeee"
+  lighter_blue: "#cccaf7"
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"
