@@ -8,14 +8,11 @@ Las barras de progreso de los objetivos/metas
 @param :value_max [Integer] El valor máximo
 {%- endcomment -%}
 
-{% assign now = include.value_now %}
-{% assign max = include.value_max %}
-
-{% assign value_width = now | divided_by: max | times: 100 %}
+{% assign width = include.value_now | divided_by: include.value_max | times: 100 %}
 
 <div class="mb-3">
 	<div class="progress position-relative border border-width-3 border-black">
-		<div class="progress-bar o-2" style="width: {{ value_width }}%" role="progressbar" aria-valuenow="{{ include.value_now }}" aria-valuemax="{{ include.value_max }}"></div>
+		<div class="progress-bar o-2" style="width: {{ width }}%" role="progressbar" aria-valuenow="{{ include.value_now }}" aria-valuemax="{{ include.value_max }}"></div>
 		<span class="d-flex position-absolute h-100 align-items-center font-weight-bold lead px-4">{{ include.title }}</span>
 	</div>
 
