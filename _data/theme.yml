@@ -41,6 +41,7 @@ lead_font_size: "1.3125rem"
 font_sizes:
   19: "1.1875"
   14: "0.875"
+  17: "1.0625"
 sizes:
   67px: "4.1875rem"
   44px: "2.75rem"
@@ -93,3 +94,8 @@ directions:
 - "right"
 - "bottom"
 - "left"
+container_max_widths:
+  sm: "540px"
+  md: "720px"
+  lg: "780px"
+  xl: "781px"
