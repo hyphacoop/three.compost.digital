@@ -13,5 +13,3 @@ usuaries:
 - 534
 last_modified_at: 2022-12-20 19:10:45.984939205 +00:00
 ---
-
-<p>We'll run a half-day micro-conference with contributors and community. We'll discuss issues we face on the (D)Web and in collective publishing.</p>
