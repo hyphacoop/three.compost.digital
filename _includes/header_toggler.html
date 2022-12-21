@@ -23,7 +23,7 @@ Cabecera y menú con toggler
 	{% include toggler/toggler_label.html id=menu-id class="m-0" content=menu_svg %}
 
 	{% capture toggled_content %}
-		<div class="d-flex background-white justify-content-between align-items-center p-3">
+		<div class="d-flex support-background justify-content-between align-items-center p-3 border-bottom-dashed border-black">
 			{% assign menu-id = page.uuid | prepend: 'r-' %}
 			{%- capture menu_svg -%}
 				{% include menu_open.html class="w-36px w-md-54px" container_class="fill-black" %}
@@ -39,6 +39,28 @@ Cabecera y menú con toggler
 				btn_href=include.btn_href
 				btn_alt=include.btn_alt %}
 		</div>
+
+		<div class="background-white pt-5 vh-100">
+			{%- assign items = site.posts | where: "layout", "menu" -%}
+
+			{% for item in items %}
+				{% include menu_item.html text=item.title href=item.post.url %}
+			{% endfor %}
+
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters mt-5 px-4">
+				{% assign posts = site.posts | where: "layout", "post" %}
+
+				{% for post in posts %}
+					<div class="col">
+						{% include cover_post/menu.html author=post.author title=post.title src=post.image.path alt=post.image.description href=post.url %}
+					</div>
+				{% endfor %}
+			</div>
+
+			{%- assign footer = site.posts | find: "layout", "footer" %}
+
+			{% include footer.html col_1=footer.column_1 col_2=footer.column_2 col_3=footer.column_3 col_4=footer.column_4 src=footer.image.path %}
+		</div>
 	{% endcapture %}
 
 	{% include toggler/toggler.html id=menu-id extra='data-action="toggle-media#toggle" data-menu-target="toggler"' toggled_content=toggled_content toggled_class="top-0 left-0 w-100 zindex-dropdown" %}
@@ -48,6 +70,6 @@ Cabecera y menú con toggler
 		logo_src=include.logo_close_src
 		logo_alt=include.logo_close_alt
 		btn_src=include.btn_close_src
-		btn_href=btn_href
-		btn_alt=btn_alt %}
+		btn_href=include.btn_href
+		btn_alt=include.btn_alt %}
 </div>
