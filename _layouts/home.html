@@ -13,13 +13,13 @@ layout: "default"
     subtitle=publication.subtitle
     content=publication.content
   %}
-<article class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters m-0 container align-items-center justify-content-center">
+<article class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters m-0 container">
   {% for post in posts %}
     {% include cover_post/home.html
+      authors=post.authors
       src=post.image.path
       alt=post.image.alt
       title=post.title
-      author=post.author
       description=post.description
       href=post.url
     %}
