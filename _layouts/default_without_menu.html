@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" dir="{{ site.dir }}">
+  <head>
+    <meta charset="UTF-8">
+    <base href="{% base %}" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="theme-color" content="white"/>
+    <meta name="color-scheme" content="light"/>
+    <meta name="referrer" content="strict-origin-when-cross-origin"/>
+
+    <link href="assets/css/styles.css?{{ site.time | date: '%s' }}" rel="stylesheet" data-turbo-track="reload">
+
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+    <link rel="alternate icon" href="public/favicon.ico">
+    <link rel="mask-icon" href="public/favicon.svg" color="white">
+
+    {% seo %}
+  </head>
+  <body>
+    <main tabindex="-1" role="main" id="content">
+      {{ content }}
+    </main>
+  </body>
+</html>
