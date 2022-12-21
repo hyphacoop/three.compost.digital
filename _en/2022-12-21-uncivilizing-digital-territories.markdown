@@ -10,7 +10,7 @@ image:
 show_biography: true
 license: 'Content License: CC BY-SA 4.0'
 order: 25
-draft: true
+draft: false
 layout: post
 uuid: 0e5a8111-f846-401c-9e53-f9794187acf4
 liquid: false
