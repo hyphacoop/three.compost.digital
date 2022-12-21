@@ -3,3 +3,4 @@ locale: "Castellano"
 dir: "ltr"
 layouts:
   supporter: "Patrocinador"
+and: y 

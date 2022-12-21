@@ -6,7 +6,7 @@ projects:
 - https://www.are.na/celine-nguyen/
 posts:
 - 2f8cf6d6-2e93-4f0a-9acb-953647a17e0e
-draft: true
+draft: false
 order: 21
 layout: author
 uuid: a741354e-b1cf-42cd-9419-c3d3322b9f1d

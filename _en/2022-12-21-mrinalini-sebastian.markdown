@@ -5,7 +5,7 @@ projects:
 - https://celinenguyen.com/
 posts:
 - 2f8cf6d6-2e93-4f0a-9acb-953647a17e0e
-draft: true
+draft: false
 order: 22
 layout: author
 uuid: 827c5715-0127-4271-b6cc-1bdb021253a3
