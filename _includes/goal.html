@@ -16,5 +16,5 @@ Las barras de progreso de los objetivos/metas
 		<span class="d-flex position-absolute h-100 align-items-center font-weight-bold lead px-4">{{ include.title }}</span>
 	</div>
 
-	<p class="p-2"><strong>${{ include.value_max }}</strong> {{ include.text }}</p>
+	<p class="p-2"><strong>${{ include.value_max | round }}</strong> {{ include.text }}</p>
 </div>

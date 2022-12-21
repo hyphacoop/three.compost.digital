@@ -192,3 +192,9 @@
 .zindex-modal { z-index: 1050; }
 .zindex-popover { z-index: 1060; }
 .zindex-tooltip { z-index: 1070; }
+
+.support-background {
+  background-image: url('../../public/background-dithered.jpg');
+  background-size: contain;
+  width: 100%;
+}
