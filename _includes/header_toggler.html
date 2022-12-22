@@ -51,8 +51,8 @@ Cabecera y menú con toggler
 				{% assign posts = site.posts | where: "layout", "post" %}
 
 				{% for post in posts %}
-					<div class="col">
-						{% include cover_post/menu.html author=post.author title=post.title src=post.image.path alt=post.image.description href=post.url %}
+					<div class="col pb-5">
+						{% include cover_post/menu.html authors=post.authors title=post.title src=post.image.path alt=post.image.description href=post.url %}
 					</div>
 				{% endfor %}
 			</div>

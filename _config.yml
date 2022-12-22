@@ -34,3 +34,5 @@ linked_fields:
 - item
 - items
 - post
+- authors
+- posts
