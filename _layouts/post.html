@@ -9,7 +9,7 @@ layout: "default"
 {%- assign prev = page | prev: posts -%}
 {%- assign next = page | next: posts -%}
 
-<article id="{{ page.slug }}" class="container mx-auto my-4">
+<article id="{{ page.slug }}" class="mx-auto max-w-780px my-4">
   {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 component_class="shadow-sm" %}
 
   <div class="content mt-5">

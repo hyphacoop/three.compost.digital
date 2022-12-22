@@ -94,6 +94,7 @@ sizes:
   74px: "4.625rem"
   221px: "13.8125rem"
   333px: "20.8125rem"
+  780px: "780px"
 directions:
 - "top"
 - "right"
