@@ -27,6 +27,11 @@ layout: "default_with_menu"
 					%}
 				</div>
 			{% endfor %}
+
+			{% assign back_cover = site.posts | find: "layout", "back_cover" %}
+			<div class="col pb-5 px-2">
+				{% include cover_post/home.html title=back_cover.title src=back_cover.image.path alt=back_cover.image.description href=back_cover.url description=back_cover.description %}
+			</div>
 		</article>
   </div>
 </div>
