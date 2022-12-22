@@ -8,18 +8,18 @@ Card horizontal
 @param :subtitle [string] Subtítulo
 @param :content [string] Contenido
 {%- endcomment -%}
-<div class="row m-0 no-gutters align-items-center justify-content-center container">
-  <div class="col-lg-4 col-md-6 p-3">
-    {% include picture.html src=include.src width=500 img_class="w-100 h-100 object-fit-cover" %}
+<div class="row m-0 no-gutters justify-content-center container">
+  <div class="col-lg-3 col-md-6">
+    {% include picture.html src=include.src width=500 img_class="w-100 object-fit-cover" %}
   </div>
-  <div class="col-lg-8 col-md-6">
+  <div class="col-lg-9 col-md-6 pl-md-5 pt-5 pt-md-0">
     <div class="">
-      {% include headings/h1.html text=include.title class="font-italic border-width-2 border-black border-bottom-dashed" %}
+      {% include headings/h1.html text=include.title class="font-italic border-width-2 border-black border-bottom-dashed display-3 work-sans" %}
     </div>
-    <div class="my-3 text-monospace">
+    <div class="my-3 text-monospace lead">
       {{ include.subtitle }}
     </div>
-    <div class="content">
+    <div class="content lead">
       {{ include.content }}
     </div>
   </div>

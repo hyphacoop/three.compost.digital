@@ -4,6 +4,7 @@ spacers:
   20: "($spacer * 1.25)"
   50: "($spacer * 3.125)"
   150: "9.375rem"
+  6: "($spacer * 6)"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
 btn_padding_y: "1.5rem"
@@ -96,3 +97,8 @@ directions:
 - "right"
 - "bottom"
 - "left"
+container_max_widths:
+  sm: "576px"
+  md: "768px"
+  lg: "1200px"
+  xl: "1201px"
