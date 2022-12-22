@@ -17,3 +17,5 @@ layout: "default"
 
 {{ content }}
 
+{%- assign footer = site.posts | find: "layout", "footer" -%}
+{% include footer.html src=footer.image.path col_1=footer.column_1 col_2=footer.column_1 col_3=footer.column_1 col_4=footer.column_1 %}
