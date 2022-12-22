@@ -4,8 +4,9 @@ layout: "default_with_menu"
 
 {%- assign publication = site.posts | find: "layout", "publication" -%}
 {%- assign posts = site.posts | where: "layout", "post" -%}
+
 <div class="support-background">
-  <div class="row align-items-center justify-content-center no-gutters m-0 container m-auto">
+  <div class="row justify-content-center no-gutters pt-6 px-3">
     {% include card_horizontal.html
       src=publication.image.path
       alt=publication.image.alt
@@ -13,18 +14,19 @@ layout: "default_with_menu"
       subtitle=publication.subtitle
       content=publication.content
     %}
-  <article class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters m-0 container">
-    {% for post in posts %}
-      {% include cover_post/home.html
-        authors=post.authors
-        src=post.image.path
-        alt=post.image.alt
-        title=post.title
-        description=post.description
-        href=post.url
-      %}
-    {% endfor %}
-  </article>
+		<article class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters mt-6">
+			{% for post in posts %}
+				<div class="col pb-5 px-2">
+					{% include cover_post/home.html
+						authors=post.authors
+						src=post.image.path
+						alt=post.image.alt
+						title=post.title
+						description=post.description
+						href=post.url
+					%}
+				</div>
+			{% endfor %}
+		</article>
   </div>
-
 </div>
