@@ -1,7 +1,6 @@
 ---
 title: Support us
 post: 89b47820-ec68-4a0b-856a-733943e4ef4a
-link: https://one.compost.digital/support-us/
 draft: false
 order: 10
 layout: menu

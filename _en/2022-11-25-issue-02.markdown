@@ -1,6 +1,5 @@
 ---
 title: Issue 02
-link: https://two.compost.digital/
 draft: false
 order: 11
 layout: menu

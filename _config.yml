@@ -29,3 +29,10 @@ liquid:
   strict_filters: true
 ignored_layouts:
 - supporter
+linked_fields:
+- menu
+- item
+- items
+- post
+- authors
+- posts
