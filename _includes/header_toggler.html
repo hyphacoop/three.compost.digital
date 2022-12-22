@@ -40,7 +40,7 @@ Cabecera y menú con toggler
 				btn_alt=include.btn_alt %}
 		</div>
 
-		<div class="background-white pt-5 vh-100">
+		<div class="background-white pt-5">
 			{%- assign items = site.posts | where: "layout", "menu" -%}
 
 			{% for item in items %}
@@ -55,6 +55,11 @@ Cabecera y menú con toggler
 						{% include cover_post/menu.html authors=post.authors title=post.title src=post.image.path alt=post.image.description href=post.url %}
 					</div>
 				{% endfor %}
+
+				{% assign back_cover = site.posts | find: "layout", "back_cover" %}
+				<div class="col pb-5">
+					{% include cover_post/menu.html title=back_cover.title src=back_cover.image.path alt=back_cover.image.description href=back_cover.url %}
+				</div>
 			</div>
 
 			{%- assign footer = site.posts | find: "layout", "footer" %}
