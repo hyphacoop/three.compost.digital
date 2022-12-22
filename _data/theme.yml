@@ -4,6 +4,7 @@ spacers:
   20: "($spacer * 1.25)"
   32: "($spacer * 2)"
   50: "($spacer * 3.125)"
+  60: "($spacer * 3.75)"
   150: "9.375rem"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
