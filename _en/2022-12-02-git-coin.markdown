@@ -1,0 +1,16 @@
+---
+title: Git Coin
+image:
+  path: public/blpe1fx8pnw1c5xzknz2c31b4h8k/logo-gitcoin.png
+  description: ''
+link: https://gitcoin.co/
+draft: false
+order: 19
+layout: supporter
+uuid: 703e50a2-486b-4186-a7c4-d8c445bd9b72
+liquid: false
+usuaries:
+- 356
+last_modified_at: 2022-12-07 15:29:26.572327496 +00:00
+---
+
