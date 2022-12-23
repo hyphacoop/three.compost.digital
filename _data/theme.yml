@@ -89,6 +89,9 @@ opacities:
   4: "-20%"
   5: "0%"
 progress_border_radius: "0"
+transform_scales:
+  n8: "0.8"
+  1: "1"
 sizes:
   67px: "4.1875rem"
   44px: "2.75rem"
