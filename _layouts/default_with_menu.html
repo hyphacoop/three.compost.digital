@@ -1,11 +1,11 @@
 ---
 layout: "default"
 ---
+{%- assign footer = site.posts | find: "layout", "footer" -%}
+{%- assign about = site.posts | find: "layout", "about" -%}
+{%- assign support = site.posts | find: "layout", "support" -%}
 
-<div class="{% if page.layout == "home" and page.layout == "support" %}support-background{% endif %}">
-  {% assign about = site.posts | find: "layout", "about" %}
-  {% assign support = site.posts | find: "layout", "support" %}
-
+<div class="{{ site.data.theme.layout_class[page.layout] }}">
   {% include header_toggler.html
     logo_open_src=about.image_menu_open.path
     logo_open_alt=about.image_menu_open.description
@@ -18,6 +18,5 @@ layout: "default"
 
   {{ content }}
 
-  {%- assign footer = site.posts | find: "layout", "footer" -%}
   {% include footer.html src=footer.image.path col_1=footer.column_1 col_2=footer.column_1 col_3=footer.column_1 col_4=footer.column_1 %}
 </div>

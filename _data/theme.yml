@@ -52,6 +52,7 @@ font_sizes:
   19: "1.1875"
   25: "1.5625"
 sizes:
+sizes:
   67px: "4.1875rem"
   44px: "2.75rem"
   54px: "3.375rem"
@@ -60,6 +61,8 @@ sizes:
   74px: "4.625rem"
   221px: "13.8125rem"
   333px: "20.8125rem"
+  780px: "780px"
+  1200px: "78rem"
 directions:
 - "top"
 - "left"
@@ -92,16 +95,6 @@ progress_border_radius: "0"
 transform_scales:
   n8: "0.8"
   1: "1"
-sizes:
-  67px: "4.1875rem"
-  44px: "2.75rem"
-  54px: "3.375rem"
-  36px: "2.25rem"
-  49px: "3.0625rem"
-  74px: "4.625rem"
-  221px: "13.8125rem"
-  333px: "20.8125rem"
-  780px: "780px"
 directions:
 - "top"
 - "right"
@@ -112,6 +105,6 @@ container_max_widths:
   md: "768px"
   lg: "1200px"
   xl: "1201px"
-transform_scales:
-  n8: "0.8"
-  1: "1"
+layout_class:
+  support: "support_background"
+  home: "support_background"
