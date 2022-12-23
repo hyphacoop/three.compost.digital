@@ -24,7 +24,7 @@ La ficha de post en el índice de artículos.
 
 	{% include embed_responsive.html src=include.src width=700 x="700" y="350" alt=include.alt %}
 
-	<p class="{{ include.title_class }}">{{- include.title -}}</p>
+	{% include headings/h1.html text=include.title class=include.title_class %}
 
 	<p class="{{ include.author_class }}">
 		{% for author in include.authors %}
