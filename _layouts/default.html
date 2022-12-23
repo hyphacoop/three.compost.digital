@@ -18,13 +18,8 @@
     {% seo %}
   </head>
   <body>
-    {%- assign menus = site.posts | where: "layout", "menu" -%}
-    {% include header_toggler.html menus=menus %}
-
     <main tabindex="-1" role="main" id="content">
       {{ content }}
     </main>
-    {%- assign footer = site.posts | find: "layout", "footer" -%}
-    {% include footer.html src=footer.image.path col_1=footer.column_1 col_2=footer.column_1 col_3=footer.column_1 col_4=footer.column_1 %}
   </body>
 </html>

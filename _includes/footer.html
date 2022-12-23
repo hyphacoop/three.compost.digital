@@ -9,14 +9,14 @@ Footer
 {%- endcomment -%}
 
 <footer class="d-flex align-items-center justify-content-center" style="background: url('{{ include.src | default: 'public/footer.png' | uri_escape }}') top center; background-size: cover !important;">
-  <div class="row row-cols-md-1 row-cols-lg-3 justify-content-center container pt-150">
-    <div class="col-12">
-      {{ include.col_1 }}
+  <div class="row row-cols-md-1 row-cols-lg-3 align-items-center justify-content-center pt-150 f-14 no-gutters px-4" style="width: 1200px;">
+    <div class="col-12 px-3">
+      {{ include.col_1}}
     </div>
-    <div class="col-12">
-      {{ include.col_2 }}
+    <div class="col-12 px-3">
+      {{ include.col_2}}
     </div>
-    <div class="col-12">
+    <div class="col-12 px-3">
       <div class="row flex-row">
         <div class="col">
           {{ include.col_3 }}
