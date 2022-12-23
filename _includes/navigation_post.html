@@ -8,6 +8,8 @@ Los botones de navegación de los posts
 @param :href_previous [String] El link de Previous
 @param :href_home [String] El link de Home
 @param :href_next [String] El link de Next
+@param :alt_previous [String] El alt de Previous
+@param :alt_next [String] El alt de Next
 {%- endcomment -%}
 
 {% assign previous_class = include.href_previous | blank | value_if: "invisible" %}
@@ -15,22 +17,23 @@ Los botones de navegación de los posts
 
 <div class="d-flex align-items-center">
 	<div
-		class="mt-3"
+		class="mt-3 transform-scale-n8 transform-scale-hover-1"
 		{% unless previous_class %}
 			aria-hidden="true"
 		{% endunless %}>
-		{% include image_with_link.html src=include.src_previous alt=site.i18n.previous_page width=40 href=include.href_previous img_class="px-2" component_class=previous_class %}
-	</div>
-
-	<div>
-		{% include image_with_link.html src=include.src_home alt=site.i18n.home width=60 href=include.href_home img_class="px-2" %}
+		{% include image_with_link.html src=include.src_previous alt=include.alt_previous width=51 href=include.href_previous img_class="px-2" component_class=previous_class %}
 	</div>
 
 	<div
-		class="mt-3"
+		class="transform-scale-n8 transform-scale-hover-1">
+		{% include image_with_link.html src=include.src_home alt=site.i18n.home width=79 href=include.href_home img_class="px-2" %}
+	</div>
+
+	<div
+		class="mt-3 transform-scale-n8 transform-scale-hover-1"
 		{% unless next_class %}
 			aria-hidden="true"
 		{% endunless %}>
-		{% include image_with_link.html src=include.src_next alt=site.i18n.next_page width=40 href=include.href_next img_class="px-2" component_class=next_class %}
+		{% include image_with_link.html src=include.src_next alt=include.alt_next width=51 href=include.href_next img_class="px-2" component_class=next_class %}
 	</div>
 </div>

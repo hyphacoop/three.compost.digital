@@ -78,3 +78,6 @@ opacities:
   4: "-20%"
   5: "0%"
 progress_border_radius: "0"
+transform_scales:
+  n8: "0.8"
+  1: "1"
