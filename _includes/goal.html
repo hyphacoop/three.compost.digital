@@ -6,15 +6,16 @@ Las barras de progreso de los objetivos/metas
 @param :text [String] La descripción
 @param :value_now [Integer] El valor actual
 @param :value_max [Integer] El valor máximo
+@param :currency [String] La moneda
 {%- endcomment -%}
 
 {% assign width = include.value_now | divided_by: include.value_max | times: 100 %}
 
 <div class="mb-3">
 	<div class="progress position-relative border border-width-3 border-black">
-		<div class="progress-bar o-2" style="width: {{ width }}%" role="progressbar" aria-valuenow="{{ include.value_now }}" aria-valuemax="{{ include.value_max }}"></div>
+		<div class="progress-bar o-2" style="width: {{ width }}%" role="progressbar" aria-valuenow="{{ include.value_now }}" aria-valuemin="0" aria-valuemax="{{ include.value_max }}"></div>
 		<span class="d-flex position-absolute h-100 align-items-center font-weight-bold lead px-4">{{ include.title }}</span>
 	</div>
 
-	<p class="p-2"><strong>${{ include.value_max }}</strong> {{ include.text }}</p>
+	<p class="p-2"><strong>{{ include.currency }}{{ include.value_max | round }}</strong> {{ include.text }}</p>
 </div>
