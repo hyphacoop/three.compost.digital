@@ -31,8 +31,8 @@ font_family_sans_serif:
 font_family_monospace:
   type: "predefined_value"
   label:
-    en: "Select a typography for the site"
-    es: "Selecciona una tipografía para el sitio"
+    en: "Select a monospace typography for the site"
+    es: "Selecciona una tipografía monospace para el sitio"
   help:
     en: "If you want us to add support for a typography, please send us an e-mail"
     es: "Si quieres que agreguemos una tipografía, por favor envíanos un e-mail"
@@ -42,12 +42,12 @@ font_family_monospace:
   values:
     en:
       "": "Default"
-      Roboto: "Roboto Mono"
-      Open Sans: "Liberation Mono"
+      Roboto Mono: "Roboto Mono"
+      Liberation Mono: "Liberation Mono"
     es:
       "": "Default"
-      Roboto: "Roboto Mono"
-      Open Sans: "Liberation Mono"
+      Roboto Mono: "Roboto Mono"
+      Liberation Mono: "Liberation Mono"
 headings_font_family:
   type: "predefined_value"
   label:
