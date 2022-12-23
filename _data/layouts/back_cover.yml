@@ -10,6 +10,7 @@ title:
     en: ''
 image:
   type: 'image'
+  required: true
   path:
     label:
       es: 'Imagen principal'
