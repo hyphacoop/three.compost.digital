@@ -14,7 +14,7 @@ layout: "default"
 
 			<p class="lead-md pt-2">{{ page.description }}</p>
 
-			<div class="row row-cols-2 no-gutters justify-content-center my-5">
+			<div class="row row-cols-2 justify-content-center my-5">
 				{% for button in buttons %}
 					<div class="col p-1">{% include buttons/with_link.html href=button.url text=button.title %}</div>
 				{% endfor %}
