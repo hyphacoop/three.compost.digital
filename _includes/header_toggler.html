@@ -10,66 +10,77 @@ Cabecera y menú con toggler
 @param :btn_close_src [String] La imagen del botón con menú cerrado
 @param :btn_alt [String] El alt de la imagen del botón
 @param :btn_href [String] El link de la imagen del botón
+@param :background_src [String] La imagen de fondo del header
 {%- endcomment -%}
 
-<div class="d-flex position-relative background-black justify-content-between align-items-center p-3">
+<div class="position-relative background-black p-3 pb-7" style="background: url('{{ include.background_src | default: 'public/background-header.png' | uri_escape }}'); background-size: auto 100%; background-position: center bottom; width: 100%;">
+	<div class="d-flex justify-content-between align-items-center container mx-auto">
+		{% assign menu-id = page.uuid | prepend: 'r-' %}
 
-	{% assign menu-id = page.uuid | prepend: 'r-' %}
+		{%- capture menu_svg -%}
+			{% include menu_close.html class="w-36px w-md-54px" container_class="stroke-white" %}
+		{%- endcapture -%}
 
-	{%- capture menu_svg -%}
-		{% include menu_close.html class="w-36px w-md-54px" container_class="stroke-white" %}
-	{%- endcapture -%}
+		{% include toggler/toggler_label.html id=menu-id class="m-0" content=menu_svg %}
 
-	{% include toggler/toggler_label.html id=menu-id class="m-0" content=menu_svg %}
+		{% capture toggled_content %}
+			<div class="support-background p-3 border-bottom-dashed border-black">
+				<div class="d-flex justify-content-between align-items-center container mx-auto">
+					{% assign menu-id = page.uuid | prepend: 'r-' %}
+					{%- capture menu_svg -%}
+						{% include menu_open.html class="w-36px w-md-54px" container_class="fill-black" %}
+					{%- endcapture -%}
 
-	{% capture toggled_content %}
-		<div class="d-flex support-background justify-content-between align-items-center p-3 border-bottom-dashed border-black">
-			{% assign menu-id = page.uuid | prepend: 'r-' %}
-			{%- capture menu_svg -%}
-				{% include menu_open.html class="w-36px w-md-54px" container_class="fill-black" %}
-			{%- endcapture -%}
+					{% include toggler/toggler_label.html id=menu-id class="m-0" content=menu_svg %}
 
-			{% include toggler/toggler_label.html id=menu-id class="m-0" content=menu_svg %}
-
-			{% include
-				header.html
-				logo_src=include.logo_open_src
-				logo_alt=include.logo_open_alt
-				btn_src=include.btn_open_src
-				btn_href=include.btn_href
-				btn_alt=include.btn_alt %}
-		</div>
-
-		<div class="background-white pt-5 vh-100">
-			{%- assign items = site.posts | where: "layout", "menu" -%}
-
-			{% for item in items %}
-				{% include menu_item.html text=item.title href=item.post.url %}
-			{% endfor %}
-
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters mt-5 px-4">
-				{% assign posts = site.posts | where: "layout", "post" %}
-
-				{% for post in posts %}
-					<div class="col pb-5">
-						{% include cover_post/menu.html authors=post.authors title=post.title src=post.image.path alt=post.image.description href=post.url %}
-					</div>
-				{% endfor %}
+					{% include
+						header.html
+						logo_src=include.logo_open_src
+						logo_alt=include.logo_open_alt
+						btn_src=include.btn_open_src
+						btn_href=include.btn_href
+						btn_alt=include.btn_alt %}
+				</div>
 			</div>
 
-			{%- assign footer = site.posts | find: "layout", "footer" %}
+			<div class="background-white pt-5">
+				<div class="container mx-auto">
+					{%- assign items = site.posts | where: "layout", "menu" -%}
 
-			{% include footer.html col_1=footer.column_1 col_2=footer.column_2 col_3=footer.column_3 col_4=footer.column_4 src=footer.image.path %}
-		</div>
-	{% endcapture %}
+					{% for item in items %}
+						{% include menu_item.html text=item.title href=item.post.url %}
+					{% endfor %}
 
-	{% include toggler/toggler.html id=menu-id extra='data-action="toggle-media#toggle" data-menu-target="toggler"' toggled_content=toggled_content toggled_class="top-0 left-0 w-100 zindex-dropdown" %}
+					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters mt-5 px-4">
+						{% assign posts = site.posts | where: "layout", "post" %}
 
-	{% include
-		header.html
-		logo_src=include.logo_close_src
-		logo_alt=include.logo_close_alt
-		btn_src=include.btn_close_src
-		btn_href=include.btn_href
-		btn_alt=include.btn_alt %}
+						{% for post in posts %}
+							<div class="col pb-5">
+								{% include cover_post/menu.html authors=post.authors title=post.title src=post.image.path alt=post.image.description href=post.url %}
+							</div>
+						{% endfor %}
+
+						{% assign back_cover = site.posts | find: "layout", "back_cover" %}
+						<div class="col pb-5">
+							{% include cover_post/menu.html title=back_cover.title src=back_cover.image.path alt=back_cover.image.description href=back_cover.url %}
+						</div>
+					</div>
+				</div>
+
+				{%- assign footer = site.posts | find: "layout", "footer" %}
+
+				{% include footer.html col_1=footer.column_1 col_2=footer.column_2 col_3=footer.column_3 col_4=footer.column_4 src=footer.image.path %}
+			</div>
+		{% endcapture %}
+
+		{% include toggler/toggler.html id=menu-id extra='data-action="toggle-media#toggle" data-menu-target="toggler"' toggled_content=toggled_content toggled_class="top-0 left-0 w-100 zindex-dropdown" %}
+
+		{% include
+			header.html
+			logo_src=include.logo_close_src
+			logo_alt=include.logo_close_alt
+			btn_src=include.btn_close_src
+			btn_href=include.btn_href
+			btn_alt=include.btn_alt %}
+	</div>
 </div>
