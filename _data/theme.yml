@@ -1,10 +1,10 @@
 ---
 spacer: "1rem"
 spacers:
+  6: "($spacer * 6)"
   20: "($spacer * 1.25)"
   50: "($spacer * 3.125)"
   150: "9.375rem"
-  6: "($spacer * 6)"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
 btn_padding_y: "1.5rem"
@@ -40,10 +40,10 @@ display4_size: "1.875rem"
 enable_responsive_font_sizes: true
 lead_font_size: "1.3125rem"
 font_sizes:
-  19: "1.1875"
   14: "0.875"
   16: "1"
   17: "1.0625"
+  19: "1.1875"
   25: "1.5625"
 sizes:
   67px: "4.1875rem"
