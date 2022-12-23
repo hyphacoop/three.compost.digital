@@ -8,8 +8,8 @@ Footer
 @param :col_4 [HTML] Contenido
 {%- endcomment -%}
 
-<footer class="d-flex align-items-center justify-content-center" style="background: url('{{ include.src | default: 'public/footer.png' | uri_escape }}') top center; background-size: cover !important;">
-<div class="row row-cols-md-1 row-cols-lg-3 align-items-center justify-content-center container pt-150">
+<footer class="d-flex justify-content-center" style="background: url('{{ include.src | default: 'public/footer.png' | uri_escape }}') top center; background-size: cover !important;">
+<div class="row row-cols-md-1 row-cols-lg-3 justify-content-center container pt-150">
   <div class="col-12 content">
     {{ include.col_1}}
   </div>
