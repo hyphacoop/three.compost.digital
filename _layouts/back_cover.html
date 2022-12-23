@@ -9,7 +9,7 @@ layout: "default"
 {%- assign prev = page | prev: posts -%}
 {%- assign next = page | next: posts -%}
 
-<article id="{{ page.slug }}" class="container mx-auto my-4">
+<article id="{{ page.slug }}" class="mx-auto max-w-780px my-4">
   <div class="shadow-sm">
     {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 %}
   </div>
@@ -31,7 +31,7 @@ layout: "default"
       {% include headings/h2.html class="text-uppercase black hover-black letter-spacing-1" text=page.content_title %}
     </div>
 
-    <div class="source-serif lead pt-2">
+    <div class="source-serif lead pt-2 content">
       {{ content }}
     </div>
 
@@ -47,10 +47,12 @@ layout: "default"
       {% endfor %}
 		</div>
 
-    <p class="font-italic source-serif lead border-bottom border-gray border-width-2 py-3">{{ page.final_message }}</p>
+		{% unless page.final_message == empty %}
+      <p class="font-italic source-serif lead border-bottom border-gray border-width-2 py-3">{{ page.final_message }}</p>
+    {% endunless %}
   </div>
 
   <footer class="d-flex flex-column align-items-center">
-    {% include navegacion_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
+    {% include navigation_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
   </footer>
 </article>
