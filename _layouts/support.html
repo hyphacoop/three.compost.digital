@@ -13,10 +13,21 @@ layout: "default_with_menu"
 
 		<p class="lead-md pt-2">{{ page.description }}</p>
 
-		<div class="row row-cols-2 no-gutters justify-content-center my-5">
-			{% for button in buttons %}
-				<div class="col p-1">{% include buttons/with_link.html href=button.url text=button.title %}</div>
-			{% endfor %}
+			<div class="row row-cols-2 justify-content-center my-5">
+				{% for button in buttons %}
+					<div class="col p-1">{% include buttons/with_link.html href=button.url text=button.title %}</div>
+				{% endfor %}
+			</div>
+
+			<div class="lead-md pt-2">{{ page.section_1 }}</div>
+
+			<div class="">
+				{% for goal in goals %}
+					{% include goal.html title=goal.title text=goal.description value_now=1000 value_max=goal.value_max %}
+				{% endfor %}
+			</div>
+
+			<div class="lead-md pt-2">{{ page.section_2 }}</div>
 		</div>
 
 		<div class="lead-md pt-2">{{ page.section_1 }}</div>
