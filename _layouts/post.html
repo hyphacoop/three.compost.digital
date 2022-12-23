@@ -16,9 +16,11 @@ layout: "default_with_menu"
     {% include headings/h1.html class="text-uppercase black hover-black letter-spacing-1 font-weight-bold" text=page.title %}
 
     {% unless page.authors == empty %}
-      {% for author in authors %}
-        <p class="lead text-uppercase letter-spacing-3">{{ author.title }}</p>
-      {% endfor %}
+      <p class="lead text-uppercase letter-spacing-3">
+        {% for author in authors %}
+          {{ author.title }}
+        {% endfor %}
+      </p>
     {% endunless %}
 
     <div class="source-serif lead pt-2">
@@ -28,7 +30,13 @@ layout: "default_with_menu"
     </div>
   </div>
 
-  <footer class="d-flex flex-column align-items-center">
+  <footer class="d-flex flex-column align-items-center mt-60">
+    {% unless page.authors == empty %}
+      {% for author in authors %}
+        {% include biography.html text=author.content %}
+      {% endfor %}
+    {% endunless %}
+
     {% unless page.license == empty %}
       {% include license_block.html title=page.license content=about.license %}
     {% endunless %}
