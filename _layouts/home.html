@@ -4,9 +4,10 @@ layout: "default_with_menu"
 
 {%- assign publication = site.posts | find: "layout", "publication" -%}
 {%- assign posts = site.posts | where: "layout", "post" -%}
+{%- assign back_cover = site.posts | find: "layout", "back_cover" -%}
 
 <div class="support-background">
-  <div class="row justify-content-center no-gutters pt-6 px-3">
+  <div class="d-flex justify-content-center pt-6 px-3">
     {% include card_horizontal.html
       src=publication.image.path
       alt=publication.image.alt
@@ -28,7 +29,6 @@ layout: "default_with_menu"
 				</div>
 			{% endfor %}
 
-			{% assign back_cover = site.posts | find: "layout", "back_cover" %}
 			<div class="col pb-5 px-2">
 				{% include cover_post/home.html title=back_cover.title src=back_cover.image.path alt=back_cover.image.description href=back_cover.url description=back_cover.description %}
 			</div>
