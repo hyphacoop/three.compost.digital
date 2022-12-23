@@ -86,5 +86,5 @@ directions:
 - "bottom"
 - "left"
 layout_class:
-  support: "support_background"
-  home: "support_background"
+  support: "support-background"
+  home: "support-background"
