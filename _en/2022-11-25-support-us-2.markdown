@@ -3,22 +3,25 @@ title: Support Us
 description: We are building on the digital commons by publishing our work freely
   and stewarding tools for anyone to use. If you like what we’re doing, consider supporting
   us!
-section_1: <h2 id="digital-bake-sale">Digital Bake Sale</h2><p>We need your support
+section_1: <h2 id="digital-bake-sale">DIGITAL BAKE SALE</h2><p>We need your support
   to ensure the future sustainability of our magazine and <a href="https://distributed.press"
-  target="_blank">Distributed Press</a>.</p><p>Our magazine has CAD $7,325.64 in our
-  bank account as of Friday, November 25, 2022. We hope to raise $30,000 by August
-  1st of 2021 and before launching Issue Two.</p><p><a class="donation-button" href="https://one.compost.digital/support-us/#support-us">Contribute</a>
+  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Distributed Press</a>.</p><p>Our
+  magazine has CAD $7,325.64 in our bank account as of Friday, November 25, 2022.
+  We hope to raise $30,000 by August 1st of 2021 and before launching Issue Two.</p><p><a
+  href="https://one.compost.digital/support-us/#support-us" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Contribute</a>
   to help us hit our fundraising goals.</p>
 goals:
 - 2568b8c9-bf51-404c-8af5-621b8ee488bd
-section_2: "<p>\n\n<strong>$40000</strong> We'll run a half-day micro-conference with
-  \ncontributors and community. We'll discuss issues we face on the (D)Web \nand in
-  collective publishing.<br></p><h2 id=\"web-monetization\">Web Monetization</h2><p>Readers
-  shouldn’t have to wade through intrusive ads or paywalls to read this magazine.
-  We don’t want your data\n      nor do we want to restrict access to COMPOST. <a
-  href=\"https://webmonetization.org/\" target=\"_blank\">Web\n        Monetization</a>
-  is another way for\n      supporters like you to send us micropayments (fractions
-  of a cent) as you view this website.</p><p></p>"
+section_2: |-
+  <p>Beyond these goals, additional funds will give all contributors, artists, and designers a $200 bonus and any remaining funds will be used in the development of future COMPOST issues.</p><h2 id="web-monetization">WEB MONETIZATION</h2><p>Readers shouldn’t have to wade through intrusive ads or paywalls to read this magazine. We don’t want your data nor do we want to restrict access to COMPOST. <a href="https://webmonetization.org/" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Web Monetization</a> is another way for supporters like you to send us micropayments (fractions of a cent) as you view this website.</p><h3 id="how-does-it-work">How does it work?</h3><p>Web Monetization is an emerging standard for web browsers. At the moment, you need to download a browser extension to make it work. We’ve found that getting a <a href="https://coil.com/signup" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Coil membership</a> is the easiest way to get started with Web Monetization. With a $5 monthly membership, you can also support hundreds of other Web Monetization websites like <a href="https://cinnamon.video" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Cinnamon</a>, <a href="https://www.ampled.com" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Ampled</a>, <a href="https://eraseallkittens.com" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Erase All Kittens</a>, and <a href="https://www.ladyspikemedia.com" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Ladyspike Media</a>.</p><h3 id="setup-coil">Setup Coil</h3><table><tbody><tr>
+  <td><ol>
+  <li><p>Visit <a href="https://coil.com/signup" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">https://coil.com/signup</a> and signup.</p></li>
+  <li><p>Go to Settings and enter the "Membership" menu item.</p></li>
+  <li><p>Add your credit card and subscribe. It's $5 a month.</p></li>
+  <li><p>Download the extension for any browser of your choice.</p></li>
+  </ol></td>
+  <td><p></p></td>
+  </tr></tbody></table><p>If everything works, you’ll see the Web Monetization mushroom animating with a dollar sign at the top right corner of the screen.</p>
 order: 12
 draft: false
 layout: support
@@ -26,6 +29,7 @@ uuid: c9c98034-4130-4caa-b339-8c4d0d9cbc0f
 liquid: false
 usuaries:
 - 356
-last_modified_at: 2022-12-20 19:10:46.108943406 +00:00
+- 534
+last_modified_at: 2022-12-26 15:03:22.757268321 +00:00
 ---
 
