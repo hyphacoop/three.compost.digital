@@ -13,7 +13,8 @@ uuid: a741354e-b1cf-42cd-9419-c3d3322b9f1d
 liquid: false
 usuaries:
 - 27
-last_modified_at: 2022-12-26 14:58:42.219845615 +00:00
+- 534
+last_modified_at: 2022-12-26 16:41:54.218080867 +00:00
 ---
 
-<p>is an artist and designer based in Bangalore. She mostly likes to cook, sew and dream up ways to smash the patriarchy.</p>
+<p><strong>Eeshita</strong> is an artist and designer based in Bangalore. She mostly likes to cook, sew and dream up ways to smash the patriarchy.</p>
