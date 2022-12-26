@@ -16,15 +16,15 @@ column_2: <p><strong>COMPOST is published to the web and <a href="https://getdwe
   otherwise stated, all content on this website is licensed under a<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"
   rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Creative Commons
   Attribution-<br><br>ShareAlike 4.0 International license</a>.</p>
-column_3: <p><strong>Social Web</strong><br><a href="https://www.are.na/compost/"
-  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Are.na</a><br><a
-  href="https://social.coop/@COMPOST" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Mastodon</a><br><a
-  href="https://www.twitter.com/COMPOSTmag" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Twitter</a><br><a
-  href="https://github.com/hyphacoop/two.compost.digital" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">GitHub</a></p><p><br><strong>Keep
-  in touch</strong> <br><a href="https://link.hypha.coop/compost-newsletter" rel="noopener"
-  referrerpolicy="strict-origin-when-cross-origin">Join our newsletter</a> <br><a
+column_3: <p><strong>Social Web</strong></p><p><a href="https://www.are.na/compost/"
+  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Are.na</a></p><p><a
+  href="https://social.coop/@COMPOST" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Mastodon</a></p><p><a
+  href="https://www.twitter.com/COMPOSTmag" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Twitter</a></p><p><a
+  href="https://github.com/hyphacoop/two.compost.digital" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">GitHub</a></p><p><strong>Keep
+  in touch</strong></p><p><a href="https://link.hypha.coop/compost-newsletter" rel="noopener"
+  referrerpolicy="strict-origin-when-cross-origin">Join our newsletter</a></p><p><a
   href="https://github.com/hyphacoop/distributed-press-organizing/wiki" rel="noopener"
-  referrerpolicy="strict-origin-when-cross-origin">Read our Wiki</a> <a href="mailto:hello@compost.digital"
+  referrerpolicy="strict-origin-when-cross-origin">Read our Wiki</a></p><p><a href="mailto:hello@compost.digital"
   rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Email us</a></p>
 column_4: <p><strong>Support Us</strong></p><p><a href="https://two.compost.digital/support-us/#web-monetization"
   rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Web Monetization</a></p><p><a
@@ -40,6 +40,6 @@ liquid: false
 usuaries:
 - 356
 - 534
-last_modified_at: 2022-12-26 16:32:36.997087710 +00:00
+last_modified_at: 2022-12-26 16:34:11.811542027 +00:00
 ---
 
