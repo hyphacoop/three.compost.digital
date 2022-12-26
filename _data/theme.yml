@@ -88,3 +88,4 @@ directions:
 layout_class:
   support: "support-background"
   home: "support-background"
+  about: "support-background"
