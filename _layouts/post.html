@@ -9,7 +9,7 @@ layout: "default_with_menu"
 {%- assign prev = page | prev: posts -%}
 {%- assign next = page | next: posts -%}
 
-<article id="{{ page.slug }}" class="mx-auto max-w-780px my-4">
+<article id="{{ page.slug }}" class="container mx-auto max-w-780px my-4">
   {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 component_class="shadow-sm" %}
 
   <div class="content mt-5">
@@ -17,22 +17,20 @@ layout: "default_with_menu"
 
     {% unless page.authors == empty %}
       <p class="lead text-uppercase letter-spacing-3">
-        {% for author in authors %}
+        {% for author in page.authors %}
           {{ author.title }}
         {% endfor %}
       </p>
     {% endunless %}
 
-    <div class="source-serif lead pt-2">
-      <p>{{ page.description }}</p>
-
+    <div class="source-serif lead-md pt-2">
       {{ content }}
     </div>
   </div>
 
   <footer class="d-flex flex-column align-items-center mt-60">
     {% unless page.authors == empty %}
-      {% for author in authors %}
+      {% for author in page.authors %}
         {% include biography.html text=author.content %}
       {% endfor %}
     {% endunless %}
