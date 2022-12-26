@@ -1,8 +1,7 @@
 ---
 title: Mrinalini Sebastian
 alias: Mrinalini Sebastian
-projects:
-- https://celinenguyen.com/
+projects: []
 posts:
 - 2f8cf6d6-2e93-4f0a-9acb-953647a17e0e
 draft: false
@@ -13,7 +12,7 @@ liquid: false
 usuaries:
 - 27
 - 534
-last_modified_at: 2022-12-26 16:42:17.144708699 +00:00
+last_modified_at: 2022-12-26 16:45:40.480849084 +00:00
 ---
 
 <p><strong>Mrinalini Sebastian</strong> from Puttur, Karnataka, is an independent researcher who is interested in questions of history, community, gender, and critical theories. She works part-time as the Site Coordinator of Harcum College Partnership Site at Grace-Trinity UCC, Philadelphia and mentors a small group of pre-school teachers who are working towards their Associate degree.</p>
