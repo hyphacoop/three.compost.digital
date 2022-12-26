@@ -2,8 +2,7 @@
 title: Eeshita Kapadiya
 alias: Eeshita
 projects:
-- https://celinenguyen.com/
-- https://www.are.na/celine-nguyen/
+- https://killjoycooking.network/
 posts:
 - 2f8cf6d6-2e93-4f0a-9acb-953647a17e0e
 draft: false
@@ -14,7 +13,7 @@ liquid: false
 usuaries:
 - 27
 - 534
-last_modified_at: 2022-12-26 16:41:54.218080867 +00:00
+last_modified_at: 2022-12-26 16:45:12.142277035 +00:00
 ---
 
 <p><strong>Eeshita</strong> is an artist and designer based in Bangalore. She mostly likes to cook, sew and dream up ways to smash the patriarchy.</p>
