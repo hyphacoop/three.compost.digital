@@ -7,13 +7,13 @@ layout: "default_with_menu"
 {%- assign buttons = site.posts | where: "layout", "button" -%}
 {%- assign goals = site.posts | where: "layout", "goal" -%}
 
-<article id="{{ page.slug }}" class="mx-auto max-w-780px py-4">
-	<div class="content mt-5">
+<article id="{{ page.slug }}" class="container mx-auto max-w-780px py-4">
+	<div class="content mt-lg-4">
 		{% include headings/h1.html class="text-uppercase black hover-black letter-spacing-1 font-weight-bold" text=page.title %}
 
 		<p class="lead-md pt-2">{{ page.description }}</p>
 
-		<div class="row row-cols-2 no-gutters justify-content-center my-5">
+		<div class="row row-cols-2 justify-content-center my-5 no-gutters">
 			{% for button in buttons %}
 				<div class="col p-1">{% include buttons/with_link.html href=button.url text=button.title %}</div>
 			{% endfor %}
