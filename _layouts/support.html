@@ -29,15 +29,5 @@ layout: "default_with_menu"
 
 			<div class="lead-md pt-2">{{ page.section_2 }}</div>
 		</div>
-
-		<div class="lead-md pt-2">{{ page.section_1 }}</div>
-
-		<div class="">
-			{% for goal in goals %}
-				{% include goal.html title=goal.title text=goal.description value_now=1000 value_max=goal.value_max %}
-			{% endfor %}
-		</div>
-
-		<div class="lead-md pt-2">{{ page.section_2 }}</div>
 	</div>
 </article>
