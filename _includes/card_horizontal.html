@@ -9,18 +9,18 @@ Card horizontal
 @param :content [string] Contenido
 {%- endcomment -%}
 <div class="row justify-content-center container-lg mx-auto">
-  <div class="col col-md-3">
+  <div class="col-12 col-md-3">
     {% include picture.html src=include.src width=500 img_class="w-100 object-fit-cover" %}
   </div>
 
-  <div class="col col-md-9 pl-md-5 pt-5 pt-md-0">
+  <div class="col-12 col-md-9 pl-md-5 pt-5 pt-md-0">
     <div class="">
       {% include headings/h1.html text=include.title class="font-italic border-width-2 border-black border-bottom-dashed display-3 work-sans" %}
     </div>
 
     <p class="my-3 text-monospace lead">{{ include.subtitle }}</p>
 
-    <div class="content lead">
+    <div class="content f-19 lead-md">
       {{ include.content }}
     </div>
   </div>
