@@ -1,5 +1,8 @@
 ---
 title: Footer
+background_image:
+  path: public/zng3uejinolcua379p9y47zyramz/footer.png
+  description: Footer background
 column_1: <p><strong>COMPOST is a magazine about the digital commons.</strong></p><p>Issue
   02, September 2021.</p><p>We are a project by <a href="https://distributed.press/"
   rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Distributed Press
@@ -40,6 +43,6 @@ liquid: false
 usuaries:
 - 356
 - 534
-last_modified_at: 2022-12-26 16:34:11.811542027 +00:00
+last_modified_at: 2022-12-26 16:34:54.785480504 +00:00
 ---
 
