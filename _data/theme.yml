@@ -97,3 +97,7 @@ directions:
 - "right"
 - "bottom"
 - "left"
+background_sizes:
+  auto-100: "auto 100%"
+background_positions:
+  cb: "center bottom"
