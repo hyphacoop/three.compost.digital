@@ -22,7 +22,7 @@ layout: "default_with_menu"
     {% unless page.authors == empty %}
       <p class="lead text-uppercase letter-spacing-3">
         {% for author in page.authors %}
-          {{ author.title }}
+          {{ author.title }}{% unless forloop.last %} {{ site.i18n.and }} {% endunless %}
         {% endfor %}
       </p>
     {% endunless %}
