@@ -1,6 +1,7 @@
 ---
 - "content"
 - "font_sizes"
+- "letter_spacing"
 - "colors"
 - "picture"
 - "embed_responsive"
@@ -12,8 +13,7 @@
 - "card_horizontal"
 - "goal"
 - "menu_item"
-- "biography"
-- "letter_spacing"
 - "cover_post"
 - "goal"
 - "btn_header"
+- "author_block"
