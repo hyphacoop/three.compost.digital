@@ -25,7 +25,15 @@ tasks:
     deps:
     - "pnpm"
     cmds:
-    - "haini.sh ./node_modules/.bin/esbuild _packs/entry.js --analyze --bundle --minify --sourcemap --outdir=assets/js/ --entry-names=\"[name]-[hash]\" --metafile=_data/manifest.json"
+    - "git rm -f assets/js/pack.* || true"
+    - "haini.sh ./node_modules/.bin/esbuild _packs/entry.js --analyze --bundle --minify --sourcemap --outdir=assets/js/ --entry-names=\"pack.[hash]\" --metafile=_data/manifest.json"
+    - "git add _data/manifest.json assets/js/pack.*"
+    - "git commit -m \"[skip ci] JS\""
+    - task: "notify"
+    sources:
+    - "_packs/**/*.js"
+    generates:
+    - "_data/manifest.json"
   watch:
     desc: "Desarrollar JavaScript"
     deps:
