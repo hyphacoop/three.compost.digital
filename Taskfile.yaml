@@ -20,6 +20,18 @@ tasks:
     silent: true
     cmds:
     - "echo https://{{.DOMAIN}}:4000/"
+  pack:
+    desc: "Compila JavaScript"
+    deps:
+    - "pnpm"
+    cmds:
+    - "haini.sh ./node_modules/.bin/esbuild _packs/entry.js --analyze --bundle --minify --sourcemap --outdir=assets/js/ --entry-names=\"[name]-[hash]\" --metafile=_data/manifest.json"
+  watch:
+    desc: "Desarrollar JavaScript"
+    deps:
+    - "pnpm"
+    cmds:
+    - "haini.sh ./node_modules/.bin/esbuild _packs/entry.js --analyze --bundle --outfile=pack.js --serve=65001"
   build:
     desc: "Genera el sitio en entorno de desarrollo"
     deps:
