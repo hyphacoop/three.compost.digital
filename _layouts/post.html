@@ -15,6 +15,10 @@ layout: "default_with_menu"
   <div class="content mt-5">
     {% include headings/h1.html class="text-uppercase black hover-black letter-spacing-1 font-weight-bold" text=page.title %}
 
+    {% if page.subtitle %}
+      {% include headings/h2.html class="text-uppercase letter-spacing-1" %}
+    {% endif %}
+
     {% unless page.authors == empty %}
       <p class="lead text-uppercase letter-spacing-3">
         {% for author in page.authors %}
@@ -29,15 +33,15 @@ layout: "default_with_menu"
   </div>
 
   <footer class="d-flex flex-column align-items-center mt-60">
-    {% unless page.authors == empty %}
+    {% unless page.authors == empty or page.show_biography == false  %}
       {% for author in page.authors %}
         {% include biography.html text=author.content %}
       {% endfor %}
     {% endunless %}
 
-    {% unless page.license == empty %}
+    {% if page.license %}
       {% include license_block.html title=page.license content=about.license %}
-    {% endunless %}
+    {% endif %}
 
     {% include navigation_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
   </footer>
