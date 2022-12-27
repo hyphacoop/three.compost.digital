@@ -171,13 +171,13 @@
       }
     }
 
-    @each $background-size in $background-sizes {
+    @each $background-size, $value in $background-sizes {
       /// Tamaño de imagen de fondo
       ///
       /// @example html
       ///   <div class="background-size-md-cover"></div>
       .background-size#{$infix}-#{$background-size} {
-        background-size: $background-size !important;
+        background-size: $value !important;
       }
     }
 

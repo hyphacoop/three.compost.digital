@@ -90,8 +90,8 @@ layout_class:
   home: "support-background"
   about: "support-background"
 background_sizes:
-- "cover"
-- "auto"
+  cover: "cover"
+  auto: "auto"
 background_positions:
   tl: "top left"
   tr: "top right"
