@@ -1,9 +1,8 @@
 ---
 title: Kola Heyward - Rotimi
-alias: Celine
+alias: Kola
 projects:
-- https://celinenguyen.com/
-- https://www.are.na/celine-nguyen/
+- https://www.kolaheywardrotimi.com/
 posts:
 - 4df3cc40-0b0c-4a38-835d-fa4a69f991bf
 draft: false
@@ -13,7 +12,8 @@ uuid: 32a7b17c-8a97-45ca-8939-2d6822d2bf66
 liquid: false
 usuaries:
 - 356
-last_modified_at: 2022-12-07 15:29:26.374939612 +00:00
+- 534
+last_modified_at: 2022-12-26 16:44:10.319798682 +00:00
 ---
 
-<p><em>Kala</em> is a writer and new media artist/schalar from Durham, NC. He is currently a Faculty Research Assistant at the University of Maryland's African American History, Culture, and Digital Humanities initiative (AADHum), where he studies how different societies engage with and creat virtual spaces.</p>
+<p><strong>Kola</strong> is a writer and new media artist/scholar from Durham, NC. He is currently a Faculty Research Assistant at the University of Maryland’s African American History, Culture, and Digital Humanities initiative (AADHum), where he studies how different societies engage with and create virtual spaces.</p>
