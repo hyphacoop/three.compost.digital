@@ -181,16 +181,19 @@
       }
     }
 
-    @each $background-position, $value in $background-positions {
-      /// Posición de imagen de fondo
-      ///
-      /// @example html
-      ///   <div class="background-position-md-tl"></div>
-      .background-position#{$infix}-#{$background-position} {
-        background-position: $value !important;
+    @each $x in $background-positions-x {
+      @each $y in $background-positions-y {
+        .background-position#{$infix}-#{$x}-#{$y} {
+          background-position: $x $y;
+        }
       }
     }
 
+    @each $background-image, $value in $background-images {
+      .background-image#{$infix}-#{$background-image} {
+        background-image: url("#{$value}");
+      }
+    }
   }
 }
 
