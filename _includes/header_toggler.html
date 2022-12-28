@@ -10,7 +10,7 @@ Cabecera y menú con toggler
 @param :btn_close_src [String] La imagen del botón con menú cerrado
 @param :btn_alt [String] El alt de la imagen del botón
 @param :btn_href [String] El link de la imagen del botón
-@param :background_src [String] La imagen de fondo del header
+@param :background_class [String] Las clases de la imagen de fondo del header
 {%- endcomment -%}
 
 {%- assign menu_id = menu | prepend: 'r-' -%}
@@ -19,7 +19,7 @@ Cabecera y menú con toggler
 {%- assign back_cover = site.posts | find: "layout", "back_cover" -%}
 {%- assign footer = site.posts | find: "layout", "footer" -%}
 
-<div class="position-relative background-black p-3 pb-7" style="background: url('{{ include.background_src | default: 'public/background-header.png' | uri_escape }}'); background-size: auto 100%; background-position: center bottom; width: 100%;">
+<div class="position-relative p-3 {{ include.background_class }}">
 	<div class="d-flex justify-content-between align-items-center container-lg mx-auto">
 		{%- capture menu_svg -%}
 			{% include menu_close.html class="w-36px w-md-54px" container_class="stroke-white" %}

@@ -3,9 +3,11 @@
 
 {%- assign theme = site.posts | find: "layout", "theme" -%}
 {%- assign footer = site.posts | find: "layout", "footer" -%}
+{%- assign about = site.posts | find: "layout", "about" -%}
 
 $background-site: '../../{{ theme.body_image.path | default: "public/background-dithered.jpg" | uri_escape }}';
 $background-footer: '../../{{ footer.background_image.path | default: "public/footer.png" | uri_escape }}';
+$background-menu: '../../{{ about.background_image.path | default: "public/background_header.png" | uri_escape }}';
 
 {{ theme | yaml_to_scss: site.data.layouts.theme }}
 {{ site.data.theme | yaml_to_scss }}

@@ -113,11 +113,15 @@ background_sizes:
   cover: "cover"
   auto: "auto"
   contain: "contain"
+  auto-100: "auto 100%"
 background_positions_x:
 - "top"
+- "center"
 background_positions_y:
 - "left"
 - "right"
+- "bottom"
 background_images:
   site: "$background-site"
   footer: "$background-footer"
+  menu: "$background-menu"
