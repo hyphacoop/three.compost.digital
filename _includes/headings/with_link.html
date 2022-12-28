@@ -9,7 +9,7 @@ La base para un encabezado
 
 {%- assign slug = include.text | slugify -%}
 <h{{ include.level }} id="{{ slug }}">
-  <a class="{{ include.class }}" href="#{{ slug }}">
+  <a class="{{ include.class }}" href="#{{ slug }}" data-turbo="false">
     {{- include.text -}}
   </a>
 </h{{ include.level }}>

@@ -37,6 +37,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-brotli'
   spec.add_runtime_dependency 'jekyll-data'
   spec.add_runtime_dependency 'jekyll-drafts-as-metadata'
+  spec.add_runtime_dependency 'jekyll-env'
   spec.add_runtime_dependency 'jekyll-embed-urls'
   spec.add_runtime_dependency 'jekyll-gzip'
   spec.add_runtime_dependency 'jekyll-hardlinks'

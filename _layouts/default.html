@@ -11,6 +11,17 @@
 
     <link href="assets/css/styles.css?{{ site.time | date: '%s' }}" rel="stylesheet" data-turbo-track="reload">
 
+    {%- include script.html src="assets/js/env.js" -%}
+    {%- if jekyll.environment == "production" -%}
+      {%- for pack in site.data.manifest.outputs -%}
+        {%- unless pack[1].entryPoint -%}{%- continue -%}{%- endunless -%}
+        {%- assign src = pack[0] -%}
+        {%- include script.html src=src -%}
+      {%- endfor -%}
+    {%- else -%}
+      {%- include script.html src="pack.js" -%}
+    {%- endif -%}
+
     <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
     <link rel="alternate icon" href="public/favicon.ico">
     <link rel="mask-icon" href="public/favicon.svg" color="white">
@@ -18,6 +29,8 @@
     {% seo %}
   </head>
   <body>
+    {% include device_detector.html %}
+
     <main tabindex="-1" role="main" id="content">
       {{ content }}
     </main>
