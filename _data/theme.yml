@@ -99,5 +99,9 @@ directions:
 - "left"
 background_sizes:
   auto-100: "auto 100%"
-background_positions:
-  cb: "center bottom"
+background_positions_x:
+- center
+background_positions_y:
+- bottom
+background_images:
+  menu: "$background-menu"
