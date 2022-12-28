@@ -106,6 +106,18 @@ container_max_widths:
   lg: "1200px"
   xl: "1201px"
 layout_class:
-  support: "support-background"
-  home: "support-background"
-  about: "support-background"
+ support: "background-image-site background-size-contain w-100"
+ home: "background-image-site background-size-contain w-100"
+ about: "background-image-site background-size-contain w-100"
+background_sizes:
+  cover: "cover"
+  auto: "auto"
+  contain: "contain"
+background_positions_x:
+- "top"
+background_positions_y:
+- "left"
+- "right"
+background_images:
+  site: "$background-site"
+  footer: "$background-footer"
