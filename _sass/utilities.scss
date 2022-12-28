@@ -190,6 +190,12 @@
         background-position: $value !important;
       }
     }
+
+    @each $background-image, $value in $background-images {
+      .background-image#{$infix}-#{$background-image} {
+        background-image: url("#{$value}");
+      }
+    }
   }
 }
 

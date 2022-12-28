@@ -4,8 +4,9 @@ layout: "default"
 {%- assign footer = site.posts | find: "layout", "footer" -%}
 {%- assign about = site.posts | find: "layout", "about" -%}
 {%- assign support = site.posts | find: "layout", "support" -%}
+{%- assign theme = site.posts | find: "layout", "theme" -%}
 
-<div class="{{ site.data.theme.layout_class[page.layout] }}">
+<div class="background-size-contain w-100 background-image-fondo">
   {% include header_toggler.html
     logo_open_src=about.image_menu_open.path
     logo_open_alt=about.image_menu_open.description

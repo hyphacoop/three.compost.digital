@@ -1,7 +1,13 @@
 ---
 ---
 
-{{ site.posts | find: "layout", "theme" | yaml_to_scss: site.data.layouts.theme }}
+{% assign theme = site.posts | find: "layout", "theme" %}
+
+$background-image: '{{ theme.body_image.path | default: "public/background-dithered.jpg" | uri_escape }}';
+
+@debug $background-image;
+
+{{ theme | yaml_to_scss: site.data.layouts.theme }}
 {{ site.data.theme | yaml_to_scss }}
 
 @import "bootstrap/scss/bootstrap";
