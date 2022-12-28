@@ -93,9 +93,11 @@ background_sizes:
   cover: "cover"
   auto: "auto"
   contain: "contain"
-background_positions:
-  tl: "top left"
-  tr: "top right"
+background_positions_x:
+- "top"
+background_positions_y:
+- "left"
+- "right"
 background_images:
   site: "$background-site"
   footer: "$background-footer"
