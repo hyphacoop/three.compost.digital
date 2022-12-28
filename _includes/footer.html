@@ -1,14 +1,14 @@
 {%- comment -%}
 
 Footer
-@param :src [string] Imagen de background
+
 @param :col_1 [HTML] Contenido
 @param :col_2 [HTML] Contenido
 @param :col_3 [HTML] Contenido
 @param :col_4 [HTML] Contenido
 {%- endcomment -%}
 
-<footer class="d-flex justify-content-center background-size-cover background-position-tl" style="background: url('{{ include.src | uri_escape }}')">
+<footer class="d-flex justify-content-center background-size-cover background-position-tl background-image-footer">
   <div class="row row-cols-md-1 row-cols-lg-3 justify-content-center container-lg mx-auto pt-150 pb-5 f-14 px-4">
     <div class="col-12 content px-3">
       {{ include.col_1}}
