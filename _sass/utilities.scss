@@ -119,7 +119,7 @@
     }
 
     .lead#{$infix} {
-      font-size: $lead-font-size;
+      font-size: $lead-font-size !important;
     }
 
     /// Poder aumentar o disminuir el alto de la tipografía.
@@ -203,6 +203,10 @@
 
 .work-sans {
   font-family: 'Work Sans';
+}
+
+.source-serif {
+  font-family: 'Source Serif 4';
 }
 
 .zindex-dropdown { z-index: 1000; }
