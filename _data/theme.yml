@@ -4,6 +4,7 @@ spacers:
   20: "($spacer * 1.25)"
   50: "($spacer * 3.125)"
   150: "9.375rem"
+  7: "($spacer * 7)"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
 btn_padding_y: "1.5rem"
@@ -41,6 +42,9 @@ lead_font_size: "1.3125rem"
 font_sizes:
   19: "1.1875"
   14: "0.875"
+  16: "1"
+  17: "1.0625"
+  25: "1.5625"
 sizes:
   67px: "4.1875rem"
   44px: "2.75rem"
@@ -50,6 +54,7 @@ sizes:
   74px: "4.625rem"
   221px: "13.8125rem"
   333px: "20.8125rem"
+  1200px: "78rem"
 directions:
 - "top"
 - "left"
@@ -79,17 +84,28 @@ opacities:
   4: "-20%"
   5: "0%"
 progress_border_radius: "0"
-sizes:
-  67px: "4.1875rem"
-  44px: "2.75rem"
-  54px: "3.375rem"
-  36px: "2.25rem"
-  49px: "3.0625rem"
-  74px: "4.625rem"
-  221px: "13.8125rem"
-  333px: "20.8125rem"
 directions:
 - "top"
 - "right"
 - "bottom"
 - "left"
+background_sizes:
+  auto-100: "auto 100%"
+  cover: "cover"
+  auto: "auto"
+  contain: "contain"
+background_positions_x:
+- "center"
+- "top"
+background_positions_y:
+- "bottom"
+- "left"
+- "right"
+background_images:
+  menu: "$background-menu"
+  site: "$background-site"
+  footer: "$background-footer"
+layout_class:
+ support: "background-image-site background-size-contain w-100"
+ home: "background-image-site background-size-contain w-100"
+ about: "background-image-site background-size-contain w-100"

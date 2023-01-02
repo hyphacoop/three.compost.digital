@@ -3,3 +3,15 @@ locale: "Castellano"
 dir: "ltr"
 layouts:
   supporter: "Patrocinador"
+support_alt: "Hongo"
+and: "y"
+device_detector:
+  outline: Bordes
+  get_help: Ayuda
+  help: |
+    Si encuentras un problema, por favor toma una captura de pantalla
+    con esta información visible.  Nos ayuda a resolverlos.
+
+    Una vez publiquemos el sitio, eliminaremos este recuadro.
+
+    Usa el mismo botón para cerrar este mensaje.

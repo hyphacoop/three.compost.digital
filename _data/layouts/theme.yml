@@ -213,6 +213,22 @@ mark_bg:
   default:
     es: "#fcf8e3"
     en: "#fcf8e3"
+body_image:
+  type: 'image'
+  path:
+    label:
+      es: 'Imagen de fondo del sitio'
+      en: 'Site´s background image'
+    help:
+      es: ''
+      en: ''
+  description:
+    label:
+      es: 'Descripción de la imagen de fondo'
+      en: 'Background image description'
+    help:
+      es: ''
+      en: ''
 order:
   type: "order"
   label:
