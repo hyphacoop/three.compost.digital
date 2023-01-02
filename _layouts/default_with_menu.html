@@ -2,19 +2,22 @@
 layout: "default"
 ---
 
-{% assign about = site.posts | find: "layout", "about" %}
-{% assign support = site.posts | find: "layout", "support" %}
+{%- assign footer = site.posts | find: "layout", "footer" -%}
+{%- assign about = site.posts | find: "layout", "about" -%}
+{%- assign support = site.posts | find: "layout", "support" -%}
 
-{% include header_toggler.html
-  logo_open_src=about.image_menu_open.path
-  logo_open_alt=about.image_menu_open.description
-  btn_open_src="public/mushroom_open.gif"
-  logo_close_src=about.image_menu_close.path
-  logo_close_alt=about.image_menu_close.description
-  btn_close_src="public/mushroom_close.gif"
-  btn_href=support.url
-  btn_alt=site.i18n.support_alt
-  background_class="pb-7 background-image-menu background-position-center-bottom w-100 background-size-auto-100" %}
+<div class="{{ site.data.theme.layout_class[page.layout] }}">
+  {% include header_toggler.html
+    logo_open_src=about.image_menu_open.path
+    logo_open_alt=about.image_menu_open.description
+    btn_open_src="public/mushroom_open.gif"
+    logo_close_src=about.image_menu_close.path
+    logo_close_alt=about.image_menu_close.description
+    btn_close_src="public/mushroom_close.gif"
+    btn_href=support.url
+    btn_alt=site.i18n.support_alt %}
 
-{{ content }}
+  {{ content }}
 
+  {% include footer.html col_1=footer.column_1 col_2=footer.column_2 col_3=footer.column_3 col_4=footer.column_4 %}
+</div>
