@@ -6,6 +6,8 @@ next_page: "Next page"
 home: "Home"
 layouts:
   supporter: "Sponsor"
+support_alt: "Mushroom"
+and: "and"
 device_detector:
   outline: Outline
   get_help: Help
