@@ -38,6 +38,11 @@ Cabecera y menú con toggler
 				btn_class="w-44px w-md-67px"
 				btn_width=67 %}
 		</div>
+		<div class="background-white">
+			{% for menu in menus %}
+				{% include menu_item.html text=menu.title href=menu.post.url %}
+			{% endfor %}
+		</div>
 	</div>
 
 	{% include

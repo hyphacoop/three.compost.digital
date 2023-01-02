@@ -50,6 +50,7 @@ sizes:
   74px: "4.625rem"
   221px: "13.8125rem"
   333px: "20.8125rem"
+  1200px: "78rem"
 directions:
 - "top"
 - "left"
@@ -79,17 +80,24 @@ opacities:
   4: "-20%"
   5: "0%"
 progress_border_radius: "0"
-sizes:
-  67px: "4.1875rem"
-  44px: "2.75rem"
-  54px: "3.375rem"
-  36px: "2.25rem"
-  49px: "3.0625rem"
-  74px: "4.625rem"
-  221px: "13.8125rem"
-  333px: "20.8125rem"
 directions:
 - "top"
 - "right"
 - "bottom"
 - "left"
+layout_class:
+ support: "background-image-site background-size-contain w-100"
+ home: "background-image-site background-size-contain w-100"
+ about: "background-image-site background-size-contain w-100"
+background_sizes:
+  cover: "cover"
+  auto: "auto"
+  contain: "contain"
+background_positions_x:
+- "top"
+background_positions_y:
+- "left"
+- "right"
+background_images:
+  site: "$background-site"
+  footer: "$background-footer"
