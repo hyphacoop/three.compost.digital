@@ -10,6 +10,7 @@ locales:
 - "en"
 - "es"
 plugins:
+- "jekyll-env"
 - "jekyll-hardlinks"
 - "jekyll-drafts-as-metadata"
 - "jekyll-locales"
@@ -30,5 +31,9 @@ liquid:
 ignored_layouts:
 - supporter
 linked_fields:
+- menu
+- item
+- items
 - post
-- authors 
+- authors
+- posts

@@ -3,18 +3,26 @@ title:
   required: true
   label:
     es: 'Título del objetivo'
-    en: 'Objetive title'
+    en: 'Goal title'
   help:
     es:
     en:
-content:
-  type: new_content
+description:
+  type: text
   label:
     en: Objective section content
     es: Sección de contenido para el objetivo
   help:
-    en: Content that can have only text
-    es: Contenido que puede tener sólo texto
+    en: ''
+    es: ''
+value_max:
+  type: float
+  label:
+    en: The maximum value of the goal
+    es: El valor máximo del objetivo
+  help:
+    en: Content that can have only numbers
+    es: Contenido que puede tener sólo números
 goal:
   type: belongs_to
   inverse: goals

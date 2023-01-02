@@ -6,4 +6,15 @@ next_page: "Next page"
 home: "Home"
 layouts:
   supporter: "Sponsor"
-and: and
+support_alt: "Mushroom"
+and: "and"
+device_detector:
+  outline: Outline
+  get_help: Help
+  help: |
+    If you find an issue, please take a screenshot including this
+    information.  It helps us fix them.
+
+    Once the site is published, we'll remove this section.
+
+    Click the same button to close this message.

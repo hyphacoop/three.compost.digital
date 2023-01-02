@@ -4,16 +4,15 @@ Las barras de progreso de los objetivos/metas
 
 @param :title [String] El título del objetivo
 @param :text [String] La descripción
-@param :valuenow [Integer] El valor actual
-@param :valuemin [Integer] El valor mínimo
-@param :valuemax [Integer] El valor máximo
-@param :width [Integer] El ancho del progreso
+@param :value_now [Float] El valor actual
+@param :value_max [Float] El valor máximo
 {%- endcomment -%}
 
+{% assign width = include.value_now | divided_by: include.value_max | times: 100 %}
 
 <div class="mb-3">
 	<div class="progress position-relative border border-width-3 border-black">
-		<div class="progress-bar o-2 w-{{ include.width }}" role="progressbar" aria-valuenow="{{ include.valuenow }}" aria-valuemin="{{ include.valuemin }}" aria-valuemax="{{ include.valuemax }}"></div>
+		<div class="progress-bar o-2" style="width: {{ width }}%" role="progressbar" aria-valuenow="{{ include.value_now }}" aria-valuemax="{{ include.value_max }}"></div>
 		<span class="d-flex position-absolute h-100 align-items-center font-weight-bold lead px-4">{{ include.title }}</span>
 	</div>
 
