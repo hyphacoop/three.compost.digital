@@ -20,7 +20,8 @@ colors:
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"
-  3: "0.3rem"
+  4: "0.2625rem"
+  5: "0.39375rem"
 pixel_densities:
 - "1"
 - "1.5"
