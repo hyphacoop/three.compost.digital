@@ -57,6 +57,15 @@ image_menu_open:
     help:
       es: ''
       en: ''
+favicon:
+  type: 'image'
+  path:
+    label:
+      es: 'Favicon'
+      en: 'Favicon'
+    help:
+      es: 'Favicon del sitio en formato .ico'
+      en: 'Favicon of the site in .ico'
 license:
   type: new_html
   label:
