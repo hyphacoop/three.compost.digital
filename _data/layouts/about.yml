@@ -64,8 +64,8 @@ favicon:
       es: 'Favicon'
       en: 'Favicon'
     help:
-      es: 'Favicon del sitio en formato .ico'
-      en: 'Favicon of the site in .ico'
+      es: 'Favicon del sitio en formato .png de 384x384px'
+      en: 'Favicon of the site in format .png size 384x384px'
 license:
   type: new_html
   label:
