@@ -21,10 +21,9 @@
     {%- else -%}
       {%- include script.html src="pack.js" -%}
     {%- endif -%}
+    {%- assign about = site.posts | find: "layout", "about" -%}
 
-    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
-    <link rel="alternate icon" href="public/favicon.ico">
-    <link rel="mask-icon" href="public/favicon.svg" color="white">
+    <link rel="icon" type="image/png" href="{{ about.favicon.path | thumbnail: 16, 16 }}" sizes="16x16">
 
     {% seo %}
   </head>
