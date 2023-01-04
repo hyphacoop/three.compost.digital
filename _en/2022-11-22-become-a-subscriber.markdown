@@ -1,6 +1,6 @@
 ---
 title: Become a subscriber
-url: https://two.compost.digital/support-us/
+link: https://two.compost.digital/support-us/
 draft: false
 order: 2
 layout: button
