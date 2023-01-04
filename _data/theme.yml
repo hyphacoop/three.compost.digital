@@ -125,7 +125,7 @@ background_images:
   site: "$background-site"
   footer: "$background-footer"
 code_color: "black"
-code_font_size: "0.8rem"
+code_font_size: "1rem"
 code_background: "#cccaf7"
 code_radius: "8px"
 code_font_family: "Roboto Mono"
