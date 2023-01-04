@@ -8,7 +8,7 @@ title:
   help:
     es: ''
     en: ''
-url:
+link:
   type: string
   label:
     es: URL del botón

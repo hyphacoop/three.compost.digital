@@ -1,6 +1,6 @@
 ---
 title: Contribute money
-url: https://opencollective.com/compost
+link: https://opencollective.com/compost
 draft: false
 order: 6
 layout: button
