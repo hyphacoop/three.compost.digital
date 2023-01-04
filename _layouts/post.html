@@ -10,13 +10,13 @@ layout: "default_with_menu"
 {%- assign next = page | next: posts -%}
 
 <article id="{{ page.slug }}" class="container mx-auto max-w-780px my-4 px-20">
-  {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 component_class="shadow-sm" %}
+  {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 embed_class="shadow" %}
 
-  <div class="content mt-5">
-    {% include headings/h1.html class="text-uppercase black hover-black letter-spacing-4 font-weight-bold" text=page.title %}
+  <div class="mt-5">
+    {% include headings/h1.html class="text-uppercase black hover-black letter-spacing-4 font-weight-bold mb-12" text=page.title %}
 
     {% if page.subtitle %}
-      {% include headings/h2.html class="text-uppercase letter-spacing-1" %}
+      {% include headings/h2.html class="text-uppercase letter-spacing-8 mb-20" %}
     {% endif %}
 
     {% unless page.authors == empty %}
@@ -27,7 +27,7 @@ layout: "default_with_menu"
       </p>
     {% endunless %}
 
-    <div class="source-serif lead-md pt-2">
+    <div class="source-serif lead-md pt-20 content">
       {{ content }}
     </div>
   </div>
