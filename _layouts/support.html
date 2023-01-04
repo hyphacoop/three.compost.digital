@@ -14,7 +14,7 @@ layout: "default_with_menu"
 
 	<div class="row row-cols-2 justify-content-center my-80 no-gutters">
 		{% for button in buttons %}
-			<div class="col p-1">{% include buttons/with_link.html href=button.url text=button.title %}</div>
+			<div class="col p-1">{% include buttons/with_link.html href=button.link text=button.title %}</div>
 		{% endfor %}
 	</div>
 
