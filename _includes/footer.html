@@ -10,21 +10,21 @@ Footer
 
 <footer class="d-flex justify-content-center background-size-cover background-position-top-left background-image-footer">
   <div class="row row-cols-md-1 row-cols-lg-3 justify-content-center container-lg mx-auto pt-150 pb-5 f-14 px-4">
-    <div class="col-12 content px-3">
-      {{ include.col_1}}
+    <div class="col-12 px-3">
+      {{ include.col_1 | replace: '<h1>', '<h1 class="f-14 font-weight-bold py-3">' }}
     </div>
 
-    <div class="col-12 content px-3 pt-5 pt-lg-0">
-      {{ include.col_2}}
+    <div class="col-12 px-3 pt-5 pt-lg-0">
+      {{ include.col_2 | replace: '<h1>', '<h1 class="f-14 font-weight-bold py-3">' }}
     </div>
     
-    <div class="col-12 content px-3 pt-5 pt-lg-0">
+    <div class="col-12 px-3 pt-5 pt-lg-0">
       <div class="row flex-row">
         <div class="col">
-          {{ include.col_3 }}
+          {{ include.col_3 | replace: '<h1>', '<h1 class="f-14 font-weight-bold py-3">' }}
         </div>
         <div class="col">
-          {{ include.col_4 }}
+          {{ include.col_4 | replace: '<h1>', '<h1 class="f-14 font-weight-bold py-3">' }}
         </div>
       </div>
     </div>
