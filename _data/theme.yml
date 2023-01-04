@@ -23,7 +23,9 @@ colors:
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"
-  3: "0.3rem"
+  3: "0.170625em"
+  4: "0.2625rem"
+  5: "0.3rem"
 pixel_densities:
 - "1"
 - "1.5"
@@ -122,3 +124,8 @@ background_images:
   menu: "$background-menu"
   site: "$background-site"
   footer: "$background-footer"
+code_color: "black"
+code_font_size: "0.8rem"
+code_background: "#cccaf7"
+code_radius: "8px"
+code_font_family: "Roboto Mono"

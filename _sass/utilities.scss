@@ -239,3 +239,9 @@ b,
 strong {
   font-weight: $font-weight-bold;
 }
+
+code {
+  background-color: $code-background;
+  border-radius: $code-radius;
+  font-family: $code-font-family;
+}
