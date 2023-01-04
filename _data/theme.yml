@@ -9,6 +9,7 @@ spacers:
   14: "($spacer * 0.875)"
   12: "($spacer * 0.75)"
   40: "($spacer * 2.5)"
+  80: "($spacer * 5)"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
 btn_padding_y: "1.5rem"
@@ -23,6 +24,8 @@ colors:
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"
+  3: "0.170625em"
+  4: "0.2625rem"
 pixel_densities:
 - "1"
 - "1.5"
