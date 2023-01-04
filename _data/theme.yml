@@ -110,3 +110,5 @@ layout_class:
  support: "background-image-site background-size-contain w-100"
  home: "background-image-site background-size-contain w-100"
  about: "background-image-site background-size-contain w-100"
+paragraph_margin_bottom: "0"
+headings_margin_bottom: "0"
