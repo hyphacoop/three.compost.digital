@@ -7,6 +7,7 @@
     margin-top:2rem;
     margin-bottom:1.5rem;
     font-family: "Open Sans", sans-serif;
+    letter-spacing: 2.73px;
   }
 
   h3 {
@@ -36,5 +37,13 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  li p {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: underline !important;
   }
 }
