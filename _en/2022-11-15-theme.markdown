@@ -1,27 +1,32 @@
 ---
-layout: "theme"
-title: "COMPOST"
-font_family_sans_serif: "Open Sans"
-font_family_monospace: "Roboto Mono"
-headings_font_family: ""
+title: COMPOST
+font_family_sans_serif: Open Sans
+font_family_monospace: Roboto Mono
 enable_rounded: true
 enable_shadows: false
 body_bg: "#ffffff"
 body_color: "#000000"
-primary: "#564FE3"
+primary: "#564fe3"
 secondary: "#6c757d"
-link_color: "#564FE3"
+link_color: "#564fe3"
 link_hover_color: "#9995ef"
-h1_font_size: "2.625rem"
-h2_font_size: "1.6875rem"
-h3_font_size: "1.535rem"
-h4_font_size: "1.5rem"
-h5_font_size: "1.25rem"
-h6_font_size: "1rem"
+h1_font_size: 2.625rem
+h2_font_size: 1.6875rem
+h3_font_size: 1.535rem
+h4_font_size: 1.5rem
+h5_font_size: 1.25rem
+h6_font_size: 1rem
 mark_bg: "#fcf8e3"
 body_image:
-  path: "public/background-dithered.jpg"
-  description: "prueba"
+  path: public/sw7pgg07zsyk5555f82duuhdxnh5/background-dithered.jpg
+  description: background dithered
 order: 1
 draft: false
+layout: theme
+uuid: 30905e62-aa3b-429b-8ae0-ed291584bc52
+liquid: false
+usuaries:
+- 534
+last_modified_at: 2022-12-28 19:49:32.041501565 +00:00
 ---
+
