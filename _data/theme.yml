@@ -25,6 +25,7 @@ colors:
   light_blue: "#9995ef"
   light_gray: "#eeeeee"
   lighter_blue: "#cccaf7"
+  post: "rgba(230, 230, 230, 0.1)"
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"

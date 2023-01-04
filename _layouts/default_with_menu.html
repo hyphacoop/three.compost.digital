@@ -6,7 +6,7 @@ layout: "default"
 {%- assign about = site.posts | find: "layout", "about" -%}
 {%- assign support = site.posts | find: "layout", "support" -%}
 
-<div class="{{ site.data.theme.layout_class[page.layout] }}">
+<div class="background-post {{ site.data.theme.layout_class[page.layout] }}">
   {% include header_toggler.html
     logo_open_src=about.image_menu_open.path
     logo_open_alt=about.image_menu_open.description
