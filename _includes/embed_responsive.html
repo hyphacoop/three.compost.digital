@@ -8,9 +8,9 @@ Embed responsive
 @param :alt [String]
 @param :width [Integer]
 @param :height [Integer]
-@param :component_class [String]
+@param :embed_class [String]
 {%- endcomment -%}
 
-<div class="embed-responsive embed-responsive-{{ include.x }}by{{ include.y }} {{ include.component_class }}">
+<div class="embed-responsive embed-responsive-{{ include.x }}by{{ include.y }} {{ include.embed_class }}">
   {%- include picture.html class="embed-responsive-item" img_class="w-100 h-100 object-fit-cover" src=include.src alt=include.alt width=include.width -%}
 </div>

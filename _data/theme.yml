@@ -22,6 +22,7 @@ letter_spacings:
   2: "0.16rem"
   4: "0.2625rem"
   5: "0.39375rem"
+  8: "0.170625rem"
 pixel_densities:
 - "1"
 - "1.5"
