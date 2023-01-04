@@ -27,9 +27,8 @@ La ficha de post en el índice de artículos.
 	{% include headings/h1.html text=include.title class=include.title_class %}
 
 	<p class="{{ include.author_class }}">
-		{% for author in include.authors %}
-			{{- author.title -}}{% unless forloop.last %} {{ site.i18n.and }}{% endunless %}
-		{% endfor %}
+		{{ include.authors | map: "title" | array_to_sentence_string: site.i18n.and }}
 	</p>
+
 	<p class="{{ include.description_class }}">{{- include.description -}}</p>
 </div>

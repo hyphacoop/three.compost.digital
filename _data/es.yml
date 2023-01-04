@@ -3,6 +3,7 @@ locale: "Castellano"
 dir: "ltr"
 layouts:
   supporter: "Patrocinador"
+support_alt: "Hongo"
 and: "y"
 device_detector:
   outline: Bordes

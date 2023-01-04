@@ -95,11 +95,6 @@ progress_border_radius: "0"
 transform_scales:
   n8: "0.8"
   1: "1"
-directions:
-- "top"
-- "right"
-- "bottom"
-- "left"
 container_max_widths:
   sm: "576px"
   md: "768px"
@@ -110,18 +105,20 @@ layout_class:
  home: "background-image-site background-size-contain w-100"
  about: "background-image-site background-size-contain w-100"
 background_sizes:
+  auto-100: "auto 100%"
   cover: "cover"
   auto: "auto"
   contain: "contain"
-  auto-100: "auto 100%"
 background_positions_x:
+- "center"
 - "top"
 - "center"
 background_positions_y:
+- "bottom"
 - "left"
 - "right"
 - "bottom"
 background_images:
+  menu: "$background-menu"
   site: "$background-site"
   footer: "$background-footer"
-  menu: "$background-menu"
