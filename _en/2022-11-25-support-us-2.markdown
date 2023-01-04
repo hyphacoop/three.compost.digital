@@ -3,8 +3,9 @@ title: Support Us
 description: We are building on the digital commons by publishing our work freely
   and stewarding tools for anyone to use. If you like what we’re doing, consider supporting
   us!
-section_1: <h2 id="digital-bake-sale">Digital Bake Sale</h2><p>We need your support
-  to ensure the future sustainability of our magazine and <a href="https://distributed.press"
+section_1: <figure><img src="https://panel.sutty.nl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--eaa55839dc7b3e56ee3479f45752fbf1dcbb8689/stick1.gif"
+  class="img-fluid"></figure><p></p><h2 id="digital-bake-sale">Digital Bake Sale</h2><p>We
+  need your support to ensure the future sustainability of our magazine and <a href="https://distributed.press"
   rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Distributed Press</a>.</p><p>Our
   magazine has CAD $7,174.48 in our bank account as of Wednesday, January 4, 2023.
   We hope to raise $40,000 by January 31st of 2022 and before launching Issue Three.</p><p><a
@@ -13,12 +14,12 @@ section_1: <h2 id="digital-bake-sale">Digital Bake Sale</h2><p>We need your supp
 goals:
 - 2568b8c9-bf51-404c-8af5-621b8ee488bd
 section_2: |-
-  <p>Beyond these goals, additional funds will give all contributors, artists, and designers a $200 bonus and any remaining funds will be used in the development of future COMPOST issues.</p><h2 id="web-monetization">Web Monetization</h2><p>Readers shouldn’t have to wade through intrusive ads or paywalls to read this magazine. We don’t want your data nor do we want to restrict access to COMPOST. <a href="https://webmonetization.org/" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Web Monetization</a> is another way for supporters like you to send us micropayments (fractions of a cent) as you view this website.</p><h3 id="how-does-it-work">How does it work?</h3><p>Web Monetization is an emerging standard for web browsers. At the moment, you need to download a browser extension to make it work. We’ve found that getting a <a href="https://coil.com/signup" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Coil membership</a> is the easiest way to get started with Web Monetization. With a $5 monthly membership, you can also support hundreds of other Web Monetization websites like <a href="https://cinnamon.video" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Cinnamon</a>, <a href="https://www.ampled.com" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Ampled</a>, <a href="https://eraseallkittens.com" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Erase All Kittens</a>, and <a href="https://www.ladyspikemedia.com" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Ladyspike Media</a>.</p><h3 id="setup-coil">Setup Coil</h3><ol>
+  <p>Beyond these goals, additional funds will give all contributors, artists, and designers a $200 bonus and any remaining funds will be used in the development of future COMPOST issues.</p><figure><img src="https://panel.sutty.nl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--099a306d3b081be9391cd95862026e837a110a1c/stick2.gif" class="img-fluid"></figure><p></p><h2 id="web-monetization">Web Monetization</h2><p>Readers shouldn’t have to wade through intrusive ads or paywalls to read this magazine. We don’t want your data nor do we want to restrict access to COMPOST. <a href="https://webmonetization.org/" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Web Monetization</a> is another way for supporters like you to send us micropayments (fractions of a cent) as you view this website.</p><h3 id="how-does-it-work">How does it work?</h3><p>Web Monetization is an emerging standard for web browsers. At the moment, you need to download a browser extension to make it work. We’ve found that getting a <a href="https://coil.com/signup" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Coil membership</a> is the easiest way to get started with Web Monetization. With a $5 monthly membership, you can also support hundreds of other Web Monetization websites like <a href="https://cinnamon.video" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Cinnamon</a>, <a href="https://www.ampled.com" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Ampled</a>, <a href="https://eraseallkittens.com" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Erase All Kittens</a>, and <a href="https://www.ladyspikemedia.com" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Ladyspike Media</a>.</p><h3 id="setup-coil">Setup Coil</h3><ol>
   <li><p>Visit <a href="https://coil.com/signup" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">https://coil.com/signup</a> and signup.</p></li>
   <li><p>Go to Settings and enter the "Membership" menu item.</p></li>
   <li><p>Add your credit card and subscribe. It's $5 a month.</p></li>
   <li><p>Download the extension for any browser of your choice.</p></li>
-  </ol><p></p><p>If everything works, you’ll see the Web Monetization mushroom animating with a dollar sign at the top right corner of the screen.</p>
+  </ol><figure><img src="https://panel.sutty.nl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzlDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bbfb4d7253ce51c62efed2415abcc5e3b2ec5797/Mushroom_WM_BLK-forever-only-151px.gif" class="img-fluid"></figure><p></p><p>If everything works, you’ll see the Web Monetization mushroom animating with a dollar sign at the top right corner of the screen.</p>
 order: 12
 draft: false
 layout: support
@@ -27,6 +28,6 @@ liquid: false
 usuaries:
 - 356
 - 534
-last_modified_at: 2023-01-04 21:21:27.144201733 +00:00
+last_modified_at: 2023-01-04 21:22:34.862409537 +00:00
 ---
 
