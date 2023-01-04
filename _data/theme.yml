@@ -26,6 +26,7 @@ letter_spacings:
   2: "0.16rem"
   3: "0.170625em"
   4: "0.2625rem"
+  6: "0.18375rem"
 pixel_densities:
 - "1"
 - "1.5"
@@ -118,3 +119,4 @@ layout_class:
  about: "background-image-site background-size-contain w-100"
 paragraph_margin_bottom: "0"
 headings_margin_bottom: "0"
+box_shadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
