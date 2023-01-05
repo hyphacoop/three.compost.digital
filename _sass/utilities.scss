@@ -1,6 +1,24 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    /// Bordes.  Bootstrap no define bordes _responsive_
+    ///
+    /// @link node_modules/bootstrap/scss/utilities/_borders.scss
+    /// @example html
+    ///   <div class="border border-md-top-0 border-width-3"></div>
+    .border#{$infix}   { border: $border-width solid $border-color !important; }
+    .border#{$infix}-0 { border: 0 !important; }
+    @each $direction in $directions {
+      .border#{$infix}-#{$direction}   { border-#{$direction}: $border-width solid $border-color !important; }
+      .border#{$infix}-#{$direction}-0 { border-#{$direction}: 0 !important; }
+      .border#{$infix}-#{$direction}-dashed { border-#{$direction}: $border-width dashed $border-color !important; }
+    }
+
+    @each $border-width, $length in $border-widths {
+      .border-width#{$infix}-#{$border-width}   { border-width: $length !important; }
+    }
+
     @each $color, $rgb in $colors {
       .background#{$infix}-#{$color} {
         background-color: var(--#{$color});
@@ -17,6 +35,83 @@
           color: var(--#{$color});
         }
       }
+
+      @each $attr in $svg-attributes {
+        /// Poder cambiar el relleno o la línea de un SVG
+        ///
+        /// @example html
+        ///   <div class="stroke-black fill-red">
+        ///     <svg/>
+        ///   </div>
+        .#{$attr}#{$infix}-#{$color} {
+          svg {
+            * {
+              #{$attr}: var(--#{$color});
+            }
+          }
+        }
+
+        .#{$attr}-hover#{$infix}-#{$color} {
+          &:hover,
+          &:focus-within {
+            svg {
+              * {
+                #{$attr}: var(--#{$color});
+              }
+            }
+          }
+        }
+      }
+
+      /// Cambiar el color al pasar por encima o hacer foco
+      ///
+      /// @example html
+      ///   <div class="black hover-red"></div>
+      .hover-#{$color} {
+        &:hover,
+        &:focus-within {
+          color: var(--#{$color}) !important;
+        }
+      }
+
+      /// Bordes de color
+      ///
+      /// @example html
+      ///   <div class="border-red"></div>
+      .border#{$infix}-#{$color} {
+        border-color: var(--#{$color}) !important;
+      }
+
+      .border-hover#{$infix}-#{$color} {
+        &:hover,
+        &:focus-within {
+          border-color: var(--#{$color}) !important;
+        }
+      }
+
+      @each $opacity, $degree in $opacities {
+        /// Color de fondo con transparencia (opacidad)
+        ///
+        /// @example html
+        ///   <div class="background-red-t2"></div>
+        .background#{$infix}-#{$color}-t#{$opacity} {
+          background-color: scale-color($rgb, $alpha: $degree);
+        }
+
+        .o#{$infix}-#{$opacity} {
+          opacity: ($degree + 100%) / 100% !important;
+        }
+      }
+    }
+
+    /// Espacio entre caracteres
+    ///
+    /// @example html
+    ///   <div class="letter-spacing-2"></div>
+    @each $letter-spacing, $value in $letter-spacings {
+      .letter-spacing#{$infix}-#{$letter-spacing} {
+        letter-spacing: $value !important;
+      }
     }
 
     .object-fit-cover#{$infix} {
@@ -24,7 +119,7 @@
     }
 
     .lead#{$infix} {
-      font-size: $lead-font-size;
+      font-size: $lead-font-size !important;
     }
 
     /// Poder aumentar o disminuir el alto de la tipografía.
@@ -48,6 +143,69 @@
         }
       }
     }
+
+    @each $cursor in $cursors {
+      /// El elemento va a tener un cursor
+      ///
+      /// @example html
+      ///   <div class="cursor-pointer"></div>
+      .cursor#{$infix}-#{$cursor} {
+        cursor: $cursor;
+      }
+    }
+
+    @each $spacer, $length in $spacers {
+      @each $direction in $directions {
+        /// Ubicación absoluta, usar con position-*
+        ///
+        /// @example html
+        ///   <div class="position-absolute top-0 left-3"></div>
+        .#{$direction}#{$infix}-#{$spacer} {
+          #{$direction}: $length
+        }
+
+        .object-position#{$infix}-#{$direction} {
+          object-position: $direction;
+        }
+      }
+    }
+
+    /// Anchos y altos en base a `$sizes` definido por Bootstrap.  Para
+    /// personalizar los tamaños, modificarlos o agregarlos en `styles.scss`
+    ///
+    /// @link assets/css/styles.scss
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+        .min-#{$abbrev}#{$infix}-#{$size} { min-#{$prop}: $length !important; }
+        .max-#{$abbrev}#{$infix}-#{$size} { max-#{$prop}: $length !important; }
+      }
+    }
+
+    @each $background-size, $value in $background-sizes {
+      /// Tamaño de imagen de fondo
+      ///
+      /// @example html
+      ///   <div class="background-size-md-cover"></div>
+      .background-size#{$infix}-#{$background-size} {
+        background-size: $value !important;
+      }
+    }
+
+    @each $x in $background-positions-x {
+      @each $y in $background-positions-y {
+        .background-position#{$infix}-#{$x}-#{$y} {
+          background-position: $x $y;
+        }
+      }
+    }
+
+    @each $background-image, $value in $background-images {
+      .background-image#{$infix}-#{$background-image} {
+        background-image: url("#{$value}");
+      }
+    }
   }
 }
 
@@ -57,4 +215,27 @@
 
 .work-sans {
   font-family: 'Work Sans';
+}
+
+.source-serif {
+  font-family: 'Source Serif 4';
+}
+
+.zindex-dropdown { z-index: 1000; }
+.zindex-sticky { z-index: 1020; }
+.zindex-fixed { z-index: 1030; }
+.zindex-modal-backdrop { z-index: 1040; }
+.zindex-modal { z-index: 1050; }
+.zindex-popover { z-index: 1060; }
+.zindex-tooltip { z-index: 1070; }
+
+.support-background {
+  background-image: url('../../public/background-dithered.jpg');
+  background-size: contain;
+  width: 100%;
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
 }

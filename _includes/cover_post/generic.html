@@ -1,0 +1,34 @@
+{%- comment -%}
+
+La ficha de post en el índice de artículos.
+
+@param :href [String] El link
+@param :title [String] El título
+@param :authors [String] Les autorxs
+@param :description [String] La descripción
+@param :src [String] La imagen
+@param :alt [String] La descripción de la imagen
+@param :title_class [String] Las clases del título
+@param :author_class [String] Las clases de autorx
+@param :description_class [String] Las clases de descripción
+{%- endcomment -%}
+<div
+	class="position-relative px-2">
+	<a
+		class="stretched-link black hover-black text-decoration-none"
+		href="{{ include.href | uri_escape }}"
+		{{ include.href | start_with: "https://" | value_if: 'rel="noopener" target="_blank"' }}
+		{{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="_blank"' }}>
+		<span class="sr-only">{{ include.alt }}</span>
+	</a>
+
+	{% include embed_responsive.html src=include.src width=700 x="700" y="350" alt=include.alt %}
+
+	{% include headings/h1.html text=include.title class=include.title_class %}
+
+	<p class="{{ include.author_class }}">
+		{{ include.authors | map: "title" | array_to_sentence_string: site.i18n.and }}
+	</p>
+
+	<p class="{{ include.description_class }}">{{- include.description -}}</p>
+</div>

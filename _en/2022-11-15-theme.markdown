@@ -18,6 +18,9 @@ h4_font_size: "1.5rem"
 h5_font_size: "1.25rem"
 h6_font_size: "1rem"
 mark_bg: "#fcf8e3"
+body_image:
+  path: "public/background-dithered.jpg"
+  description: "prueba"
 order: 1
 draft: false
 ---

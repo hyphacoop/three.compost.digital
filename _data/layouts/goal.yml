@@ -1,0 +1,63 @@
+title:
+  type: 'string'
+  required: true
+  label:
+    es: 'Título del objetivo'
+    en: 'Goal title'
+  help:
+    es:
+    en:
+description:
+  type: text
+  label:
+    en: Objective section content
+    es: Sección de contenido para el objetivo
+  help:
+    en: ''
+    es: ''
+value_max:
+  type: float
+  label:
+    en: The maximum amount of the goal
+    es: Monto máximo del objetivo
+  help:
+    en: Content that can have only numbers
+    es: Contenido que puede tener sólo números
+goal:
+  type: belongs_to
+  inverse: goals
+  filter:
+    layout: support
+  label:
+    en: Belongs to
+    es: Pertenece a
+  help:
+    en: What article does this one belong to?
+    es: "¿De qué artículo depende?"
+currency:
+  type: 'string'
+  required: true
+  label:
+    es: 'Moneda'
+    en: 'Currency'
+  help:
+    es: 'Código de tres letras de la moneda en la que se expresan los precios'
+    en: 'Three letter code to denote currency used in pricing'
+  default:
+    en: 'USD'
+order:
+  type: order
+  label:
+    en: Order
+    es: Orden
+  help:
+    en: Position in articles list
+    es: La posición del artículo en la lista de artículos
+draft:
+  type: boolean
+  label:
+    en: Draft
+    es: Borrador
+  help:
+    en: This post isn't ready to be published yet
+    es: Este artículo aun no está listo para publicar

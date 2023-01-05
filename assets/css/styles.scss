@@ -1,11 +1,22 @@
 ---
 ---
 
-{{ site.posts | find: "layout", "theme" | yaml_to_scss: site.data.layouts.theme }}
+{%- assign theme = site.posts | find: "layout", "theme" -%}
+{%- assign footer = site.posts | find: "layout", "footer" -%}
+{%- assign about = site.posts | find: "layout", "about" -%}
+
+$background-site: '../../{{ theme.body_image.path | default: "public/background-dithered.jpg" | uri_escape }}';
+$background-footer: '../../{{ footer.background_image.path | default: "public/footer.png" | uri_escape }}';
+$background-menu: '../../{{ about.background_image.path | default: "public/background_header.png" | uri_escape }}';
+
+{{ theme | yaml_to_scss: site.data.layouts.theme }}
 {{ site.data.theme | yaml_to_scss }}
 
 @import "bootstrap/scss/bootstrap";
 @import "utilities";
 @import "open_sans";
 @import "open_sans_wght_700";
+@import "work_sans_ital_wght_1_300";
+@import "source_serif_4_ital_wght_0_400;0_700;1_400;1_700";
 @import "content";
+@import "toggler";

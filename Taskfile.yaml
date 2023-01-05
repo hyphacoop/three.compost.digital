@@ -20,6 +20,26 @@ tasks:
     silent: true
     cmds:
     - "echo https://{{.DOMAIN}}:4000/"
+  pack:
+    desc: "Compila JavaScript"
+    deps:
+    - "pnpm"
+    cmds:
+    - "git rm -f assets/js/pack.* || true"
+    - "haini.sh ./node_modules/.bin/esbuild _packs/entry.js --analyze --bundle --minify --sourcemap --outdir=assets/js/ --entry-names=\"pack.[hash]\" --metafile=_data/manifest.json"
+    - "git add _data/manifest.json assets/js/pack.*"
+    - "git commit -m \"[skip ci] JS\""
+    - task: "notify"
+    sources:
+    - "_packs/**/*.js"
+    generates:
+    - "_data/manifest.json"
+  watch:
+    desc: "Desarrollar JavaScript"
+    deps:
+    - "pnpm"
+    cmds:
+    - "haini.sh ./node_modules/.bin/esbuild _packs/entry.js --analyze --bundle --outfile=pack.js --serve=65001"
   build:
     desc: "Genera el sitio en entorno de desarrollo"
     deps:
@@ -48,28 +68,6 @@ tasks:
     - "package.json"
     generates:
     - "pnpm-lock.yaml"
-  webpack:
-    desc: "Compila el JS para producción"
-    deps:
-    - "pnpm"
-    cmds:
-    - "git rm -f assets/js/pack.* || true"
-    - "haini.sh ./node_modules/.bin/webpack --config webpack.prod.js"
-    - "git add _data/assets.json assets/js/pack.*"
-    - "git commit -m '[skip ci] Recompilar JS' || true"
-    sources:
-    - "_packs/**/*.js"
-    - ".env"
-    generates:
-    - "assets/js/pack.*.js"
-    - "_data/assets.json"
-  webpack-dev-server:
-    deps:
-    - "pnpm"
-    cmds:
-    - "haini.sh ./node_modules/.bin/webpack-dev-server --public {{.DOMAIN}}:4000 --host 127.0.0.1 --port 65001"
-    preconditions:
-    - "ss -lnp | grep \":65001 \" | wc -l | xargs test 0 = "
   hosts:
     desc: "Agrega el dominio local a /etc/hosts"
     interactive: true

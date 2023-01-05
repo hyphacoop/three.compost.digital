@@ -1,5 +1,11 @@
 ---
 spacer: "1rem"
+spacers:
+  6: "($spacer * 6)"
+  20: "($spacer * 1.25)"
+  50: "($spacer * 3.125)"
+  150: "9.375rem"
+  7: "($spacer * 7)"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
 btn_padding_y: "1.5rem"
@@ -10,6 +16,10 @@ colors:
   transparent: "transparent"
   blue: "#564FE3"
   light_blue: "#9995ef"
+  light_gray: "#eeeeee"
+letter_spacings:
+  1: "0.1rem"
+  2: "0.16rem"
 pixel_densities:
 - "1"
 - "1.5"
@@ -25,13 +35,81 @@ embed_responsive_aspect_ratios:
 - "(16 9)"
 - "(4 3)"
 - "(1 1)"
+- "(700 350)"
 display3_size: "3.9375rem"
 display4_size: "1.875rem"
 enable_responsive_font_sizes: true
 lead_font_size: "1.3125rem"
 font_sizes:
-  19: "1.1875"
   14: "0.875"
+  16: "1"
+  17: "1.0625"
+  19: "1.1875"
+  25: "1.5625"
 transform_scales:
   n8: "0.8"
   1: "1"
+sizes:
+  67px: "4.1875rem"
+  44px: "2.75rem"
+  54px: "3.375rem"
+  36px: "2.25rem"
+  49px: "3.0625rem"
+  74px: "4.625rem"
+  221px: "13.8125rem"
+  333px: "20.8125rem"
+  1200px: "78rem"
+directions:
+- "top"
+- "left"
+- "right"
+- "bottom"
+svg_attributes:
+- "fill"
+- "stroke"
+cursors:
+- "pointer"
+- "none"
+border_width: "1px"
+border_widths:
+  1: "1px"
+  2: "2px"
+  3: "3px"
+  4: "4px"
+  5: "5px"
+progress_bg: "transparent"
+progress_bar_bg: "#9995ef"
+progress_height: "4.625rem"
+opacities:
+  0: "-100%"
+  1: "-80%"
+  2: "-60%"
+  3: "-40%"
+  4: "-20%"
+  5: "0%"
+progress_border_radius: "0"
+container_max_widths:
+  sm: "576px"
+  md: "768px"
+  lg: "1200px"
+  xl: "1201px"
+background_sizes:
+  auto-100: "auto 100%"
+  cover: "cover"
+  auto: "auto"
+  contain: "contain"
+background_positions_x:
+- "center"
+- "top"
+background_positions_y:
+- "bottom"
+- "left"
+- "right"
+background_images:
+  menu: "$background-menu"
+  site: "$background-site"
+  footer: "$background-footer"
+layout_class:
+  support: "background-image-site background-size-contain w-100"
+  home: "background-image-site background-size-contain w-100"
+  about: "background-image-site background-size-contain w-100"

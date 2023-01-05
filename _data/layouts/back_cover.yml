@@ -1,0 +1,100 @@
+---
+title:
+  type: string
+  required: true
+  label:
+    es: Título
+    en: Title
+  help:
+    es: ''
+    en: ''
+description:
+  type: 'text'
+  required: true
+  label:
+    es: 'Alerta de contenido o descripción del artículo'
+    en: 'Content warning or post description'
+  help:
+    es: |
+      Resumen del contenido del artículo, que también usarán redes
+      sociales y buscadores.  Si el artículo trata de violencias y otros
+      temas sensibles, te invitamos a usar este campo como alerta de
+      contenido, para que las personas puedan determinar cuándo quieren
+      abrirlo.
+    en: |
+      Summary of the post contents, also used by social media and search
+      engines.  If the post is about violence and other sensitive
+      topics, we invite you to use it as a content warning, so others
+      can decide when they want to read it.
+image:
+  type: 'image'
+  path:
+    label:
+      es: 'Imagen principal'
+      en: 'Main image'
+    help:
+      es: ''
+      en: ''
+  description:
+    label:
+      es: 'Descripción de la imagen principal'
+      en: 'Main image description'
+    help:
+      es: ''
+      en: ''
+authors_title:
+  type: string
+  label:
+    es: Título de la sección Autorxs
+    en: Authors section title
+  help:
+    es: ''
+    en: ''
+content_title:
+  type: string
+  label:
+    es: Título del contenido
+    en: Content title
+  help:
+    es: ''
+    en: ''
+content:
+  type: 'new_content'
+  label:
+    es: 'Contenido del artículo'
+    en: 'Post content'
+  help:
+    es: 'Escribe aquí el artículo'
+    en: 'Write down your post'
+supporters_title:
+  type: string
+  label:
+    es: Título de la sección de Sponsors
+    en: Supporters section title
+  help:
+    es: ''
+    en: ''
+final_message:
+  type: string
+  label:
+    es: Mensaje final
+    en: Final message
+  help:
+    es: ''
+    en: ''
+draft:
+  type: 'boolean'
+  label:
+    es: 'Borrador'
+    en: 'Draft'
+  help:
+    es: 'Este artículo aun no está listo para publicar'
+    en: "This post isn't ready to be published yet"
+order:
+  type: 'order'
+  label:
+    es: 'Orden'
+    en: 'Order'
+  help:
+    es: 'La posición del artículo en la lista de artículos'
+    en: 'The post position in the posts list'

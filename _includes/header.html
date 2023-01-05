@@ -1,0 +1,24 @@
+{%- comment -%}
+
+Items de cabecera (excepto el ícono de hamburguesa)
+
+@param :logo_src [String] La imagen del logo
+@param :logo_alt [String] El alt del logo
+@param :btn_src [String] La imagen del botón
+@param :btn_href [String] El link del botón
+@param :btn_alt [String] El alt del botón
+{%- endcomment -%}
+
+{% include image_with_link.html
+	src=include.logo_src
+	href="?#"
+	alt=include.logo_alt
+	width=333
+	img_class="w-221px w-md-333px" %}
+
+{% include btn_header.html
+	src=include.btn_src
+	href=include.btn_href
+	alt=include.btn_alt
+	width=67
+	img_class="w-44px w-md-67px" %}
