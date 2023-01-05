@@ -2,12 +2,12 @@
 spacer: "1rem"
 spacers:
   6: "($spacer * 6)"
+  7: "($spacer * 7)"
   20: "($spacer * 1.25)"
   32: "($spacer * 2)"
   50: "($spacer * 3.125)"
   60: "($spacer * 3.75)"
   150: "9.375rem"
-  7: "($spacer * 7)"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
 btn_padding_y: "1.5rem"
@@ -53,9 +53,6 @@ font_sizes:
   17: "1.0625"
   19: "1.1875"
   25: "1.5625"
-transform_scales:
-  n8: "0.8"
-  1: "1"
 sizes:
   67px: "4.1875rem"
   44px: "2.75rem"
@@ -97,11 +94,6 @@ opacities:
   4: "-20%"
   5: "0%"
 progress_border_radius: "0"
-container_max_widths:
-  sm: "576px"
-  md: "768px"
-  lg: "1200px"
-  xl: "1201px"
 background_sizes:
   auto-100: "auto 100%"
   cover: "cover"
@@ -114,6 +106,14 @@ background_positions_y:
 - "bottom"
 - "left"
 - "right"
+container_max_widths:
+  sm: "540px"
+  md: "720px"
+  lg: "780px"
+  xl: "781px"
+transform_scales:
+  n8: "0.8"
+  1: "1"
 background_images:
   menu: "$background-menu"
   site: "$background-site"

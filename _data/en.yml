@@ -6,6 +6,7 @@ next_page: "Next page"
 home: "Home"
 layouts:
   supporter: "Sponsor"
+content_license: "Content License: "
 support_alt: "Mushroom"
 and: "and"
 device_detector:
@@ -18,4 +19,3 @@ device_detector:
     Once the site is published, we'll remove this section.
 
     Click the same button to close this message.
-content_license: "Content License: "

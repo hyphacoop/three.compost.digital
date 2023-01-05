@@ -132,18 +132,6 @@
       }
     }
 
-    @each $transform-scale, $value in $transform-scales {
-      .transform-scale#{$infix}-#{$transform-scale} {
-        transform: scale($value) !important;
-      }
-
-      .transform-scale-hover#{$infix}-#{$transform-scale} {
-        &:hover, &:focus {
-          transform: scale($value) !important;
-        }
-      }
-    }
-
     @each $cursor in $cursors {
       /// El elemento va a tener un cursor
       ///
@@ -183,6 +171,18 @@
       }
     }
 
+    @each $transform-scale, $value in $transform-scales {
+      .transform-scale#{$infix}-#{$transform-scale} {
+        transform: scale($value) !important;
+      }
+
+      .transform-scale-hover#{$infix}-#{$transform-scale} {
+        &:hover, &:focus {
+          transform: scale($value) !important;
+        }
+      }
+    }
+
     @each $background-size, $value in $background-sizes {
       /// Tamaño de imagen de fondo
       ///
@@ -204,18 +204,6 @@
     @each $background-image, $value in $background-images {
       .background-image#{$infix}-#{$background-image} {
         background-image: url("#{$value}");
-      }
-    }
-
-    @each $transform-scale, $value in $transform-scales {
-      .transform-scale#{$infix}-#{$transform-scale} {
-        transform: scale($value) !important;
-      }
-
-      .transform-scale-hover#{$infix}-#{$transform-scale} {
-        &:hover, &:focus {
-          transform: scale($value) !important;
-        }
       }
     }
   }
