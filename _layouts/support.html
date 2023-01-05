@@ -22,7 +22,7 @@ layout: "default_with_menu"
 
 	<div class="my-4">
 		{% for goal in goals %}
-			{% include goal.html title=goal.title text=goal.description value_now=1000 value_max=goal.value_max %}
+			{% include goal.html title=goal.title text=goal.description value_now=1000 value_max=goal.value_max currency=goal.currency %}
 		{% endfor %}
 	</div>
 
