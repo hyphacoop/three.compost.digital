@@ -15,14 +15,31 @@ export default class extends Controller {
       type: Number,
       default: 1105,
     },
+    footnoteClasses: {
+      type: Array,
+      default: [
+        "background-white",
+        "w-100",
+        "p-3",
+        "border-top",
+      ],
+    },
     sidenoteClasses: {
       type: Array,
       default: [
         "position-absolute",
         "f-11",
-        "w-220px"
+        "w-220px",
       ],
-    }
+    },
+    containerWidth: {
+      type: Number,
+      default: 780,
+    },
+    sidenoteWidth: {
+      type: Number,
+      default: 220,
+    },
   };
 
   connect() {
@@ -47,15 +64,57 @@ export default class extends Controller {
   }
 
   footnoteTargetConnected(footnote) {
-    const sidenote = footnote;
     const reference = this.referenceTargets.find(x => x.id === footnote.dataset.reference);
-    const number = reference.querySelector("sup").textContent;
-    const offset = Math.max(reference.offsetTop, this.offsetTopValue);
 
-    sidenote.style.top = `${offset}px`;
-    sidenote.style.left = `${this.offsetLeftValue}px`;
-    sidenote.classList.add(...this.sidenoteClassesValue);
+    if (this.sidenotesPossible) {
+      const sidenote = footnote;
+      const number = reference.querySelector("sup").textContent;
+      const offset = Math.max(reference.offsetTop, this.offsetTopValue);
 
-    this.offsetTopValue = offset + sidenote.offsetHeight + this.minSpacingValue;
+      sidenote.style.top = `${offset}px`;
+      sidenote.style.left = `${this.offsetLeftValue}px`;
+      sidenote.classList.add(...this.sidenoteClassesValue);
+
+      this.offsetTopValue = offset + sidenote.offsetHeight + this.minSpacingValue;
+    } else {
+      footnote.classList.add(...this.footnoteClassesValue);
+      footnote.style.bottom = 0;
+      footnote.style.left = 0;
+      footnote.style.zIndex = 1;
+      footnote.dataset.height = footnote.offsetHeight;
+      footnote.style.height = 0;
+      footnote.classList.add("collapsing", "position-fixed");
+
+      reference.dataset.action = "footnotes#show";
+      reference.dataset.footnotesReferenceParam = reference.id;
+      reference.dataset.footnotesFootnoteParam = footnote.id;
+    }
+  }
+
+  get sidenotesPossible () {
+    const bodyWidth = document.body.offsetWidth;
+    const containerWidth = (this.containerWidthValue + this.sidenoteWidthValue * 2);
+
+    return (bodyWidth > containerWidth);
+  }
+
+  show(event) {
+    const footnote = this.footnoteTargets.find(x => x.id === event.params.footnote);
+
+    event.preventDefault();
+
+    this.hide();
+
+    footnote.style.height = `${footnote.dataset.height}px`;
+    footnote.classList.add(...this.footnoteClassesValue);
+    footnote.setAttribute("role", "alert");
+  }
+
+  hide(event = undefined) {
+    for (const footnote of this.footnoteTargets) {
+      footnote.style.height = 0;
+      footnote.classList.remove(...this.footnoteClassesValue);
+      footnote.setAttribute("role", "");
+    }
   }
 }
