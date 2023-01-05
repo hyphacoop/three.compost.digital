@@ -66,6 +66,8 @@ export default class extends Controller {
   footnoteTargetConnected(footnote) {
     const reference = this.referenceTargets.find(x => x.id === footnote.dataset.reference);
 
+    footnote.style.listStylePosition = "inside";
+
     if (this.sidenotesPossible) {
       const sidenote = footnote;
       const number = reference.querySelector("sup").textContent;
