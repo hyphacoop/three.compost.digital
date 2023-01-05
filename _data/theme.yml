@@ -46,6 +46,9 @@ font_sizes:
   17: "1.0625"
   19: "1.1875"
   25: "1.5625"
+transform_scales:
+  n8: "0.8"
+  1: "1"
 sizes:
   67px: "4.1875rem"
   44px: "2.75rem"
@@ -107,6 +110,6 @@ background_images:
   site: "$background-site"
   footer: "$background-footer"
 layout_class:
- support: "background-image-site background-size-contain w-100"
- home: "background-image-site background-size-contain w-100"
- about: "background-image-site background-size-contain w-100"
+  support: "background-image-site background-size-contain w-100"
+  home: "background-image-site background-size-contain w-100"
+  about: "background-image-site background-size-contain w-100"
