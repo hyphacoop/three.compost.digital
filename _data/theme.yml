@@ -3,7 +3,9 @@ spacer: "1rem"
 spacers:
   6: "($spacer * 6)"
   20: "($spacer * 1.25)"
+  32: "($spacer * 2)"
   50: "($spacer * 3.125)"
+  60: "($spacer * 3.75)"
   150: "9.375rem"
   7: "($spacer * 7)"
 btn_transition: "all 250ms ease-in-out"
@@ -20,6 +22,9 @@ colors:
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"
+  4: "0.2625rem"
+  5: "0.39375rem"
+  8: "0.170625rem"
 pixel_densities:
 - "1"
 - "1.5"
@@ -36,6 +41,7 @@ embed_responsive_aspect_ratios:
 - "(4 3)"
 - "(1 1)"
 - "(700 350)"
+- "(2 1)"
 display3_size: "3.9375rem"
 display4_size: "1.875rem"
 enable_responsive_font_sizes: true
@@ -58,6 +64,7 @@ sizes:
   74px: "4.625rem"
   221px: "13.8125rem"
   333px: "20.8125rem"
+  780px: "780px"
   1200px: "78rem"
 directions:
 - "top"

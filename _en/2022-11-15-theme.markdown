@@ -2,6 +2,7 @@
 layout: "theme"
 title: "COMPOST"
 font_family_sans_serif: "Open Sans"
+font_family_monospace: "Roboto Mono"
 headings_font_family: ""
 enable_rounded: true
 enable_shadows: false
