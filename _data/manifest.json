@@ -946,8 +946,22 @@
         }
       ]
     },
+    "_packs/controllers/footnotes_controller.js": {
+      "bytes": 4586,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ]
+    },
     "_packs/entry.js": {
-      "bytes": 964,
+      "bytes": 1087,
       "imports": [
         {
           "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js",
@@ -968,18 +982,22 @@
         {
           "path": "_packs/controllers/device_detector_controller.js",
           "kind": "import-statement"
+        },
+        {
+          "path": "_packs/controllers/footnotes_controller.js",
+          "kind": "import-statement"
         }
       ]
     }
   },
   "outputs": {
-    "assets/js/pack.Z2FSA3FL.js.map": {
+    "assets/js/pack.6PCEPX37.js.map": {
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 590991
+      "bytes": 598807
     },
-    "assets/js/pack.Z2FSA3FL.js": {
+    "assets/js/pack.6PCEPX37.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "_packs/entry.js",
@@ -1147,7 +1165,7 @@
           "bytesInOutput": 4696
         },
         "_packs/entry.js": {
-          "bytesInOutput": 564
+          "bytesInOutput": 598
         },
         "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/finally.js": {
           "bytesInOutput": 200
@@ -1195,16 +1213,16 @@
           "bytesInOutput": 48
         },
         "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js": {
-          "bytesInOutput": 1415
+          "bytesInOutput": 1417
         },
         "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queries.js": {
-          "bytesInOutput": 1614
+          "bytesInOutput": 1615
         },
         "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queues.js": {
-          "bytesInOutput": 1806
+          "bytesInOutput": 1807
         },
         "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/routes.js": {
-          "bytesInOutput": 3240
+          "bytesInOutput": 3242
         },
         "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/version.js": {
           "bytesInOutput": 114
@@ -1243,13 +1261,16 @@
           "bytesInOutput": 73392
         },
         "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js": {
-          "bytesInOutput": 42022
+          "bytesInOutput": 42017
         },
         "_packs/controllers/device_detector_controller.js": {
-          "bytesInOutput": 1040
+          "bytesInOutput": 1039
+        },
+        "_packs/controllers/footnotes_controller.js": {
+          "bytesInOutput": 2748
         }
       },
-      "bytes": 844047
+      "bytes": 846829
     }
   }
 }
