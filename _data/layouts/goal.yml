@@ -18,8 +18,8 @@ description:
 value_max:
   type: float
   label:
-    en: The maximum value of the goal
-    es: El valor máximo del objetivo
+    en: The maximum amount of the goal
+    es: Monto máximo del objetivo
   help:
     en: Content that can have only numbers
     es: Contenido que puede tener sólo números
@@ -34,6 +34,17 @@ goal:
   help:
     en: What article does this one belong to?
     es: "¿De qué artículo depende?"
+currency:
+  type: 'string'
+  required: true
+  label:
+    es: 'Moneda'
+    en: 'Currency'
+  help:
+    es: 'Código de tres letras de la moneda en la que se expresan los precios'
+    en: 'Three letter code to denote currency used in pricing'
+  default:
+    en: 'USD'
 order:
   type: order
   label:
