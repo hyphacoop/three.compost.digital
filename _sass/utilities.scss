@@ -217,12 +217,6 @@
 .zindex-popover { z-index: 1060; }
 .zindex-tooltip { z-index: 1070; }
 
-.support-background {
-  background-image: url('../../public/background-dithered.jpg');
-  background-size: contain;
-  width: 100%;
-}
-
 b,
 strong {
   font-weight: $font-weight-bold;
