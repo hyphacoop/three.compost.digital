@@ -1,11 +1,11 @@
 ---
 title: LAUNCH ISSUE THREE!
-description: We'll run a half-day micro-conference with contributors and community.
-  We'll discuss issues we face on the (D)Web and in collective publishing.
-value_max: 40000.0
+description: We're still looking for funding for future issues! Help us reach our
+  goal!
+value_max: 25000.0
 goal: c9c98034-4130-4caa-b339-8c4d0d9cbc0f
-currency: USD
-order: 13
+currency: "$"
+order: 4
 draft: false
 layout: goal
 uuid: 2568b8c9-bf51-404c-8af5-621b8ee488bd
@@ -13,6 +13,6 @@ liquid: false
 usuaries:
 - 356
 - 534
-last_modified_at: 2023-01-04 17:44:25.861666442 +00:00
+last_modified_at: 2023-01-04 21:28:19.818798543 +00:00
 ---
 
