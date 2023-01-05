@@ -12,7 +12,7 @@ liquid: false
 usuaries:
 - 27
 - 534
-last_modified_at: 2023-01-04 21:58:40.109379872 +00:00
+last_modified_at: 2023-01-05 23:28:21.596249177 +00:00
 ---
 
 <p><strong>Mrinalini Sebastian</strong> from Puttur, Karnataka, is an independent researcher who is interested in questions of history, community, gender, and critical theories. She works part-time as the Site Coordinator of Harcum College Partnership Site at Grace-Trinity UCC, Philadelphia and mentors a small group of pre-school teachers who are working towards their Associate degree.</p>
