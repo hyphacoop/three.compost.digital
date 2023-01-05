@@ -129,3 +129,10 @@ footnotes_sidenotes_classes:
 footnotes_offset_left: 1105
 footnotes_container_width: 780
 footnotes_sidenote_width: 220
+footnotes_classes:
+- "background-white"
+- "position-fixed"
+footnotes_toggled_classes:
+- "w-100"
+- "p-3"
+- "border-top"

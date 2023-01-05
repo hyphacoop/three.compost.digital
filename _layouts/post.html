@@ -33,6 +33,8 @@ layout: "default_with_menu"
       data-footnotes-container-width-value="{{ site.data.theme.footnotes_container_width }}"
       data-footnotes-sidenote-width-value="{{ site.data.theme.footnotes_sidenote_width }}"
       data-footnotes-offset-left-value="{{ site.data.theme.footnotes_offset_left }}"
+      data-footnotes-footnotes-classes-value="{{ site.data.theme.footnotes_classes | jsonify | escape }}"
+      data-footnotes-footnotes-toggled-classes-value="{{ site.data.theme.footnotes_toggled_classes | jsonify | escape }}"
       data-footnotes-sidenotes-classes-value="{{ site.data.theme.footnotes_sidenotes_classes | jsonify | escape }}">
       {{ content }}
     </div>

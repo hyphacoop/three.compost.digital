@@ -18,6 +18,13 @@ export default class extends Controller {
     footnoteClasses: {
       type: Array,
       default: [
+        "background-white",
+        "position-fixed",
+      ],
+    },
+    footnoteToggledClasses: {
+      type: Array,
+      default: [
         "w-100",
         "p-3",
         "border-top",
@@ -80,8 +87,8 @@ export default class extends Controller {
     } else {
       footnote.dataset.action = "blur->footnotes#hide";
 
+      footnote.classList.add(...this.footnoteToggledClassesValue);
       footnote.classList.add(...this.footnoteClassesValue);
-      footnote.classList.add("position-fixed", "background-white");
       footnote.style.bottom = 0;
       footnote.style.left = 0;
       footnote.style.zIndex = 1;
@@ -110,7 +117,7 @@ export default class extends Controller {
     this.hide();
 
     footnote.style.height = `${footnote.dataset.height}px`;
-    footnote.classList.add(...this.footnoteClassesValue);
+    footnote.classList.add(...this.footnoteToggledClassesValue);
     footnote.setAttribute("role", "alert");
     footnote.setAttribute("tabindex", "0");
     footnote.focus();
@@ -119,7 +126,7 @@ export default class extends Controller {
   hide(event = undefined) {
     for (const footnote of this.footnoteTargets) {
       footnote.style.height = 0;
-      footnote.classList.remove(...this.footnoteClassesValue);
+      footnote.classList.remove(...this.footnoteToggledClassesValue);
       footnote.setAttribute("role", "");
     }
   }
