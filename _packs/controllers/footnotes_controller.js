@@ -18,7 +18,6 @@ export default class extends Controller {
     footnoteClasses: {
       type: Array,
       default: [
-        "background-white",
         "w-100",
         "p-3",
         "border-top",
@@ -82,7 +81,7 @@ export default class extends Controller {
       footnote.dataset.action = "blur->footnotes#hide";
 
       footnote.classList.add(...this.footnoteClassesValue);
-      footnote.classList.add("position-fixed");
+      footnote.classList.add("position-fixed", "background-white");
       footnote.style.bottom = 0;
       footnote.style.left = 0;
       footnote.style.zIndex = 1;
