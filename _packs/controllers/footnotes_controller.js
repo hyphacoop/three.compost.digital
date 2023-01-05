@@ -79,6 +79,8 @@ export default class extends Controller {
 
       this.offsetTopValue = offset + sidenote.offsetHeight + this.minSpacingValue;
     } else {
+      footnote.dataset.action = "blur->footnotes#hide";
+
       footnote.classList.add(...this.footnoteClassesValue);
       footnote.classList.add("position-fixed");
       footnote.style.bottom = 0;
@@ -111,6 +113,8 @@ export default class extends Controller {
     footnote.style.height = `${footnote.dataset.height}px`;
     footnote.classList.add(...this.footnoteClassesValue);
     footnote.setAttribute("role", "alert");
+    footnote.setAttribute("tabindex", "0");
+    footnote.focus();
   }
 
   hide(event = undefined) {
