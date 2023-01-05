@@ -80,12 +80,13 @@ export default class extends Controller {
       this.offsetTopValue = offset + sidenote.offsetHeight + this.minSpacingValue;
     } else {
       footnote.classList.add(...this.footnoteClassesValue);
+      footnote.classList.add("position-fixed");
       footnote.style.bottom = 0;
       footnote.style.left = 0;
       footnote.style.zIndex = 1;
       footnote.dataset.height = footnote.offsetHeight;
       footnote.style.height = 0;
-      footnote.classList.add("collapsing", "position-fixed");
+      footnote.classList.add("collapsing");
 
       reference.dataset.action = "footnotes#show";
       reference.dataset.footnotesReferenceParam = reference.id;
