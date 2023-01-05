@@ -1,0 +1,1255 @@
+{
+  "inputs": {
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/trim.js": {
+      "bytes": 194,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version.js": {
+      "bytes": 1434,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/trim.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js": {
+      "bytes": 441,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/memory-cache.js": {
+      "bytes": 410,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js": {
+      "bytes": 848,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/memory-cache.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/browsers.json": {
+      "bytes": 59065,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/browser_engine.json": {
+      "bytes": 887,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/fixtures/available-browsers.json": {
+      "bytes": 7886,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/fixtures/mobile-only-browsers.json": {
+      "bytes": 345,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/browser.js": {
+      "bytes": 3932,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/browsers.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/browser_engine.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/fixtures/available-browsers.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/fixtures/mobile-only-browsers.json",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/mobile_apps.json": {
+      "bytes": 14359,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/mobile-apps.js": {
+      "bytes": 1494,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/mobile_apps.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/feed_readers.json": {
+      "bytes": 4635,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/feed-readers.js": {
+      "bytes": 1574,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/feed_readers.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/libraries.json": {
+      "bytes": 4410,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/libraries.js": {
+      "bytes": 1546,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/libraries.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/mediaplayers.json": {
+      "bytes": 2921,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/media-players.js": {
+      "bytes": 1511,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/mediaplayers.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/pim.json": {
+      "bytes": 1670,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/personal-information-managers.js": {
+      "bytes": 1590,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/pim.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/index.js": {
+      "bytes": 1402,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/browser.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/mobile-apps.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/feed-readers.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/libraries.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/media-players.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/personal-information-managers.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/cameras.json": {
+      "bytes": 791,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/cameras.js": {
+      "bytes": 1730,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/cameras.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/mobiles.json": {
+      "bytes": 1072666,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/model.js": {
+      "bytes": 268,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/mobiles.js": {
+      "bytes": 2607,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/mobiles.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/model.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/televisions.json": {
+      "bytes": 19013,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/televisions.js": {
+      "bytes": 2092,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/televisions.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/model.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/car_browsers.json": {
+      "bytes": 787,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/cars.js": {
+      "bytes": 1393,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/car_browsers.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/consoles.json": {
+      "bytes": 1246,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/consoles.js": {
+      "bytes": 1785,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/consoles.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/notebooks.json": {
+      "bytes": 5059,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/notebooks.js": {
+      "bytes": 1893,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/notebooks.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/model.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/portable_media_player.json": {
+      "bytes": 2866,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/portable-media-players.js": {
+      "bytes": 1922,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/portable_media_player.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/index.js": {
+      "bytes": 1274,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/cameras.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/mobiles.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/televisions.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/cars.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/consoles.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/notebooks.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/portable-media-players.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/oss.json": {
+      "bytes": 31130,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/operating-system/fixtures/operating-system.json": {
+      "bytes": 3692,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/operating-system/index.js": {
+      "bytes": 3430,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/oss.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/operating-system/fixtures/operating-system.json",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/vendorfragments.json": {
+      "bytes": 1101,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/vendor-fragment/index.js": {
+      "bytes": 913,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/vendorfragments.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/bots.json": {
+      "bytes": 82227,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/bot/index.js": {
+      "bytes": 1201,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/bots.json",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version-compare.js": {
+      "bytes": 3894,
+      "imports": []
+    },
+    "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js": {
+      "bytes": 11657,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/index.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/index.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/operating-system/index.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/vendor-fragment/index.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/browser.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/bot/index.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version-compare.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/finally.js": {
+      "bytes": 499,
+      "imports": []
+    },
+    "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/allSettled.js": {
+      "bytes": 1221,
+      "imports": []
+    },
+    "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js": {
+      "bytes": 6028,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/finally.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/allSettled.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/jsonify_notice.js": {
+      "bytes": 6885,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js": {
+      "bytes": 2929,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/scope.js": {
+      "bytes": 2654,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/stackframe@1.3.4/node_modules/stackframe/stackframe.js": {
+      "bytes": 4944,
+      "imports": []
+    },
+    "node_modules/.pnpm/error-stack-parser@2.1.4/node_modules/error-stack-parser/error-stack-parser.js": {
+      "bytes": 8713,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/stackframe@1.3.4/node_modules/stackframe/stackframe.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/processor/esp.js": {
+      "bytes": 1628,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/error-stack-parser@2.1.4/node_modules/error-stack-parser/error-stack-parser.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/angular_message.js": {
+      "bytes": 443,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/debounce.js": {
+      "bytes": 487,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/ignore_noise.js": {
+      "bytes": 510,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/uncaught_message.js": {
+      "bytes": 450,
+      "imports": []
+    },
+    "node_modules/.pnpm/cross-fetch@3.1.5/node_modules/cross-fetch/dist/browser-ponyfill.js": {
+      "bytes": 15491,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/api.js": {
+      "bytes": 202,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/fetch.js": {
+      "bytes": 1702,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/cross-fetch@3.1.5/node_modules/cross-fetch/dist/browser-ponyfill.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/api.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/node.js": {
+      "bytes": 2945,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/api.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js": {
+      "bytes": 288,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/fetch.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/node.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/treebase.js": {
+      "bytes": 5597,
+      "imports": []
+    },
+    "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/rbtree.js": {
+      "bytes": 5456,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/treebase.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/bintree.js": {
+      "bytes": 2211,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/treebase.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/index.js": {
+      "bytes": 97,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/rbtree.js",
+          "kind": "require-call"
+        },
+        {
+          "path": "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/bintree.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/tdigest@0.1.2/node_modules/tdigest/tdigest.js": {
+      "bytes": 13370,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/index.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js": {
+      "bytes": 3027,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/tdigest@0.1.2/node_modules/tdigest/tdigest.js",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queries.js": {
+      "bytes": 3605,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queues.js": {
+      "bytes": 3946,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/routes.js": {
+      "bytes": 7139,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/version.js": {
+      "bytes": 222,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/remote_settings.js": {
+      "bytes": 6255,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/version.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/base_notifier.js": {
+      "bytes": 10548,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/jsonify_notice.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/scope.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/processor/esp.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/angular_message.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/debounce.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/ignore_noise.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/uncaught_message.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queries.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queues.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/routes.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/version.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/remote_settings.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/window.js": {
+      "bytes": 495,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/console.js": {
+      "bytes": 942,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/dom.js": {
+      "bytes": 2918,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/fetch.js": {
+      "bytes": 1254,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/location.js": {
+      "bytes": 1292,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/xhr.js": {
+      "bytes": 1222,
+      "imports": []
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/notifier.js": {
+      "bytes": 7388,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/base_notifier.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/window.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/console.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/fetch.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/location.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/xhr.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/index.js": {
+      "bytes": 192,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/notifier.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/base_notifier.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queries.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/scope.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "node_modules/.pnpm/@hotwired+turbo@7.2.4/node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js": {
+      "bytes": 135905,
+      "imports": []
+    },
+    "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js": {
+      "bytes": 82300,
+      "imports": []
+    },
+    "_packs/controllers/device_detector_controller.js": {
+      "bytes": 1401,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ]
+    },
+    "_packs/entry.js": {
+      "bytes": 964,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@hotwired+turbo@7.2.4/node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_packs/controllers/device_detector_controller.js",
+          "kind": "import-statement"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "assets/js/pack.Z2FSA3FL.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 590991
+    },
+    "assets/js/pack.Z2FSA3FL.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "_packs/entry.js",
+      "inputs": {
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/trim.js": {
+          "bytesInOutput": 146
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version.js": {
+          "bytesInOutput": 637
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/variable-replacement.js": {
+          "bytesInOutput": 226
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/memory-cache.js": {
+          "bytesInOutput": 181
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/user-agent.js": {
+          "bytesInOutput": 343
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/browsers.json": {
+          "bytesInOutput": 33220
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/browser_engine.json": {
+          "bytesInOutput": 476
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/fixtures/available-browsers.json": {
+          "bytesInOutput": 5345
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/fixtures/mobile-only-browsers.json": {
+          "bytesInOutput": 299
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/browser.js": {
+          "bytesInOutput": 1357
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/mobile_apps.json": {
+          "bytesInOutput": 8686
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/mobile-apps.js": {
+          "bytesInOutput": 622
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/feed_readers.json": {
+          "bytesInOutput": 3056
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/feed-readers.js": {
+          "bytesInOutput": 642
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/libraries.json": {
+          "bytesInOutput": 2861
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/libraries.js": {
+          "bytesInOutput": 642
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/mediaplayers.json": {
+          "bytesInOutput": 1802
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/media-players.js": {
+          "bytesInOutput": 624
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/client/pim.json": {
+          "bytesInOutput": 1057
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/personal-information-managers.js": {
+          "bytesInOutput": 640
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/client/index.js": {
+          "bytesInOutput": 547
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/cameras.json": {
+          "bytesInOutput": 385
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/cameras.js": {
+          "bytesInOutput": 631
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/mobiles.json": {
+          "bytesInOutput": 505099
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/model.js": {
+          "bytesInOutput": 172
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/mobiles.js": {
+          "bytesInOutput": 862
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/televisions.json": {
+          "bytesInOutput": 8514
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/televisions.js": {
+          "bytesInOutput": 777
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/car_browsers.json": {
+          "bytesInOutput": 382
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/cars.js": {
+          "bytesInOutput": 506
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/consoles.json": {
+          "bytesInOutput": 644
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/consoles.js": {
+          "bytesInOutput": 631
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/notebooks.json": {
+          "bytesInOutput": 2425
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/notebooks.js": {
+          "bytesInOutput": 690
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/device/portable_media_player.json": {
+          "bytesInOutput": 1405
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/portable-media-players.js": {
+          "bytesInOutput": 631
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/device/index.js": {
+          "bytesInOutput": 461
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/oss.json": {
+          "bytesInOutput": 19433
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/operating-system/fixtures/operating-system.json": {
+          "bytesInOutput": 2241
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/operating-system/index.js": {
+          "bytesInOutput": 1383
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/vendorfragments.json": {
+          "bytesInOutput": 586
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/vendor-fragment/index.js": {
+          "bytesInOutput": 340
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/fixtures/regexes/bots.json": {
+          "bytesInOutput": 49634
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/parsers/bot/index.js": {
+          "bytesInOutput": 519
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/utils/version-compare.js": {
+          "bytesInOutput": 757
+        },
+        "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js": {
+          "bytesInOutput": 4023
+        },
+        "node_modules/.pnpm/stackframe@1.3.4/node_modules/stackframe/stackframe.js": {
+          "bytesInOutput": 2136
+        },
+        "node_modules/.pnpm/error-stack-parser@2.1.4/node_modules/error-stack-parser/error-stack-parser.js": {
+          "bytesInOutput": 3029
+        },
+        "node_modules/.pnpm/cross-fetch@3.1.5/node_modules/cross-fetch/dist/browser-ponyfill.js": {
+          "bytesInOutput": 8354
+        },
+        "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/treebase.js": {
+          "bytesInOutput": 2577
+        },
+        "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/rbtree.js": {
+          "bytesInOutput": 1921
+        },
+        "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/lib/bintree.js": {
+          "bytesInOutput": 967
+        },
+        "node_modules/.pnpm/bintrees@1.0.2/node_modules/bintrees/index.js": {
+          "bytesInOutput": 59
+        },
+        "node_modules/.pnpm/tdigest@0.1.2/node_modules/tdigest/tdigest.js": {
+          "bytesInOutput": 4696
+        },
+        "_packs/entry.js": {
+          "bytesInOutput": 564
+        },
+        "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/finally.js": {
+          "bytesInOutput": 200
+        },
+        "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/allSettled.js": {
+          "bytesInOutput": 567
+        },
+        "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js": {
+          "bytesInOutput": 2676
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/jsonify_notice.js": {
+          "bytesInOutput": 3144
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js": {
+          "bytesInOutput": 1480
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/scope.js": {
+          "bytesInOutput": 1404
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/processor/esp.js": {
+          "bytesInOutput": 693
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/angular_message.js": {
+          "bytesInOutput": 223
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/debounce.js": {
+          "bytesInOutput": 153
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/ignore_noise.js": {
+          "bytesInOutput": 255
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/uncaught_message.js": {
+          "bytesInOutput": 223
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/fetch.js": {
+          "bytesInOutput": 798
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/api.js": {
+          "bytesInOutput": 142
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/node.js": {
+          "bytesInOutput": 1085
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js": {
+          "bytesInOutput": 48
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js": {
+          "bytesInOutput": 1415
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queries.js": {
+          "bytesInOutput": 1614
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queues.js": {
+          "bytesInOutput": 1806
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/routes.js": {
+          "bytesInOutput": 3240
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/version.js": {
+          "bytesInOutput": 114
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/remote_settings.js": {
+          "bytesInOutput": 2821
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/base_notifier.js": {
+          "bytesInOutput": 5096
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/window.js": {
+          "bytesInOutput": 251
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/console.js": {
+          "bytesInOutput": 351
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/dom.js": {
+          "bytesInOutput": 1349
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/fetch.js": {
+          "bytesInOutput": 526
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/location.js": {
+          "bytesInOutput": 507
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/xhr.js": {
+          "bytesInOutput": 616
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/notifier.js": {
+          "bytesInOutput": 3218
+        },
+        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/.pnpm/@hotwired+turbo@7.2.4/node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js": {
+          "bytesInOutput": 73392
+        },
+        "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js": {
+          "bytesInOutput": 42022
+        },
+        "_packs/controllers/device_detector_controller.js": {
+          "bytesInOutput": 1040
+        }
+      },
+      "bytes": 844047
+    }
+  }
+}

@@ -4,7 +4,7 @@
   {% assign text = x | append: "by" | append: y %}
 
   <div class="mb-3">
-    {% include headings/h2.html text=text %}
+    {% include headings/with_link.html level=2 text=text %}
     {% include embed_responsive.html src="public/placeholder.png" width=576 x=x y=y %}
   </div>
 {% endfor %}

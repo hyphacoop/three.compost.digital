@@ -4,7 +4,7 @@ La ficha de post en el índice de artículos.
 
 @param :href [String] El link
 @param :title [String] El título
-@param :author [String] Le autore
+@param :authors [String] Les autorxs
 @param :description [String] La descripción
 @param :src [String] La imagen
 @param :alt [String] La descripción de la imagen
@@ -12,7 +12,6 @@ La ficha de post en el índice de artículos.
 @param :author_class [String] Las clases de autorx
 @param :description_class [String] Las clases de descripción
 {%- endcomment -%}
-
 <div
 	class="position-relative px-2">
 	<a
@@ -25,7 +24,11 @@ La ficha de post en el índice de artículos.
 
 	{% include embed_responsive.html src=include.src width=700 x="700" y="350" alt=include.alt %}
 
-	<p class="{{ include.title_class }}">{{- include.title -}}</p>
-	<p class="{{ include.author_class }}">{{- include.author -}}</p>
+	{% include headings/h1.html text=include.title class=include.title_class %}
+
+	<p class="{{ include.author_class }}">
+		{{ include.authors | map: "title" | array_to_sentence_string: site.i18n.and }}
+	</p>
+
 	<p class="{{ include.description_class }}">{{- include.description -}}</p>
 </div>

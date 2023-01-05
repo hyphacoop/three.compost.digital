@@ -4,10 +4,20 @@ La ficha de post en el índice de artículos del home.
 
 @param :href [String] El link
 @param :title [String] El título
-@param :author [String] Le autore
+@param :authors [String] Les autorxs
 @param :src [String] La imagen
 @param :alt [String] La descripción de la imagen
+@param :description [String] La descripción del post
 {%- endcomment -%}
 
-{% include cover_post/generic.html author=include.author title=include.title description=include.description src=include.src alt=include.alt href=include.href title_class="font-weight-bold text-uppercase m-0 py-2 letter-spacing-1 display-4 f-xl-25" author_class="text-uppercase letter-spacing-2 f-16 lead-md f-xl-17" description_class="source-serif f-16 lead-md f-xl-17" %}
-
+{% include cover_post/generic.html
+  authors=include.authors
+  title=include.title
+  description=include.description
+  src=include.src
+  alt=include.alt
+  href=include.href
+  title_class="font-weight-bold text-uppercase m-0 py-2 letter-spacing-1 display-4 f-xl-25"
+  author_class="text-uppercase letter-spacing-2 f-16 lead-md f-xl-17"
+  description_class="source-serif f-16 lead-md f-xl-17"
+%}

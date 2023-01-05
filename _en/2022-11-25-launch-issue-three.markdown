@@ -1,6 +1,8 @@
 ---
 title: LAUNCH ISSUE THREE!
 goal: c9c98034-4130-4caa-b339-8c4d0d9cbc0f
+value_max: 40000.0
+description: "We'll run a half-day micro-conference with contributors and community. We'll discuss issues we face on the (D)Web and in collective publishing."
 order: 13
 draft: false
 layout: goal
@@ -10,5 +12,3 @@ usuaries:
 - 356
 last_modified_at: 2022-11-25 22:28:54.539655748 +00:00
 ---
-
-<p><strong>$40000</strong> We'll run a half-day micro-conference with contributors and community. We'll discuss issues we face on the (D)Web and in collective publishing.</p>

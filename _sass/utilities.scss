@@ -182,6 +182,30 @@
         }
       }
     }
+
+    @each $background-size, $value in $background-sizes {
+      /// Tamaño de imagen de fondo
+      ///
+      /// @example html
+      ///   <div class="background-size-md-cover"></div>
+      .background-size#{$infix}-#{$background-size} {
+        background-size: $value !important;
+      }
+    }
+
+    @each $x in $background-positions-x {
+      @each $y in $background-positions-y {
+        .background-position#{$infix}-#{$x}-#{$y} {
+          background-position: $x $y;
+        }
+      }
+    }
+
+    @each $background-image, $value in $background-images {
+      .background-image#{$infix}-#{$background-image} {
+        background-image: url("#{$value}");
+      }
+    }
   }
 }
 
@@ -204,3 +228,14 @@
 .zindex-modal { z-index: 1050; }
 .zindex-popover { z-index: 1060; }
 .zindex-tooltip { z-index: 1070; }
+
+.support-background {
+  background-image: url('../../public/background-dithered.jpg');
+  background-size: contain;
+  width: 100%;
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
