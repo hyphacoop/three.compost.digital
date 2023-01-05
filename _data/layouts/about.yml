@@ -57,6 +57,22 @@ image_menu_open:
     help:
       es: ''
       en: ''
+background_image:
+  type: 'image'
+  path:
+    label:
+      es: 'Imagen de fondo'
+      en: 'Background image'
+    help:
+      es: 'Imagen de fondo de la cabecera'
+      en: 'Header background image'
+  description:
+    label:
+      es: 'Descripción de la imagen'
+      en: 'Image description'
+    help:
+      es: ''
+      en: ''
 license:
   type: new_html
   label:

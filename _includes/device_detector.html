@@ -1,0 +1,30 @@
+<div
+  data-controller="device-detector"
+  data-action="resize@window->device-detector#resized"
+  class="position-fixed top-0 right-0 z-index-2050 pointer-event-none">
+  <div class="background-pink-t3 pr-1">
+    <button class="pointer-event-auto btn btn-sm" data-action="device-detector#toggleHelp">
+      {{ site.i18n.device_detector.get_help }}
+    </button>
+    <button class="pointer-event-auto btn btn-sm" data-action="device-detector#outline">
+      {{ site.i18n.device_detector.outline }}
+    </button>
+    <span data-device-detector-target="clientName"></span>
+    {{- -}}&nbsp;{{- -}}
+    <span data-device-detector-target="clientVersion"></span>
+    {{- -}}&nbsp;{{- -}}
+    (<span data-device-detector-target="deviceType"></span>)
+    {{- -}}&nbsp;{{- -}}
+    <span data-device-detector-target="osName"></span>
+    {{- -}}&nbsp;{{- -}}
+    <span data-device-detector-target="osVersion"></span>
+    {{- -}}&nbsp;{{- -}}
+    <span data-device-detector-target="viewportWidth"></span>
+    x <span data-device-detector-target="viewportHeight"></span>
+    x <span data-device-detector-target="devicePixelRatio"></span>
+  </div>
+
+  <div data-device-detector-target="help" hidden class="background-pink content">
+    {{ site.i18n.device_detector.help | allow_inclusive_language_in_markdown | markdownify }}
+  </div>
+</div>

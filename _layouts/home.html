@@ -1,7 +1,35 @@
 ---
-layout: "default"
+layout: "default_with_menu"
 ---
 
-{%- assign theme = site.posts | find: "layout", "theme" -%}
+{%- assign publication = site.posts | find: "layout", "publication" -%}
+{%- assign posts = site.posts | where: "layout", "post" -%}
+{%- assign back_cover = site.posts | find: "layout", "back_cover" -%}
 
-{%- include buttons/with_link.html href=theme.url text="Go to Components" -%}
+<div class="pt-md-6 px-3">
+	{% include card_horizontal.html
+		src=publication.image.path
+		alt=publication.image.alt
+		title=publication.title
+		subtitle=publication.subtitle
+		content=publication.content
+	%}
+	<article class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-6 container-lg mx-auto">
+		{% for post in posts %}
+			<div class="col pb-5 px-2">
+				{% include cover_post/home.html
+					authors=post.authors
+					src=post.image.path
+					alt=post.image.alt
+					title=post.title
+					description=post.description
+					href=post.url
+				%}
+			</div>
+		{% endfor %}
+
+		<div class="col pb-5 px-2">
+			{% include cover_post/home.html title=back_cover.title src=back_cover.image.path alt=back_cover.image.description href=back_cover.url description=back_cover.description %}
+		</div>
+	</article>
+</div>

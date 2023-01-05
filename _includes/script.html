@@ -1,0 +1,5 @@
+{% comment %}
+@param :src [String]
+{% endcomment %}
+
+<script defer src="{{ include.src | uri_escape }}" data-turbo-track="reload"></script>

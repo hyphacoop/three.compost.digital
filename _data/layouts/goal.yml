@@ -7,8 +7,8 @@ title:
   help:
     es:
     en:
-content:
-  type: new_content
+description:
+  type: text
   label:
     en: Objective section content
     es: Sección de contenido para el objetivo

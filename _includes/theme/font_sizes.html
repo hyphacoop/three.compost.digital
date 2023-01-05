@@ -1,7 +1,7 @@
 {% for font_size in site.data.theme.font_sizes %}
   <div class="mb-3">
     {% assign title = "Tipografía f-" | append: font_size[0] %}
-    {% include headings/h2.html text=title %}
+    {% include headings/with_link.html level=2 text=title %}
 
     <p class="f-{{ font_size[0] }}">
       <strong>Lorem ipsum dolor sit amet</strong>, consectetur
