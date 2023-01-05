@@ -20,20 +20,20 @@ column_2: <p><strong>COMPOST is published to the web and <a href="https://getdwe
   rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Creative Commons
   Attribution-ShareAlike 4.0 International license</a>.</p>
 column_3: <p><strong>Social Web</strong></p><p><a href="https://www.are.na/compost/"
-  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Are.na</a></p><p><a
-  href="https://social.coop/@COMPOST" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Mastodon</a></p><p><a
-  href="https://www.twitter.com/COMPOSTmag" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Twitter</a></p><p><a
-  href="https://github.com/hyphacoop/two.compost.digital" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">GitHub</a></p><p></p><p><strong>Keep
-  in touch</strong></p><p></p><p><a href="https://link.hypha.coop/compost-newsletter"
-  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Join our newsletter</a></p><p><a
-  href="https://github.com/hyphacoop/distributed-press-organizing/wiki" rel="noopener"
-  referrerpolicy="strict-origin-when-cross-origin">Read our Wiki</a></p><p><a href="mailto:hello@compost.digital"
-  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Email us</a></p>
-column_4: <p><strong>Support Us</strong></p><p></p><p><a href="https://two.compost.digital/support-us/#web-monetization"
-  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Web Monetization</a></p><p><a
+  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Are.na</a><br><a
+  href="https://social.coop/@COMPOST" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Mastodon</a><br><a
+  href="https://www.twitter.com/COMPOSTmag" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Twitter</a><br><a
+  href="https://github.com/hyphacoop/two.compost.digital" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">GitHub</a></p><p><strong>Keep
+  in touch</strong></p><p><a href="https://link.hypha.coop/compost-newsletter" rel="noopener"
+  referrerpolicy="strict-origin-when-cross-origin">Join our newsletter</a><br><a href="https://github.com/hyphacoop/distributed-press-organizing/wiki"
+  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Read our Wiki</a><br><a
+  href="mailto:hello@compost.digital" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Email
+  us</a></p>
+column_4: <p><strong>Support Us</strong></p><p><a href="https://two.compost.digital/support-us/#web-monetization"
+  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Web Monetization</a><br><a
   href="https://opencollective.com/compost" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Open
-  Collective</a></p><p><a href="https://gitcoin.co/grants/1385/compost" rel="noopener"
-  referrerpolicy="strict-origin-when-cross-origin">Gitcoin</a></p><p><a href="https://two.compost.digital/support-us/"
+  Collective</a><br><a href="https://gitcoin.co/grants/1385/compost" rel="noopener"
+  referrerpolicy="strict-origin-when-cross-origin">Gitcoin</a><br><a href="https://two.compost.digital/support-us/"
   rel="noopener" referrerpolicy="strict-origin-when-cross-origin">compostmag.eth</a></p>
 draft: false
 order: 7
@@ -43,6 +43,6 @@ liquid: false
 usuaries:
 - 356
 - 534
-last_modified_at: 2023-01-05 18:39:00.308477277 +00:00
+last_modified_at: 2023-01-05 18:40:44.699153867 +00:00
 ---
 
