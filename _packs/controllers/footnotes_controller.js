@@ -49,12 +49,36 @@ export default class extends Controller {
   };
 
   connect() {
+    this.originalFootnotes = [];
+    this.createFootnotes();
+  }
+
+  resize(event = undefined) {
+    if (this.sidenotesArePossible === undefined) return;
+    if (this.sidenotesArePossible === this.areSidenotesPossible) return;
+
+    const footnotes = Array.from(this.footnoteTargets);
+
+    for (const i in this.footnoteTargets) {
+      footnotes[i].outerHTML = this.originalFootnotes[i];
+    }
+
+    this.originalFootnotes = [];
+
+    this.createFootnotes();
+  }
+
+  createFootnotes() {
     const references = this.element.querySelectorAll("a[id^=fn]");
     const footnotes = this.element.querySelectorAll("li[id^=fn]");
+
+    this.sidenotesArePossible = this.areSidenotesPossible;
 
     for (const i in Array.from(references)) {
       const reference = references[i];
       const footnote = footnotes[i];
+
+      this.originalFootnotes.push(footnote.outerHTML);
 
       reference.dataset.footnote = footnote.id;
       reference.dataset.footnotesTarget = "reference";
@@ -74,7 +98,7 @@ export default class extends Controller {
 
     footnote.style.listStylePosition = "inside";
 
-    if (this.sidenotesPossible) {
+    if (this.sidenotesArePossible) {
       const sidenote = footnote;
       const number = reference.querySelector("sup").textContent;
       const offset = Math.max(reference.offsetTop, this.offsetTopValue);
@@ -102,7 +126,7 @@ export default class extends Controller {
     }
   }
 
-  get sidenotesPossible () {
+  get areSidenotesPossible () {
     const bodyWidth = document.body.offsetWidth;
     const containerWidth = (this.containerWidthValue + this.sidenoteWidthValue * 2);
 
