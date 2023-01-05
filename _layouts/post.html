@@ -27,7 +27,11 @@ layout: "default_with_menu"
       </p>
     {% endunless %}
 
-    <div class="source-serif lead-md pt-20 content" data-controller="footnotes" data-footnotes-sidenotes-classes-value="{{ site.data.theme.footnotes_sidenotes_classes | jsonify | escape }}">
+    <div
+      class="source-serif lead-md pt-20 content"
+      data-controller="footnotes"
+      data-footnotes-offset-left-value="{{ site.data.theme.footnotes_offset_left }}">
+      data-footnotes-sidenotes-classes-value="{{ site.data.theme.footnotes_sidenotes_classes | jsonify | escape }}">
       {{ content }}
     </div>
   </div>

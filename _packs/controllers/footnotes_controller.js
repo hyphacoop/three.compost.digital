@@ -7,9 +7,13 @@ export default class extends Controller {
       type: Number,
       default: 20,
     },
-    offset: {
+    offsetTop: {
       type: Number,
       default: 0,
+    },
+    offsetLeft: {
+      type: Number,
+      default: 1105,
     },
     sidenoteClasses: {
       type: Array,
@@ -46,12 +50,12 @@ export default class extends Controller {
     const sidenote = footnote;
     const reference = this.referenceTargets.find(x => x.id === footnote.dataset.reference);
     const number = reference.querySelector("sup").textContent;
-    const offset = Math.max(reference.offsetTop, this.offsetValue);
+    const offset = Math.max(reference.offsetTop, this.offsetTopValue);
 
     sidenote.style.top = `${offset}px`;
-    sidenote.style.left = `1105px`;
+    sidenote.style.left = `${this.offsetLeftValue}px`;
     sidenote.classList.add(...this.sidenoteClassesValue);
 
-    this.offsetValue = offset + sidenote.offsetHeight + this.minSpacingValue;
+    this.offsetTopValue = offset + sidenote.offsetHeight + this.minSpacingValue;
   }
 }
