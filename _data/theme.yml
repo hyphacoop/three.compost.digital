@@ -127,3 +127,5 @@ footnotes_sidenotes_classes:
 - "w-220px"
 - "f-11"
 footnotes_offset_left: 1105
+footnotes_container_width: 780
+footnotes_sidenote_width: 220
