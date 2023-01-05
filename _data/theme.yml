@@ -57,12 +57,12 @@ display4_size: "1.875rem"
 enable_responsive_font_sizes: true
 lead_font_size: "1.3125rem"
 font_sizes:
+  11: "0.7"
   14: "0.875"
   16: "1"
   17: "1.0625"
   19: "1.1875"
   25: "1.5625"
-sizes:
 sizes:
   67px: "4.1875rem"
   44px: "2.75rem"
@@ -70,6 +70,7 @@ sizes:
   36px: "2.25rem"
   49px: "3.0625rem"
   74px: "4.625rem"
+  220px: "220px"
   221px: "13.8125rem"
   333px: "20.8125rem"
   780px: "780px"
@@ -123,12 +124,10 @@ background_sizes:
 background_positions_x:
 - "center"
 - "top"
-- "center"
 background_positions_y:
 - "bottom"
 - "left"
 - "right"
-- "bottom"
 background_images:
   menu: "$background-menu"
   site: "$background-site"
@@ -141,3 +140,20 @@ code_font_family: "Roboto Mono"
 paragraph_margin_bottom: "0"
 headings_margin_bottom: "0"
 box_shadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
+layout_class:
+  support: "background-image-site background-size-contain w-100"
+  home: "background-image-site background-size-contain w-100"
+  about: "background-image-site background-size-contain w-100"
+footnotes_sidenotes_classes:
+- "position-absolute"
+- "w-220px"
+- "f-11"
+footnotes_container_width: 780
+footnotes_sidenote_width: 220
+footnotes_classes:
+- "background-white"
+- "position-fixed"
+footnotes_toggled_classes:
+- "w-100"
+- "p-3"
+- "border-top"
