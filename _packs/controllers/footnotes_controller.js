@@ -11,10 +11,6 @@ export default class extends Controller {
       type: Number,
       default: 0,
     },
-    offsetLeft: {
-      type: Number,
-      default: 1105,
-    },
     footnoteClasses: {
       type: Array,
       default: [
@@ -55,17 +51,27 @@ export default class extends Controller {
 
   resize(event = undefined) {
     if (this.sidenotesArePossible === undefined) return;
-    if (this.sidenotesArePossible === this.areSidenotesPossible) return;
 
-    const footnotes = Array.from(this.footnoteTargets);
+    const sidenotesWerePossible = this.sidenotesArePossible;
+    const sidenotesArePossible = this.areSidenotesPossible;
 
-    for (const i in this.footnoteTargets) {
-      footnotes[i].outerHTML = this.originalFootnotes[i];
+    if (sidenotesWerePossible && sidenotesArePossible) {
+      const offsetLeft = this.element.offsetLeft + this.element.offsetWidth;
+
+      for (const sidenote of this.footnoteTargets) {
+        sidenote.style.left = `${offsetLeft}px`;
+      }
+    } else {
+      const footnotes = Array.from(this.footnoteTargets);
+
+      for (const i in this.footnoteTargets) {
+        footnotes[i].outerHTML = this.originalFootnotes[i];
+      }
+
+      this.originalFootnotes = [];
+
+      this.createFootnotes();
     }
-
-    this.originalFootnotes = [];
-
-    this.createFootnotes();
   }
 
   createFootnotes() {
@@ -101,13 +107,14 @@ export default class extends Controller {
     if (this.sidenotesArePossible) {
       const sidenote = footnote;
       const number = reference.querySelector("sup").textContent;
-      const offset = Math.max(reference.offsetTop, this.offsetTopValue);
+      const offsetTop = Math.max(reference.offsetTop, this.offsetTopValue);
+      const offsetLeft = this.element.offsetLeft + this.element.offsetWidth;
 
-      sidenote.style.top = `${offset}px`;
-      sidenote.style.left = `${this.offsetLeftValue}px`;
+      sidenote.style.top = `${offsetTop}px`;
+      sidenote.style.left = `${offsetLeft}px`;
       sidenote.classList.add(...this.sidenoteClassesValue);
 
-      this.offsetTopValue = offset + sidenote.offsetHeight + this.minSpacingValue;
+      this.offsetTopValue = offsetTop + sidenote.offsetHeight + this.minSpacingValue;
     } else {
       footnote.dataset.action = "blur->footnotes#hide";
 
