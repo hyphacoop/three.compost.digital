@@ -150,11 +150,12 @@ footnotes_sidenote_width: 220
 footnotes_footnote_class:
 - "background-white"
 - "position-fixed"
-footnotes_footnote_toggled_class:
 - "w-100"
-- "p-3"
+- "px-3"
 - "border-top"
 - "border-black"
+footnotes_footnote_toggled_class:
+- "py-3"
 footnotes_sidenote_class:
 - "position-absolute"
 - "w-220px"
