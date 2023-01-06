@@ -5,6 +5,7 @@ layout: "default_with_menu"
 {%- assign about = site.posts | find: "layout", "about" -%}
 {%- assign authors = site.posts | where: "layout", "author" -%}
 {%- assign buttons = site.posts | where: "layout", "button" -%}
+{%- assign buttons = site.posts | where: "layout", "button_copy" | concat: buttons | order -%}
 {%- assign goals = site.posts | where: "layout", "goal" -%}
 
 <article id="{{ page.slug }}" class="container mx-auto max-w-780px py-4">
