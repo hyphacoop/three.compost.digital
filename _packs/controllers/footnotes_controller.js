@@ -90,14 +90,14 @@ export default class extends Controller {
 
       sidenote.style.top = `${offsetTop}px`;
       sidenote.style.left = `${offsetLeft}px`;
-      sidenote.classList.add(...this.sidenoteClass);
+      sidenote.classList.add(...this.sidenoteClasses);
 
       this.offsetTopValue = offsetTop + sidenote.offsetHeight + this.minSpacingValue;
     } else {
       footnote.dataset.action = "blur->footnotes#hide";
 
-      footnote.classList.add(...this.footnoteToggledClass);
-      footnote.classList.add(...this.footnoteClass);
+      footnote.classList.add(...this.footnoteToggledClasses);
+      footnote.classList.add(...this.footnoteClasses);
       footnote.style.bottom = 0;
       footnote.style.left = 0;
       footnote.style.zIndex = 1;
@@ -126,7 +126,7 @@ export default class extends Controller {
     this.hide();
 
     footnote.style.height = `${footnote.dataset.height}px`;
-    footnote.classList.add(...this.footnoteToggledClass);
+    footnote.classList.add(...this.footnoteToggledClasses);
     footnote.setAttribute("role", "alert");
     footnote.setAttribute("tabindex", "0");
     footnote.focus();
@@ -135,7 +135,7 @@ export default class extends Controller {
   hide(event = undefined) {
     for (const footnote of this.footnoteTargets) {
       footnote.style.height = 0;
-      footnote.classList.remove(...this.footnoteToggledClass);
+      footnote.classList.remove(...this.footnoteToggledClasses);
       footnote.setAttribute("role", "");
     }
   }
