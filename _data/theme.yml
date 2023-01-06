@@ -19,6 +19,7 @@ colors:
   blue: "#564FE3"
   light_blue: "#9995ef"
   light_gray: "#eeeeee"
+  footnote: "#888888"
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"
@@ -126,6 +127,8 @@ footnotes_sidenotes_classes:
 - "position-absolute"
 - "w-220px"
 - "f-11"
+- "ml-40"
+- "footnote"
 footnotes_container_width: 780
 footnotes_sidenote_width: 220
 footnotes_classes:
@@ -135,3 +138,4 @@ footnotes_toggled_classes:
 - "w-100"
 - "p-3"
 - "border-top"
+- "border-black"
