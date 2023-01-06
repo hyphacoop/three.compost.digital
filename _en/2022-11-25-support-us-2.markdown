@@ -3,14 +3,13 @@ title: Support Us
 description: We are building on the digital commons by publishing our work freely
   and stewarding tools for anyone to use. If you like what we’re doing, consider supporting
   us!
-section_1: <figure><img src="https://panel.sutty.nl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--eaa55839dc7b3e56ee3479f45752fbf1dcbb8689/stick1.gif"
-  class="img-fluid"></figure><p></p><h2 id="digital-bake-sale">Digital Bake Sale</h2><p>We
-  need your support to ensure the future sustainability of our magazine and <a href="https://distributed.press"
-  rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Distributed Press</a>.</p><p>Our
-  magazine has CAD $7,174.48 in our bank account as of Wednesday, January 4, 2023.
-  We hope to raise $40,000 by January 31st of 2022 and before launching Issue Three.</p><p><a
-  href="https://two.compost.digital/support-us/#support-us" rel="noopener" referrerpolicy="strict-origin-when-cross-origin">Contribute</a>
+section_1: <h2 id="digital-bake-sale">Digital Bake Sale</h2><p>We need your support
+  to ensure the future sustainability of our magazine and <a href="https://distributed.press"
+  target="_blank">Distributed Press</a>.</p><p>Our magazine has BALANCE in our
+  bank account as of DATE. We hope to raise $30,000 by August
+  1st of 2021 and before launching Issue Two.</p><p><a class="donation-button" href="https://one.compost.digital/support-us/#support-us">Contribute</a>
   to help us hit our fundraising goals.</p>
+monetization_url: "https://api.compost.digital/v0/monetization/balances.json"
 goals:
 - 2568b8c9-bf51-404c-8af5-621b8ee488bd
 - a1e96bde-f3f1-421d-a27d-0f09b2a168ac
