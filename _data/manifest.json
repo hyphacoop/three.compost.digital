@@ -932,6 +932,15 @@
       "bytes": 82300,
       "imports": []
     },
+    "_packs/controllers/body_scroll_controller.js": {
+      "bytes": 438,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "_packs/controllers/device_detector_controller.js": {
       "bytes": 1401,
       "imports": [
@@ -975,7 +984,7 @@
       ]
     },
     "_packs/entry.js": {
-      "bytes": 1340,
+      "bytes": 1469,
       "imports": [
         {
           "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js",
@@ -994,6 +1003,10 @@
           "kind": "import-statement"
         },
         {
+          "path": "_packs/controllers/body_scroll_controller.js",
+          "kind": "import-statement"
+        },
+        {
           "path": "_packs/controllers/device_detector_controller.js",
           "kind": "import-statement"
         },
@@ -1009,13 +1022,13 @@
     }
   },
   "outputs": {
-    "assets/js/pack.ROQRJCPS.js.map": {
+    "assets/js/pack.FNMJGZN6.js.map": {
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 600154
+      "bytes": 601160
     },
-    "assets/js/pack.ROQRJCPS.js": {
+    "assets/js/pack.FNMJGZN6.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "_packs/entry.js",
@@ -1183,7 +1196,7 @@
           "bytesInOutput": 4705
         },
         "_packs/entry.js": {
-          "bytesInOutput": 726
+          "bytesInOutput": 762
         },
         "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/finally.js": {
           "bytesInOutput": 200
@@ -1281,6 +1294,9 @@
         "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js": {
           "bytesInOutput": 42017
         },
+        "_packs/controllers/body_scroll_controller.js": {
+          "bytesInOutput": 273
+        },
         "_packs/controllers/device_detector_controller.js": {
           "bytesInOutput": 1038
         },
@@ -1291,7 +1307,7 @@
           "bytesInOutput": 524
         }
       },
-      "bytes": 847346
+      "bytes": 847655
     }
   }
 }
