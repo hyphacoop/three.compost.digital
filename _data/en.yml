@@ -8,6 +8,8 @@ layouts:
   supporter: "Sponsor"
 support_alt: "Mushroom"
 and: "and"
+button_copy:
+  confirmation: "%s copied"
 device_detector:
   outline: Outline
   get_help: Help
