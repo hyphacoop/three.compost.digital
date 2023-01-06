@@ -7,8 +7,18 @@ export default class extends Controller {
   };
 
   async connect() {
-    if (this.monetizationUrlValue.startsWith("//")) {
-      this.monetizationUrlValue = `${this.protocol}${this.monetizationUrlValue}`;
+    if (!this.monetizationUrlValue) return;
+
+    try {
+      const monetizationUrl = new URL(this.monetizationUrlValue);
+
+      if (window.location.protocol !== monetizationUrl.protocol) {
+        monetizationUrl.protocol = this.protocol;
+        this.monetizationUrlValue = monetizationUrl.toString();
+      }
+    } catch(e) {
+      console.error("Not a valid URL", this.monetizationUrlValue);
+      return;
     }
 
     const balances = await this.fetchBalances();

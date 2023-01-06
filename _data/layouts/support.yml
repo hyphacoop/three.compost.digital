@@ -33,6 +33,14 @@ section_1:
   help:
     en: Content that can have text and images
     es: Contenido que puede tener texto e imágenes
+monetization_url:
+  type: "url"
+  label:
+    en: "Distributed Press monetization URL"
+    es: "URL de monetización de Distributed Press"
+  help:
+    en: ""
+    es: ""
 goals:
   type: has_many
   inverse: goal
