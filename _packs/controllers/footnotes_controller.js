@@ -104,6 +104,7 @@ export default class extends Controller {
       footnote.dataset.height = footnote.offsetHeight;
       footnote.style.height = 0;
       footnote.classList.add("collapsing");
+      footnote.classList.remove(...this.footnoteToggledClasses);
 
       reference.dataset.action = "footnotes#show";
       reference.dataset.footnotesReferenceParam = reference.id;
