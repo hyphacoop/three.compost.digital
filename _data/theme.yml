@@ -26,6 +26,7 @@ colors:
   light_gray: "#eeeeee"
   lighter_blue: "#cccaf7"
   post: "rgba(230, 230, 230, 0.1)"
+  footnote: "#888888"
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"
@@ -57,12 +58,12 @@ display4_size: "1.875rem"
 enable_responsive_font_sizes: true
 lead_font_size: "1.3125rem"
 font_sizes:
+  11: "0.7"
   14: "0.875"
   16: "1"
   17: "1.0625"
   19: "1.1875"
   25: "1.5625"
-sizes:
 sizes:
   67px: "4.1875rem"
   44px: "2.75rem"
@@ -70,6 +71,7 @@ sizes:
   36px: "2.25rem"
   49px: "3.0625rem"
   74px: "4.625rem"
+  220px: "220px"
   221px: "13.8125rem"
   333px: "20.8125rem"
   780px: "780px"
@@ -112,9 +114,9 @@ container_max_widths:
   lg: "1200px"
   xl: "1201px"
 layout_class:
- support: "background-image-site background-size-contain w-100"
- home: "background-image-site background-size-contain w-100"
- about: "background-image-site background-size-contain w-100"
+  support: "background-image-site background-size-contain w-100"
+  home: "background-image-site background-size-contain w-100"
+  about: "background-image-site background-size-contain w-100"
 background_sizes:
   auto-100: "auto 100%"
   cover: "cover"
@@ -123,12 +125,10 @@ background_sizes:
 background_positions_x:
 - "center"
 - "top"
-- "center"
 background_positions_y:
 - "bottom"
 - "left"
 - "right"
-- "bottom"
 background_images:
   menu: "$background-menu"
   site: "$background-site"
@@ -141,3 +141,19 @@ code_font_family: "Roboto Mono"
 paragraph_margin_bottom: "0"
 headings_margin_bottom: "0"
 box_shadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
+footnotes_sidenotes_classes:
+- "position-absolute"
+- "w-220px"
+- "f-11"
+- "ml-40"
+- "footnote"
+footnotes_container_width: 780
+footnotes_sidenote_width: 220
+footnotes_classes:
+- "background-white"
+- "position-fixed"
+footnotes_toggled_classes:
+- "w-100"
+- "p-3"
+- "border-top"
+- "border-black"

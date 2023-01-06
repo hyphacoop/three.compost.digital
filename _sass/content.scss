@@ -49,5 +49,21 @@
 
   a {
     text-decoration: underline !important;
+
+  sup {
+    position: relative;
+    @include font-size(100%);
+    line-height: 0;
+    vertical-align: baseline;
+    top: 0;
+    font-weight: bold;
+
+    &:before {
+      content: "[";
+    }
+
+    &:after {
+      content: "]";
+    }
   }
 }
