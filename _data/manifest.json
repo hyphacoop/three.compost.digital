@@ -947,7 +947,7 @@
       ]
     },
     "_packs/controllers/footnotes_controller.js": {
-      "bytes": 4211,
+      "bytes": 4286,
       "imports": [
         {
           "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
@@ -991,13 +991,13 @@
     }
   },
   "outputs": {
-    "assets/js/pack.G7HAEMTA.js.map": {
+    "assets/js/pack.JWEEVNT7.js.map": {
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 598273
+      "bytes": 598388
     },
-    "assets/js/pack.G7HAEMTA.js": {
+    "assets/js/pack.JWEEVNT7.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "_packs/entry.js",
@@ -1267,10 +1267,10 @@
           "bytesInOutput": 1039
         },
         "_packs/controllers/footnotes_controller.js": {
-          "bytesInOutput": 2548
+          "bytesInOutput": 2609
         }
       },
-      "bytes": 846629
+      "bytes": 846690
     }
   }
 }
