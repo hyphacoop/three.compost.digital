@@ -13,7 +13,14 @@ Las barras de progreso de los objetivos/metas
 
 <div class="mb-3">
 	<div class="progress position-relative border border-width-3 border-black">
-		<div class="progress-bar o-2" style="width: {{ width }}%" role="progressbar" aria-valuenow="{{ include.value_now }}" aria-valuemin="0" aria-valuemax="{{ include.value_max }}"></div>
+    <div
+      data-support-us-target="goal"
+      class="progress-bar o-2 collapsing width"
+      style="width: {{ width }}%"
+      role="progressbar"
+      aria-valuenow="{{ include.value_now }}"
+      aria-valuemin="0"
+      aria-valuemax="{{ include.value_max }}"></div>
 		<span class="d-flex position-absolute h-100 align-items-center font-weight-bold lead px-4">{{ include.title }}</span>
 	</div>
 

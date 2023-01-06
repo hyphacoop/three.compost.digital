@@ -8,7 +8,10 @@ layout: "default_with_menu"
 {%- assign buttons = site.posts | where: "layout", "button_copy" | concat: buttons | order -%}
 {%- assign goals = site.posts | where: "layout", "goal" -%}
 
-<article id="{{ page.slug }}" class="container mx-auto max-w-780px py-4 mt-lg-5 px-20">
+<article
+  data-controller="support-us"
+  data-support-us-monetization-url-value="{{ page.monetization_url }}"
+  id="{{ page.slug }}" class="container mx-auto max-w-780px py-4 mt-lg-5 px-20">
 	{% include headings/h1.html class="text-uppercase black hover-black letter-spacing-4 font-weight-bold mb-4" text=page.title %}
 
 	<p class="lead-md content">{{ page.description }}</p>
@@ -19,7 +22,12 @@ layout: "default_with_menu"
 		{% endfor %}
 	</div>
 
-	<div class="lead-md content">{{ page.section_1 }}</div>
+  <div class="lead-md content">
+    {{-
+      page.section_1
+      | replace: "BALANCE", '<span data-support-us-target="balance"></span>'
+      | replace: "DATE", '<span data-support-us-target="date"></span>' -}}
+  </div>
 
 	<div class="my-4">
 		{% for goal in goals %}
