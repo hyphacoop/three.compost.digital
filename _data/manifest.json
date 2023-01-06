@@ -983,8 +983,22 @@
         }
       ]
     },
+    "_packs/controllers/support_us_controller.js": {
+      "bytes": 2093,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ]
+    },
     "_packs/entry.js": {
-      "bytes": 1469,
+      "bytes": 1470,
       "imports": [
         {
           "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js",
@@ -1017,18 +1031,22 @@
         {
           "path": "_packs/controllers/button_copy_controller.js",
           "kind": "import-statement"
+        },
+        {
+          "path": "_packs/controllers/support_us_controller.js",
+          "kind": "import-statement"
         }
       ]
     }
   },
   "outputs": {
-    "assets/js/pack.FNMJGZN6.js.map": {
+    "assets/js/pack.QLGBDCWB.js.map": {
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 601160
+      "bytes": 604892
     },
-    "assets/js/pack.FNMJGZN6.js": {
+    "assets/js/pack.QLGBDCWB.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "_packs/entry.js",
@@ -1196,7 +1214,7 @@
           "bytesInOutput": 4705
         },
         "_packs/entry.js": {
-          "bytesInOutput": 762
+          "bytesInOutput": 705
         },
         "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/finally.js": {
           "bytesInOutput": 200
@@ -1305,9 +1323,12 @@
         },
         "_packs/controllers/button_copy_controller.js": {
           "bytesInOutput": 524
+        },
+        "_packs/controllers/support_us_controller.js": {
+          "bytesInOutput": 1237
         }
       },
-      "bytes": 847655
+      "bytes": 848835
     }
   }
 }
