@@ -2,6 +2,7 @@ import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
   static targets = ["footnote", "reference"];
+  static classes = ["footnote", "footnoteToggled", "sidenote"];
   static values = {
     minSpacing: {
       type: Number,
@@ -10,29 +11,6 @@ export default class extends Controller {
     offsetTop: {
       type: Number,
       default: 0,
-    },
-    footnoteClasses: {
-      type: Array,
-      default: [
-        "background-white",
-        "position-fixed",
-      ],
-    },
-    footnoteToggledClasses: {
-      type: Array,
-      default: [
-        "w-100",
-        "p-3",
-        "border-top",
-      ],
-    },
-    sidenoteClasses: {
-      type: Array,
-      default: [
-        "position-absolute",
-        "f-11",
-        "w-220px",
-      ],
     },
     containerWidth: {
       type: Number,
@@ -112,14 +90,14 @@ export default class extends Controller {
 
       sidenote.style.top = `${offsetTop}px`;
       sidenote.style.left = `${offsetLeft}px`;
-      sidenote.classList.add(...this.sidenoteClassesValue);
+      sidenote.classList.add(...this.sidenoteClass);
 
       this.offsetTopValue = offsetTop + sidenote.offsetHeight + this.minSpacingValue;
     } else {
       footnote.dataset.action = "blur->footnotes#hide";
 
-      footnote.classList.add(...this.footnoteToggledClassesValue);
-      footnote.classList.add(...this.footnoteClassesValue);
+      footnote.classList.add(...this.footnoteToggledClass);
+      footnote.classList.add(...this.footnoteClass);
       footnote.style.bottom = 0;
       footnote.style.left = 0;
       footnote.style.zIndex = 1;
@@ -148,7 +126,7 @@ export default class extends Controller {
     this.hide();
 
     footnote.style.height = `${footnote.dataset.height}px`;
-    footnote.classList.add(...this.footnoteToggledClassesValue);
+    footnote.classList.add(...this.footnoteToggledClass);
     footnote.setAttribute("role", "alert");
     footnote.setAttribute("tabindex", "0");
     footnote.focus();
@@ -157,7 +135,7 @@ export default class extends Controller {
   hide(event = undefined) {
     for (const footnote of this.footnoteTargets) {
       footnote.style.height = 0;
-      footnote.classList.remove(...this.footnoteToggledClassesValue);
+      footnote.classList.remove(...this.footnoteToggledClass);
       footnote.setAttribute("role", "");
     }
   }
