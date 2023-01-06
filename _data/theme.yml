@@ -123,19 +123,19 @@ layout_class:
   support: "background-image-site background-size-contain w-100"
   home: "background-image-site background-size-contain w-100"
   about: "background-image-site background-size-contain w-100"
-footnotes_sidenotes_classes:
+footnotes_container_width: 780
+footnotes_sidenote_width: 220
+footnotes_footnote_class:
+- "background-white"
+- "position-fixed"
+footnotes_footnote_toggled_class:
+- "w-100"
+- "p-3"
+- "border-top"
+- "border-black"
+footnotes_sidenote_class:
 - "position-absolute"
 - "w-220px"
 - "f-11"
 - "ml-40"
 - "footnote"
-footnotes_container_width: 780
-footnotes_sidenote_width: 220
-footnotes_classes:
-- "background-white"
-- "position-fixed"
-footnotes_toggled_classes:
-- "w-100"
-- "p-3"
-- "border-top"
-- "border-black"
