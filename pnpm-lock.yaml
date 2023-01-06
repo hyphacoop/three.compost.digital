@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@airbrake/browser': ^2.1.8
+  '@airbrake/browser': ^1.4.2
   '@hotwired/stimulus': ^3.2.1
   '@hotwired/turbo': ^7.2.4
   bootstrap: ~4.6
@@ -12,7 +12,7 @@ dependencies:
   bootstrap: 4.6.2
 
 devDependencies:
-  '@airbrake/browser': 2.1.8
+  '@airbrake/browser': 1.4.2
   '@hotwired/stimulus': 3.2.1
   '@hotwired/turbo': 7.2.4
   device-detector-js: 3.0.3
@@ -20,11 +20,11 @@ devDependencies:
 
 packages:
 
-  /@airbrake/browser/2.1.8:
-    resolution: {integrity: sha512-3xzpkQUq48R+hVbGlxUFLnv8dZg7M9OhBceX473ZrX4osxgfuKRqB+ecNawevKOftBrsjK2gNBayCXTbE+yFzQ==}
+  /@airbrake/browser/1.4.2:
+    resolution: {integrity: sha512-hlP+IMDcJXpoIaXTeKl8W+p18hKRJ9SKgLQTVh45GA9/qFXsLgu0V4tn0jDT5NQQXJG1+IKBv/RLRVgyswJy+w==}
     dependencies:
       '@types/promise-polyfill': 6.0.4
-      '@types/request': 2.48.8
+      '@types/request': 2.48.5
       cross-fetch: 3.1.5
       error-stack-parser: 2.1.4
       promise-polyfill: 8.2.3
@@ -252,8 +252,8 @@ packages:
     resolution: {integrity: sha512-GSCjjH6mDS8jgpT22rEOkZVqZcYj7i9AHJu4ntpvoohEpa0mLAKP/Kz3POMKqABaFsS4TyNHOeoyWpzycddcoQ==}
     dev: true
 
-  /@types/request/2.48.8:
-    resolution: {integrity: sha512-whjk1EDJPcAR2kYHRbFl/lKeeKYTi05A15K9bnLInCVroNDCtXce57xKdI0/rQaA3K+6q0eFyUBPmqfSndUZdQ==}
+  /@types/request/2.48.5:
+    resolution: {integrity: sha512-/LO7xRVnL3DxJ1WkPGDQrp4VTV1reX9RkC85mJ+Qzykj2Bdw+mG15aAfDahc76HtknjzE16SX/Yddn6MxVbmGQ==}
     dependencies:
       '@types/caseless': 0.12.2
       '@types/node': 18.11.18
