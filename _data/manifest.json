@@ -960,8 +960,22 @@
         }
       ]
     },
+    "_packs/controllers/button_copy_controller.js": {
+      "bytes": 742,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ]
+    },
     "_packs/entry.js": {
-      "bytes": 1087,
+      "bytes": 1340,
       "imports": [
         {
           "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js",
@@ -986,18 +1000,22 @@
         {
           "path": "_packs/controllers/footnotes_controller.js",
           "kind": "import-statement"
+        },
+        {
+          "path": "_packs/controllers/button_copy_controller.js",
+          "kind": "import-statement"
         }
       ]
     }
   },
   "outputs": {
-    "assets/js/pack.JWEEVNT7.js.map": {
+    "assets/js/pack.ROQRJCPS.js.map": {
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 598388
+      "bytes": 600154
     },
-    "assets/js/pack.JWEEVNT7.js": {
+    "assets/js/pack.ROQRJCPS.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "_packs/entry.js",
@@ -1162,10 +1180,10 @@
           "bytesInOutput": 59
         },
         "node_modules/.pnpm/tdigest@0.1.2/node_modules/tdigest/tdigest.js": {
-          "bytesInOutput": 4696
+          "bytesInOutput": 4705
         },
         "_packs/entry.js": {
-          "bytesInOutput": 598
+          "bytesInOutput": 726
         },
         "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/finally.js": {
           "bytesInOutput": 200
@@ -1264,13 +1282,16 @@
           "bytesInOutput": 42017
         },
         "_packs/controllers/device_detector_controller.js": {
-          "bytesInOutput": 1039
+          "bytesInOutput": 1038
         },
         "_packs/controllers/footnotes_controller.js": {
-          "bytesInOutput": 2609
+          "bytesInOutput": 2606
+        },
+        "_packs/controllers/button_copy_controller.js": {
+          "bytesInOutput": 524
         }
       },
-      "bytes": 846690
+      "bytes": 847346
     }
   }
 }
