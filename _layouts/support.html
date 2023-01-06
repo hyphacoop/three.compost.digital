@@ -7,7 +7,10 @@ layout: "default_with_menu"
 {%- assign buttons = site.posts | where: "layout", "button" -%}
 {%- assign goals = site.posts | where: "layout", "goal" -%}
 
-<article id="{{ page.slug }}" class="container mx-auto max-w-780px py-4">
+<article
+  data-controller="support-us"
+  data-support-us-monetization-url-value="{{ page.monetization_url }}"
+  id="{{ page.slug }}" class="container mx-auto max-w-780px py-4">
 	<div class="content mt-lg-4">
 		{% include headings/h1.html class="text-uppercase black hover-black letter-spacing-1 font-weight-bold" text=page.title %}
 
@@ -19,11 +22,14 @@ layout: "default_with_menu"
 			{% endfor %}
 		</div>
 
-		<div class="lead-md pt-2">{{ page.section_1 }}</div>
+    <div class="lead-md pt-2 content">
+      {{-
+        page.section_1
+        | replace: "BALANCE", '<span data-support-us-target="balance"></span>'
+        | replace: "DATE", '<span data-support-us-target="date"></span>' -}}
+    </div>
 
     <div
-      data-controller="support-us"
-      data-support-us-monetization-url-value="{{ page.monetization_url }}"
       class="">
 			{% for goal in goals %}
 				{% include goal.html title=goal.title text=goal.description value_now=1000 value_max=goal.value_max %}

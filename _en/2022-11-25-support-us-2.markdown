@@ -5,8 +5,8 @@ description: We are building on the digital commons by publishing our work freel
   us!
 section_1: <h2 id="digital-bake-sale">Digital Bake Sale</h2><p>We need your support
   to ensure the future sustainability of our magazine and <a href="https://distributed.press"
-  target="_blank">Distributed Press</a>.</p><p>Our magazine has CAD $7,325.64 in our
-  bank account as of Friday, November 25, 2022. We hope to raise $30,000 by August
+  target="_blank">Distributed Press</a>.</p><p>Our magazine has BALANCE in our
+  bank account as of DATE. We hope to raise $30,000 by August
   1st of 2021 and before launching Issue Two.</p><p><a class="donation-button" href="https://one.compost.digital/support-us/#support-us">Contribute</a>
   to help us hit our fundraising goals.</p>
 monetization_url: "https://api.compost.digital/v0/monetization/balances.json"

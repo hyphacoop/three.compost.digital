@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  static targets = ["goal"];
+  static targets = ["goal", "balance", "date"];
   static values = {
     monetizationUrl: String,
   };
@@ -24,12 +24,28 @@ export default class extends Controller {
     const balances = await this.fetchBalances();
     const decimalIndex = balances.balance.length - balances.decimal;
     const totalBalance = `${balances.balance.slice(0, decimalIndex)}.${balances.balance.slice(decimalIndex)}`;
+    const locale = document.querySelector("html").lang;
 
     for (const goal of this.goalTargets) {
       const max = parseFloat(goal.getAttribute("aria-valuemax") ?? "0");
       const now = Math.min(100, (totalBalance / max) * 100);
       goal.style.width = `${now}%`;
       goal.setAttribute("aria-valuenow", totalBalance);
+    }
+
+    if (this.hasBalanceTarget) {
+      const style = "currency";
+      const currency = balances.currency;
+      const balanceFormatter = new Intl.NumberFormat(locale, { style, currency });
+
+      this.balanceTarget.innerText = balanceFormatter.format(totalBalance);
+    }
+
+    if (this.hasDateTarget) {
+      const balanceDate = new Date(balances.timestamp);
+      const dateFormatter = new Intl.DateTimeFormat(locale, { dateStyle: 'full' });
+
+      this.dateTarget.innerText = dateFormatter.format(balanceDate);
     }
   }
 

@@ -31,7 +31,7 @@ section_1:
     en: First content section
     es: Primera sección de contenido
   help:
-    en: Content that can have text and images
+    en: "Use BALANCE to replace it dynamically by the total balance and DATE for the date it was last updated."
     es: Contenido que puede tener texto e imágenes
 monetization_url:
   type: "url"
