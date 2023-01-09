@@ -255,3 +255,9 @@ footer .content a {
   background-size: contain;
   width: 100%;
 }
+
+small,
+.small {
+  @include font-size($small-font-size);
+  font-weight: unset;
+}
