@@ -24,7 +24,9 @@ Turbo.start();
 import { Application } from "@hotwired/stimulus";
 window.Stimulus = Application.start();
 
+import BodyScrollController from "./controllers/body_scroll_controller";
 import DeviceDetectorController from "./controllers/device_detector_controller";
 
 Stimulus.debug = (window.env.JEKYLL_ENV !== "production");
+Stimulus.register("body-scroll", BodyScrollController);
 Stimulus.register("device-detector", DeviceDetectorController);
