@@ -132,18 +132,6 @@
       }
     }
 
-    @each $transform-scale, $value in $transform-scales {
-      .transform-scale#{$infix}-#{$transform-scale} {
-        transform: scale($value) !important;
-      }
-
-      .transform-scale-hover#{$infix}-#{$transform-scale} {
-        &:hover, &:focus {
-          transform: scale($value) !important;
-        }
-      }
-    }
-
     @each $cursor in $cursors {
       /// El elemento va a tener un cursor
       ///
@@ -180,6 +168,18 @@
         .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
         .min-#{$abbrev}#{$infix}-#{$size} { min-#{$prop}: $length !important; }
         .max-#{$abbrev}#{$infix}-#{$size} { max-#{$prop}: $length !important; }
+      }
+    }
+
+    @each $transform-scale, $value in $transform-scales {
+      .transform-scale#{$infix}-#{$transform-scale} {
+        transform: scale($value) !important;
+      }
+
+      .transform-scale-hover#{$infix}-#{$transform-scale} {
+        &:hover, &:focus {
+          transform: scale($value) !important;
+        }
       }
     }
 
@@ -228,6 +228,12 @@
 .zindex-modal { z-index: 1050; }
 .zindex-popover { z-index: 1060; }
 .zindex-tooltip { z-index: 1070; }
+
+code {
+  background-color: $code-background;
+  border-radius: $code-radius;
+  font-family: $code-font-family;
+}
 
 .support-background {
   background-image: url('../../public/background-dithered.jpg');
