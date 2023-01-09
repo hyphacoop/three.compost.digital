@@ -249,3 +249,9 @@ blockquote {
 footer .content a {
   text-decoration: none !important;
 }
+
+small,
+.small {
+  @include font-size($small-font-size);
+  font-weight: unset;
+}
