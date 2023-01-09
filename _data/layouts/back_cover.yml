@@ -28,6 +28,7 @@ description:
       can decide when they want to read it.
 image:
   type: 'image'
+  required: true
   path:
     label:
       es: 'Imagen principal'
