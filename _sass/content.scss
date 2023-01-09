@@ -37,4 +37,21 @@
       margin-bottom: 0;
     }
   }
+
+  sup {
+    position: relative;
+    @include font-size(100%);
+    line-height: 0;
+    vertical-align: baseline;
+    top: 0;
+    font-weight: bold;
+
+    &:before {
+      content: "[";
+    }
+
+    &:after {
+      content: "]";
+    }
+  }
 }

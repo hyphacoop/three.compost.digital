@@ -19,6 +19,7 @@ colors:
   blue: "#564FE3"
   light_blue: "#9995ef"
   light_gray: "#eeeeee"
+  footnote: "#888888"
   lighter_blue: "#cccaf7"
 letter_spacings:
   1: "0.1rem"
@@ -49,6 +50,7 @@ display4_size: "1.875rem"
 enable_responsive_font_sizes: true
 lead_font_size: "1.3125rem"
 font_sizes:
+  11: "0.7"
   14: "0.875"
   16: "1"
   17: "1.0625"
@@ -61,6 +63,7 @@ sizes:
   36px: "2.25rem"
   49px: "3.0625rem"
   74px: "4.625rem"
+  220px: "220px"
   221px: "13.8125rem"
   333px: "20.8125rem"
   780px: "780px"
@@ -105,6 +108,7 @@ background_positions_x:
 background_positions_y:
 - "bottom"
 - "left"
+- "right"
 code_color: "black"
 code_font_size: "1rem"
 code_background: "#cccaf7"
@@ -126,3 +130,21 @@ layout_class:
   support: "background-image-site background-size-contain w-100"
   home: "background-image-site background-size-contain w-100"
   about: "background-image-site background-size-contain w-100"
+footnotes_container_width: 780
+footnotes_sidenote_width: 220
+footnotes_footnote_class:
+- "background-white"
+- "position-fixed"
+- "w-100"
+- "px-3"
+- "border-top"
+- "border-black"
+footnotes_footnote_toggled_class:
+- "py-3"
+footnotes_sidenote_class:
+- "position-absolute"
+- "w-220px"
+- "f-11"
+- "ml-40"
+- "footnote"
+footnotes_padding_left: 16

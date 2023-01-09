@@ -26,9 +26,11 @@ window.Stimulus = Application.start();
 
 import BodyScrollController from "./controllers/body_scroll_controller";
 import DeviceDetectorController from "./controllers/device_detector_controller";
+import FootnotesController from "./controllers/footnotes_controller";
 import SupportUsController from "./controllers/support_us_controller";
 
 Stimulus.debug = (window.env.JEKYLL_ENV !== "production");
 Stimulus.register("body-scroll", BodyScrollController);
 Stimulus.register("device-detector", DeviceDetectorController);
+Stimulus.register("footnotes", FootnotesController);
 Stimulus.register("support-us", SupportUsController);
