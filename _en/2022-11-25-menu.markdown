@@ -1,7 +1,6 @@
 ---
 title: About Us
 post: 773ec90a-329e-4a76-aa34-8530f5108c4a
-link: https://two.compost.digital/
 draft: false
 order: 9
 layout: menu

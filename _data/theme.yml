@@ -1,9 +1,12 @@
 ---
 spacer: "1rem"
 spacers:
+  6: "($spacer * 6)"
+  7: "($spacer * 7)"
   20: "($spacer * 1.25)"
   32: "($spacer * 2)"
   50: "($spacer * 3.125)"
+  60: "($spacer * 3.75)"
   150: "9.375rem"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
@@ -20,6 +23,10 @@ colors:
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"
+  3: "0.170625em"
+  4: "0.2625rem"
+  5: "0.39375rem"
+  8: "0.170625rem"
 pixel_densities:
 - "1"
 - "1.5"
@@ -42,10 +49,10 @@ display4_size: "1.875rem"
 enable_responsive_font_sizes: true
 lead_font_size: "1.3125rem"
 font_sizes:
-  19: "1.1875"
   14: "0.875"
   16: "1"
   17: "1.0625"
+  19: "1.1875"
   25: "1.5625"
 sizes:
   67px: "4.1875rem"
@@ -56,6 +63,8 @@ sizes:
   74px: "4.625rem"
   221px: "13.8125rem"
   333px: "20.8125rem"
+  780px: "780px"
+  1200px: "78rem"
 directions:
 - "top"
 - "left"
@@ -85,22 +94,35 @@ opacities:
   4: "-20%"
   5: "0%"
 progress_border_radius: "0"
-sizes:
-  67px: "4.1875rem"
-  44px: "2.75rem"
-  54px: "3.375rem"
-  36px: "2.25rem"
-  49px: "3.0625rem"
-  74px: "4.625rem"
-  221px: "13.8125rem"
-  333px: "20.8125rem"
-directions:
+background_sizes:
+  auto-100: "auto 100%"
+  cover: "cover"
+  auto: "auto"
+  contain: "contain"
+background_positions_x:
+- "center"
 - "top"
-- "right"
+background_positions_y:
 - "bottom"
 - "left"
+code_color: "black"
+code_font_size: "1rem"
+code_background: "#cccaf7"
+code_radius: "8px"
+code_font_family: "Roboto Mono"
 container_max_widths:
   sm: "540px"
   md: "720px"
   lg: "780px"
   xl: "781px"
+transform_scales:
+  n8: "0.8"
+  1: "1"
+background_images:
+  menu: "$background-menu"
+  site: "$background-site"
+  footer: "$background-footer"
+layout_class:
+  support: "background-image-site background-size-contain w-100"
+  home: "background-image-site background-size-contain w-100"
+  about: "background-image-site background-size-contain w-100"

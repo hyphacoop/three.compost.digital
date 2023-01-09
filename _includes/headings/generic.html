@@ -8,8 +8,7 @@ La base para un encabezado
 {%- endcomment -%}
 
 {%- assign slug = include.text | slugify -%}
-<h{{ include.level }} id="{{ slug }}">
-  <a class="{{ include.class }}" href="#{{ slug }}">
-    {{- include.text -}}
-  </a>
+
+<h{{ include.level }} id="{{ slug }}" class="{{ include.class }}">
+  {{- include.text -}}
 </h{{ include.level }}>

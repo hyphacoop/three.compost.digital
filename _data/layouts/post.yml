@@ -25,6 +25,14 @@ description:
       engines.  If the post is about violence and other sensitive
       topics, we invite you to use it as a content warning, so others
       can decide when they want to read it.
+subtitle:
+  type: 'string'
+  label:
+    es: 'Subtítulo del artículo'
+    en: 'Post subtitle'
+  help:
+    es: ''
+    en: ''
 authors:
   type: 'has_and_belongs_to_many'
   filter:
