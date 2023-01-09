@@ -20,6 +20,10 @@ export default class extends Controller {
       type: Number,
       default: 220,
     },
+    paddingLeft: {
+      type: Number,
+      default: 16,
+    },
   };
 
   connect() {
@@ -101,7 +105,7 @@ export default class extends Controller {
 
   get areSidenotesPossible () {
     const bodyWidth = document.body.offsetWidth;
-    const containerWidth = (this.containerWidthValue + this.sidenoteWidthValue * 2);
+    const containerWidth = (this.containerWidthValue + this.paddingLeftValue + this.sidenoteWidthValue * 2);
 
     return (bodyWidth > containerWidth);
   }
@@ -110,7 +114,7 @@ export default class extends Controller {
     if (!reference) reference = this.referenceTargets.find(x => x.id === sidenote.dataset.reference);
 
     const offsetTop = Math.max(reference.offsetTop, this.offsetTopValue);
-    const offsetLeft = this.element.offsetLeft + this.element.offsetWidth + 16;
+    const offsetLeft = this.element.offsetLeft + this.element.offsetWidth + this.paddingLeftValue;
 
     sidenote.style.top = `${offsetTop}px`;
     sidenote.style.left = `${offsetLeft}px`;
