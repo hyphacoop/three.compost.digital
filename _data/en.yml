@@ -6,6 +6,7 @@ next_page: "Next page"
 home: "Home"
 layouts:
   supporter: "Sponsor"
+content_license: "Content License: "
 support_alt: "Mushroom"
 and: "and"
 device_detector:
