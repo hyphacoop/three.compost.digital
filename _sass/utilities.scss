@@ -229,6 +229,12 @@
 .zindex-popover { z-index: 1060; }
 .zindex-tooltip { z-index: 1070; }
 
+code {
+  background-color: $code-background;
+  border-radius: $code-radius;
+  font-family: $code-font-family;
+}
+
 .support-background {
   background-image: url('../../public/background-dithered.jpg');
   background-size: contain;
