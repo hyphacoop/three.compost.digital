@@ -22,6 +22,7 @@ colors:
 letter_spacings:
   1: "0.1rem"
   2: "0.16rem"
+  3: "0.170625em"
   4: "0.2625rem"
   5: "0.39375rem"
   8: "0.170625rem"
@@ -103,6 +104,11 @@ background_positions_x:
 background_positions_y:
 - "bottom"
 - "left"
+code_color: "black"
+code_font_size: "1rem"
+code_background: "#cccaf7"
+code_radius: "8px"
+code_font_family: "Roboto Mono"
 container_max_widths:
   sm: "540px"
   md: "720px"
