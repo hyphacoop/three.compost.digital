@@ -2,6 +2,7 @@
 layout: "theme"
 title: "COMPOST"
 font_family_sans_serif: "Open Sans"
+font_family_monospace: "Roboto Mono"
 headings_font_family: ""
 enable_rounded: true
 enable_shadows: false
@@ -18,6 +19,9 @@ h4_font_size: "1.5rem"
 h5_font_size: "1.25rem"
 h6_font_size: "1rem"
 mark_bg: "#fcf8e3"
+body_image:
+  path: "public/background-dithered.jpg"
+  description: "prueba"
 order: 1
 draft: false
 ---

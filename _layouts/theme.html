@@ -9,7 +9,7 @@ layout: default
 
     <section id="{{ component | replace: "_", "-" }}" class="mb-5">
       <header>
-        {% include headings/h1.html text=title %}
+        {% include headings/with_link.html level=1 text=title %}
       </header>
 
       {% include {{ component_include }} %}
@@ -24,7 +24,7 @@ layout: default
 
     <section id="{{ component | replace: "_", "-" }}" class="mb-5">
       <header>
-        {% include headings/h1.html text=title %}
+        {% include headings/with_link.html level=1 text=title %}
       </header>
 
       {% include {{ component_include }} %}

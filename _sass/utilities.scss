@@ -119,7 +119,7 @@
     }
 
     .lead#{$infix} {
-      font-size: $lead-font-size;
+      font-size: $lead-font-size !important;
     }
 
     /// Poder aumentar o disminuir el alto de la tipografía.
@@ -170,6 +170,42 @@
         .max-#{$abbrev}#{$infix}-#{$size} { max-#{$prop}: $length !important; }
       }
     }
+
+    @each $transform-scale, $value in $transform-scales {
+      .transform-scale#{$infix}-#{$transform-scale} {
+        transform: scale($value) !important;
+      }
+
+      .transform-scale-hover#{$infix}-#{$transform-scale} {
+        &:hover, &:focus {
+          transform: scale($value) !important;
+        }
+      }
+    }
+
+    @each $background-size, $value in $background-sizes {
+      /// Tamaño de imagen de fondo
+      ///
+      /// @example html
+      ///   <div class="background-size-md-cover"></div>
+      .background-size#{$infix}-#{$background-size} {
+        background-size: $value !important;
+      }
+    }
+
+    @each $x in $background-positions-x {
+      @each $y in $background-positions-y {
+        .background-position#{$infix}-#{$x}-#{$y} {
+          background-position: $x $y;
+        }
+      }
+    }
+
+    @each $background-image, $value in $background-images {
+      .background-image#{$infix}-#{$background-image} {
+        background-image: url("#{$value}");
+      }
+    }
   }
 }
 
@@ -179,6 +215,10 @@
 
 .work-sans {
   font-family: 'Work Sans';
+}
+
+.source-serif {
+  font-family: 'Source Serif 4';
 }
 
 .zindex-dropdown { z-index: 1000; }
@@ -193,4 +233,15 @@ code {
   background-color: $code-background;
   border-radius: $code-radius;
   font-family: $code-font-family;
+}
+
+.support-background {
+  background-image: url('../../public/background-dithered.jpg');
+  background-size: contain;
+  width: 100%;
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
 }

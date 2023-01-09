@@ -3,18 +3,26 @@ title:
   required: true
   label:
     es: 'Título del objetivo'
-    en: 'Objetive title'
+    en: 'Goal title'
   help:
     es:
     en:
-content:
-  type: new_content
+description:
+  type: text
   label:
     en: Objective section content
     es: Sección de contenido para el objetivo
   help:
-    en: Content that can have only text
-    es: Contenido que puede tener sólo texto
+    en: ''
+    es: ''
+value_max:
+  type: float
+  label:
+    en: The maximum amount of the goal
+    es: Monto máximo del objetivo
+  help:
+    en: Content that can have only numbers
+    es: Contenido que puede tener sólo números
 goal:
   type: belongs_to
   inverse: goals
@@ -26,6 +34,17 @@ goal:
   help:
     en: What article does this one belong to?
     es: "¿De qué artículo depende?"
+currency:
+  type: 'string'
+  required: true
+  label:
+    es: 'Moneda'
+    en: 'Currency'
+  help:
+    es: 'Código de tres letras de la moneda en la que se expresan los precios'
+    en: 'Three letter code to denote currency used in pricing'
+  default:
+    en: 'USD'
 order:
   type: order
   label:

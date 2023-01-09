@@ -16,14 +16,6 @@ post:
   help:
     en: 'If the item leads to a fixed post, associate it here'
     es: 'Si el ítem lleva a un artículo fijo, asociarlo aquí'
-link:
-  type: 'string'
-  label:
-    en: 'Link'
-    es: 'Vínculo'
-  help:
-    en: 'If the item leads to an external page, associate it here'
-    es: 'Si el ítem lleva a una página exterior, asociarla aquí'
 draft:
   type: 'boolean'
   label:
