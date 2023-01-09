@@ -249,3 +249,9 @@ blockquote {
 footer .content a {
   text-decoration: none !important;
 }
+
+.support-background {
+  background-image: url('../../public/background-dithered.jpg');
+  background-size: contain;
+  width: 100%;
+}
