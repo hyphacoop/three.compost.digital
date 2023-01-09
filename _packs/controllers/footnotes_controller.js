@@ -73,10 +73,6 @@ export default class extends Controller {
     }
   }
 
-  referenceTargetConnected(reference) {
-    console.log("Reference", reference.href);
-  }
-
   footnoteTargetConnected(footnote) {
     const reference = this.referenceTargets.find(x => x.id === footnote.dataset.reference);
 
