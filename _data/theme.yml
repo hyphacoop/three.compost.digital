@@ -127,10 +127,27 @@ background_images:
   site: "$background-site"
   footer: "$background-footer"
 layout_class:
-<<<<<<< HEAD
  support: "background-image-site background-size-contain w-100"
  home: "background-image-site background-size-contain w-100"
  about: "background-image-site background-size-contain w-100"
+footnotes_container_width: 780
+footnotes_sidenote_width: 220
+footnotes_footnote_class:
+- "background-white"
+- "position-fixed"
+- "w-100"
+- "px-3"
+- "border-top"
+- "border-black"
+footnotes_footnote_toggled_class:
+- "py-3"
+footnotes_sidenote_class:
+- "position-absolute"
+- "w-220px"
+- "f-11"
+- "ml-40"
+- "footnote"
+footnotes_padding_left: 16
 chrome_icon_sizes:
 - 36
 - 48
@@ -154,26 +171,3 @@ msapplication_sizes:
 - 144
 - 150
 - 310
-=======
-  support: "background-image-site background-size-contain w-100"
-  home: "background-image-site background-size-contain w-100"
-  about: "background-image-site background-size-contain w-100"
-footnotes_container_width: 780
-footnotes_sidenote_width: 220
-footnotes_footnote_class:
-- "background-white"
-- "position-fixed"
-- "w-100"
-- "px-3"
-- "border-top"
-- "border-black"
-footnotes_footnote_toggled_class:
-- "py-3"
-footnotes_sidenote_class:
-- "position-absolute"
-- "w-220px"
-- "f-11"
-- "ml-40"
-- "footnote"
-footnotes_padding_left: 16
->>>>>>> origin
