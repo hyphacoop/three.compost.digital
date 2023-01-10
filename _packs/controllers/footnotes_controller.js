@@ -20,6 +20,10 @@ export default class extends Controller {
       type: Number,
       default: 220,
     },
+    paddingLeft: {
+      type: Number,
+      default: 16,
+    },
   };
 
   connect() {
@@ -30,14 +34,14 @@ export default class extends Controller {
   resize(event = undefined) {
     if (this.sidenotesArePossible === undefined) return;
 
+    this.offsetTopValue = 0;
+
     const sidenotesWerePossible = this.sidenotesArePossible;
     const sidenotesArePossible = this.areSidenotesPossible;
 
     if (sidenotesWerePossible && sidenotesArePossible) {
-      const offsetLeft = this.element.offsetLeft + this.element.offsetWidth;
-
       for (const sidenote of this.footnoteTargets) {
-        sidenote.style.left = `${offsetLeft}px`;
+        this.positionSidenote(sidenote);
       }
     } else {
       const footnotes = Array.from(this.footnoteTargets);
@@ -73,26 +77,13 @@ export default class extends Controller {
     }
   }
 
-  referenceTargetConnected(reference) {
-    console.log("Reference", reference.href);
-  }
-
   footnoteTargetConnected(footnote) {
     const reference = this.referenceTargets.find(x => x.id === footnote.dataset.reference);
 
     footnote.style.listStylePosition = "inside";
 
     if (this.sidenotesArePossible) {
-      const sidenote = footnote;
-      const number = reference.querySelector("sup").textContent;
-      const offsetTop = Math.max(reference.offsetTop, this.offsetTopValue);
-      const offsetLeft = this.element.offsetLeft + this.element.offsetWidth;
-
-      sidenote.style.top = `${offsetTop}px`;
-      sidenote.style.left = `${offsetLeft}px`;
-      sidenote.classList.add(...this.sidenoteClasses);
-
-      this.offsetTopValue = offsetTop + sidenote.offsetHeight + this.minSpacingValue;
+      this.positionSidenote(footnote, reference);
     } else {
       footnote.dataset.action = "blur->footnotes#hide";
 
@@ -114,9 +105,22 @@ export default class extends Controller {
 
   get areSidenotesPossible () {
     const bodyWidth = document.body.offsetWidth;
-    const containerWidth = (this.containerWidthValue + this.sidenoteWidthValue * 2);
+    const containerWidth = (this.containerWidthValue + this.paddingLeftValue + this.sidenoteWidthValue * 2);
 
     return (bodyWidth > containerWidth);
+  }
+
+  positionSidenote(sidenote, reference = undefined) {
+    if (!reference) reference = this.referenceTargets.find(x => x.id === sidenote.dataset.reference);
+
+    const offsetTop = Math.max(reference.offsetTop, this.offsetTopValue);
+    const offsetLeft = this.element.offsetLeft + this.element.offsetWidth + this.paddingLeftValue;
+
+    sidenote.style.top = `${offsetTop}px`;
+    sidenote.style.left = `${offsetLeft}px`;
+    sidenote.classList.add(...this.sidenoteClasses);
+
+    this.offsetTopValue = offsetTop + sidenote.offsetHeight + this.minSpacingValue;
   }
 
   show(event) {
