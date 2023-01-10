@@ -46,10 +46,10 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-include-cache'
   spec.add_runtime_dependency 'jekyll-linked-posts'
   spec.add_runtime_dependency 'jekyll-locales'
-  spec.add_runtime_dependency 'jekyll-order'
+  spec.add_runtime_dependency 'jekyll-order', '>= 0.1.6'
   spec.add_runtime_dependency 'jekyll-relative-urls'
   spec.add_runtime_dependency 'jekyll-seo-tag'
-  spec.add_runtime_dependency 'sutty-liquid', '>= 0.11.6'
+  spec.add_runtime_dependency 'sutty-liquid', '>= 0.11.7'
 
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'rubocop-jekyll'
