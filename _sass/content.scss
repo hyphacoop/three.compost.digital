@@ -29,10 +29,12 @@
   iframe {
     @extend .img-fluid;
     height: auto;
+    margin: 2rem;
   }
 
   figure {
     text-align: center;
+    margin: 0;
   }
 
   & > * {
