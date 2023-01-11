@@ -148,3 +148,26 @@ footnotes_sidenote_class:
 - "ml-40"
 - "footnote"
 footnotes_padding_left: 16
+chrome_icon_sizes:
+- 36
+- 48
+- 72
+- 96
+- 144
+- 192
+- 256
+- 384
+apple_touch_sizes:
+- 57
+- 60
+- 72
+- 76
+- 120
+- 144
+- 152
+- 180
+msapplication_sizes:
+- 70
+- 144
+- 150
+- 310
