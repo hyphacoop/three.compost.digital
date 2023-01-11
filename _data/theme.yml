@@ -127,9 +127,9 @@ background_images:
   site: "$background-site"
   footer: "$background-footer"
 layout_class:
- support: "background-image-site background-size-contain w-100"
- home: "background-image-site background-size-contain w-100"
- about: "background-image-site background-size-contain w-100"
+  support: "background-image-site background-size-contain w-100"
+  home: "background-image-site background-size-contain w-100"
+  about: "background-image-site background-size-contain w-100"
 footnotes_container_width: 780
 footnotes_sidenote_width: 220
 footnotes_footnote_class:
