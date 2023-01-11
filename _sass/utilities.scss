@@ -245,3 +245,8 @@ b,
 strong {
   font-weight: $font-weight-bold;
 }
+
+a {
+  word-break: break-word !important;
+  word-wrap: break-word !important;
+}
