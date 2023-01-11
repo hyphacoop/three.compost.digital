@@ -12,6 +12,6 @@ agregar el parámetro de seguridad noopener.
   href="{{ include.href | default: "#" }}"
   {{ include.href | start_with: "https://" | value_if: 'rel="noopener"' }}
   {{ include.href | start_with: "http://" | value_if: 'rel="noopener"' }}
-  class="btn btn-primary btn-block text-uppercase f-md-17">
+  class="btn btn-primary w-100 d-flex align-items-center justify-content-center text-uppercase f-md-17">
   <span>{{- include.text -}}</span>
 </a>
