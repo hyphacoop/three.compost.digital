@@ -13,7 +13,7 @@ liquid: false
 usuaries:
 - 27
 - 534
-last_modified_at: 2023-01-10 14:56:24.373425983 +00:00
+last_modified_at: 2023-01-11 22:15:49.234353103 +00:00
 ---
 
 <p><strong>Eeshita</strong> is an artist and designer based in Bangalore. She mostly likes to cook, sew and dream up ways to smash the patriarchy.</p>
