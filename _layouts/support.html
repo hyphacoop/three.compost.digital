@@ -21,7 +21,7 @@ layout: "default_with_menu"
     {% for button in buttons %}
       <div class="col d-flex p-1">
         {% if button.layout == "button" %}
-          {% include buttons/with_link.html href=button.url text=button.title %}
+          {% include buttons/with_link.html href=button.link text=button.title %}
         {% elsif button.layout == "button_copy" %}
           {% include buttons/with_copy.html copy=button.text text=button.title %}
         {% endif %}
