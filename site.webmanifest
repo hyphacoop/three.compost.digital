@@ -2,6 +2,7 @@
 ---
 
 {%- assign theme = site.posts | find: "layout", "theme" -%}
+{%- assign about = site.posts | find: "layout", "about" -%}
 
 {
     "name": {{ site.title | jsonify }},
@@ -9,7 +10,7 @@
     "icons": [
       {% for chrome_icon_size in site.data.theme.chrome_icon_sizes %}
         {
-            "src": {{ theme.favicon.path | thumbnail: chrome_icon_size, chrome_icon_size | uri_escape | jsonify }},
+            "src": {{ about.favicon.path | thumbnail: chrome_icon_size, chrome_icon_size | uri_escape | jsonify }},
             "sizes": "{{ chrome_icon_size }}x{{ chrome_icon_size }}",
             "type": "image/png"
         }{% unless forloop.last %},{% endunless %}
