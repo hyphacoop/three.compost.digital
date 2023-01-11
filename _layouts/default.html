@@ -22,10 +22,24 @@
       {%- include script.html src="pack.js" -%}
     {%- endif -%}
 
-    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
-    <link rel="alternate icon" href="public/favicon.ico">
-    <link rel="mask-icon" href="public/favicon.svg" color="white">
+    {%- assign about = site.posts | find: "layout", "about" -%}
+    {%- assign theme = site.posts | find: "layout", "theme" -%}
 
+    {% for apple_touch_size in site.data.theme.apple_touch_sizes %}
+      <link rel="apple-touch-icon" sizes="{{ apple_touch_size }}x{{ apple_touch_size }}" href="{{ about.favicon.path | thumbnail: apple_touch_size, apple_touch_size | uri_escape }}">
+    {% endfor %}
+
+    {% for chrome_icon_size in site.data.theme.chrome_icon_sizes %}
+      <link rel="icon" type="image/png" sizes="{{ chrome_icon_size }}x{{chrome_icon_size }}" href="{{ about.favicon.path | thumbnail: chrome_icon_size , chrome_icon_size | uri_escape }}">
+    {% endfor %}
+
+    {% for msapplication_size in site.data.theme.msapplication_sizes %}
+      <meta name="msapplication-TileImage" content="{{ about.favicon.path | thumbnail: msapplication_size , msapplication_size | uri_escape }}">
+    {% endfor %}
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="{{ theme.bg_color }}">
+    <meta name="theme-color" content="{{ theme.primary }}">
     {% seo %}
   </head>
   <body>
