@@ -261,3 +261,8 @@ small,
   @include font-size($small-font-size);
   font-weight: unset;
 }
+
+a {
+  word-break: break-word !important;
+  word-wrap: break-word !important;
+}
