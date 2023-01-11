@@ -19,7 +19,7 @@ layout: "default_with_menu"
 
 		<div class="row row-cols-2 justify-content-center my-5 no-gutters">
 			{% for button in buttons %}
-        <div class="col p-1">
+        <div class="col d-flex p-1">
           {% if button.layout == "button" %}
             {% include buttons/with_link.html href=button.url text=button.title %}
           {% elsif button.layout == "button_copy" %}
