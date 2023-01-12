@@ -221,19 +221,3 @@ b,
 strong {
   font-weight: $font-weight-bold;
 }
-
-blockquote {
-  border-left: 4px solid rgba(0, 0, 0, 0.2);
-  margin-left: 0.75em;
-  padding-left: 0.5em;
-}
-
-footer .content a {
-  text-decoration: none !important;
-}
-
-small,
-.small {
-  @include font-size($small-font-size);
-  font-weight: unset;
-}
