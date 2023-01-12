@@ -13,7 +13,7 @@ link es externo, agregar el parámetro de seguridad noopener.
   data-button-copy-text-value="{{ include.copy | escape_once }}"
   data-button-copy-confirmation-value="{{ site.i18n.button_copy.confirmation | replace: "%s", include.copy | escape_once }}"
   data-action="button-copy#copy"
-  class="btn btn-primary btn-block text-uppercase f-md-17">
+  class="btn btn-primary w-100 d-flex align-items-center justify-content-center text-uppercase f-md-17">
   <span data-button-copy-target="text">{{- include.text -}}</span>
   <span data-button-copy-target="icon">
     {%- include svg/copy-icon.svg -%}

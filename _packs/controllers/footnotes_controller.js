@@ -65,12 +65,15 @@ export default class extends Controller {
     for (const i in Array.from(references)) {
       const reference = references[i];
       const footnote = footnotes[i];
+      const backlink = footnote.querySelector("a[role=doc-backlink]");
 
       this.originalFootnotes.push(footnote.outerHTML);
 
       reference.dataset.footnote = footnote.id;
+      reference.dataset.turbo = "false";
       reference.dataset.footnotesTarget = "reference";
 
+      if (backlink) backlink.dataset.turbo = "false";
       footnote.dataset.reference = reference.id;
       // XXX: The timeout ensures footnotes are processed in order.
       setTimeout(() => footnote.dataset.footnotesTarget = "footnote", 1+i);
@@ -119,6 +122,8 @@ export default class extends Controller {
     sidenote.style.top = `${offsetTop}px`;
     sidenote.style.left = `${offsetLeft}px`;
     sidenote.classList.add(...this.sidenoteClasses);
+    sidenote.dataset.action = "";
+    reference.dataset.action = "";
 
     this.offsetTopValue = offsetTop + sidenote.offsetHeight + this.minSpacingValue;
   }
