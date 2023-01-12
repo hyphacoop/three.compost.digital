@@ -8,6 +8,11 @@ spacers:
   50: "($spacer * 3.125)"
   60: "($spacer * 3.75)"
   150: "9.375rem"
+  100: "($spacer * 6.25)"
+  14: "($spacer * 0.875)"
+  12: "($spacer * 0.75)"
+  40: "($spacer * 2.5)"
+  80: "($spacer * 5)"
 btn_transition: "all 250ms ease-in-out"
 btn_font_size: "0.8rem"
 btn_padding_y: "1.5rem"
@@ -19,6 +24,7 @@ colors:
   blue: "#564FE3"
   light_blue: "#9995ef"
   light_gray: "#eeeeee"
+  post: "rgba(230, 230, 230, 0.1)"
   footnote: "#888888"
   lighter_blue: "#cccaf7"
 letter_spacings:
@@ -26,6 +32,8 @@ letter_spacings:
   2: "0.16rem"
   3: "0.170625em"
   4: "0.2625rem"
+  6: "0.18375rem"
+  7: "0.13125rem"
   5: "0.39375rem"
   8: "0.170625rem"
 pixel_densities:
@@ -115,10 +123,10 @@ code_background: "#cccaf7"
 code_radius: "8px"
 code_font_family: "Roboto Mono"
 container_max_widths:
-  sm: "540px"
-  md: "720px"
-  lg: "780px"
-  xl: "781px"
+  sm: "576px"
+  md: "768px"
+  lg: "1200px"
+  xl: "1201px"
 transform_scales:
   n8: "0.8"
   1: "1"
@@ -130,6 +138,9 @@ layout_class:
   support: "background-image-site background-size-contain w-100"
   home: "background-image-site background-size-contain w-100"
   about: "background-image-site background-size-contain w-100"
+paragraph_margin_bottom: "0"
+headings_margin_bottom: "0"
+box_shadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
 footnotes_container_width: 780
 footnotes_sidenote_width: 220
 footnotes_footnote_class:
