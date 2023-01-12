@@ -122,6 +122,8 @@ export default class extends Controller {
     sidenote.style.top = `${offsetTop}px`;
     sidenote.style.left = `${offsetLeft}px`;
     sidenote.classList.add(...this.sidenoteClasses);
+    sidenote.dataset.action = "";
+    reference.dataset.action = "";
 
     this.offsetTopValue = offsetTop + sidenote.offsetHeight + this.minSpacingValue;
   }
