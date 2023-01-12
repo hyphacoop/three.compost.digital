@@ -4,6 +4,8 @@ dir: "ltr"
 layouts:
   supporter: "Patrocinador"
 support_alt: "Hongo"
+button_copy:
+  confirmation: "%s copiado"
 and: "y"
 device_detector:
   outline: Bordes

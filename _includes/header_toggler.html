@@ -19,7 +19,7 @@ Cabecera y menú con toggler
 {%- assign back_cover = site.posts | find: "layout", "back_cover" -%}
 {%- assign footer = site.posts | find: "layout", "footer" -%}
 
-<div class="position-relative {{ include.background_class }}">
+<div data-controller="body-scroll" class="position-relative p-3 {{ include.background_class }}">
 	<div class="d-flex justify-content-between align-items-center container-lg mx-auto">
 		{%- capture menu_svg -%}
 			{% include menu_close.html class="w-36px w-md-54px" container_class="stroke-white" %}

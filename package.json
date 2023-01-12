@@ -4,7 +4,7 @@
     "bootstrap": "~4.6"
   },
   "devDependencies": {
-    "@airbrake/browser": "^2.1.8",
+    "@airbrake/browser": "^1.4.2",
     "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo": "^7.2.4",
     "device-detector-js": "^3.0.3",

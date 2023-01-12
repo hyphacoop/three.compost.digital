@@ -171,6 +171,18 @@
       }
     }
 
+    @each $transform-scale, $value in $transform-scales {
+      .transform-scale#{$infix}-#{$transform-scale} {
+        transform: scale($value) !important;
+      }
+
+      .transform-scale-hover#{$infix}-#{$transform-scale} {
+        &:hover, &:focus {
+          transform: scale($value) !important;
+        }
+      }
+    }
+
     @each $background-size, $value in $background-sizes {
       /// Tamaño de imagen de fondo
       ///
@@ -216,6 +228,12 @@
 .zindex-modal { z-index: 1050; }
 .zindex-popover { z-index: 1060; }
 .zindex-tooltip { z-index: 1070; }
+
+code {
+  background-color: $code-background;
+  border-radius: $code-radius;
+  font-family: $code-font-family;
+}
 
 b,
 strong {
