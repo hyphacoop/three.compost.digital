@@ -156,6 +156,10 @@
           object-position: $direction;
         }
       }
+
+      .lh#{$infix}-#{$spacer} {
+        line-height: $length !important;
+      }
     }
 
     /// Anchos y altos en base a `$sizes` definido por Bootstrap.  Para

@@ -134,13 +134,13 @@ code_font_size: "1rem"
 code_background: "#cccaf7"
 code_radius: "8px"
 code_font_family: "Roboto Mono"
-paragraph_margin_bottom: "0"
-headings_margin_bottom: "0"
-box_shadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
 background_images:
   menu: "$background-menu"
   site: "$background-site"
   footer: "$background-footer"
+paragraph_margin_bottom: "0"
+headings_margin_bottom: "0"
+box_shadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
 footnotes_container_width: 780
 footnotes_sidenote_width: 220
 footnotes_footnote_class:
