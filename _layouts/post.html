@@ -10,7 +10,7 @@ layout: "default_with_menu"
 {%- assign next = page | next: posts -%}
 
 <article id="{{ page.slug }}" class="container mx-auto max-w-780px my-4 px-20">
-  {% include embed_responsive.html src=page.image.path alt=page.image.description x=2 y=1 width=780 embed_class="shadow" %}
+  {% include picture.html src=page.image.path alt=page.image.description width=780 img_class="w-100 shadow" %}
 
   <div class="mt-5">
     {% include headings/h1.html class="text-uppercase black hover-black letter-spacing-4 font-weight-bold mb-12" text=page.title %}
