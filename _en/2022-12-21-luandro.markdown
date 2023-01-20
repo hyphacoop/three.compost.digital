@@ -12,7 +12,8 @@ liquid: false
 usuaries:
 - 27
 - 534
-last_modified_at: 2023-01-11 22:18:50.229184783 +00:00
+- 616
+last_modified_at: 2023-01-16 20:16:35.746706840 +00:00
 ---
 
 <p><strong>Luandro</strong> is a technologist, forester, and admirer of originary cultures. Works in collaboration with communities on projects to support local autonomy and strenghten cultural identity. Active in the community-networks movement and in distributed protocols cypherspaces.</p>
