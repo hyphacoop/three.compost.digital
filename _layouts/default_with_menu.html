@@ -6,7 +6,7 @@ layout: "default"
 {%- assign about = site.posts | find: "layout", "about" -%}
 {%- assign support = site.posts | find: "layout", "support" -%}
 
-<div class="{{ site.data.theme.layout_class[page.layout] }}">
+<div class="background-post {{ site.data.theme.layout_class[page.layout] }}">
   {% include header_toggler.html
     logo_open_src=about.image_menu_open.path
     logo_open_alt=about.image_menu_open.description
@@ -15,7 +15,8 @@ layout: "default"
     logo_close_alt=about.image_menu_close.description
     btn_close_src="public/mushroom_close.gif"
     btn_href=support.url
-    btn_alt=site.i18n.support_alt %}
+    btn_alt=site.i18n.support_alt
+    background_class="pt-2 px-3 pb-100 background-image-menu background-position-center-bottom w-100 background-size-auto-100" %}
 
   {{ content }}
 

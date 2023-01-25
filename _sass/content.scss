@@ -7,6 +7,7 @@
     margin-top:2rem;
     margin-bottom:1.5rem;
     font-family: "Open Sans", sans-serif;
+    letter-spacing: 2.73px;
   }
 
   h3 {
@@ -28,6 +29,12 @@
   iframe {
     @extend .img-fluid;
     height: auto;
+    margin: 2rem 0;
+  }
+
+  figure {
+    text-align: center;
+    margin: 0;
   }
 
   & > * {
@@ -36,6 +43,14 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  li p {
+    margin-bottom: $paragraph-margin-bottom;
+  }
+
+  a {
+    text-decoration: underline !important;
   }
 
   sup {
@@ -59,4 +74,20 @@
     word-break: break-word !important;
     word-wrap: break-word !important;
   }
+
+  blockquote {
+    border-left: 4px solid rgba(0, 0, 0, 0.2);
+    margin-left: 0.75em;
+    padding-left: 0.5em;
+  }
+}
+
+footer .content a {
+  text-decoration: none !important;
+}
+
+small,
+.small {
+  @include font-size($small-font-size);
+  font-weight: unset;
 }
