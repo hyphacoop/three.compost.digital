@@ -100,6 +100,10 @@ export default class extends Controller {
       footnote.classList.add("collapsing");
       footnote.classList.remove(...this.footnoteToggledClasses);
 
+      const backlink = footnote.querySelector("a[role=doc-backlink]");
+
+      if (backlink) backlink.style.display = "none";
+
       reference.dataset.action = "footnotes#show";
       reference.dataset.footnotesReferenceParam = reference.id;
       reference.dataset.footnotesFootnoteParam = footnote.id;
@@ -116,6 +120,7 @@ export default class extends Controller {
   positionSidenote(sidenote, reference = undefined) {
     if (!reference) reference = this.referenceTargets.find(x => x.id === sidenote.dataset.reference);
 
+    const backlink = sidenote.querySelector("a[role=doc-backlink]");
     const offsetTop = Math.max(reference.offsetTop, this.offsetTopValue);
     const offsetLeft = this.element.offsetLeft + this.element.offsetWidth + this.paddingLeftValue;
 
@@ -124,6 +129,8 @@ export default class extends Controller {
     sidenote.classList.add(...this.sidenoteClasses);
     sidenote.dataset.action = "";
     reference.dataset.action = "";
+
+    if (backlink) backlink.style.display = "";
 
     this.offsetTopValue = offsetTop + sidenote.offsetHeight + this.minSpacingValue;
   }
