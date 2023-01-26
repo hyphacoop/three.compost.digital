@@ -12,7 +12,7 @@ Las barras de progreso de los objetivos/metas
 {% assign width = include.value_now | divided_by: include.value_max | times: 100 %}
 
 <div class="mb-3">
-	<div class="progress position-relative border border-width-3 border-black">
+	<div class="progress position-relative border border-width-3 border-black lh-4">
     <div
       data-support-us-target="goal"
       class="progress-bar o-2 collapsing width"
@@ -21,7 +21,7 @@ Las barras de progreso de los objetivos/metas
       aria-valuenow="{{ include.value_now }}"
       aria-valuemin="0"
       aria-valuemax="{{ include.value_max }}"></div>
-		<span class="d-flex position-absolute h-100 align-items-center font-weight-bold lead px-4">{{ include.title }}</span>
+		<span class="d-flex position-absolute h-100 align-items-center font-weight-bold f-16 lead-md px-4">{{ include.title }}</span>
 	</div>
 
 	<p class="p-2"><strong>{{ include.currency }}{{ include.value_max | round }}</strong> {{ include.text }}</p>
