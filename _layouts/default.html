@@ -43,7 +43,9 @@
     {% seo %}
   </head>
   <body>
-    {% include device_detector.html %}
+    {% unless jekyll.environment == "production" %}
+      {% include device_detector.html %}
+    {% endunless %}
 
     <main tabindex="-1" role="main" id="content">
       {{ content }}
