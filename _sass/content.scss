@@ -70,6 +70,11 @@
     }
   }
 
+  a {
+    word-break: break-word !important;
+    word-wrap: break-word !important;
+  }
+
   blockquote {
     border-left: 4px solid rgba(0, 0, 0, 0.2);
     margin-left: 0.75em;
