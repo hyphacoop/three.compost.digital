@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'compost-jekyll-theme'
-  spec.version       = '0.1.0'
+  spec.version       = '0.1.1'
   spec.authors       = ['Sutty']
   spec.email         = ['sutty@riseup.net']
   spec.summary       = 'Jekyll port for COMPOST Magazine Issue 02'
