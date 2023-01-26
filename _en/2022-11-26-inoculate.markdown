@@ -6,7 +6,7 @@ image:
   description: ''
 draft: false
 order: 14
-layout: publication
+layout: front_cover
 uuid: 3ca5c2cd-a849-449b-b759-a847025ae7c1
 liquid: false
 usuaries:
