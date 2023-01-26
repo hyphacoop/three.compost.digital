@@ -558,19 +558,19 @@
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/jsonify_notice.js": {
-      "bytes": 6885,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/jsonify_notice.js": {
+      "bytes": 6886,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/metrics.js": {
       "bytes": 2929,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/scope.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/scope.js": {
       "bytes": 2654,
       "imports": [
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/metrics.js",
           "kind": "import-statement"
         }
       ]
@@ -588,7 +588,7 @@
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/processor/esp.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/processor/esp.js": {
       "bytes": 1628,
       "imports": [
         {
@@ -597,19 +597,19 @@
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/angular_message.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/angular_message.js": {
       "bytes": 443,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/debounce.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/debounce.js": {
       "bytes": 487,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/ignore_noise.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/ignore_noise.js": {
       "bytes": 510,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/uncaught_message.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/uncaught_message.js": {
       "bytes": 450,
       "imports": []
     },
@@ -617,12 +617,12 @@
       "bytes": 15491,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/api.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/api.js": {
       "bytes": 202,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/fetch.js": {
-      "bytes": 1702,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/fetch.js": {
+      "bytes": 1662,
       "imports": [
         {
           "path": "node_modules/.pnpm/cross-fetch@3.1.5/node_modules/cross-fetch/dist/browser-ponyfill.js",
@@ -633,33 +633,33 @@
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/api.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/api.js",
           "kind": "import-statement"
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/node.js": {
-      "bytes": 2945,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/node.js": {
+      "bytes": 2929,
       "imports": [
         {
           "path": "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/api.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/api.js",
           "kind": "import-statement"
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/index.js": {
       "bytes": 288,
       "imports": [
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/fetch.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/fetch.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/node.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/node.js",
           "kind": "import-statement"
         }
       ]
@@ -708,8 +708,8 @@
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js": {
-      "bytes": 3027,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/tdshared.js": {
+      "bytes": 2873,
       "imports": [
         {
           "path": "node_modules/.pnpm/tdigest@0.1.2/node_modules/tdigest/tdigest.js",
@@ -717,209 +717,192 @@
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queries.js": {
-      "bytes": 3605,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/queries.js": {
+      "bytes": 3444,
       "imports": [
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/index.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/tdshared.js",
           "kind": "import-statement"
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queues.js": {
-      "bytes": 3946,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/queues.js": {
+      "bytes": 3631,
       "imports": [
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/index.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/metrics.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/tdshared.js",
           "kind": "import-statement"
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/routes.js": {
-      "bytes": 7139,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/routes.js": {
+      "bytes": 6768,
       "imports": [
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/index.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/metrics.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/tdshared.js",
           "kind": "import-statement"
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/version.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/version.js": {
       "bytes": 222,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/remote_settings.js": {
-      "bytes": 6255,
-      "imports": [
-        {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/version.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/base_notifier.js": {
-      "bytes": 10548,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/base_notifier.js": {
+      "bytes": 9147,
       "imports": [
         {
           "path": "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/jsonify_notice.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/jsonify_notice.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/scope.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/scope.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/processor/esp.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/processor/esp.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/angular_message.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/angular_message.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/debounce.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/debounce.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/ignore_noise.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/ignore_noise.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/uncaught_message.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/uncaught_message.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/index.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queries.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/queries.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queues.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/queues.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/routes.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/routes.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/version.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/remote_settings.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/version.js",
           "kind": "import-statement"
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/window.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/window.js": {
       "bytes": 495,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/console.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/console.js": {
       "bytes": 942,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/dom.js": {
-      "bytes": 2918,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/dom.js": {
+      "bytes": 2903,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/fetch.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/fetch.js": {
       "bytes": 1254,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/location.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/location.js": {
       "bytes": 1292,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/xhr.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/xhr.js": {
       "bytes": 1222,
       "imports": []
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/notifier.js": {
-      "bytes": 7388,
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/notifier.js": {
+      "bytes": 7365,
       "imports": [
         {
           "path": "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/base_notifier.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/base_notifier.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/window.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/window.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/console.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/console.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/dom.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/dom.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/fetch.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/fetch.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/location.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/location.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/xhr.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/xhr.js",
           "kind": "import-statement"
         }
       ]
     },
-    "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/index.js": {
+    "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/index.js": {
       "bytes": 192,
       "imports": [
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/notifier.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/notifier.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/base_notifier.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/base_notifier.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queries.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/queries.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/scope.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/scope.js",
           "kind": "import-statement"
         }
       ]
@@ -931,6 +914,15 @@
     "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js": {
       "bytes": 82300,
       "imports": []
+    },
+    "_packs/controllers/body_scroll_controller.js": {
+      "bytes": 438,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        }
+      ]
     },
     "_packs/controllers/device_detector_controller.js": {
       "bytes": 1401,
@@ -946,15 +938,57 @@
         }
       ]
     },
+    "_packs/controllers/button_copy_controller.js": {
+      "bytes": 742,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ]
+    },
+    "_packs/controllers/footnotes_controller.js": {
+      "bytes": 4832,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ]
+    },
+    "_packs/controllers/support_us_controller.js": {
+      "bytes": 2093,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ]
+    },
     "_packs/entry.js": {
-      "bytes": 964,
+      "bytes": 1470,
       "imports": [
         {
           "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js",
           "kind": "import-statement"
         },
         {
-          "path": "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/index.js",
+          "path": "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/index.js",
           "kind": "import-statement"
         },
         {
@@ -966,20 +1000,36 @@
           "kind": "import-statement"
         },
         {
+          "path": "_packs/controllers/body_scroll_controller.js",
+          "kind": "import-statement"
+        },
+        {
           "path": "_packs/controllers/device_detector_controller.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_packs/controllers/button_copy_controller.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_packs/controllers/footnotes_controller.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_packs/controllers/support_us_controller.js",
           "kind": "import-statement"
         }
       ]
     }
   },
   "outputs": {
-    "assets/js/pack.Z2FSA3FL.js.map": {
+    "assets/js/pack.K7EEKFVP.js.map": {
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 590991
+      "bytes": 601284
     },
-    "assets/js/pack.Z2FSA3FL.js": {
+    "assets/js/pack.K7EEKFVP.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "_packs/entry.js",
@@ -1144,10 +1194,10 @@
           "bytesInOutput": 59
         },
         "node_modules/.pnpm/tdigest@0.1.2/node_modules/tdigest/tdigest.js": {
-          "bytesInOutput": 4696
+          "bytesInOutput": 4705
         },
         "_packs/entry.js": {
-          "bytesInOutput": 564
+          "bytesInOutput": 705
         },
         "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/finally.js": {
           "bytesInOutput": 200
@@ -1158,98 +1208,107 @@
         "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/index.js": {
           "bytesInOutput": 2676
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/jsonify_notice.js": {
-          "bytesInOutput": 3144
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/jsonify_notice.js": {
+          "bytesInOutput": 3138
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/metrics.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/metrics.js": {
           "bytesInOutput": 1480
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/scope.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/scope.js": {
           "bytesInOutput": 1404
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/processor/esp.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/processor/esp.js": {
           "bytesInOutput": 693
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/angular_message.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/angular_message.js": {
           "bytesInOutput": 223
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/debounce.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/debounce.js": {
           "bytesInOutput": 153
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/ignore_noise.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/ignore_noise.js": {
           "bytesInOutput": 255
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/uncaught_message.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/uncaught_message.js": {
           "bytesInOutput": 223
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/fetch.js": {
-          "bytesInOutput": 798
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/fetch.js": {
+          "bytesInOutput": 764
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/api.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/api.js": {
           "bytesInOutput": 142
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/node.js": {
-          "bytesInOutput": 1085
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/node.js": {
+          "bytesInOutput": 1061
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/http_req/index.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/http_req/index.js": {
           "bytesInOutput": 48
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/tdshared.js": {
-          "bytesInOutput": 1415
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/tdshared.js": {
+          "bytesInOutput": 1297
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queries.js": {
-          "bytesInOutput": 1614
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/queries.js": {
+          "bytesInOutput": 1538
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/queues.js": {
-          "bytesInOutput": 1806
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/queues.js": {
+          "bytesInOutput": 1610
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/routes.js": {
-          "bytesInOutput": 3240
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/routes.js": {
+          "bytesInOutput": 2968
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/version.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/version.js": {
           "bytesInOutput": 114
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/remote_settings.js": {
-          "bytesInOutput": 2821
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/base_notifier.js": {
+          "bytesInOutput": 4190
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/base_notifier.js": {
-          "bytesInOutput": 5096
-        },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/filter/window.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/filter/window.js": {
           "bytesInOutput": 251
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/console.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/console.js": {
           "bytesInOutput": 351
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/dom.js": {
-          "bytesInOutput": 1349
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/dom.js": {
+          "bytesInOutput": 1325
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/fetch.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/fetch.js": {
           "bytesInOutput": 526
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/location.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/location.js": {
           "bytesInOutput": 507
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/instrumentation/xhr.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/instrumentation/xhr.js": {
           "bytesInOutput": 616
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/notifier.js": {
-          "bytesInOutput": 3218
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/notifier.js": {
+          "bytesInOutput": 3155
         },
-        "node_modules/.pnpm/@airbrake+browser@2.1.8/node_modules/@airbrake/browser/esm/index.js": {
+        "node_modules/.pnpm/@airbrake+browser@1.4.2/node_modules/@airbrake/browser/esm/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/.pnpm/@hotwired+turbo@7.2.4/node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js": {
           "bytesInOutput": 73392
         },
         "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js": {
-          "bytesInOutput": 42022
+          "bytesInOutput": 42017
+        },
+        "_packs/controllers/body_scroll_controller.js": {
+          "bytesInOutput": 273
         },
         "_packs/controllers/device_detector_controller.js": {
-          "bytesInOutput": 1040
+          "bytesInOutput": 1038
+        },
+        "_packs/controllers/button_copy_controller.js": {
+          "bytesInOutput": 524
+        },
+        "_packs/controllers/footnotes_controller.js": {
+          "bytesInOutput": 2951
+        },
+        "_packs/controllers/support_us_controller.js": {
+          "bytesInOutput": 1237
         }
       },
-      "bytes": 844047
+      "bytes": 844634
     }
   }
 }
