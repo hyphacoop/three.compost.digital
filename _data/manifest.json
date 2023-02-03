@@ -953,7 +953,7 @@
       ]
     },
     "_packs/controllers/footnotes_controller.js": {
-      "bytes": 4589,
+      "bytes": 4832,
       "imports": [
         {
           "path": "node_modules/.pnpm/@hotwired+stimulus@3.2.1/node_modules/@hotwired/stimulus/dist/stimulus.js",
@@ -1023,13 +1023,13 @@
     }
   },
   "outputs": {
-    "assets/js/pack.34DHW2S5.js.map": {
+    "assets/js/pack.3BDZHCSF.js.map": {
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 600870
+      "bytes": 601264
     },
-    "assets/js/pack.34DHW2S5.js": {
+    "assets/js/pack.3BDZHCSF.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "_packs/entry.js",
@@ -1302,13 +1302,13 @@
           "bytesInOutput": 524
         },
         "_packs/controllers/footnotes_controller.js": {
-          "bytesInOutput": 2804
+          "bytesInOutput": 2951
         },
         "_packs/controllers/support_us_controller.js": {
           "bytesInOutput": 1237
         }
       },
-      "bytes": 844487
+      "bytes": 844634
     }
   }
 }
