@@ -1,30 +1,29 @@
 ---
-title: "COMPOST"
-url: "https://compost.sutty.nl"
+title: COMPOST Theme Testing
+url: https://compost.testing.sutty.nl
 sass:
-#  style: "compressed"
   load_paths:
-  - "node_modules"
+  - node_modules
 permalink: ":title/"
 locales:
-- "en"
-- "es"
+- en
+- es
 plugins:
-- "jekyll-hardlinks"
-- "jekyll-drafts-as-metadata"
-- "jekyll-locales"
-- "jekyll-ignore-layouts"
-- "jekyll-relative-urls"
-- "jekyll-include-cache"
-- "jekyll-linked-posts"
-- "jekyll-order"
-- "jekyll-data"
-- "jekyll-seo-tag"
-- "jekyll-images"
-- "jekyll-embed-urls"
-- "sutty-liquid"
-- "jekyll-gzip"
-- "jekyll-brotli"
+- jekyll-hardlinks
+- jekyll-drafts-as-metadata
+- jekyll-locales
+- jekyll-ignore-layouts
+- jekyll-relative-urls
+- jekyll-include-cache
+- jekyll-linked-posts
+- jekyll-order
+- jekyll-data
+- jekyll-seo-tag
+- jekyll-images
+- jekyll-embed-urls
+- sutty-liquid
+- jekyll-gzip
+- jekyll-brotli
 liquid:
   strict_filters: true
 ignored_layouts:
@@ -36,3 +35,5 @@ linked_fields:
 - post
 - authors
 - posts
+description: Jekyll port for COMPOST Magazine Issue 02
+hostname: compost.testing.sutty.nl
