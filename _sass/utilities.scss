@@ -243,3 +243,10 @@ code {
   border-radius: $code-radius;
   font-family: $code-font-family;
 }
+
+.rotate {
+  width: 60px;
+  transform: rotate(90deg);
+  flex: 0 1 auto;
+  margin: 60px;
+}
