@@ -10,7 +10,6 @@ locales:
 - "en"
 - "es"
 plugins:
-- "jekyll-env"
 - "jekyll-hardlinks"
 - "jekyll-drafts-as-metadata"
 - "jekyll-locales"
