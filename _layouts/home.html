@@ -14,7 +14,10 @@ layout: "default_with_menu"
 		subtitle=front_cover.subtitle
 		content=front_cover.content
 	%}
-	<article class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-6 container-lg mx-auto">
+
+	{% include divider.html src="public/nettles-small-clear.gif" alt="divider" %}
+
+	<article class="row row-cols-1 row-cols-md-2 row-cols-lg-3 container-lg mx-auto">
 		{% for post in posts %}
 			<div class="col pb-5 px-2">
 				{% include cover_post/home.html

@@ -1,0 +1,13 @@
+{%- comment -%}
+
+Image component
+
+@param :src [String] La imagen
+@param :alt [String] La descripción de la imagen
+{%- endcomment -%}
+
+<div class="d-flex flex-row justify-content-center align-items-center">
+	<div class="border-bottom-dashed border-black flex-grow-1 my-2"></div>
+	{% include picture.html src=include.src alt=include.alt img_class="rotate" %}
+	<div class="border-bottom-dashed border-black flex-grow-1 my-2"></div>
+</div>

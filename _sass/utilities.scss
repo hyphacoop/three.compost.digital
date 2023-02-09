@@ -243,3 +243,10 @@ b,
 strong {
   font-weight: $font-weight-bold;
 }
+
+.rotate {
+  width: 60px;
+  transform: rotate(90deg);
+  flex: 0 1 auto;
+  margin: 60px;
+}
