@@ -981,7 +981,7 @@
       ]
     },
     "_packs/entry.js": {
-      "bytes": 1470,
+      "bytes": 1450,
       "imports": [
         {
           "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js",
@@ -1023,13 +1023,13 @@
     }
   },
   "outputs": {
-    "assets/js/pack.K7EEKFVP.js.map": {
+    "assets/js/pack.3BDZHCSF.js.map": {
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 601284
+      "bytes": 601264
     },
-    "assets/js/pack.K7EEKFVP.js": {
+    "assets/js/pack.3BDZHCSF.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "_packs/entry.js",
