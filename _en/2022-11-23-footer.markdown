@@ -16,7 +16,7 @@ column_2: <p style="text-align:start"><strong>COMPOST is published to the web an
   <a href="https://getdweb.net/" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">DWeb</a>
   using the <a href="https://github.com/hyphacoop/api.distributed.press" rel="noopener"
   target="_blank" referrerpolicy="strict-origin-when-cross-origin">Distributed Press
-  API</a>.</strong></p><p style="text-align:start">Read it on </p><p style="text-align:start"><a
+  API</a>.</strong></p><p style="text-align:start">Read it on</p><p style="text-align:start"><a
   href="https://two.compost.digital/" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">https://two.compost.digital</a><br><a
   href="https://ipfs.distributed.press/ipns/two.compost.digital/" rel="noopener" target="_blank"
   referrerpolicy="strict-origin-when-cross-origin">ipns://two.compost.digital</a><br><a
@@ -51,9 +51,9 @@ layout: footer
 uuid: 81a580fa-7e0f-4ade-9669-316f5bb2c298
 liquid: false
 usuaries:
+- 310
 - 356
 - 534
-- 310
-last_modified_at: 2023-02-08 21:24:13.827329099 +00:00
+last_modified_at: 2023-02-09 20:57:58.880608648 +00:00
 ---
 
