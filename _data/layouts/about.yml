@@ -1,108 +1,108 @@
 ---
 title:
-  type: string
+  type: "string"
   required: true
   label:
-    es: Título
-    en: Title
+    es: "Título"
+    en: "Title"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 description:
-  type: text
+  type: "text"
   required: true
   label:
-    es: Descripción del proyecto
-    en: Proyect description
+    es: "Descripción del proyecto"
+    en: "Proyect description"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 content:
-  type: new_content
+  type: "new_content"
   label:
-    es: contenido de la pagina about
-    en: title post page one
+    es: "Contenido de la página Acerca"
+    en: "About page content"
   help:
-    es: titulo de la página centrado a la izquierda
-    en: title page 1
+    es: ""
+    en: ""
 image_menu_close:
-  type: 'image'
+  type: "image"
   path:
     label:
-      es: 'Logo'
-      en: 'Logo'
+      es: "Logo de cabecera con el menú cerrado"
+      en: "Header logo with menu closed"
     help:
-      es: 'Logo de cabecera con el menú cerrado'
-      en: ''
+      es: ""
+      en: ""
   description:
     label:
-      es: 'Descripción del logo'
-      en: 'Logo description'
+      es: "Descripción del logo"
+      en: "Logo description"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
 image_menu_open:
-  type: 'image'
+  type: "image"
   path:
     label:
-      es: 'Logo'
-      en: 'Logo'
+      es: "Logo con menú abierto"
+      en: "Header logo with menu opened"
     help:
-      es: 'Logo de cabecera con el menú abierto'
-      en: ''
+      es: ""
+      en: ""
   description:
     label:
-      es: 'Descripción del logo'
-      en: 'Logo description'
+      es: "Descripción del logo"
+      en: "Logo description"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
 favicon:
-  type: 'image'
+  type: "image"
   path:
     label:
-      es: 'Favicon'
-      en: 'Favicon'
+      es: "Favicon"
+      en: "Favicon"
     help:
-      es: 'Favicon del sitio en formato .png'
-      en: 'Favicon of the site in .png'
+      es: "Favicon del sitio en formato .png, al menos de 384x384px de resolución"
+      en: "Favicon for the site in .png format, at least 384x384px resolution"
 background_image:
-  type: 'image'
+  type: "image"
   path:
     label:
-      es: 'Imagen de fondo'
-      en: 'Background image'
+      es: "Imagen de fondo de la cabecera"
+      en: "Header background image"
     help:
-      es: 'Imagen de fondo de la cabecera'
-      en: 'Header background image'
+      es: ""
+      en: ""
   description:
     label:
-      es: 'Descripción de la imagen'
-      en: 'Image description'
+      es: "Descripción de la imagen"
+      en: "Image description"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
 license:
-  type: new_html
+  type: "new_html"
   label:
-    es: Descripción de la licencia
-    en: License description
+    es: "Descripción de la licencia"
+    en: "License description"
   help:
-    es: 'este contenido se mostrará en los post que contienen un pie de licencia'
-    en: 'this content will be displayed in posts that contain a license footer'
+    es: "Se mostrará en los artículos que contienen un pie de licencia"
+    en: "Will be displayed on posts with license footer enabled"
 order:
-  type: order
+  type: "order"
   label:
-    es: Orden
-    en: Order
+    es: "Orden"
+    en: "Order"
   help:
-    es: La posición del artículo en la lista de artículos
-    en: Position in articles list
+    es: "La posición del artículo en la lista de artículos"
+    en: "Position in articles list"
 draft:
-  type: boolean
+  type: "boolean"
   label:
-    es: Borrador
-    en: Draft
+    es: "Borrador"
+    en: "Draft"
   help:
-    es: Este artículo aun no está listo para publicar
-    en: This post isn't ready to be published yet
+    es: "Este artículo aun no está listo para publicar"
+    en: "This post isn"t ready to be published yet"
