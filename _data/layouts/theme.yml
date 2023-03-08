@@ -14,8 +14,8 @@ font_family_sans_serif:
     en: "Select a typography for the site"
     es: "Selecciona una tipografía para el sitio"
   help:
-    en: "If you want us to add support for a typography, please send us an e-mail"
-    es: "Si quieres que agreguemos una tipografía, por favor envíanos un e-mail"
+    en: ""
+    es: ""
   default:
     en: ""
     es: ""
@@ -34,8 +34,8 @@ font_family_monospace:
     en: "Select a monospace typography for the site"
     es: "Selecciona una tipografía monospace para el sitio"
   help:
-    en: "If you want us to add support for a typography, please send us an e-mail"
-    es: "Si quieres que agreguemos una tipografía, por favor envíanos un e-mail"
+    en: ""
+    es: ""
   default:
     en: ""
     es: ""
@@ -54,8 +54,8 @@ headings_font_family:
     en: "Select a typography for headings"
     es: "Selecciona una tipografía para los títulos del sitio"
   help:
-    en: "If you want us to add support for a typography, please send us an e-mail"
-    es: "Si quieres que agreguemos una tipografía, por favor envíanos un e-mail"
+    en: ""
+    es: ""
   default:
     en: ""
     es: ""
@@ -80,7 +80,7 @@ enable_rounded:
     es: false
     en: false
 enable_shadows:
-  type: boolean
+  type: "boolean"
   label:
     en: "Shadows"
     es: "Sombras"
@@ -123,17 +123,6 @@ primary:
   default:
     es: "#007bff"
     en: "#007bff"
-secondary:
-  type: "color"
-  label:
-    en: "Secondary color"
-    es: "Color secundario"
-  help:
-    en: "Highlights certain elements"
-    es: "Resalta algunos elementos"
-  default:
-    es: "#6c757d"
-    en: "#6c757d"
 link_color:
   type: "color"
   label:
@@ -234,21 +223,21 @@ mark_bg:
     es: "#fcf8e3"
     en: "#fcf8e3"
 body_image:
-  type: 'image'
+  type: "image"
   path:
     label:
-      es: 'Imagen de fondo del sitio'
-      en: 'Site´s background image'
+      es: "Imagen de fondo del sitio"
+      en: "Site´s background image"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
   description:
     label:
-      es: 'Descripción de la imagen de fondo'
-      en: 'Background image description'
+      es: "Descripción de la imagen de fondo"
+      en: "Background image description"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
 order:
   type: "order"
   label:
