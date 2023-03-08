@@ -1,35 +1,35 @@
 ---
 title:
-  type: 'string'
+  type: "string"
   required: true
   label:
-    en: 'Item name'
-    es: 'Nombre del ítem'
+    en: "Item name"
+    es: "Nombre del ítem"
   help:
-    en: 'As shown on the menu'
-    es: 'Tal como aparece en el menú'
+    en: "As shown on the menu"
+    es: "Tal como aparece en el menú"
 post:
-  type: 'belongs_to'
+  type: "belongs_to"
   label:
-    en: 'Link to this post'
-    es: 'Artículo'
+    en: "Link to this post"
+    es: "Artículo"
   help:
-    en: 'If the item leads to a fixed post, associate it here'
-    es: 'Si el ítem lleva a un artículo fijo, asociarlo aquí'
+    en: "If the item leads to a fixed post, associate it here"
+    es: "Si el ítem lleva a un artículo fijo, asociarlo aquí"
 draft:
-  type: 'boolean'
+  type: "boolean"
   label:
-    es: 'Borrador'
-    en: 'Draft'
+    es: "Borrador"
+    en: "Draft"
   help:
-    es: 'Este artículo aun no está listo para publicar'
+    es: "Este artículo aun no está listo para publicar"
     en: "This post isn't ready to be published yet"
 order:
-  type: 'order'
+  type: "order"
   required: true
   label:
-    es: 'Orden'
-    en: 'Order'
+    es: "Orden"
+    en: "Order"
   help:
-    es: 'La posición del artículo en la lista de artículos'
-    en: 'The post position in the posts list'
+    es: "La posición del artículo en la lista de artículos"
+    en: "The post position in the posts list"
