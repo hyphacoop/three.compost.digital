@@ -1,15 +1,19 @@
 ---
 locale: "Castellano"
 dir: "ltr"
+previous_page: "Página anterior"
+next_page: "Página siguiente"
+home: "Inicio"
 layouts:
-  supporter: "Patrocinador"
-support_alt: "Hongo"
+  supporter: "Patrocinadorx"
+content_license: "Licencia del contenido: "
+support_alt: "Apóyanos"
+and: "y"
 button_copy:
   confirmation: "%s copiado"
-and: "y"
 device_detector:
-  outline: Bordes
-  get_help: Ayuda
+  outline: "Bordes"
+  get_help: "Ayuda"
   help: |
     Si encuentras un problema, por favor toma una captura de pantalla
     con esta información visible.  Nos ayuda a resolverlos.

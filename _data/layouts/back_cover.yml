@@ -70,7 +70,7 @@ content:
 supporters_title:
   type: "string"
   label:
-    es: "Título de la sección de Sponsors"
+    es: "Título de la sección de patrocinadores"
     en: "Supporters section title"
   help:
     es: ""

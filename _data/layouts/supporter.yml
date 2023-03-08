@@ -3,7 +3,7 @@ title:
   type: "string"
   required: true
   label:
-    es: "Nombre de lx sponsor"
+    es: "Nombre de lx patrocinadorx"
     en: "Supporter name"
   help:
     es: ""
@@ -27,7 +27,7 @@ image:
 link:
   type: "url"
   label:
-    es: "URL del sitio del sponsor"
+    es: "URL del sitio de lx patrocinadorx"
     en: "Supporter site URL"
   help:
     es: ""
