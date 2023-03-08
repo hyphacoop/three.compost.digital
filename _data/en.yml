@@ -5,15 +5,15 @@ previous_page: "Previous page"
 next_page: "Next page"
 home: "Home"
 layouts:
-  supporter: "Sponsor"
+  supporter: "Supporter"
 content_license: "Content License: "
-support_alt: "Mushroom"
+support_alt: "Support us"
 and: "and"
 button_copy:
   confirmation: "%s copied"
 device_detector:
-  outline: Outline
-  get_help: Help
+  outline: "Outline"
+  get_help: "Help"
   help: |
     If you find an issue, please take a screenshot including this
     information.  It helps us fix them.
