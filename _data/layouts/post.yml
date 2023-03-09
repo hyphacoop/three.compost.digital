@@ -42,8 +42,8 @@ authors:
     es: "Autores"
     en: "Authors"
   help:
-    es: "Quiénes participaron en la escritura de este artículo"
-    en: "Authors who collaborated in writing this post.  Start writing to filter."
+    es: "Usar la lista desplegable para elegir 1 o más autores. Empezar a escribir para filtrar."
+    en: "Use the dropdown list to select an author or authors. Start writing to filter."
 image:
   type: "image"
   path:
