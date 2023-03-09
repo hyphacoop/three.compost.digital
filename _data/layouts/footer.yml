@@ -67,7 +67,7 @@ column_3:
 column_4:
   type: "new_html"
   label:
-    es: "Contenido de la tercera columna del footer"
+    es: "Contenido de la cuarta columna del footer"
     en: "Content for footer's fourth column"
   help:
     es: ""
