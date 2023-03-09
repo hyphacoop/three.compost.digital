@@ -64,24 +64,8 @@ favicon:
       es: 'Favicon'
       en: 'Favicon'
     help:
-      es: 'Favicon del sitio en formato .png'
-      en: 'Favicon of the site in .png'
-background_image:
-  type: 'image'
-  path:
-    label:
-      es: 'Imagen de fondo'
-      en: 'Background image'
-    help:
-      es: 'Imagen de fondo de la cabecera'
-      en: 'Header background image'
-  description:
-    label:
-      es: 'Descripción de la imagen'
-      en: 'Image description'
-    help:
-      es: ''
-      en: ''
+      es: 'Favicon del sitio en formato .png de 384x384px'
+      en: 'Favicon of the site in format .png size 384x384px'
 license:
   type: new_html
   label:
