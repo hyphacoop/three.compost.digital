@@ -10,8 +10,8 @@ title:
 description:
   type: "text"
   label:
-    en: "Section content"
-    es: "Sección de contenido"
+    en: "What is the description of this goal?"
+    es: "¿Cuál es la descripción de este objetivo?"
   help:
     en: ""
     es: ""
