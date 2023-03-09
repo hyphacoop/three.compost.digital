@@ -36,6 +36,5 @@ linked_fields:
 - post
 - authors
 - posts
-theme: sutty-minima
 description: compost issue 3
 hostname: compost.sutty.nl
