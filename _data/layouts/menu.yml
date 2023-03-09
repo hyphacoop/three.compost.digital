@@ -11,8 +11,8 @@ title:
 post:
   type: "belongs_to"
   label:
-    en: "Link to this post"
-    es: "Artículo"
+    en: "Post linked to this item"
+    es: "Artículo vinculado a este ítem"
   help:
     en: "If the item leads to a fixed post, associate it here"
     es: "Si el ítem lleva a un artículo fijo, asociarlo aquí"
