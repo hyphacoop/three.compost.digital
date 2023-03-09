@@ -7,7 +7,6 @@ enable_shadows: false
 body_bg: "#ffffff"
 body_color: "#000000"
 primary: "#564fe3"
-secondary: "#6c757d"
 link_color: "#564fe3"
 link_hover_color: "#9995ef"
 h1_font_size: 2.625rem
@@ -28,6 +27,7 @@ liquid: false
 usuaries:
 - 534
 - 616
-last_modified_at: 2023-01-16 20:34:34.749287522 +00:00
+- 310
+last_modified_at: 2023-03-09 16:35:10.551799274 +00:00
 ---
 
