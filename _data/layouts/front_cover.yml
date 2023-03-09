@@ -14,7 +14,7 @@ subtitle:
     en: "Subtitle"
     es: "Subtítulo"
   help:
-    en: "Subtitle or N° Issue"
+    en: "Subtitle or issue number"
     es: "Para poner un subtítulo o el número de publicación"
 description:
   type: "text"
