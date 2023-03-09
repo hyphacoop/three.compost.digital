@@ -16,20 +16,19 @@ post:
   help:
     en: "If the item leads to a fixed post, associate it here"
     es: "Si el ítem lleva a un artículo fijo, asociarlo aquí"
-draft:
-  type: "boolean"
-  label:
-    es: "Borrador"
-    en: "Draft"
-  help:
-    es: "Este artículo aun no está listo para publicar"
-    en: "This post isn't ready to be published yet"
 order:
   type: "order"
-  required: true
   label:
     es: "Orden"
     en: "Order"
   help:
     es: "La posición del artículo en la lista de artículos"
     en: "The post position in the posts list"
+draft:
+  type: "boolean"
+  label:
+    es: "Borrador"
+    en: "Draft"
+  help:
+    es: "Al activar \"Borrador\" este contenido se mantendrá disponible en el panel, pero no se publica en el sitio como los demás contenidos al tocar \"Publicar todos los cambios\""
+    en: "By activating \"Draft\" this content will remain available in the dashboard, but will not be published on the site as other contents when you tap \"Publish all changes\"."

@@ -104,5 +104,5 @@ draft:
     es: "Borrador"
     en: "Draft"
   help:
-    es: "Este artículo aun no está listo para publicar"
-    en: "This post isn't ready to be published yet"
+    es: "Al activar \"Borrador\" este contenido se mantendrá disponible en el panel, pero no se publica en el sitio como los demás contenidos al tocar \"Publicar todos los cambios\""
+    en: "By activating \"Draft\" this content will remain available in the dashboard, but will not be published on the site as other contents when you tap \"Publish all changes\"."

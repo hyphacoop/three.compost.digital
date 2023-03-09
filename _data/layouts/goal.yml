@@ -38,16 +38,16 @@ currency:
 order:
   type: "order"
   label:
-    en: "Order"
     es: "Orden"
+    en: "Order"
   help:
-    en: "Position in articles list"
     es: "La posición del artículo en la lista de artículos"
+    en: "The post position in the posts list"
 draft:
   type: "boolean"
   label:
-    en: "Draft"
     es: "Borrador"
+    en: "Draft"
   help:
-    en: "This post isn't ready to be published yet"
-    es: "Este artículo aun no está listo para publicar"
+    es: "Al activar \"Borrador\" este contenido se mantendrá disponible en el panel, pero no se publica en el sitio como los demás contenidos al tocar \"Publicar todos los cambios\""
+    en: "By activating \"Draft\" this content will remain available in the dashboard, but will not be published on the site as other contents when you tap \"Publish all changes\"."
