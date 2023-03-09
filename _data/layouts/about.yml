@@ -66,6 +66,13 @@ favicon:
     help:
       es: "Favicon del sitio en formato .png, al menos de 384x384px de resolución"
       en: "Favicon for the site in .png format, at least 384x384px resolution"
+  description:
+    label:
+      es: "Descripción del favicon"
+      en: "Favicon description"
+    help:
+      es: ""
+      en: ""
 background_image:
   type: "image"
   path:
