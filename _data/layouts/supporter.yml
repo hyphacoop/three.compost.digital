@@ -22,8 +22,8 @@ image:
       es: "Descripción del logo"
       en: "Logo description"
     help:
-      es: ""
-      en: ""
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 link:
   type: "url"
   label:

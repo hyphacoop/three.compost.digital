@@ -6,7 +6,7 @@ title:
     en: "Post title"
   help:
     es: "¡Un título que invite a leer el artículo!"
-    en: "A title that invites people to read the post!"
+    en: "A title that makes people want to read the post!"
 description:
   type: "text"
   required: true
@@ -21,8 +21,8 @@ description:
       contenido, para que las personas puedan determinar cuándo quieren
       abrirlo.
     en: |
-      Summary of the post contents, also used by social media and search
-      engines.  If the post is about violence and other sensitive
+      Summary of post content, also used by social media and search
+      engines. If the post is about violence and other sensitive
       topics, we invite you to use it as a content warning, so others
       can decide when they want to read it.
 subtitle:
@@ -42,8 +42,8 @@ authors:
     es: "Autores"
     en: "Authors"
   help:
-    es: "Usar la lista desplegable para elegir 1 o más autores. Empezar a escribir para filtrar."
-    en: "Use the dropdown list to select an author or authors. Start writing to filter."
+    es: "Empieza a escribir para encontrar autores.  Presiona enter para seleccionarlos.  Crea autores nuevxs desde la lista de artículos para encontrarles luego aquí."
+    en: "Start typing to find authors.  Press enter to add the selected item. Add a new author from the posts list to find them later here."
 image:
   type: "image"
   path:
@@ -52,14 +52,14 @@ image:
       en: "Main image"
     help:
       es: "Se utiliza para ilustrar el artículo y como previsualización en las redes sociales."
-      en: "It's used to illustrate the article and as preview in social networks."
+      en: "Used to illustrate the article and as preview in social networks."
   description:
     label:
       es: "Descripción de la imagen principal"
       en: "Main image description"
     help:
-      es: "Describe la imagen principal para usuaries no videntes y buscadores"
-      en: "Describe the main image for blind or partially sighted users and search engines"
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 content:
   type: "new_content"
   label:
@@ -67,7 +67,7 @@ content:
     en: "Post content"
   help:
     es: "Escribe aquí el artículo"
-    en: "Write down your post"
+    en: "Write your post here"
 show_biography:
   type: "boolean"
   label:

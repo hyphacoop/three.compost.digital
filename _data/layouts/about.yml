@@ -39,8 +39,8 @@ image_menu_close:
       es: "Descripción del logo"
       en: "Logo description"
     help:
-      es: ""
-      en: ""
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 image_menu_open:
   type: "image"
   path:
@@ -55,8 +55,8 @@ image_menu_open:
       es: "Descripción del logo"
       en: "Logo description"
     help:
-      es: ""
-      en: ""
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 favicon:
   type: "image"
   path:
@@ -71,8 +71,8 @@ favicon:
       es: "Descripción del favicon"
       en: "Favicon description"
     help:
-      es: ""
-      en: ""
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 background_image:
   type: "image"
   path:

@@ -28,11 +28,11 @@ content:
 projects:
   type: "array"
   label:
-    es: "Proyectos"
-    en: "Projects"
+    es: "Proyectos personales"
+    en: "Personal projects"
   help:
-    es: "Lista de proyectos personales de lx autorx"
-    en: "List of author's personal projects"
+    es: "Empieza a escribir para filtrar valores ya usados.  Presiona enter para agregar el ítem seleccionado o agregar uno nuevo si no existe."
+    en: "Start typing to filter previously used values.  Press enter to add the selected item or a new one if it doesn't exist yet."
 posts:
   type: "has_and_belongs_to_many"
   filter:
@@ -42,8 +42,8 @@ posts:
     es: "Artículos de lx autorx"
     en: "Author's posts"
   help:
-    es: "Usar la lista desplegable para elegir el título.  Empezar a escribir para filtrar."
-    en: "Use the dropdown list to select a title.  Start writing to filter."
+    es: "Empieza a escribir para encontrar artículos.  Presiona enter para seleccionarlos.  Crea artículos nuevos desde la lista de artículos para encontrarlos luego aquí."
+    en: "Start typing to find posts.  Press enter to add the selected item. Add a new post from the posts list to find them later here."
 locales:
   type: "locales"
   label:

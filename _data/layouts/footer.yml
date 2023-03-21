@@ -22,8 +22,8 @@ image:
       es: "Descripción de la imagen principal"
       en: "Main image description"
     help:
-      es: ""
-      en: ""
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 background_image:
   type: "image"
   path:
@@ -38,8 +38,8 @@ background_image:
       es: "Descripción de la imagen de fondo"
       en: "Background image description"
     help:
-      es: ""
-      en: ""
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 column_1:
   type: "new_html"
   label:
