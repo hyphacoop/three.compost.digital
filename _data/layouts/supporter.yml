@@ -1,50 +1,58 @@
 ---
 title:
-  type: string
+  type: "string"
   required: true
   label:
-    es: Título
-    en: Title
+    es: "Nombre de lx patrocinadorx"
+    en: "Supporter name"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 image:
-  type: 'image'
+  type: "image"
   path:
     label:
-      es: 'Logo'
-      en: 'Logo'
+      es: "Logo"
+      en: "Logo"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
   description:
     label:
-      es: 'Descripción de la imagen'
-      en: 'Image description'
+      es: "Descripción del logo"
+      en: "Logo description"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
 link:
-  type: url
+  type: "url"
   label:
-    es: URL del sitio del Sponsor
-    en: Supporter site URL
+    es: "URL del sitio de lx patrocinadorx"
+    en: "Supporter site URL"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
+locales:
+  type: "locales"
+  label:
+    es: "Traducciones"
+    en: "Translations"
+  help:
+    es: "Vínculo al mismo artículo en otros idiomas"
+    en: "Link to same post in other languages"
 draft:
-  type: 'boolean'
+  type: "boolean"
   label:
-    es: 'Borrador'
-    en: 'Draft'
+    es: "Borrador"
+    en: "Draft"
   help:
-    es: 'Este artículo aun no está listo para publicar'
-    en: "This post isn't ready to be published yet"
+    es: "Al activar \"Borrador\" este contenido se mantendrá disponible en el panel, pero no se publica en el sitio como los demás contenidos al tocar \"Publicar todos los cambios\""
+    en: "By activating \"Draft\", this content will remain available on the dashboard, but will not be published on the site when you tap \"Publish all changes\" (other content which does not have this option selected will)."
 order:
-  type: 'order'
+  type: "order"
   label:
-    es: 'Orden'
-    en: 'Order'
+    es: "Orden"
+    en: "Order"
   help:
-    es: 'La posición del artículo en la lista de artículos'
-    en: 'The post position in the posts list'
+    es: "La posición del artículo en la lista de artículos"
+    en: "Position in list of posts"

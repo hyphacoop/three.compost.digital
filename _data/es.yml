@@ -1,15 +1,31 @@
 ---
 locale: "Castellano"
 dir: "ltr"
+previous_page: "Página anterior"
+next_page: "Página siguiente"
+home: "Inicio"
 layouts:
-  supporter: "Patrocinador"
-support_alt: "Hongo"
+  about: "Acerca"
+  author: "Autorx"
+  back_cover: "Contraportada"
+  button_copy: "Botón con copiado"
+  button: "Botón con vínculo"
+  footer: "Pie del sitio"
+  front_cover: "Portada"
+  goal: "Objetivo"
+  menu: "Ítem del menú"
+  post: "Artículo"
+  supporter: "Patrocinadorx"
+  support: "Apóyanos"
+  theme: "Personalizar"
+content_license: "Licencia del contenido: "
+support_alt: "Apóyanos"
+and: "y"
 button_copy:
   confirmation: "%s copiado"
-and: "y"
 device_detector:
-  outline: Bordes
-  get_help: Ayuda
+  outline: "Bordes"
+  get_help: "Ayuda"
   help: |
     Si encuentras un problema, por favor toma una captura de pantalla
     con esta información visible.  Nos ayuda a resolverlos.

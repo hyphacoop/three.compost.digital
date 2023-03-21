@@ -1,19 +1,19 @@
 ---
 title:
-  type: string
+  type: "string"
   required: true
   label:
-    es: Título
-    en: Title
+    es: "Título"
+    en: "Title"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 description:
-  type: 'text'
+  type: "text"
   required: true
   label:
-    es: 'Alerta de contenido o descripción del artículo'
-    en: 'Content warning or post description'
+    es: "Alerta de contenido o descripción del artículo"
+    en: "Content warning or post description"
   help:
     es: |
       Resumen del contenido del artículo, que también usarán redes
@@ -27,75 +27,83 @@ description:
       topics, we invite you to use it as a content warning, so others
       can decide when they want to read it.
 image:
-  type: 'image'
+  type: "image"
   required: true
   path:
     label:
-      es: 'Imagen principal'
-      en: 'Main image'
+      es: "Imagen principal"
+      en: "Main image"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
   description:
     label:
-      es: 'Descripción de la imagen principal'
-      en: 'Main image description'
+      es: "Descripción de la imagen principal"
+      en: "Main image description"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
 authors_title:
-  type: string
+  type: "string"
   label:
-    es: Título de la sección Autorxs
-    en: Authors section title
+    es: "Título de la sección Autorxs"
+    en: "Authors section title"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 content_title:
-  type: string
+  type: "string"
   label:
-    es: Título del contenido
-    en: Content title
+    es: "Título del contenido"
+    en: "Content title"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 content:
-  type: 'new_content'
+  type: "new_content"
   label:
-    es: 'Contenido del artículo'
-    en: 'Post content'
+    es: "Contenido del artículo"
+    en: "Post content"
   help:
-    es: 'Escribe aquí el artículo'
-    en: 'Write down your post'
+    es: "Escribe aquí el artículo"
+    en: "Write down your post"
 supporters_title:
-  type: string
+  type: "string"
   label:
-    es: Título de la sección de Sponsors
-    en: Supporters section title
+    es: "Título de la sección de patrocinadores"
+    en: "Supporters section title"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 final_message:
-  type: string
+  type: "string"
   label:
-    es: Mensaje final
-    en: Final message
+    es: "Mensaje final"
+    en: "Final message"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
+locales:
+  type: "locales"
+  label:
+    es: "Traducciones"
+    en: "Translations"
+  help:
+    es: "Vínculo al mismo artículo en otros idiomas"
+    en: "Link to same post in other languages"
 draft:
-  type: 'boolean'
+  type: "boolean"
   label:
-    es: 'Borrador'
-    en: 'Draft'
+    es: "Borrador"
+    en: "Draft"
   help:
-    es: 'Este artículo aun no está listo para publicar'
-    en: "This post isn't ready to be published yet"
+    es: "Al activar \"Borrador\" este contenido se mantendrá disponible en el panel, pero no se publica en el sitio como los demás contenidos al tocar \"Publicar todos los cambios\""
+    en: "By activating \"Draft\", this content will remain available on the dashboard, but will not be published on the site when you tap \"Publish all changes\" (other content which does not have this option selected will)."
 order:
-  type: 'order'
+  type: "order"
   label:
-    es: 'Orden'
-    en: 'Order'
+    es: "Orden"
+    en: "Order"
   help:
-    es: 'La posición del artículo en la lista de artículos'
-    en: 'The post position in the posts list'
+    es: "La posición del artículo en la lista de artículos"
+    en: "Position in list of posts"
