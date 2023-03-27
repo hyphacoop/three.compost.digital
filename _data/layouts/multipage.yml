@@ -91,7 +91,7 @@ sections:
           es: 'El título de la sección'
           en: 'The title of the section'
       content:
-        type: 'text'
+        type: 'new_content'
         required: true
         label:
           es: 'Contenido de la sección'
