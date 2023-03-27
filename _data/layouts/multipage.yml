@@ -69,20 +69,14 @@ image:
         Describe the main image for blind or partially sighted users and
         search engines
 sections:
-  type: 'array'
-  required: true
+  type: 'has_many'
+  layout: 'section'
   label:
-    es: 'Secciones del artículo'
-    en: 'Post sections'
+    es: 'Secciones'
+    en: 'Sections'
   help:
-    es: 'Agrega las secciones de tu artículo'
-    en: 'Add sections to your post'
-  items:
-    type: 'new_content'
-    label:
-      es: 'Contenido de la sección'
-      en: 'Section content'
-  minItems: 1
+    es: 'Las secciones que componen este artículo'
+    en: 'The sections that make up this post'
 
 show_biography:
   type: boolean
