@@ -68,14 +68,38 @@ image:
       en: |
         Describe the main image for blind or partially sighted users and
         search engines
-content:
-  type: 'new_content'
+sections:
+  type: 'array'
+  required: true
   label:
-    es: 'Contenido del artículo'
-    en: 'Post content'
+    es: 'Secciones del artículo'
+    en: 'Post sections'
   help:
-    es: 'Escribe aquí el artículo'
-    en: 'Write down your post'
+    es: 'Agrega las secciones de tu artículo'
+    en: 'Add sections to your post'
+  items:
+    type: 'object'
+    label: 'Sección'
+    properties:
+      title:
+        type: 'string'
+        required: true
+        label:
+          es: 'Título de la sección'
+          en: 'Section title'
+        help:
+          es: 'El título de la sección'
+          en: 'The title of the section'
+      content:
+        type: 'text'
+        required: true
+        label:
+          es: 'Contenido de la sección'
+          en: 'Section content'
+        help:
+          es: 'El contenido de la sección'
+          en: 'The content of the section'
+  minItems: 1
 show_biography:
   type: boolean
   label:
