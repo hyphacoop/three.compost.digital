@@ -1,0 +1,37 @@
+layout: 'section'
+title:
+  type: 'string'
+  required: true
+  label:
+    es: 'Título de la sección'
+    en: 'Section title'
+  help:
+    es: 'El título de esta sección'
+    en: 'The title of this section'
+content:
+  type: 'new_content'
+  required: true
+  label:
+    es: 'Contenido de la sección'
+    en: 'Section content'
+  help:
+    es: 'Escribe aquí el contenido de la sección'
+    en: 'Write down the content of this section'
+image:
+  type: 'image'
+  label:
+    es: 'Imagen de la sección'
+    en: 'Section image'
+  help:
+    es: 'Una imagen opcional para esta sección'
+    en: 'An optional image for this section'
+post:
+  type: 'belongs_to'
+  required: true
+  layout: 'multipage'
+  label:
+    es: 'Artículo'
+    en: 'Post'
+  help:
+    es: 'El artículo al que pertenece esta sección'
+    en: 'The post this section belongs to'
