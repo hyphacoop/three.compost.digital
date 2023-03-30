@@ -1,0 +1,60 @@
+---
+title:
+  type: "string"
+  required: true
+  label:
+    es: "Título de la licencia"
+    en: "Licence title"
+  help:
+    es: "Título que describe la licencia a usar"
+    en: "Title that describes the license to use"
+description:
+  type: "text"
+  required: true
+  label:
+    es: "Alerta de contenido o descripción del artículo"
+    en: "Content warning or post description"
+  help:
+    es: |
+      Resumen del contenido del artículo, que también usarán redes
+      sociales y buscadores.  Si el artículo trata de violencias y otros
+      temas sensibles, te invitamos a usar este campo como alerta de
+      contenido, para que las personas puedan determinar cuándo quieren
+      abrirlo.
+    en: |
+      Summary of post content, also used by social media and search
+      engines. If the post is about violence and other sensitive
+      topics, we invite you to use it as a content warning, so others
+      can decide when they want to read it.
+content:
+  type: "new_content"
+  label:
+    es: "Contenido del artículo"
+    en: "Post content"
+  help:
+    es: "Escribe aquí el artículo"
+    en: "Write your post here"
+locales:
+  type: "locales"
+  label:
+    es: "Traducciones"
+    en: "Translations"
+  help:
+    es: "Vínculo al mismo artículo en otros idiomas"
+    en: "Link to same post in other languages"
+draft:
+  type: "boolean"
+  label:
+    es: "Borrador"
+    en: "Draft"
+  help:
+    es: "Al activar \"Borrador\" este contenido se mantendrá disponible en el panel, pero no se publica en el sitio como los demás contenidos al tocar \"Publicar todos los cambios\""
+    en: "By activating \"Draft\", this content will remain available on the dashboard, but will not be published on the site when you tap \"Publish all changes\" (other content which does not have this option selected will)."
+order:
+  type: "order"
+  label:
+    es: "Orden"
+    en: "Order"
+  help:
+    es: "La posición del artículo en la lista de artículos"
+    en: "Position in list of posts"
