@@ -13,7 +13,7 @@ description:
   required: true
   label:
     es: "Descripción del proyecto"
-    en: "Proyect description"
+    en: "Project description"
   help:
     es: ""
     en: ""
