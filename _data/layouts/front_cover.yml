@@ -48,8 +48,8 @@ image:
       es: "Imagen principal"
       en: "Main image"
     help:
-      es: "Se utiliza para ilustrar el artículo y como previsualización en las redes sociales."
-      en: "Used to illustrate the article and as preview in social networks."
+      es: "Imagen principal de la portada.  Si no una, el contenido será de una sola columna."
+      en: "Main image on the home page.  If you don't add one, the layout will be a single column."
   description:
     label:
       es: "Descripción de la imagen principal"
