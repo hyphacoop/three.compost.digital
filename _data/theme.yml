@@ -131,7 +131,8 @@ transform_scales:
   n8: "0.8"
   1: "1"
 background_images:
-  menu: "$background-menu"
+  menu-open: "$background-menu-open"
+  menu-close: "$background-menu-close"
   site: "$background-site"
   footer: "$background-footer"
 layout_class:
