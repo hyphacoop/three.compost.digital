@@ -98,6 +98,13 @@ background_image_open:
     help:
       es: 'Imagen de fondo de la cabecera'
       en: 'Header background image when menu is open'
+  description:
+    label:
+      es: 'Descripción de la imagen'
+      en: 'Image description'
+    help:
+      es: ''
+      en: ''
 license:
   type: "new_html"
   label:
