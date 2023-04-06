@@ -51,8 +51,8 @@ image:
       es: "Imagen principal"
       en: "Main image"
     help:
-      es: "Se utiliza para ilustrar el artículo y como previsualización en las redes sociales."
-      en: "Used to illustrate the article and as preview in social networks."
+      es: "Se utiliza para ilustrar el artículo y como previsualización en las redes sociales.  Si no agregas una, será mostrada como un bloque de color en la lista de artículos."
+      en: "Used to illustrate the article and as preview in social networks.  If you don't add one, it will be shown as a block of color on the post list."
   description:
     label:
       es: "Descripción de la imagen principal"
