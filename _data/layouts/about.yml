@@ -32,8 +32,8 @@ image_menu_close:
       es: "Logo de cabecera con el menú cerrado"
       en: "Header logo with menu closed"
     help:
-      es: ""
-      en: ""
+      es: "Máximo 220px de ancho y 90px de alto"
+      en: "Max. 220px width by 90px height"
   description:
     label:
       es: "Descripción del logo"
