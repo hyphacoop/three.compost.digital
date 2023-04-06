@@ -73,22 +73,31 @@ favicon:
     help:
       es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
       en: "Describe the image for accesibility purposes and for indexation in search engines"
-background_image:
-  type: "image"
+background_image_close:
+  type: 'image'
   path:
     label:
-      es: "Imagen de fondo de la cabecera"
-      en: "Header background image"
+      es: 'Imagen de fondo para el menú cerrado'
+      en: 'Background image for the closed menu'
     help:
-      es: ""
-      en: ""
+      es: 'Imagen de fondo de la cabecera'
+      en: 'Header background image when menu is close'
   description:
     label:
-      es: "Descripción de la imagen"
-      en: "Image description"
+      es: 'Descripción de la imagen'
+      en: 'Image description'
     help:
-      es: ""
-      en: ""
+      es: ''
+      en: ''
+background_image_open:
+  type: 'image'
+  path:
+    label:
+      es: 'Imagen de fondo para el menú abierto'
+      en: 'Background image for the opened menu'
+    help:
+      es: 'Imagen de fondo de la cabecera'
+      en: 'Header background image when menu is open'
 license:
   type: "new_html"
   label:
