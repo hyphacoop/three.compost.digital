@@ -16,6 +16,16 @@ post:
   help:
     en: "If the item leads to a fixed post, associate it here"
     es: "Si el ítem lleva a un artículo fijo, asociarlo aquí"
+  filter:
+    layout:
+    - "about"
+    - "back_cover"
+    - "code_of_conduct"
+    - "license"
+    - "post"
+    - "privacy_policy"
+    - "support"
+    - "theme"
 locales:
   type: "locales"
   label:
