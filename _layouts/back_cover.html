@@ -23,9 +23,7 @@ layout: "default_with_menu"
 
     {% unless authors == empty %}
       {% for author in authors %}
-        {% unless author.projects == empty %}
-          {% include author_block.html title=author.alias links=author.projects %}
-        {% endunless %}
+        {% include author_block.html title=author.alias links=author.projects %}
       {% endfor %}
     {% endunless %}
 
