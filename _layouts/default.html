@@ -11,6 +11,10 @@
 
     <link href="assets/css/styles.css?{{ site.time | date: '%s' }}" rel="stylesheet" data-turbo-track="reload">
 
+    {% for link in page.css %}
+      <link href="{{ link | uri_escape }}?{{ site.time | date: '%s' }}" rel="stylesheet" data-turbo-track="reload">
+    {% endfor %}
+
     {%- include script.html src="assets/js/env.js" -%}
     {%- if jekyll.environment == "production" -%}
       {%- for pack in site.data.manifest.outputs -%}
