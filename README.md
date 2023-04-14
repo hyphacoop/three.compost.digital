@@ -53,6 +53,17 @@ When your theme is released, only the files in `_layouts`, `_includes`,
 directory to your theme-gem, please edit the regexp in
 `compost-jekyll-theme.gemspec` accordingly.
 
+If you do not see the images when you compile the site you may need to 
+install `git-lfs` on your [distribution](https://github.com/git-lfs/git-lfs). 
+
+After that run it in the repository
+
+```
+git lfs fetch
+git lfs install
+git lfs checkout
+```
+
 ## License
 
 Copyright 2022 Cooperativa de Trabajo Sutty Ltda.
