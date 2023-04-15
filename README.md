@@ -59,8 +59,8 @@ install `git-lfs` on your [distribution](https://github.com/git-lfs/git-lfs).
 After that run it in the repository
 
 ```
-git lfs fetch
 git lfs install
+git lfs fetch
 git lfs checkout
 ```
 
