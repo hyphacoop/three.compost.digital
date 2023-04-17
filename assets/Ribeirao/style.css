@@ -1,0 +1,103 @@
+.main-div, body { 
+    margin:0;
+}
+
+h2 {
+    font-size: 5em;
+    text-align: center;
+}
+
+
+.rdp-content {
+    position: relative;
+}
+.content-foreground {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 1em;
+    background-image:url('riverontheback.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.river {
+    width: 100%;
+}
+
+.sixty {
+    width: 60%;
+}
+
+.forty {
+    width: 40%;
+}
+
+.third {
+    width: 33.333333%;
+}
+.quarter {
+    width: 25%;
+}
+
+.ml10 {
+    margin-left: 10%;
+}
+.ml20 {
+    margin-left: 20%;
+}
+.half {
+    width: 50%;
+}
+
+.three-quarters {
+    width: 75%;
+}
+
+.full {
+    width: 100%;
+}
+
+.r90deg {
+    transform: rotate(90deg);
+}
+.r270deg {
+    transform: rotate(270deg);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+    .flex {
+        flex-direction: column;
+    }
+    .half, .quarter, .third, .sixty, .forty, .three-quarters { 
+        width: 90%;
+    }
+    .ml10, .ml20 {
+        margin-left: 0;
+    }
+    img.sixty {
+        width: 30%;
+        margin:auto;
+    }
+}
+
+#main_content {
+    position: relative;
+  }
+  
+  #rdp-container {
+    max-width: 1000px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+  }

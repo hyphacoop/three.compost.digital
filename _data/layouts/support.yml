@@ -1,18 +1,18 @@
 title:
-  type: 'string'
+  type: "string"
   required: true
   label:
-    es: 'Título de la página soporte'
-    en: 'Support page title'
+    es: "Título de la página soporte"
+    en: "Support page title"
   help:
-    es: '¡Un título que invite a leer el artículo!'
-    en: 'A title that invites people to read the post!'
+    es: ""
+    en: ""
 description:
-  type: 'text'
+  type: "text"
   required: true
   label:
-    es: 'Alerta de contenido o descripción del artículo'
-    en: 'Content warning or post description'
+    es: "Alerta de contenido o descripción del artículo"
+    en: "Content warning or post description"
   help:
     es: |
       Resumen del contenido del artículo, que también usarán redes
@@ -26,13 +26,13 @@ description:
       topics, we invite you to use it as a content warning, so others
       can decide when they want to read it.
 section_1:
-  type: new_html
+  type: "new_html"
   label:
-    en: First content section
-    es: Primera sección de contenido
+    en: "First section content"
+    es: "Primera sección de contenido"
   help:
-    en: "Use BALANCE to replace it dynamically by the total balance and DATE for the date it was last updated."
-    es: Contenido que puede tener texto e imágenes
+    en: "Use the BALANCE keyword to replace it dynamically by the total balance and DATE for the date it was last updated."
+    es: "Usa la palabra clave BALANCE para reemplazarla dinámicamente con el balance total y DATE por la fecha en que fue actualizado."
 monetization_url:
   type: "url"
   label:
@@ -41,38 +41,35 @@ monetization_url:
   help:
     en: ""
     es: ""
-goals:
-  type: has_many
-  inverse: goal
-  filter:
-    layout: goal
-  label:
-    en: Add goals
-    es: Agregar objetivos
-  help:
-    en: If objectives exist, associate them here
-    es: Si existen objetivos, asociarlos aquí
 section_2:
-  type: new_html
+  type: "new_html"
   label:
-    en: Second content section
-    es: Segunda sección de contenido
+    en: "Second section content"
+    es: "Segunda sección de contenido"
   help:
-    en: Content that can have text and images
-    es: Contenido que puede tener texto e imágenes
-order:
-  type: order
+    en: ""
+    es: ""
+locales:
+  type: "locales"
   label:
-    en: Order
-    es: Orden
+    es: "Traducciones"
+    en: "Translations"
   help:
-    en: Position in articles list
-    es: La posición del artículo en la lista de artículos
+    es: "Vínculo al mismo artículo en otros idiomas"
+    en: "Link to same post in other languages"
 draft:
-  type: boolean
+  type: "boolean"
   label:
-    en: Draft
-    es: Borrador
+    es: "Borrador"
+    en: "Draft"
   help:
-    en: This post isn't ready to be published yet
-    es: Este artículo aun no está listo para publicar
+    es: "Al activar \"Borrador\" este contenido se mantendrá disponible en el panel, pero no se publica en el sitio como los demás contenidos al tocar \"Publicar todos los cambios\""
+    en: "By activating \"Draft\", this content will remain available on the dashboard, but will not be published on the site when you tap \"Publish all changes\" (other content which does not have this option selected will)."
+order:
+  type: "order"
+  label:
+    es: "Orden"
+    en: "Order"
+  help:
+    es: "La posición del artículo en la lista de artículos"
+    en: "Position in list of posts"

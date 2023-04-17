@@ -5,6 +5,7 @@ componente de imagen que tiene un link [url]
 @param :src [String]
 @param :href [String] El link
 @param :width [Integer] Ancho de la imagen
+@param :height [Integer] Alto de la imagen
 @param :alt [String] El alt de la imagen
 @param :a_class [String] Clases para a
 @param :component_class [String] Clases para el componente
@@ -18,5 +19,5 @@ componente de imagen que tiene un link [url]
 		 {{ include.href | start_with: "http://" | value_if: 'rel="noopener" target="_blank"' }}>
 		 <span class="sr-only">{{ include.alt }}</span>
 	 </a>
-  {% include picture.html src=include.src width=include.width alt=include.alt img_class=include.img_class %}
+  {% include picture.html src=include.src width=include.width height=include.height alt=include.alt img_class=include.img_class %}
 </div>

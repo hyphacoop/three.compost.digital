@@ -28,6 +28,13 @@ liquid:
   strict_filters: true
 ignored_layouts:
 - supporter
+- author
+- button
+- button_copy
+- footer
+- front_cover
+- goal
+- menu
 linked_fields:
 - menu
 - item

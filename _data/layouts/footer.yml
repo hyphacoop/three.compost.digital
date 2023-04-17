@@ -1,90 +1,98 @@
 ---
 title:
-  type: string
+  type: "string"
   required: true
   label:
-    es: Título
-    en: Title
+    es: "Título"
+    en: "Title"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 image:
-  type: 'image'
+  type: "image"
   path:
     label:
-      es: 'Imagen principal'
-      en: 'Main image'
+      es: "Imagen principal"
+      en: "Main image"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
   description:
     label:
-      es: 'Descripción de la imagen principal'
-      en: 'Main image description'
+      es: "Descripción de la imagen principal"
+      en: "Main image description"
     help:
-      es: ''
-      en: ''
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 background_image:
-  type: 'image'
+  type: "image"
   path:
     label:
-      es: 'Imagen de fondo'
-      en: 'Background image'
+      es: "Imagen de fondo"
+      en: "Background image"
     help:
-      es: ''
-      en: ''
+      es: ""
+      en: ""
   description:
     label:
-      es: 'Descripción de la imagen de fondo'
-      en: 'Background image description'
+      es: "Descripción de la imagen de fondo"
+      en: "Background image description"
     help:
-      es: ''
-      en: ''
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 column_1:
-  type: new_html
+  type: "new_html"
   label:
-    es: Contenido de la primera columna del footer
-    en: Footer first column content
+    es: "Contenido de la primera columna del footer"
+    en: "Content for footer's first column"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 column_2:
-  type: new_html
+  type: "new_html"
   label:
-    es: Contenido de la segunda columna del footer
-    en: Footer second column content
+    es: "Contenido de la segunda columna del footer"
+    en: "Content for footer's second column"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 column_3:
-  type: new_html
+  type: "new_html"
   label:
-    es: Contenido de la tercera columna del footer
-    en: Footer third column content
+    es: "Contenido de la tercera columna del footer"
+    en: "Content for footer's third column"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 column_4:
-  type: new_html
+  type: "new_html"
   label:
-    es: Contenido de la cuarta columna del footer
-    en: Footer fourth column content
+    es: "Contenido de la cuarta columna del footer"
+    en: "Content for footer's fourth column"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
+locales:
+  type: "locales"
+  label:
+    es: "Traducciones"
+    en: "Translations"
+  help:
+    es: "Vínculo al mismo artículo en otros idiomas"
+    en: "Link to same post in other languages"
 draft:
-  type: 'boolean'
+  type: "boolean"
   label:
-    es: 'Borrador'
-    en: 'Draft'
+    es: "Borrador"
+    en: "Draft"
   help:
-    es: 'Este artículo aun no está listo para publicar'
-    en: "This post isn't ready to be published yet"
+    es: "Al activar \"Borrador\" este contenido se mantendrá disponible en el panel, pero no se publica en el sitio como los demás contenidos al tocar \"Publicar todos los cambios\""
+    en: "By activating \"Draft\", this content will remain available on the dashboard, but will not be published on the site when you tap \"Publish all changes\" (other content which does not have this option selected will)."
 order:
-  type: 'order'
+  type: "order"
   label:
-    es: 'Orden'
-    en: 'Order'
+    es: "Orden"
+    en: "Order"
   help:
-    es: 'La posición del artículo en la lista de artículos'
-    en: 'The post position in the posts list'
+    es: "La posición del artículo en la lista de artículos"
+    en: "Position in list of posts"

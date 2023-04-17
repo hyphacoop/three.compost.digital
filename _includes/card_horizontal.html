@@ -9,9 +9,11 @@ Card horizontal
 @param :content [string] Contenido
 {%- endcomment -%}
 <div class="row justify-content-center container-lg mx-auto">
-  <div class="col-12 col-md-5 px-4">
-    {% include picture.html src=include.src width=500 img_class="w-100 object-fit-cover" %}
-  </div>
+  {% if include.src %}
+    <div class="col-12 col-md-5 px-4">
+      {% include picture.html src=include.src width=500 img_class="w-100 object-fit-cover" %}
+    </div>
+  {% endif %}
 
   <div class="col-12 col-md pl-xl-5 pt-5 pt-md-0">
     <div class="">
