@@ -12,7 +12,7 @@ const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 const fetchAllMarkdown = async () => {
     const promises = folderArray.map(async (folder) => {
 
-        const response = await fetch(`./${folder}/index.md`);
+        const response = await fetch(`assets/flux/${folder}/index.md`);
 
         if (!response.ok) {
             console.error(`Error fetching index.md from folder ${folder}`);
@@ -31,7 +31,7 @@ const fetchAllMarkdown = async () => {
         const parts = timestamp.split(" ");
         // get the day's number
         const date = parseInt(parts[2], 10);
-        console.log('date', date)
+
         // Check if date is valid
         if (!isNaN(date)) {
             // Find the last valid day in the validDays array
@@ -52,7 +52,7 @@ const fetchAllMarkdown = async () => {
             const lastValidDay = validDays.length > 0 ? Math.max(...validDays) : 0;
             validDays.push(lastValidDay + 10);
         }
-        console.log('validDays', validDays)
+
         // Use the last element in the validDays array as the current valid day
         const validDay = validDays[validDays.length - 1];
         return { folder, content, validDay };
@@ -82,7 +82,7 @@ const updateSvg = (newDay, folderNumber) => {
                     // Remove all previous path elements
                     const paths = document.querySelectorAll("path");
                     paths.forEach((path) => {
-                        svg.removeChild(path);
+                        path.parentNode.removeChild(path);
                     });
 
                     circles.forEach((circle, i) => {
@@ -123,8 +123,6 @@ const updateSvg = (newDay, folderNumber) => {
                     futurePath.setAttribute("stroke-width", "2");
                     futurePath.setAttribute("stroke-dasharray", "5,5");
 
-                    console.log('newday', newDay, folderNumber, startCircle, endCircle);
-                    console.log('futurePath', futurePath.getAttribute('d'));
                     // Append the path to the SVG container first, then append the circles
                     svg.appendChild(futurePath);
                     svg.appendChild(path);
@@ -144,17 +142,16 @@ fetchAllMarkdown()
 
         // Get the container element
         const svgContainer = document.getElementById('svg-container')
-
+        const theContainer = document.getElementById('maincont')
+        const containerWidth = theContainer.clientWidth;
 
         // Get the screen's width
-        let screenWidth = window.innerWidth - 50;
+        let screenWidth = containerWidth - 50;
         let screenHeight = window.innerHeight;
 
         // Get the highest valid day number to scale to the screen size
         const maxDay = validDays[validDays.length - 1] + 25;
-        console.log('validDays', validDays)
-        console.log('maxDay', maxDay)
-        console.log('window.innerWidth', window.innerWidth)
+
 
         // calculate the current day based on the content parameter
         const currentDay = folderArray.findIndex(folder => folder === contentParam) + 1;
@@ -164,7 +161,7 @@ fetchAllMarkdown()
         if (screenWidth < 700) {
             svgContainer.classList.add('vertical');
             svg.setAttribute("width", 50);
-            svg.setAttribute("height", screenHeight * 1.75);
+            svg.setAttribute("height", screenHeight * 1.5);
 
             // Calculate the position of each date based on the screen height
             // and create circles at the corresponding positions
@@ -178,7 +175,7 @@ fetchAllMarkdown()
                 const margin = index === 0 ? 10 : 75;
                 const positionX = 25; 
                 const positionY = (screenHeight / (maxDay + 10)) * validDay + margin;
-                console.log('positionY', positionY, margin);
+
                 // Create an SVG circle
                 const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
                 circle.setAttribute("cx", positionX);
@@ -188,29 +185,34 @@ fetchAllMarkdown()
                 // Get the folder number associated with the circle
                 const folderNumber = String(index + 1).padStart(3, "0");
 
-
+   
                 // set the circle style based on the current day
-                if (folderNumber == currentDay) {
+                if (validDay == '1') {
+                    circle.setAttribute('fill', 'blue');
+                } else if (folderNumber == currentDay) {
+   
                     circle.setAttribute('fill', 'darkblue');
                     circle.setAttribute('r', 15);
                 } else if (folderNumber < currentDay) {
+
                     circle.setAttribute('fill', 'blue');
                     circle.setAttribute('r', 5);
                 } else {
+
                     circle.setAttribute('fill', 'gray');
                 }
 
                 circle.addEventListener("click", () => {
                 
                     // Set the src attribute of #md-content
-                    document.getElementById("md-content").src = `./${folderNumber}/index.md`;
+                    document.getElementById("md-content").src = `assets/flux/${folderNumber}/index.md`;
 
                     // Update the current day
                     const newDay = folderNumber - 1;
 
                     // Update the URL parameter
                     const urlParams = new URLSearchParams(window.location.search);
-                    urlParams.set('content', folderNumber);
+                    urlParams.set('transmission', folderNumber);
                     const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
                     window.history.pushState({}, '', newUrl);
 
@@ -253,7 +255,7 @@ fetchAllMarkdown()
                 // set the circle style based on the current day
                 if (folderNumber == currentDay) {
                     circle.setAttribute('fill', 'darkblue');
-                    circle.setAttribute('r', 50);
+                    circle.setAttribute('r', 15);
                 } else if (folderNumber < currentDay) {
                     circle.setAttribute('fill', 'blue');
                     circle.setAttribute('r', 7);
@@ -264,7 +266,7 @@ fetchAllMarkdown()
                 circle.addEventListener("click", () => {
 
                     // Set the src attribute of #md-content
-                    document.getElementById("md-content").src = `./${folderNumber}/index.md`;
+                    document.getElementById("md-content").src = `assets/flux/${folderNumber}/index.md`;
 
                     // Update the current day
                     const newDay = folderNumber - 1;
@@ -302,9 +304,9 @@ fetchAllMarkdown()
             }
         });
         if (contentParam) {
-        document.getElementById('md-content').src = `./${contentParam}/index.md`;
+        document.getElementById('md-content').src = `assets/flux/${contentParam}/index.md`;
         } else {
-            document.getElementById('md-content').src = `./001/index.md`;
+            document.getElementById('md-content').src = `assets/flux/001/index.md`;
         }
 
 

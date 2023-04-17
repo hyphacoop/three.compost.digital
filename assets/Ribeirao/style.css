@@ -1,6 +1,5 @@
 .main-div, body { 
     margin:0;
-    font-size: larger;
 }
 
 h2 {
@@ -9,21 +8,18 @@ h2 {
 }
 
 
-.content {
+.rdp-content {
     position: relative;
 }
-.content-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
 .content-foreground {
-    position:absolute;
     top: 0;
     left: 0;
     z-index: 2;
     padding: 1em;
+    background-image:url('riverontheback.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 .river {
     width: 100%;
@@ -96,7 +92,7 @@ h2 {
     position: relative;
   }
   
-  #container {
+  #rdp-container {
     max-width: 1000px;
     width: auto;
     height: auto;

@@ -1,7 +1,6 @@
 .flx-container {
     display: flex;
     flex-direction: row;
-    width: 100vw;
 } 
 .dir-col {
     flex-direction: column;

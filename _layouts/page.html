@@ -38,17 +38,18 @@ layout: "default_with_menu"
     </div>
   </div>
 
-  <footer class="d-flex flex-column align-items-center mt-60">
-    {% unless page.authors == empty or page.show_biography == false  %}
-      {% for author in page.authors %}
-        {% include biography.html text=author.content %}
-      {% endfor %}
-    {% endunless %}
-
-    {% if page.license %}
-      {% include license_block.html title=page.license content=about.license %}
-    {% endif %}
-
-    {% include navigation_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
-  </footer>
+  
 </article>
+<footer class="d-flex flex-column align-items-center mt-60">
+  {% unless page.authors == empty or page.show_biography == false  %}
+    {% for author in page.authors %}
+      {% include biography.html text=author.content %}
+    {% endfor %}
+  {% endunless %}
+
+  {% if page.license %}
+    {% include license_block.html title=page.license content=about.license %}
+  {% endif %}
+
+  {% include navigation_post.html src_previous="public/arrow_previous.png" src_home="public/home.png" src_next="public/arrow_next.png" href_previous=prev.url href_home="?#" href_next=next.url %}
+</footer>
