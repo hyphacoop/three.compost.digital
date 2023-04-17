@@ -8,10 +8,34 @@ Footer
 @param :col_4 [HTML] Contenido
 {%- endcomment -%}
 
+{%- assign license = site.posts | find: "layout", "license" -%}
+{%- assign code_of_conduct = site.posts | find: "layout", "code_of_conduct" -%}
+{%- assign privacy_policy = site.posts | find: "layout", "privacy_policy" -%}
+
 <footer class="d-flex justify-content-center background-size-cover background-position-top-left background-image-footer">
   <div class="row row-cols-md-1 row-cols-lg-3 justify-content-center container-lg mx-auto pt-150 pb-5 f-14 px-4">
     <div class="col-12 px-3 content">
       {{ include.col_1 }}
+
+      <ul class="list-unstyled">
+        {% if license %}
+          <li>
+            <a href="{{ license.url }}" rel="license">{{ license.title }}</a>
+          </li>
+        {% endif %}
+
+        {% if code_of_conduct %}
+          <li>
+            <a href="{{ code_of_conduct.url }}" rel="code-of-conduct">{{ code_of_conduct.title }}</a>
+          </li>
+        {% endif %}
+
+        {% if privacy_policy %}
+          <li>
+            <a href="{{ privacy_policy.url }}" rel="privacy-policy">{{ privacy_policy.title }}</a>
+          </li>
+        {% endif %}
+      </ul>
     </div>
 
     <div class="col-12 px-3 pt-5 pt-lg-0 content">

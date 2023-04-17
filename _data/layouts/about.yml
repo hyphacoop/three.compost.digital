@@ -1,92 +1,139 @@
 ---
 title:
-  type: string
+  type: "string"
   required: true
   label:
-    es: Título
-    en: Title
+    es: "Título"
+    en: "Title"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 description:
-  type: text
+  type: "text"
   required: true
   label:
-    es: Descripción del proyecto
-    en: Proyect description
+    es: "Descripción del proyecto"
+    en: "Project description"
   help:
-    es: ''
-    en: ''
+    es: ""
+    en: ""
 content:
-  type: new_content
+  type: "new_content"
   label:
-    es: contenido de la pagina about
-    en: title post page one
+    es: "Contenido de la página Acerca"
+    en: "About page content"
   help:
-    es: titulo de la página centrado a la izquierda
-    en: title page 1
+    es: ""
+    en: ""
 image_menu_close:
-  type: 'image'
+  type: "image"
   path:
     label:
-      es: 'Logo'
-      en: 'Logo'
+      es: "Logo de cabecera con el menú cerrado"
+      en: "Header logo with menu closed"
     help:
-      es: 'Logo de cabecera con el menú cerrado'
-      en: ''
+      es: "Máximo 220px de ancho y 90px de alto"
+      en: "Max. 220px width by 90px height"
   description:
     label:
-      es: 'Descripción del logo'
-      en: 'Logo description'
+      es: "Descripción del logo"
+      en: "Logo description"
     help:
-      es: ''
-      en: ''
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
 image_menu_open:
+  type: "image"
+  path:
+    label:
+      es: "Logo con menú abierto"
+      en: "Header logo with menu opened"
+    help:
+      es: ""
+      en: ""
+  description:
+    label:
+      es: "Descripción del logo"
+      en: "Logo description"
+    help:
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
+favicon:
+  type: "image"
+  path:
+    label:
+      es: "Favicon"
+      en: "Favicon"
+    help:
+      es: "Favicon del sitio en formato .png, al menos de 384x384px de resolución"
+      en: "Favicon for the site in .png format, at least 384x384px resolution"
+  description:
+    label:
+      es: "Descripción del favicon"
+      en: "Favicon description"
+    help:
+      es: "Describí la imagen por razones de accesibilidad e indexacion en buscadores"
+      en: "Describe the image for accesibility purposes and for indexation in search engines"
+background_image_close:
   type: 'image'
   path:
     label:
-      es: 'Logo'
-      en: 'Logo'
+      es: 'Imagen de fondo para el menú cerrado'
+      en: 'Background image for the closed menu'
     help:
-      es: 'Logo de cabecera con el menú abierto'
-      en: ''
+      es: 'Imagen de fondo de la cabecera'
+      en: 'Header background image when menu is close'
   description:
     label:
-      es: 'Descripción del logo'
-      en: 'Logo description'
+      es: 'Descripción de la imagen'
+      en: 'Image description'
     help:
       es: ''
       en: ''
-favicon:
+background_image_open:
   type: 'image'
   path:
     label:
-      es: 'Favicon'
-      en: 'Favicon'
+      es: 'Imagen de fondo para el menú abierto'
+      en: 'Background image for the opened menu'
     help:
-      es: 'Favicon del sitio en formato .png de 384x384px'
-      en: 'Favicon of the site in format .png size 384x384px'
+      es: 'Imagen de fondo de la cabecera'
+      en: 'Header background image when menu is open'
+  description:
+    label:
+      es: 'Descripción de la imagen'
+      en: 'Image description'
+    help:
+      es: ''
+      en: ''
 license:
-  type: new_html
+  type: "new_html"
   label:
-    es: Descripción de la licencia
-    en: License description
+    es: "Descripción de la licencia"
+    en: "License description"
   help:
-    es: 'este contenido se mostrará en los post que contienen un pie de licencia'
-    en: 'this content will be displayed in posts that contain a license footer'
-order:
-  type: order
+    es: "Se mostrará en los artículos que contienen un pie de licencia"
+    en: "Will be displayed on posts with license footer enabled"
+locales:
+  type: "locales"
   label:
-    es: Orden
-    en: Order
+    es: "Traducciones"
+    en: "Translations"
   help:
-    es: La posición del artículo en la lista de artículos
-    en: Position in articles list
+    es: "Vínculo al mismo artículo en otros idiomas"
+    en: "Link to same post in other languages"
 draft:
-  type: boolean
+  type: "boolean"
   label:
-    es: Borrador
-    en: Draft
+    es: "Borrador"
+    en: "Draft"
   help:
-    es: Este artículo aun no está listo para publicar
-    en: This post isn't ready to be published yet
+    es: "Al activar \"Borrador\" este contenido se mantendrá disponible en el panel, pero no se publica en el sitio como los demás contenidos al tocar \"Publicar todos los cambios\""
+    en: "By activating \"Draft\", this content will remain available on the dashboard, but will not be published on the site when you tap \"Publish all changes\" (other content which does not have this option selected will)."
+order:
+  type: "order"
+  label:
+    es: "Orden"
+    en: "Order"
+  help:
+    es: "La posición del artículo en la lista de artículos"
+    en: "Position in list of posts"

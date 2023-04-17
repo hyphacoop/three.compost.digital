@@ -12,5 +12,9 @@ Embed responsive
 {%- endcomment -%}
 
 <div class="embed-responsive embed-responsive-{{ include.x }}by{{ include.y }} {{ include.embed_class }}">
-  {%- include picture.html class="embed-responsive-item" img_class="w-100 h-100 object-fit-cover" src=include.src alt=include.alt width=include.width -%}
+  {% if include.src %}
+    {%- include picture.html class="embed-responsive-item" img_class="w-100 h-100 object-fit-cover" src=include.src alt=include.alt width=include.width -%}
+  {% else %}
+    <div class="embed-responsive-item background-primary"></div>
+  {% endif %}
 </div>
