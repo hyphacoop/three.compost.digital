@@ -19,6 +19,16 @@
       .border-width#{$infix}-#{$border-width}   { border-width: $length !important; }
     }
 
+    @each $color, $rgb in $theme-colors {
+      .background#{$infix}-#{$color} {
+        background-color: var(--#{$color});
+
+        &:focus {
+          background-color: var(--#{$color});
+        }
+      }
+    }
+
     @each $color, $rgb in $colors {
       .background#{$infix}-#{$color} {
         background-color: var(--#{$color});

@@ -1,40 +1,39 @@
+---
 title:
   type: "string"
   required: true
   label:
-    es: "Título del objetivo"
-    en: "Goal title"
+    es: "Título del Codigo de Conducta"
+    en: "Title of code of conduct"
   help:
     es: ""
     en: ""
 description:
   type: "text"
-  label:
-    en: "What is the description of this goal?"
-    es: "¿Cuál es la descripción de este objetivo?"
-  help:
-    en: ""
-    es: ""
-value_max:
-  type: "float"
-  label:
-    en: "The maximum amount for this goal"
-    es: "Monto máximo del objetivo"
-  help:
-    en: ""
-    es: ""
-currency:
-  type: "string"
   required: true
   label:
-    es: "Moneda"
-    en: "Currency"
+    es: "Alerta de contenido o descripción del artículo"
+    en: "Content warning or post description"
   help:
-    es: "Código de tres letras de la moneda en la que se expresan los precios"
-    en: "Three letter code to denote currency used in pricing"
-  default:
-    en: "USD"
-    es: "USD"
+    es: |
+      Resumen del contenido del artículo, que también usarán redes
+      sociales y buscadores.  Si el artículo trata de violencias y otros
+      temas sensibles, te invitamos a usar este campo como alerta de
+      contenido, para que las personas puedan determinar cuándo quieren
+      abrirlo.
+    en: |
+      Summary of post content, also used by social media and search
+      engines. If the post is about violence and other sensitive
+      topics, we invite you to use it as a content warning, so others
+      can decide when they want to read it.
+content:
+  type: "new_content"
+  label:
+    es: "Contenido del artículo"
+    en: "Post content"
+  help:
+    es: "Escribe aquí el artículo"
+    en: "Write your post here"
 locales:
   type: "locales"
   label:
