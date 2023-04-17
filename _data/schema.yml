@@ -1,0 +1,18 @@
+---
+organization:
+  theme:
+  - "about"
+  - "menu"
+  front_cover: []
+  post:
+  - "author"
+  back_cover: []
+  support:
+  - "button_copy"
+  - "button"
+  - "goal"
+  - "supporter"
+  footer:
+  - "privacy_policy"
+  - "code_of_conduct"
+  - "license"
