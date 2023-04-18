@@ -22,6 +22,7 @@ css: "assets/Musselled/TemplateData/style.css"
   </div>
 </div>
 <script>
+document.addEventListener("turbo:load", () => {
 
     var container = document.querySelector("#unity-container");
     var canvas = document.querySelector("#unity-canvas");
@@ -114,5 +115,7 @@ css: "assets/Musselled/TemplateData/style.css"
         alert(message);
       });
     };
+    document.body.appendChild(script);
+  });
 
 </script>
