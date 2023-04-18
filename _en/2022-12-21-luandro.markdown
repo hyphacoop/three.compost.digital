@@ -6,14 +6,16 @@ projects:
 - https://www.are.na/celine-nguyen/
 posts:
 - 0e5a8111-f846-401c-9e53-f9794187acf4
+- 39ed0a15-415d-4a84-9524-bfbfc7e0102b
+locales: []
 draft: true
-order: 24
+order: 26
 layout: author
 uuid: f0c95de9-727f-42a9-9690-861c7e2050b1
 liquid: false
 usuaries:
 - 27
-last_modified_at: 2022-12-21 21:41:28.808993806 +00:00
+last_modified_at: 2023-04-18 00:03:03.158403993 +00:00
 ---
 
 <p>is a technologist, forester, and admirer of originary cultures. Works in collaboration with communities on projects to support local autonomy and strenghten cultural identity. Active in the community-networks movement and in distributed protocols cypherspaces.</p>

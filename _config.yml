@@ -28,6 +28,13 @@ liquid:
   strict_filters: true
 ignored_layouts:
 - supporter
+- author
+- button
+- button_copy
+- footer
+- front_cover
+- goal
+- menu
 linked_fields:
 - menu
 - item
@@ -37,3 +44,4 @@ linked_fields:
 - posts
 description: compost issue 3
 hostname: compost.sutty.nl
+onion-location: x4wzm4i4ij566xakjzjcsm2oluukmednytaee4bxmvcd6f57qflolrad.onion
