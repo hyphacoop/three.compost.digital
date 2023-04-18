@@ -3,8 +3,10 @@ layout: "default_with_menu"
 ---
 
 {%- assign front_cover = site.posts | find: "layout", "front_cover" -%}
-{%- assign posts = site.posts | where: "layout", "post" -%}
-{%- assign back_cover = site.posts | find: "layout", "back_cover" -%}
+{%- assign pages = site.pages | where: "layout", "page" -%}   
+{%- assign back_cover = site.posts | where: "layout", "back_cover" -%}                                                                         
+{%- assign posts = site.posts | where: "layout", "post" | concat: pages | order | concat: back_cover -%}   
+
 
 <div class="pt-md-80 px-3">
 	{% include card_horizontal.html
