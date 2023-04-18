@@ -16,15 +16,16 @@ license: "<p>We treat each issue of COMPOST as a lab. During the development of 
   of a digital commons. Over the summer of 2021, our Issue Two cohort has been thinking
   about creative collaboration, collectively supporting livelihoods, and growing our
   community sustainably.</p>"
-order: 8
+locales: []
 draft: false
+order: 9
 layout: about
 uuid: 773ec90a-329e-4a76-aa34-8530f5108c4a
 liquid: false
 usuaries:
-- 356
 - 27
-last_modified_at: 2023-01-03 19:07:35.945707640 +00:00
+- 356
+last_modified_at: 2023-04-18 00:03:02.530104240 +00:00
 ---
 
 <h2 id="experiments-with-publishing">Experiments with Publishing</h2>

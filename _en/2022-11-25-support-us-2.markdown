@@ -5,13 +5,11 @@ description: We are building on the digital commons by publishing our work freel
   us!
 section_1: <h2 id="digital-bake-sale">Digital Bake Sale</h2><p>We need your support
   to ensure the future sustainability of our magazine and <a href="https://distributed.press"
-  target="_blank">Distributed Press</a>.</p><p>Our magazine has BALANCE in our
-  bank account as of DATE. We hope to raise $30,000 by August
-  1st of 2021 and before launching Issue Two.</p><p><a class="donation-button" href="https://one.compost.digital/support-us/#support-us">Contribute</a>
+  target="_blank">Distributed Press</a>.</p><p>Our magazine has BALANCE in our bank
+  account as of DATE. We hope to raise $30,000 by August 1st of 2021 and before launching
+  Issue Two.</p><p><a class="donation-button" href="https://one.compost.digital/support-us/#support-us">Contribute</a>
   to help us hit our fundraising goals.</p>
-monetization_url: "https://api.compost.digital/v0/monetization/balances.json"
-goals:
-- 2568b8c9-bf51-404c-8af5-621b8ee488bd
+monetization_url: https://api.compost.digital/v0/monetization/balances.json
 section_2: "<p>\n\n<strong>$40000</strong> We'll run a half-day micro-conference with
   \ncontributors and community. We'll discuss issues we face on the (D)Web \nand in
   collective publishing.<br></p><h2 id=\"web-monetization\">Web Monetization</h2><p>Readers
@@ -20,13 +18,14 @@ section_2: "<p>\n\n<strong>$40000</strong> We'll run a half-day micro-conference
   href=\"https://webmonetization.org/\" target=\"_blank\">Web\n        Monetization</a>
   is another way for\n      supporters like you to send us micropayments (fractions
   of a cent) as you view this website.</p><p></p>"
-order: 12
+locales: []
 draft: false
+order: 13
 layout: support
 uuid: c9c98034-4130-4caa-b339-8c4d0d9cbc0f
 liquid: false
 usuaries:
 - 356
-last_modified_at: 2022-11-25 22:28:54.566189295 +00:00
+last_modified_at: 2023-04-18 00:03:02.605234609 +00:00
 ---
 

@@ -33,12 +33,14 @@ column_4: <p>Support Us<br><a href="https://two.compost.digital/support-us/#web-
   target="_blank" rel="noopener">Open Collective</a><br><a href="https://gitcoin.co/grants/1385/compost"
   target="_blank" rel="noopener">Gitcoin</a></p><p><a href="https://two.compost.digital/support-us/"
   target="_blank" rel="noopener">compostmag.eth</a></p>
+locales: []
 draft: false
-order: 7
+order: 8
 layout: footer
 uuid: 81a580fa-7e0f-4ade-9669-316f5bb2c298
 liquid: false
 usuaries:
 - 356
-last_modified_at: 2022-12-07 15:29:26.340001554 +00:00
+last_modified_at: 2023-04-18 00:03:02.454806037 +00:00
 ---
+

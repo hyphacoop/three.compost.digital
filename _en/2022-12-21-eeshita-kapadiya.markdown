@@ -9,14 +9,14 @@ posts:
 - 28a567b9-95b9-40ea-a9a0-8f1209f2dca6
 locales: []
 draft: false
-order: 21
+order: 23
 layout: author
 uuid: a741354e-b1cf-42cd-9419-c3d3322b9f1d
 liquid: false
 usuaries:
 - 27
 - 534
-last_modified_at: 2023-04-18 00:00:36.629842703 +00:00
+last_modified_at: 2023-04-18 00:03:03.141179067 +00:00
 ---
 
 <p>is an artist and designer based in Bangalore. She mostly likes to cook, sew and dream up ways to smash the patriarchy.</p>
