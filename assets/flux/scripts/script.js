@@ -87,8 +87,10 @@ const updateSvg = (newDay, folderNumber) => {
 
                     circles.forEach((circle, i) => {
 
-
-                        if (i == newDay) {
+                        if (i == 0) {
+                            circle.setAttribute('fill', 'darkblue');
+                            circle.setAttribute('r', 10);
+                        } else if (i == newDay) {
                             circle.setAttribute('fill', 'darkblue');
                             circle.setAttribute('r', 10);
                             endCircle = circle;
@@ -187,7 +189,7 @@ fetchAllMarkdown()
 
    
                 // set the circle style based on the current day
-                if (validDay == '1') {
+                if (index == 0) {
                     circle.setAttribute('fill', 'blue');
                 } else if (folderNumber == currentDay) {
    
@@ -253,7 +255,9 @@ fetchAllMarkdown()
                 const folderNumber = String(index + 1).padStart(3, "0");
 
                 // set the circle style based on the current day
-                if (folderNumber == currentDay) {
+                if (index == 0) {
+                    circle.setAttribute('fill', 'blue');
+                } else if (folderNumber == currentDay) {
                     circle.setAttribute('fill', 'darkblue');
                     circle.setAttribute('r', 15);
                 } else if (folderNumber < currentDay) {
