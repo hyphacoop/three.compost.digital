@@ -3,8 +3,9 @@ layout: "default_with_menu"
 ---
 
 {%- assign about = site.posts | find: "layout", "about" -%}
-{%- assign back_covers = site.posts | where: "layout", "back_cover" -%}
-{%- assign posts = site.posts | where: "layout", "post" | concat: back_covers -%}
+{%- assign pages = site.pages | where: "layout", "page" -%}   
+{%- assign back_cover = site.posts | where: "layout", "back_cover" -%}                                                                         
+{%- assign posts = site.posts | where: "layout", "post" | concat: pages | order | concat: back_cover -%} 
 {%- assign authors = site.posts | where: "layout", "author" -%}
 {%- assign prev = page | prev: posts -%}
 {%- assign next = page | next: posts -%}
