@@ -1,0 +1,17 @@
+---
+title: Portal sem porteiras
+alias: Portal sem porteiras
+projects: []
+posts: []
+locales: []
+draft: false
+order: 29
+layout: author
+uuid: f36d5773-fe61-4086-ad18-8e1698c4ce20
+liquid: false
+usuaries:
+- 649
+last_modified_at: 2023-04-24 17:13:38.906975379 +00:00
+---
+
+<p style="text-align:start">Portal sem porteiras is a communication and technology association in the serra da mantiqueira, southeastern brazil.</p><p style="text-align:start">Texts and images were written, organized and edited by Marcela Guerra (guerradimarcela.net.br) and Diana Zatz, with drawings and videos by Chico linares, poetry by Analuh (@analu_cristina) and Regina Nakamura( @c.a.m.i.n.h.o), photos by Maiza Ramacciotti(@maiza_ramacciotti),&nbsp; contributions and revision by Lia Aroeira, Hiure Queiroz(hiurequeiroz.github.io), and Rafael Barone.</p>
