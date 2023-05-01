@@ -15,7 +15,8 @@ Cabecera y menú con toggler
 
 {%- assign menu_id = menu | prepend: 'r-' -%}
 {%- assign items = site.posts | where: "layout", "menu" -%}
-{%- assign posts = site.posts | where: "layout", "post" -%}
+{%- assign pages = site.pages | where: "layout", "page" -%}   
+{%- assign posts = site.posts | where: "layout", "post" | concat: pages | order -%}  
 {%- assign back_cover = site.posts | find: "layout", "back_cover" -%}
 {%- assign footer = site.posts | find: "layout", "footer" -%}
 
