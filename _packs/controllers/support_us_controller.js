@@ -22,6 +22,9 @@ export default class extends Controller {
     }
 
     const balances = await this.fetchBalances();
+
+    if (!balances) return;
+
     const decimalIndex = balances.balance.length - balances.decimal;
     const totalBalance = `${balances.balance.slice(0, decimalIndex)}.${balances.balance.slice(decimalIndex)}`;
     const locale = document.querySelector("html").lang;
@@ -56,7 +59,7 @@ export default class extends Controller {
       return await response.json();
     } catch(e) {
       console.error("Couldn't fetch", this.monetizationUrlValue, e);
-      return {};
+      return null;
     }
   }
 
