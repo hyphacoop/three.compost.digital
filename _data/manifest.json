@@ -981,7 +981,7 @@
       ]
     },
     "_packs/entry.js": {
-      "bytes": 1470,
+      "bytes": 1536,
       "imports": [
         {
           "path": "node_modules/.pnpm/device-detector-js@3.0.3/node_modules/device-detector-js/dist/index.js",
@@ -1023,13 +1023,13 @@
     }
   },
   "outputs": {
-    "assets/js/pack.3PREOLVY.js.map": {
+    "assets/js/pack.27TCBNGN.js.map": {
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 601339
+      "bytes": 601462
     },
-    "assets/js/pack.3PREOLVY.js": {
+    "assets/js/pack.27TCBNGN.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "_packs/entry.js",
@@ -1197,7 +1197,7 @@
           "bytesInOutput": 4705
         },
         "_packs/entry.js": {
-          "bytesInOutput": 705
+          "bytesInOutput": 735
         },
         "node_modules/.pnpm/promise-polyfill@8.2.3/node_modules/promise-polyfill/src/finally.js": {
           "bytesInOutput": 200
@@ -1308,7 +1308,7 @@
           "bytesInOutput": 1256
         }
       },
-      "bytes": 844653
+      "bytes": 844683
     }
   }
 }
