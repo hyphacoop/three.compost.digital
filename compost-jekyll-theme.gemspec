@@ -44,7 +44,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-ignore-layouts', '~> 0.1.2'
   spec.add_runtime_dependency 'jekyll-images', '~> 0.4.0'
   spec.add_runtime_dependency 'jekyll-include-cache', '~> 0.2.1'
-  spec.add_runtime_dependency 'jekyll-linked-posts', '~> 0.4.3'
+  spec.add_runtime_dependency 'jekyll-linked-posts', '~> 0.5.1'
   spec.add_runtime_dependency 'jekyll-locales', '~> 0.2.0'
   spec.add_runtime_dependency 'jekyll-order', '~> 0.1.6'
   spec.add_runtime_dependency 'jekyll-relative-urls', '~> 0.0.6'
