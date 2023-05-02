@@ -4,18 +4,22 @@ import { Notifier } from "@airbrake/browser";
 window.deviceDetector = new DeviceDetector();
 window.device = window.deviceDetector.parse(navigator.userAgent);
 
-if (!window.device.bot && window.env.JEKYLL_ENV === "production") {
-  window.airbrake = new Notifier({
-    projectId: window.env.AIRBRAKE_PROJECT_ID,
-    projectKey: window.env.AIRBRAKE_PROJECT_KEY,
-    host: "https://panel.sutty.nl",
-  });
+try {
+  if (!window.device.bot && window.env.JEKYLL_ENV === "production") {
+    window.airbrake = new Notifier({
+      projectId: window.env.AIRBRAKE_PROJECT_ID,
+      projectKey: window.env.AIRBRAKE_PROJECT_KEY,
+      host: "https://panel.sutty.nl",
+    });
 
-  console.originalError = console.error;
-  console.error = (...e) => {
-    window.airbrake.notify(e.join(" "));
-    return console.originalError(...e);
-  };
+    console.originalError = console.error;
+    console.error = (...e) => {
+      window.airbrake.notify(e.join(" "));
+      return console.originalError(...e);
+    };
+  }
+} catch (e) {
+  console.error(e);
 }
 
 import * as Turbo from "@hotwired/turbo";
