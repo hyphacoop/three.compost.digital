@@ -1,5 +1,5 @@
 ---
-title: 'Compost '
+title: COMPOST ISSUE 03
 url: https://compost.sutty.nl
 sass:
   load_paths:
@@ -42,6 +42,6 @@ linked_fields:
 - post
 - authors
 - posts
-description: compost issue 3
+description: 'COMPOST ISSUE 03: Water Bodies'
 hostname: compost.sutty.nl
 onion-location: x4wzm4i4ij566xakjzjcsm2oluukmednytaee4bxmvcd6f57qflolrad.onion
