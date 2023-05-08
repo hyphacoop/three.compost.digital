@@ -1,18 +1,17 @@
 // generate list of folders
 const folderArray = Array.from({ length: 36 }, (_, i) => String(i + 1).padStart(3, '0'));
 
-
 // Create the previous button
 const prevButton = document.createElement('button');
-prevButton.setAttribute('id', 'prev-button');
+prevButton.id = 'prev-button';
 prevButton.innerHTML = '&#8249;'; 
-prevButton.addEventListener('click', goToPreviousTransmission);
+prevButton.addEventListener('click', goToPrevious);
 
 // Create the next button
 const nextButton = document.createElement('button');
-nextButton.setAttribute('id', 'next-button');
+nextButton.id = 'next-button';
 nextButton.innerHTML = '&#8250;';
-nextButton.addEventListener('click', goToNextTransmission);
+nextButton.addEventListener('click', goToNext);
 
 
 // Events for prev + next buttons
@@ -51,7 +50,6 @@ function goToPrevious() {
   }
 
   function updateButtonVisibility() {
-    const prevButton = document.getElementById('prev-button');
     const urlParams = new URLSearchParams(window.location.search);
     let transmission = urlParams.get('transmission');
     
@@ -62,17 +60,17 @@ function goToPrevious() {
     }
   }
 
-  function insertButtonsInsideMarkdownBody() {
-    const markdownBody = document.querySelector('#md-content .markdown-body');
-    if (markdownBody) {
-      markdownBody.appendChild(prevButton);
-      markdownBody.appendChild(nextButton);
+  function insertButtons() {
+    const mainContainer = document.getElementById('maincont');
+    if (mainContainer) {
+      mainContainer.appendChild(prevButton);
+      mainContainer.appendChild(nextButton);
     }
   }
   
   
   document.addEventListener('DOMContentLoaded', () => {
-    insertButtonsInsideMarkdownBody();
+    insertButtons();
     updateButtonVisibility();
   });
 
