@@ -31,16 +31,16 @@ returning to the ground I came from
 ---
 
 
-# FAILED CONNECTION.
+## FAILED CONNECTION.
 
 
-# RETRYING CONNECTION . . . . . . .
+## RETRYING CONNECTION . . . . . . .
 
 
-# FAILED.
+## FAILED.
 
 
-# RETRYING CONNECTION . . . . . . .
+## RETRYING CONNECTION . . . . . . .
 
 
-# FAILED.
+## FAILED.

@@ -1,18 +1,18 @@
-# RE-ESTABLISHING CONNECTION . . . . . . . 
+## RE-ESTABLISHING CONNECTION . . . . . . . 
 
 
 
-# RE-ESTABLISHING CONNECTION . . . . . . . 
+## RE-ESTABLISHING CONNECTION . . . . . . . 
 
 
 
-# RE-ESTABLISHING CONNECTION . . . . . . . 
+## RE-ESTABLISHING CONNECTION . . . . . . . 
 
 
-# CONTACTING . . . . . . .
+## CONTACTING . . . . . . .
 
 
-# CONTACTING . . . . . . .
+## CONTACTING . . . . . . .
 
 
 
