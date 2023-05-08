@@ -34,3 +34,9 @@ stroke:black;
 width: calc(100% - 100px);
 padding: 10px;
 }
+
+.nav-buttons {
+    align-self: flex-start;
+    margin-top: auto;
+    padding:0.5rem;
+}

@@ -4,12 +4,14 @@ const folderArray = Array.from({ length: 36 }, (_, i) => String(i + 1).padStart(
 // Create the previous button
 const prevButton = document.createElement('button');
 prevButton.id = 'prev-button';
+prevButton.classList.add('nav-buttons');
 prevButton.innerHTML = '&#8249;'; 
 prevButton.addEventListener('click', goToPrevious);
 
 // Create the next button
 const nextButton = document.createElement('button');
 nextButton.id = 'next-button';
+nextButton.classList.add('nav-buttons');
 nextButton.innerHTML = '&#8250;';
 nextButton.addEventListener('click', goToNext);
 
