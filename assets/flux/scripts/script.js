@@ -1,7 +1,21 @@
 // generate list of folders
 const folderArray = Array.from({ length: 36 }, (_, i) => String(i + 1).padStart(3, '0'));
 
-// prev + next buttons
+
+// Create the previous button
+const prevButton = document.createElement('button');
+prevButton.setAttribute('id', 'prev-button');
+prevButton.innerHTML = '&#8249;'; 
+prevButton.addEventListener('click', goToPreviousTransmission);
+
+// Create the next button
+const nextButton = document.createElement('button');
+nextButton.setAttribute('id', 'next-button');
+nextButton.innerHTML = '&#8250;';
+nextButton.addEventListener('click', goToNextTransmission);
+
+
+// Events for prev + next buttons
 function goToPrevious() {
     const urlParams = new URLSearchParams(window.location.search);
     let transmission = urlParams.get('transmission');
@@ -47,8 +61,18 @@ function goToPrevious() {
       prevButton.style.display = 'inline-block';
     }
   }
+
+  function insertButtonsInsideMarkdownBody() {
+    const markdownBody = document.querySelector('#md-content .markdown-body');
+    if (markdownBody) {
+      markdownBody.appendChild(prevButton);
+      markdownBody.appendChild(nextButton);
+    }
+  }
+  
   
   document.addEventListener('DOMContentLoaded', () => {
+    insertButtonsInsideMarkdownBody();
     updateButtonVisibility();
   });
 
