@@ -6,21 +6,21 @@
 Unless you have moved beyond the range, you should still be able to receive my transmissions. 
 
 
-# CONTACTING  . . . . . . . **DESIGNATION: QS47**
+## CONTACTING  . . . . . . . **DESIGNATION: QS47**
 
-# FAILED.
+## FAILED.
 
-# RETRYING CONNECTION . . . . . . . 
+## RETRYING CONNECTION . . . . . . . 
 
-# FAILED.
+## FAILED.
 
-# RETRYING CONNECTION . . . . . . . 
+## RETRYING CONNECTION . . . . . . . 
 
-# FAILED.
+## FAILED.
 
-# RETRYING CONNECTION . . . . . . . 
+## RETRYING CONNECTION . . . . . . . 
 
-# FAILED.
+## FAILED.
 
 
 ==I am transmitting this into the cloud intended specifically for QS47==

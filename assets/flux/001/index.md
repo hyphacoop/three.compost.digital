@@ -1,14 +1,14 @@
 > [DAY 001 TIME 13:59]
 
-# DETECTING . . . . . . .  
+## DETECTING . . . . . . .  
 
-# ESTABLISHING CONTACT . . . . . . . 
+## ESTABLISHING CONTACT . . . . . . . 
 
-# STABILIZING CONNECTION . . . . . . . 
+## STABILIZING CONNECTION . . . . . . . 
 
-# SECURING PATH . . . . . . .
+## SECURING PATH . . . . . . .
 
-# EQUALIZING SCRIPTS . . . . . . .
+## EQUALIZING SCRIPTS . . . . . . .
 
 ---
 

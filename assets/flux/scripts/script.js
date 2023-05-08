@@ -1,6 +1,59 @@
 // generate list of folders
 const folderArray = Array.from({ length: 36 }, (_, i) => String(i + 1).padStart(3, '0'));
 
+// prev + next buttons
+function goToPrevious() {
+    const urlParams = new URLSearchParams(window.location.search);
+    let transmission = urlParams.get('transmission');
+    
+    if (transmission) {
+      transmission = parseInt(transmission, 10);
+      if (transmission > 1) {
+        transmission -= 1;
+        urlParams.set('transmission', String(transmission).padStart(3, '0'));
+        const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+        window.location.href = newUrl;
+        updateButtonVisibility();
+      }
+    }
+  }
+  
+  function goToNext() {
+    const urlParams = new URLSearchParams(window.location.search);
+    let transmission = urlParams.get('transmission') || '001';
+    transmission = parseInt(transmission, 10);
+ 
+    if (transmission < folderArray.length) {
+        transmission++;
+      } else {
+        transmission = 1;
+      }
+      
+      const paddedTransmission = String(transmission).padStart(3, '0');
+      urlParams.set('transmission', paddedTransmission);
+      const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+      window.location.href = newUrl;
+      updateButtonVisibility();
+  }
+
+  function updateButtonVisibility() {
+    const prevButton = document.getElementById('prev-button');
+    const urlParams = new URLSearchParams(window.location.search);
+    let transmission = urlParams.get('transmission');
+    
+    if (!transmission || transmission === '001') {
+      prevButton.style.display = 'none';
+    } else {
+      prevButton.style.display = 'inline-block';
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    updateButtonVisibility();
+  });
+
+  
+
 // init validDay
 const validDays = [];
 
