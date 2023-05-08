@@ -1,6 +1,24 @@
 // generate list of folders
 const folderArray = Array.from({ length: 36 }, (_, i) => String(i + 1).padStart(3, '0'));
 
+// load content with buttons
+function loadContent(folderNumber) {
+    // Set the src attribute of #md-content
+    document.getElementById("md-content").src = `assets/flux/${folderNumber}/index.md`;
+  
+    // Update the current day
+    const newDay = parseInt(folderNumber) - 1;
+  
+    // Update the URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.set("transmission", folderNumber);
+    const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+    window.history.pushState({}, "", newUrl);
+  
+    updateSvg(newDay, folderNumber);
+  }
+  
+
 // Create the previous button
 const prevButton = document.createElement('button');
 prevButton.id = 'prev-button';
@@ -25,9 +43,8 @@ function goToPrevious() {
       transmission = parseInt(transmission, 10);
       if (transmission > 1) {
         transmission -= 1;
-        urlParams.set('transmission', String(transmission).padStart(3, '0'));
-        const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
-        window.location.href = newUrl;
+        const folderNumber = String(transmission).padStart(3, "0");
+        loadContent(folderNumber);
         updateButtonVisibility();
       }
     }
@@ -44,10 +61,8 @@ function goToPrevious() {
         transmission = 1;
       }
       
-      const paddedTransmission = String(transmission).padStart(3, '0');
-      urlParams.set('transmission', paddedTransmission);
-      const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
-      window.location.href = newUrl;
+      const folderNumber = String(transmission).padStart(3, "0");
+      loadContent(folderNumber);
       updateButtonVisibility();
   }
 
