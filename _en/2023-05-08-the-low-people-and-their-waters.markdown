@@ -9,8 +9,8 @@ subtitle: Dutch people are born water heroes. At least, so goes the story. In re
 authors: []
 image:
   path: public/wcao8c8k3lr1muccb8ygeg4sl1eo/RP-P-OB-84.981.jpg
-  description: 'Breaking of the dikes of the Old IJssel river near Gouda, 1776, Noach
-    van der Meer (II), after Hendrik Kobell. Source: Open access archive of the Rijksmuseum,
+  description: 'Breaking dikes at the Old IJssel river near Gouda, 1776. Noach van
+    der Meer (II), after Hendrik Kobell. Source: Open access archive of the Rijksmuseum,
     Amsterdam'
 show_biography: true
 license: cc-by
@@ -23,7 +23,7 @@ liquid: false
 usuaries:
 - 644
 - 727
-last_modified_at: 2023-05-09 08:35:22.268259598 +00:00
+last_modified_at: 2023-05-09 08:36:02.451776125 +00:00
 ---
 
 <h6 style="text-align:start" id="this-is-a-story-about-my-ancestors-whom-i-lovingly-call-the-low-people.-'low'-because-roughly-half-their-lands-infamously-sat-below-sea-level.-still-the-majority-of-dutch-people-live-'below'-the-water-from-a-few-centimeters-to-five-or-six-meters.-their-country's-name-is-derived-from-this-fact:-the-netherlands-(nederland)-means-low-countries.-but-low-people-is-a-playful-figure-of-speech-that-hints-at-something-else-too.-my-ancestors-did-not-stand-'above'-the-water-in-any-hierarchical-sense.-if-anything-the-water-ruled-them-for-a-very-long-time-not-the-other-way-around.-one-persistent-image-of-the-dutch-as-born-heroes-of-water-control-and-public-management-is-therefore-quite-misleading.-it-took-them-a-millennium-to-figure-it-out."><em>This is a story about my ancestors, whom I lovingly call the Low People. ‘Low’ because roughly half their lands infamously sat below sea level. Still, the majority of Dutch people live ‘below’ the water, from a few centimeters to five or six meters. Their country’s name is derived from this fact: the Netherlands (Nederland) means Low Countries. But Low People is a playful figure of speech that hints at something else too. My ancestors did not stand ‘above’ the water in any hierarchical sense. If anything, the water ruled them for a very long time, not the other way around. One persistent image of the Dutch as born heroes of water control and public management is therefore quite misleading. It took them a millennium to figure it out.</em></h6><h6 style="text-align:start" id="this-story-is-about-the-first-couple-of-centuries-of-that-process-told-as-a-fable.-it-is-about-necessary-cooperation-about-the-early-chaotic-and-experimental-collaborations-and-formations-of-collective-rules-and-social-structures-and-it-is-about-how-water-and-especially-the-risks-that-it-posed-shaped-those-structures.-eventually-these-were-called">
