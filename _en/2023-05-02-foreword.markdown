@@ -16,7 +16,8 @@ liquid: false
 usuaries:
 - 644
 - 649
-last_modified_at: 2023-05-03 21:43:58.727052347 +00:00
+last_modified_at: 2023-05-11 19:39:39.257110700 +00:00
 ---
 
-<p style="text-align:start"></p>
+<p style="text-align:start">Testing footnotes<a href="#fn1" id="fnef1" role="doc-noteref" data-turbo="false"><sup>1</sup></a></p><ol><li id="fn1">This is a test for footnotes <a href="#fnef1" role="doc-backlink" data-turbo="false">↩︎︎</a>
+</li></ol>
