@@ -137,9 +137,9 @@ background_images:
   site: "$background-site"
   footer: "$background-footer"
 layout_class:
-  support: "background-image-site background-size-400px w-100"
-  home: "background-image-site background-size-400px w-100"
-  about: "background-image-site background-size-400px w-100"
+  support: "background-image-site background-size-contain w-100"
+  home: "background-image-site background-size-contain w-100"
+  about: "background-image-site background-size-contain w-100"
 paragraph_margin_bottom: "0"
 headings_margin_bottom: "0"
 box_shadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
