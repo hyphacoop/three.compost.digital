@@ -197,12 +197,6 @@
       }
     }
 
-    $background-sizes: (
-      custom: 400px
-    );
-
-    $infix: "-md";
-
     @each $background-size, $value in $background-sizes {
       /// Tamaño de imagen de fondo
       ///
