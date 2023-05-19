@@ -7,7 +7,7 @@
 
 $background-site: '../../{{ theme.body_image.path | default: "public/background-dithered.png" | uri_escape }}';
 $background-footer: '../../{{ footer.background_image.path | default: "public/footer.png" | uri_escape }}';
-$background-menu-open: '../../{{ about.background_image_open.path | default: "public/background-dithered-dotted.png" | uri_escape }}';
+$background-menu-open: '../../{{ about.background_image_open.path | default: "public/background-dithered-dotted.jpg" | uri_escape }}';
 $background-menu-close: '../../{{ about.background_image_close.path | default: "public/background_header.png" | uri_escape }}';
 
 {{ theme | yaml_to_scss: site.data.layouts.theme }}
