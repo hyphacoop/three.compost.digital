@@ -22,3 +22,8 @@ $background-menu-close: '../../{{ about.background_image_close.path | default: "
 @import "roboto_mono_ital_wght_0_400_0_700_1_400_1_700";
 @import "content";
 @import "toggler";
+
+
+.background-size-400px {
+  background-size: 400px !important;
+}
