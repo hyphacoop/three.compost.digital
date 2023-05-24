@@ -13,7 +13,8 @@ liquid: false
 usuaries:
 - 356
 - 649
-last_modified_at: 2023-05-02 23:12:51.219932132 +00:00
+- 644
+last_modified_at: 2023-05-24 21:57:49.581367330 +00:00
 ---
 
-<p style="text-align:start"><del>As dominant platforms continue to construct an unimaginative reality of sleekness, convenience, and extraction, we wonder: How do we </del><em><del>Inoculate</del></em><del> networks with our consideration and attention, against the flattening, homogenizing forces of the internet?</del></p><p style="text-align:start"><del>This second issue of COMPOST magazine takes a step back; widening our scope and probing how we shape digital networks and how they shape us back.</del></p>
+<p style="text-align:start">It’s boiled into steam, then turns turbines for the electricity that powers your device, the router it connects to, and every whirring, beating part of the network that brings you these words. This page is brought to you by a million liters of water, as droughts, contamination, and rising sea levels continue to creep us towards a boiling point of human and non-human suffering.</p><p style="text-align:start">For this third issue of COMPOST, we turn to our relationships with, and acknowledge ourselves as, <em>Water Bodies</em>.</p>
