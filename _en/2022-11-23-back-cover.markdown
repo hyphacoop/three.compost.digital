@@ -10,7 +10,7 @@ supporters_title: "＊✿❀ BIG thank you to our supporters + partners! ❀✿�
 final_message: "⋇⋆✦⋆⋇ end ⋇⋆✦⋆⋇"
 locales: []
 draft: false
-order: 6
+order: 1
 layout: back_cover
 uuid: 5caee0d7-4ed5-4d8c-8f80-768847be046d
 liquid: false
