@@ -12,7 +12,7 @@ uuid: 4b82f979-bf74-4bec-9da5-4e2b17100d62
 liquid: false
 usuaries:
 - 725
-last_modified_at: 2023-05-05 20:10:44.234791381 +00:00
+last_modified_at: 2023-05-25 21:43:48.887152187 +00:00
 ---
 
 <p style="text-align:start">Lake is an artist living in New Orleans, Louisiana. She illustrates and tattoos surrealistic art inspired by technology and the natural world. She can be found on instagram: <a href="https://instagram.com/lake___sleep" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">@lake___sleep</a> and the fediverse: <a href="https://autonomous.zone/@lake" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">@lake@autonomous.zone</a></p>
