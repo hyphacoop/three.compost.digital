@@ -1,0 +1,22 @@
+---
+title: Test post
+description: Description
+subtitle: Subtitle
+authors: []
+image:
+  path: public/baua5hvzehji82qpxck673i6rhw3/text-icon.png
+  description: Placeholder image
+show_biography: false
+locales: []
+draft: false
+order: 38
+layout: post
+uuid: 8327aa6e-6f1f-445f-b941-5c9ecfc6e9da
+liquid: false
+usuaries:
+- 649
+last_modified_at: 2023-05-25 21:27:14.811444706 +00:00
+---
+
+<p style="text-align:start">This is my post<a href="#fn1" id="fnef1" role="doc-noteref" data-turbo="false"><sup>1</sup></a></p><ol><li id="fn1">Here is a footnote reference <a href="#fnef1" role="doc-backlink" data-turbo="false">↩︎︎</a>
+</li></ol>
