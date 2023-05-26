@@ -19,7 +19,7 @@ uuid: 35a049be-6b8b-4717-b467-97dc1cb62797
 liquid: false
 usuaries:
 - 644
-last_modified_at: 2023-05-26 23:02:34.754570479 +00:00
+last_modified_at: 2023-05-26 23:03:56.426319015 +00:00
 ---
 
 <p style="text-align:start">UPDATE &gt;&gt;&gt; Before the invention of the printing press, publishing was an intricate process that involved painstaking labor, specialized skills, and significant resources. With such a high barrier to entry, the ability to broadcast ideas was concentrated in the hands of the elite few. With the advent of the printing press, however, publishing became dramatically more accessible. The movable type unleashed an intellectual revolution that made it possible for people outside of dominant institutions to spread new stories and dialogues to the masses unlike ever before.</p><p style="text-align:start">[...]</p>
