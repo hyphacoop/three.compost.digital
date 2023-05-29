@@ -14,7 +14,7 @@ liquid: false
 usuaries:
 - 644
 - 727
-last_modified_at: 2023-05-29 19:41:21.191694742 +00:00
+last_modified_at: 2023-05-29 19:42:20.058087426 +00:00
 ---
 
 <p style="text-align:start">Jens Kimmel is a writer, journalist, organizer, postcapitalist. Generally interested in what remains in the margins. Specifically interested in forms of collective governance and commoning.</p>
