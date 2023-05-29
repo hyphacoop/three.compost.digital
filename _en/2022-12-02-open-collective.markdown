@@ -1,9 +1,9 @@
 ---
-title: Open collective
+title: Open Collective
 image:
   path: public/vmfplsl6kfj1hmw7azb6bxf3a19s/logo-opencollective.png
   description: ''
-link: https://opencollective.com/
+link: https://opencollective.com/compost/
 locales: []
 draft: false
 order: 18
@@ -12,6 +12,7 @@ uuid: fde338ec-ff67-4fc9-985d-c519a453bcb6
 liquid: false
 usuaries:
 - 356
-last_modified_at: 2023-04-18 00:03:02.902143990 +00:00
+- 644
+last_modified_at: 2023-05-29 05:32:39.483565661 +00:00
 ---
 
