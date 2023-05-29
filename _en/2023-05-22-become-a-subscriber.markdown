@@ -1,6 +1,6 @@
 ---
 title: Become a subscriber
-link: https://two.compost.digital/support-us/
+link: https://opencollective.com/compost/contribute/backer-22573/checkout
 locales: []
 draft: false
 order: 3
@@ -10,6 +10,6 @@ liquid: false
 usuaries:
 - 356
 - 644
-last_modified_at: 2023-05-29 05:30:51.837393235 +00:00
+last_modified_at: 2023-05-29 05:30:58.668370700 +00:00
 ---
 
