@@ -17,7 +17,7 @@ h5_font_size: 0.875rem
 h6_font_size: 0.75rem
 mark_bg: "#fcf8e3"
 body_image:
-  path: public/background-dithered.png
+  path: public/sw7pgg07zsyk5555f82duuhdxnh5/background-dithered.jpg
   description: prueba
 locales: []
 draft: false
