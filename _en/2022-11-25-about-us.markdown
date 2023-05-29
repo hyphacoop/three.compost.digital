@@ -18,7 +18,7 @@ license: <p style="text-align:start">We treat each issue of COMPOST as a lab. Du
   supporting livelihoods, and growing our community sustainably.</p>
 locales: []
 draft: false
-order: 15
+order: 9
 layout: about
 uuid: 773ec90a-329e-4a76-aa34-8530f5108c4a
 liquid: false

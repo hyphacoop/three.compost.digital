@@ -21,7 +21,7 @@ body_image:
   description: prueba
 locales: []
 draft: false
-order: 2
+order: 1
 layout: theme
 uuid: 31c6b671-5546-442d-8575-9d86001b77d4
 liquid: false
