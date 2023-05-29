@@ -8,7 +8,7 @@ body_bg: "#ffffff"
 body_color: "#000000"
 primary: "#0b5566"
 link_color: "#0b5566"
-link_hover_color: "#15b0d5"
+link_hover_color: "#119cbf"
 h1_font_size: 2.25rem
 h2_font_size: 1.5rem
 h3_font_size: 1.125rem
@@ -27,6 +27,6 @@ uuid: 31c6b671-5546-442d-8575-9d86001b77d4
 liquid: false
 usuaries:
 - 644
-last_modified_at: 2023-05-29 17:43:10.938445489 +00:00
+last_modified_at: 2023-05-29 17:43:28.280311911 +00:00
 ---
 
