@@ -1,6 +1,6 @@
 ---
 title: LAUNCH ISSUE FOUR!
-description: If we reach USD $10,000, we'll be able to publish another issue of COMPOST.
+description: We'll be able to publish another issue of COMPOST!
 value_max: 10000.0
 currency: USD
 locales: []
@@ -12,6 +12,6 @@ liquid: false
 usuaries:
 - 356
 - 644
-last_modified_at: 2023-05-29 06:37:19.037755497 +00:00
+last_modified_at: 2023-05-29 06:39:39.206644047 +00:00
 ---
 
