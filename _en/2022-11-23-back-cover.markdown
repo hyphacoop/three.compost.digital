@@ -18,7 +18,7 @@ usuaries:
 - 356
 - 644
 - 649
-last_modified_at: 2023-05-29 19:02:54.681187258 +00:00
+last_modified_at: 2023-05-29 20:01:11.713658898 +00:00
 ---
 
 <p style="text-align:start">Big thank you to our monthly supporters on Open Collective. It truly warms out hearts that you believe in this project and supporting us on this journey!</p><p style="text-align:start">Huge thank you to Vincent for building out all the custom multimedia pieces and layout out the design so beautifully.</p><p style="text-align:start">Hanami, we’re so lucky to have you as part of our team — you continue to blow us away with your super speedy turn arounds.</p>
