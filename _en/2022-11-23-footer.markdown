@@ -42,13 +42,13 @@ column_4: <p style="text-align:start">Support Us<a href="https://two.compost.dig
   target="_blank" referrerpolicy="strict-origin-when-cross-origin">compostmag.eth</a></p>
 locales: []
 draft: false
-order: 8
+order: 14
 layout: footer
 uuid: 81a580fa-7e0f-4ade-9669-316f5bb2c298
 liquid: false
 usuaries:
 - 356
 - 644
-last_modified_at: 2023-05-29 06:44:58.153981196 +00:00
+last_modified_at: 2023-05-29 18:26:59.474020191 +00:00
 ---
 

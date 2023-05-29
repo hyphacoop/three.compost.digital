@@ -6,12 +6,12 @@ value_max: 20000.0
 currency: USD
 locales: []
 draft: false
-order: 2
+order: 9
 layout: goal
 uuid: 758fdda9-19fc-4a9e-bd00-5d836a7c1144
 liquid: false
 usuaries:
 - 644
-last_modified_at: 2023-05-29 06:37:29.851338069 +00:00
+last_modified_at: 2023-05-29 18:27:00.303981241 +00:00
 ---
 
