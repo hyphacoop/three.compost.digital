@@ -1,9 +1,9 @@
 ---
 title: Back cover
-description: Back Cover
+description: Tangents, fragments, and shout outs!
 image:
   path: public/gryb6vceeiq8snw4nnoof395q908/Compost_Issue03_Assets-BackCover1.jpg
-  description: imagen de una flor en un lienzo color lila.
+  description: A blue image of water rippling out from the center.
 authors_title: "-ˋˏ ༻our other projects + writings༺ ˎˊ-"
 content_title: SHOUT OUTS ＼(＾▽＾)／
 supporters_title: "＊✿❀ BIG thank you to our supporters + partners! ❀✿＊"
@@ -17,7 +17,8 @@ liquid: false
 usuaries:
 - 356
 - 649
-last_modified_at: 2023-05-03 21:45:32.164445169 +00:00
+- 644
+last_modified_at: 2023-05-29 05:27:04.288124286 +00:00
 ---
 
-<p style="text-align:start"><del>Huge thank you to Sharon of Nomadic Labs for building our website so thoughtfully and beautifully.</del></p><p style="text-align:start"><del>The gifs scattered throughout this issue were made by Liaizon Wakest. Thank you for bringing a little part of Kickapoo to our magazine!</del></p><p style="text-align:start"><del>Thanks for working away behind the scenes, Elon and Yurko! We truly appreciate all your support.</del></p><p style="text-align:start"><del>Hanami, we’re so lucky to have you as part of our team—you continue to blow us away with your skills.</del></p><p style="text-align:start"><del>We have so so so much gratitude for our monthly supporters on Open Collective. Thank you for believing in this project and supporting us on this journey!</del></p><p style="text-align:start"><del>I want a shout out to Andi for so much inspiration; Mai, Benedict, Udit and team for great guidance and the willingness to experiment with the metadata on the images. Benny, Kola, Luandro, Eeshita, and Wakest for all the exciting ideas and connections. — Margaret</del></p>
+<p style="text-align:start">Big thank you to our monthly supporters on Open Collective. It truly warms out hearts that you believe in this project and supporting us on this journey!</p><p style="text-align:start"></p><p style="text-align:start"></p><p style="text-align:start"><del>Huge thank you to Sharon of Nomadic Labs for building our website so thoughtfully and beautifully.</del></p><p style="text-align:start"><del>The  scattered throughout this issue were made by Liaizon Wakest. Thank you for bringing a little part of Kickapoo to our magazine!</del></p><p style="text-align:start"><del>Thanks for working away behind the scenes, Elon and Yurko! We truly appreciate all your support.</del></p><p style="text-align:start"><del>Hanami, we’re so lucky to have you as part of our team—you continue to blow us away with your skills.</del></p><p style="text-align:start"><del>I want a shout out to Andi for so much inspiration; Mai, Benedict, Udit and team for great guidance and the willingness to experiment with the metadata on the images. Benny, Kola, Luandro, Eeshita, and Wakest for all the exciting ideas and connections. — Margaret</del></p>
