@@ -9,12 +9,12 @@ body_color: "#000000"
 primary: "#0b5566"
 link_color: "#0b5566"
 link_hover_color: "#18434d"
-h1_font_size: 2.625rem
-h2_font_size: 1.6875rem
-h3_font_size: 1.535rem
-h4_font_size: 1.5rem
-h5_font_size: 1.25rem
-h6_font_size: 1rem
+h1_font_size: 2.5rem
+h2_font_size: 1.56rem
+h3_font_size: 1.41rem
+h4_font_size: 1.375rem
+h5_font_size: 1.125rem
+h6_font_size: 0.875rem
 mark_bg: "#fcf8e3"
 body_image:
   path: public/background-dithered.png
@@ -27,6 +27,6 @@ uuid: 31c6b671-5546-442d-8575-9d86001b77d4
 liquid: false
 usuaries:
 - 644
-last_modified_at: 2023-05-29 06:28:39.997432823 +00:00
+last_modified_at: 2023-05-29 17:26:56.905420742 +00:00
 ---
 
