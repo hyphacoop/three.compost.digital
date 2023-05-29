@@ -3,7 +3,7 @@ title: Support Us
 description: We are building on the digital commons by publishing our work freely
   and stewarding tools for anyone to use. If you like what we’re doing, consider supporting
   us!
-section_1: <figure><img src="public/re6s940bp5s3v3cg07e2sagb30zu/water_dividers_transparent_1_200px.png"
+section_1: <figure><img src="public/g9t4hvcd5tv08mbxjmzomx0yxqkr/water_dividers_transparent_4_200px.png"
   class="max-w-100" controls="false"></figure><h2 style="text-align:start" id="digital-bake-sale">Digital
   Bake Sale</h2><p style="text-align:start">We need your support to ensure the future
   sustainability of our magazine and <a href="https://distributed.press" rel="noopener"
@@ -22,6 +22,6 @@ liquid: false
 usuaries:
 - 356
 - 644
-last_modified_at: 2023-05-29 18:24:52.940617510 +00:00
+last_modified_at: 2023-05-29 18:25:43.546723770 +00:00
 ---
 
