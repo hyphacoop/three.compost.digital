@@ -14,9 +14,9 @@ uuid: 7520837e-4807-45b3-a250-d980f0f1f864
 liquid: false
 usuaries:
 - 644
-- 649
 - 646
-last_modified_at: 2023-05-30 20:42:40.200421689 +00:00
+- 649
+last_modified_at: 2023-05-30 20:42:47.482807546 +00:00
 ---
 
 <p style="text-align:start">Alexandra Kumala is a writer and filmmaker from Jakarta.</p>
