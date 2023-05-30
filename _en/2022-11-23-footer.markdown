@@ -29,9 +29,10 @@ column_3: <p style="text-align:start">Social Web<br><a href="https://www.are.na/
   referrerpolicy="strict-origin-when-cross-origin">GitHub</a> <br></p><p style="text-align:start">Keep
   in touch <br><a href="https://link.hypha.coop/compost-newsletter" rel="noopener"
   target="_blank" referrerpolicy="strict-origin-when-cross-origin">Join our newsletter</a>
-  <br><a href="https://github.com/hyphacoop/distributed-press-organizing/wiki" rel="noopener"
-  target="_blank" referrerpolicy="strict-origin-when-cross-origin">Read our Wiki</a>
-  <a href="mailto:hello@compost.digital" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Email
+  </p><p style="text-align:start"><a href="https://github.com/hyphacoop/distributed-press-organizing/wiki"
+  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Read
+  our Wiki</a> </p><p style="text-align:start"><a href="mailto:hello@compost.digital"
+  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Email
   us</a></p>
 column_4: <p style="text-align:start">Support Us<a href="https://two.compost.digital/support-us/#web-monetization"
   rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin"><br></a><a
@@ -49,6 +50,6 @@ liquid: false
 usuaries:
 - 356
 - 644
-last_modified_at: 2023-05-29 06:44:58.153981196 +00:00
+last_modified_at: 2023-05-30 16:40:24.112316467 +00:00
 ---
 
