@@ -1,8 +1,7 @@
 ---
 title: lake
 alias: lake
-projects:
-- https://www.instagram.com/lake___sleep/
+projects: []
 posts:
 - 713de76b-b30f-4b60-a4ab-ae974f73331f
 locales: []
@@ -14,7 +13,8 @@ liquid: false
 usuaries:
 - 644
 - 725
-last_modified_at: 2023-05-29 21:57:08.116677683 +00:00
+- 646
+last_modified_at: 2023-05-30 20:43:28.136699156 +00:00
 ---
 
 <p style="text-align:start">Lake is an artist living in New Orleans, Louisiana. She illustrates and tattoos surrealistic art inspired by technology and the natural world. She can be found on instagram: <a href="https://instagram.com/lake___sleep" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">@lake___sleep</a> and the fediverse: <a href="https://autonomous.zone/@lake" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">@lake@autonomous.zone</a></p>
