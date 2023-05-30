@@ -1,8 +1,7 @@
 ---
 title: mai ishikawa sutton
 alias: mai ishikawa sutton
-projects:
-- maisutton.net/
+projects: []
 posts:
 - c747c8ff-4a7b-447f-b44f-fb528e603482
 - 35a049be-6b8b-4717-b467-97dc1cb62797
@@ -14,7 +13,8 @@ uuid: 05c5963c-8bf7-40ca-ab16-e9199fa72ff2
 liquid: false
 usuaries:
 - 644
-last_modified_at: 2023-05-29 21:57:08.130816191 +00:00
+- 646
+last_modified_at: 2023-05-30 20:44:28.720222120 +00:00
 ---
 
 <p style="text-align:start"></p>
