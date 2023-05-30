@@ -2,7 +2,6 @@
 title: Alexandra Kumala
 alias: Alexandra Kumala
 projects:
-- https://alexandrakumala.com
 - https://sugarnutmeg.com
 - https://xamoedra.cargo.site
 posts:
@@ -16,7 +15,8 @@ liquid: false
 usuaries:
 - 644
 - 649
-last_modified_at: 2023-05-29 21:57:08.029804849 +00:00
+- 646
+last_modified_at: 2023-05-30 20:42:40.200421689 +00:00
 ---
 
 <p style="text-align:start">Alexandra Kumala is a writer and filmmaker from Jakarta.</p>
