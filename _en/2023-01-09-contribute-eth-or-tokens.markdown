@@ -3,7 +3,7 @@ title: Contribute ETH or Tokens
 text: compostmag.eth
 locales: []
 draft: false
-order: 30
+order: 2
 layout: button_copy
 uuid: '028075eb-ca83-483c-9f91-59db8de44006'
 liquid: false
