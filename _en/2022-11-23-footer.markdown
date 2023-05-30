@@ -16,30 +16,35 @@ column_2: <p style="text-align:start">COMPOST is published to the web and <a hre
   rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">DWeb</a>
   using the <a href="https://github.com/hyphacoop/api.distributed.press" rel="noopener"
   target="_blank" referrerpolicy="strict-origin-when-cross-origin">Distributed Press
-  API</a>.<br></p><p style="text-align:start">Read it on:</p><p style="text-align:start">https://three.compost.digital</p><p
-  style="text-align:start">ipns://three.compost.digital</p><p style="text-align:start">Unless
-  otherwise stated, all content on this website is licensed under a<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"
-  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Creative
-  Commons Attribution-ShareAlike 4.0 International license</a>.<br><br><br><br><br></p>
-column_3: <p style="text-align:start">Social Web<br><a href="https://www.are.na/compost/"
-  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Are.na</a><br><a
-  href="https://social.coop/@COMPOST" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Mastodon</a><br><a
-  href="https://www.twitter.com/COMPOSTmag" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Twitter</a><br><a
-  href="https://github.com/hyphacoop/two.compost.digital" rel="noopener" target="_blank"
-  referrerpolicy="strict-origin-when-cross-origin">GitHub</a> <br></p><p style="text-align:start">Keep
-  in touch <br><a href="https://link.hypha.coop/compost-newsletter" rel="noopener"
-  target="_blank" referrerpolicy="strict-origin-when-cross-origin">Join our newsletter</a>
-  </p><p style="text-align:start"><a href="https://github.com/hyphacoop/distributed-press-organizing/wiki"
-  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Read
-  our Wiki</a> </p><p style="text-align:start"><a href="mailto:hello@compost.digital"
-  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Email
-  us</a></p>
-column_4: <p style="text-align:start">Support Us<a href="https://two.compost.digital/support-us/#web-monetization"
-  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin"><br></a><a
+  API</a>.<br></p><p style="text-align:start">Read it on:</p><p style="text-align:start"><a
+  href="https://three.compost.digital/" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">https://three.compost.digital</a></p><p
+  style="text-align:start"><a href="https://ipfs.distributed.press/ipns/three.compost.digital/"
+  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">ipns://three.compost.digital</a></p><p
+  style="text-align:start"><a href="https://hyper.distributed.press/three.compost.digital/"
+  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">hyper://three.compost.digital</a></p><p
+  style="text-align:start">Unless otherwise stated, all content on this website is
+  licensed under a<br><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener"
+  target="_blank" referrerpolicy="strict-origin-when-cross-origin">Creative Commons
+  Attribution-ShareAlike 4.0 International license</a>.<br><br><br><br><br></p>
+column_3: <p style="text-align:start">Social Web</p><p style="text-align:start"><a
+  href="https://www.are.na/compost/" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Are.na</a></p><p
+  style="text-align:start"><a href="https://social.coop/@COMPOST" rel="noopener" target="_blank"
+  referrerpolicy="strict-origin-when-cross-origin">Mastodon</a></p><p style="text-align:start"><a
+  href="https://www.twitter.com/COMPOSTmag" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Twitter</a></p><p
+  style="text-align:start"><a href="https://github.com/hyphacoop/three.compost.digital"
+  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">GitHub
+  </a><br></p><p style="text-align:start">Keep in touch</p><p style="text-align:start"><a
+  href="https://link.hypha.coop/compost-newsletter" rel="noopener" target="_blank"
+  referrerpolicy="strict-origin-when-cross-origin">Join our newsletter</a></p><p style="text-align:start"><a
+  href="https://github.com/hyphacoop/distributed-press-organizing/wiki" rel="noopener"
+  target="_blank" referrerpolicy="strict-origin-when-cross-origin">Read our Wiki</a></p><p
+  style="text-align:start"><a href="mailto:hello@compost.digital" rel="noopener" target="_blank"
+  referrerpolicy="strict-origin-when-cross-origin">Email us</a></p>
+column_4: <p style="text-align:start">Support Us</p><p style="text-align:start"><a
   href="https://opencollective.com/compost" rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Open
-  Collective</a><br><a href="https://gitcoin.co/grants/1385/compost" rel="noopener"
-  target="_blank" referrerpolicy="strict-origin-when-cross-origin">Gitcoin</a></p><p
-  style="text-align:start"><a href="https://two.compost.digital/support-us/" rel="noopener"
+  Collective</a></p><p style="text-align:start"><a href="https://gitcoin.co/grants/1385/compost"
+  rel="noopener" target="_blank" referrerpolicy="strict-origin-when-cross-origin">Gitcoin</a></p><p
+  style="text-align:start"><a href="https://three.compost.digital/support-us/" rel="noopener"
   target="_blank" referrerpolicy="strict-origin-when-cross-origin">compostmag.eth</a></p>
 locales: []
 draft: false
@@ -50,6 +55,7 @@ liquid: false
 usuaries:
 - 356
 - 644
-last_modified_at: 2023-05-30 16:40:24.112316467 +00:00
+- 646
+last_modified_at: 2023-05-30 21:14:13.805256849 +00:00
 ---
 
