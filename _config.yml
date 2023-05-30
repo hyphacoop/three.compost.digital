@@ -1,6 +1,6 @@
 ---
 title: COMPOST ISSUE 03
-url: https://compost.sutty.nl
+url: https://three.compost.digital
 sass:
   load_paths:
   - node_modules
@@ -43,5 +43,5 @@ linked_fields:
 - authors
 - posts
 description: 'COMPOST ISSUE 03: Water Bodies'
-hostname: compost.sutty.nl
+hostname: three.compost.digital
 onion-location: x4wzm4i4ij566xakjzjcsm2oluukmednytaee4bxmvcd6f57qflolrad.onion
