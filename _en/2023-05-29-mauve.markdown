@@ -3,7 +3,8 @@ title: mauve
 alias: mauve
 projects:
 - https://software.mauve.moe
-posts: []
+posts:
+- 35a049be-6b8b-4717-b467-97dc1cb62797
 locales: []
 draft: false
 order: 5
@@ -13,7 +14,7 @@ liquid: false
 usuaries:
 - 644
 - 646
-last_modified_at: 2023-05-30 20:43:59.948687811 +00:00
+last_modified_at: 2023-05-30 21:24:20.653369817 +00:00
 ---
 
 <p style="text-align:start">Mauve is a decentralized software consultant who has been working on everything from setting up local mesh networks, local-first file transfer apps, a decentralized web browser, and to a peer to peer virtual reality.</p>
