@@ -8,18 +8,20 @@ Author block
 
 {% assign links = include.links %}
 
-<div class="">
-  <div class="py-3">
-    {% include headings/h3.html text=include.title class="black source-serif font-weight-bold" %}
-  </div>
-
-  {% unless links == empty %}
-    <div class="background-lighter-blue text-monospace text-left p-3 mt-2 mb-2 rounded">
-      {% for link in links %}
-      <li class="list-unstyled">
-        <a class="black hover-white" href="{{- link -}}" target="_blank" rel="noopener">{{ link }}</a>
-      </li>
-      {% endfor %}
+{% unless links == empty %}
+  <div class="">
+    <div class="py-3">
+      {% include headings/h3.html text=include.title class="black source-serif font-weight-bold" %}
     </div>
-  {% endunless %}
-</div>
+
+    {% unless links == empty %}
+      <div class="background-lighter-blue text-monospace text-left p-3 mt-2 mb-2 rounded">
+        {% for link in links %}
+        <li class="list-unstyled">
+          <a class="black hover-white" href="{{- link -}}" target="_blank" rel="noopener">{{ link }}</a>
+        </li>
+        {% endfor %}
+      </div>
+    {% endunless %}
+  </div>
+{% endunless %}
