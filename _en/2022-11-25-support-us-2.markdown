@@ -3,14 +3,13 @@ title: Support Us
 description: We are building on the digital commons by publishing our work freely
   and stewarding tools for anyone to use. If you like what we’re doing, consider supporting
   us!
-section_1: <figure><img src="public/g9t4hvcd5tv08mbxjmzomx0yxqkr/water_dividers_transparent_4_200px.png"
-  class="max-w-100" controls="false"></figure><h2 style="text-align:start" id="digital-bake-sale">Digital
-  Bake Sale</h2><p style="text-align:start">We need your support to ensure the future
-  sustainability of our magazine and <a href="https://distributed.press" rel="noopener"
-  target="_blank" referrerpolicy="strict-origin-when-cross-origin">Distributed Press</a>.</p><p
-  style="text-align:start">Our magazine has BALANCE in our bank account as of DATE.
-  We hope to raise $20,000 by August 1st of 2023.</p><p style="text-align:start">Please
-  contribute to help us hit our fundraising goals!</p>
+section_1: <h2 style="text-align:start" id="digital-bake-sale">Digital Bake Sale</h2><p
+  style="text-align:start">We need your support to ensure the future sustainability
+  of our magazine and <a href="https://distributed.press" rel="noopener" target="_blank"
+  referrerpolicy="strict-origin-when-cross-origin">Distributed Press</a>.</p><p style="text-align:start">Our
+  magazine has BALANCE in our bank account. We hope to raise $20,000 by August 1st
+  of 2023.</p><p style="text-align:start">Please contribute to help us hit our fundraising
+  goals!</p>
 monetization_url: https://api.compost.digital/v0/monetization/balances.json
 section_2: <p style="text-align:start"></p>
 locales: []
@@ -22,6 +21,6 @@ liquid: false
 usuaries:
 - 356
 - 644
-last_modified_at: 2023-05-29 18:25:57.219763661 +00:00
+last_modified_at: 2023-05-30 20:43:34.875255448 +00:00
 ---
 
